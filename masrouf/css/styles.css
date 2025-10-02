@@ -1,0 +1,18 @@
+:root {
+  --bg: #12141a;
+  --panel: #1b1f27;
+  --ink: #eef1f6;
+  --accent: #e0b25a;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.55 system-ui, sans-serif;
+}
+
+section {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
