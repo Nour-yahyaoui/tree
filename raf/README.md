@@ -2,10 +2,14 @@
 
 An unknown filter is a word, not something to drop.
 
-## How
+## Decision
 
 One sqlite file, one CLI, the standard library and nothing else.
 
-## Notes
+```sh
+raf list --tag reading
+```
 
-One sqlite file, one CLI, the standard library and nothing else.
+## The rules
+
+The shelf is one file, so backing it up is copying a file.
