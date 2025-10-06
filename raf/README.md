@@ -1,10 +1,10 @@
 # raf
 
-One sqlite file, one CLI, the standard library and nothing else.
-
-## Why
-
 The shelf is one file, so backing it up is copying a file.
+
+## Open questions
+
+One sqlite file, one CLI, the standard library and nothing else.
 
 ```sh
 raf list --tag reading
