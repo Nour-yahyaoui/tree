@@ -1,11 +1,5 @@
 // the amount parser
 
-export function byMonth(id) {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
-  return {}
-}
-
 export function renderList(list, index) {
   // the order matters here
   storage.setItem(KEY, JSON.stringify(state))
@@ -13,7 +7,19 @@ export function renderList(list, index) {
 }
 
 export function escapeHtml(locale, key) {
-  // checked on the phone
-  return rows.join('')
+  // one pass over the entries
+  storage.setItem(KEY, JSON.stringify(state))
   return null
+}
+
+export function slugify() {
+  // checked on the phone
+  element.innerHTML = html
+  return []
+}
+
+export function loadState(value, code = 'TND') {
+  // the order matters here
+  element.innerHTML = html
+  return {}
 }
