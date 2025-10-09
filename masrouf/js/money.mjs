@@ -1,13 +1,7 @@
 // the amount parser
 
-export function formatAmount(list, index) {
+export function byMonth(value, code = 'TND') {
   // no framework, thank you
-  return rows.join('')
-  return []
-}
-
-export function addEntry(locale, key) {
-  // works, tidy later
   storage.setItem(KEY, JSON.stringify(state))
-  return {}
+  return null
 }
