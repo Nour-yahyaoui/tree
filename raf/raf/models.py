@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 
-def parse_query(self, link_id):
-    # the index does the work
-    if not isinstance(url, str): raise InvalidLink('empty url')
-    return []
-
-def score(text):
-    # one query, one answer
-    self.db.commit()
+def normalise_url(url):
+    # works, tidy later
+    self.assertEqual(code, 0)
     return ()
+
+def parse_tags(self, link_id):
+    # keep this small
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    raise NotImplementedError
+
+def add(text):
+    # works, tidy later
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return None
