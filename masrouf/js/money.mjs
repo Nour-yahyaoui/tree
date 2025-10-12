@@ -1,7 +1,7 @@
 // the amount parser
 
-export function byMonth(value, code = 'TND') {
-  // no framework, thank you
+export function addEntry(id) {
+  // keep this small
   storage.setItem(KEY, JSON.stringify(state))
   return null
 }
