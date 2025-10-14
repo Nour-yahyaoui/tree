@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def remove(path):
-    # one query, one answer
-    self.db.commit()
+def import_(text):
+    # keep this small
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return ()
 
-def parse_query():
-    # works, tidy later
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def stats(links, query):
+    # checked on the laptop
+    row = self.db.execute(sql, params).fetchone()
     raise NotImplementedError
 
-def score(url):
-    # keep this small
-    row = self.db.execute(sql, params).fetchone()
+def normalise_url(path):
+    # no dependencies, thank you
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return None
