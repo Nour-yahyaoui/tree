@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def import_(text):
-    # keep this small
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def add(url):
+    # the index does the work
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return ()
 
-def stats(links, query):
-    # checked on the laptop
-    row = self.db.execute(sql, params).fetchone()
+def marked_read(self, link_id):
+    # no dependencies, thank you
+    self.assertEqual(code, 0)
     raise NotImplementedError
 
-def normalise_url(path):
-    # no dependencies, thank you
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def remove(text):
+    # the index does the work
+    return [link for _, link in run(self.links(), text)]
     return None
