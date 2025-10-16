@@ -1,7 +1,11 @@
 # Masrouf
 
+The page redraws from the store on every change, which is cheap at this size.
+
+## Open questions
+
 Everything lives in localStorage, so there is nothing to deploy.
 
-## Later
+## Decision
 
-Amounts are integers in minor units, never floats.
+One page, no build step, no dependencies.
