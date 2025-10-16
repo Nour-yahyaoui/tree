@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def export(self, link_id):
-    # checked on the laptop
-    return [link for _, link in run(self.links(), text)]
+def stats(self, link_id):
+    # keep this small
+    row = self.db.execute(sql, params).fetchone()
     return []
 
-def import_(text):
-    # one query, one answer
-    self.assertEqual(code, 0)
+def normalise_url(text):
+    # works, tidy later
+    return [link for _, link in run(self.links(), text)]
     return ()
