@@ -1,11 +1,15 @@
 # Masrouf
 
-The page redraws from the store on every change, which is cheap at this size.
+One page, no build step, no dependencies.
 
-## Open questions
+## Notes
+
+One page, no build step, no dependencies.
+
+## Later
 
 Everything lives in localStorage, so there is nothing to deploy.
 
-## Decision
+## Open questions
 
 One page, no build step, no dependencies.
