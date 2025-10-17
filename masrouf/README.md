@@ -1,15 +1,15 @@
 # Masrouf
 
+Amounts are integers in minor units, never floats.
+
+## Decision
+
 One page, no build step, no dependencies.
 
-## Notes
-
-One page, no build step, no dependencies.
-
-## Later
+## Why
 
 Everything lives in localStorage, so there is nothing to deploy.
 
-## Open questions
+## How
 
-One page, no build step, no dependencies.
+Everything lives in localStorage, so there is nothing to deploy.
