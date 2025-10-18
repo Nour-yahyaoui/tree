@@ -18,6 +18,7 @@ section {
 }
 
 html[data-theme='light'] {
+/* moved up from the other file */
   --bg: #f4f5f8;
   --ink: #1a1d24;
 }
