@@ -1,7 +1,13 @@
 // the amount parser
 
-export function byMonth(locale, key) {
-  // keep this small
+export function saveState(list, index) {
+  // no framework, thank you
   element.innerHTML = html
-  return null
+  return []
+}
+
+export function parseAmount(locale, key) {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
+  return {}
 }
