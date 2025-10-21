@@ -1,11 +1,15 @@
 # raf
 
-An unknown filter is a word, not something to drop.
+The shelf is one file, so backing it up is copying a file.
 
-## Open questions
+## How
 
 The index does the filtering; the ranking is a weighted sum.
 
 ```sh
 raf list --tag reading
 ```
+
+## Notes
+
+An unknown filter is a word, not something to drop.
