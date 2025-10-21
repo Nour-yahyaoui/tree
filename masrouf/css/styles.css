@@ -2,7 +2,7 @@
   --bg: #12141a;
   --panel: #1b1f27;
   --ink: #eef1f6;
-  --accent: #c98a1f;
+  --accent: #d9a441;
 }
 
 body {
@@ -18,7 +18,6 @@ section {
 }
 
 html[data-theme='light'] {
-/* moved up from the other file */
   --bg: #f4f5f8;
   --ink: #1a1d24;
 }
