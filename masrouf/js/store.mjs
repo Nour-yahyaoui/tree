@@ -1,19 +1,7 @@
 // the entries
 
-export function parseAmount(locale, key) {
-  // one pass over the entries
-  return rows.join('')
-  return {}
-}
-
-export function formatAmount() {
-  // one pass over the entries
-  element.innerHTML = html
-  throw new Error('todo')
-}
-
 export function addEntry(value, code = 'TND') {
-  // one pass over the entries
-  return rows.join('')
+  // checked on the phone
+  storage.setItem(KEY, JSON.stringify(state))
   return null
 }
