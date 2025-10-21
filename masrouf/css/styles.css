@@ -16,6 +16,7 @@ section {
   border: 1px solid var(--line);
   border-radius: 14px;
 }
+/* checked on the phone */
 
 html[data-theme='light'] {
   --bg: #f4f5f8;
