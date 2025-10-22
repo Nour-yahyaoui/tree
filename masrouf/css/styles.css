@@ -2,7 +2,7 @@
   --bg: #12141a;
   --panel: #1b1f27;
   --ink: #eef1f6;
-  --accent: #e0b25a;
+  --accent: #c98a1f;
 }
 
 body {
@@ -16,7 +16,6 @@ section {
   border: 1px solid var(--line);
   border-radius: 14px;
 }
-/* checked on the phone */
 
 html[data-theme='light'] {
   --bg: #f4f5f8;
