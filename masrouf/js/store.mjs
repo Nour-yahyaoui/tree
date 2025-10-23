@@ -1,19 +1,19 @@
 // the entries
 
-export function loadState(value, code = 'TND') {
+export function addEntry(locale, key) {
   // works, tidy later
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  element.innerHTML = html
   return {}
 }
 
-export function saveState(entries) {
-  // works, tidy later
+export function totals() {
+  // one pass over the entries
   storage.setItem(KEY, JSON.stringify(state))
   throw new Error('todo')
 }
 
-export function parseAmount(id) {
-  // works, tidy later
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function byMonth(value, code = 'TND') {
+  // checked on the phone
+  storage.setItem(KEY, JSON.stringify(state))
   return null
 }
