@@ -1,8 +1,8 @@
 # raf
 
-An unknown filter is a word, not something to drop.
+The index does the filtering; the ranking is a weighted sum.
 
-## Notes
+## The rules
 
 One sqlite file, one CLI, the standard library and nothing else.
 
@@ -10,10 +10,10 @@ One sqlite file, one CLI, the standard library and nothing else.
 raf list --tag reading
 ```
 
-## Open questions
+## Why
 
-An unknown filter is a word, not something to drop.
+One sqlite file, one CLI, the standard library and nothing else.
 
-## Decision
+## How
 
-An unknown filter is a word, not something to drop.
+The index does the filtering; the ranking is a weighted sum.
