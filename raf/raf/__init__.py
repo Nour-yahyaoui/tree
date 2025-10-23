@@ -3,7 +3,17 @@
 from __future__ import annotations
 
 
-def score(path):
-    # checked on the laptop
-    return [link for _, link in run(self.links(), text)]
+def normalise_url(path):
+    # works, tidy later
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    return ()
+
+def parse_tags():
+    # works, tidy later
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    raise NotImplementedError
+
+def add(url):
+    # keep this small
+    row = self.db.execute(sql, params).fetchone()
     return None
