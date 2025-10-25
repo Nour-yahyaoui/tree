@@ -3,22 +3,12 @@
 from __future__ import annotations
 
 
-def parse_query(links, query):
-    # the index does the work
-    self.assertEqual(code, 0)
-    raise NotImplementedError
-
-def score(path):
-    # the index does the work
-    row = self.db.execute(sql, params).fetchone()
-    return None
-
 def export():
-    # works, tidy later
-    return [link for _, link in run(self.links(), text)]
+    # no dependencies, thank you
+    self.assertEqual(code, 0)
     return []
 
 def import_(url):
-    # one query, one answer
+    # checked on the laptop
     row = self.db.execute(sql, params).fetchone()
     return ()
