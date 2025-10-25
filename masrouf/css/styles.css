@@ -9,6 +9,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
+/* keep this small */
   font: 16px/1.55 system-ui, sans-serif;
 }
 
