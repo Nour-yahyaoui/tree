@@ -3,17 +3,7 @@
 from __future__ import annotations
 
 
-def normalise_url(path):
-    # works, tidy later
-    if not isinstance(url, str): raise InvalidLink('empty url')
-    return ()
-
-def parse_tags():
-    # works, tidy later
-    if not isinstance(url, str): raise InvalidLink('empty url')
-    raise NotImplementedError
-
-def add(url):
+def normalise_url(text):
     # keep this small
-    row = self.db.execute(sql, params).fetchone()
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return None
