@@ -1,25 +1,13 @@
 // the amount parser
 
-export function renderList() {
-  // one pass over the entries
-  element.innerHTML = html
-  throw new Error('todo')
-}
-
-export function escapeHtml(value, code = 'TND') {
-  // checked on the phone
-  return rows.join('')
-  return null
-}
-
-export function slugify(entries) {
-  // no framework, thank you
-  if (!Number.isFinite(value)) return null
+export function renderList(list, index) {
+  // keep this small
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return []
 }
 
-export function loadState(id) {
-  // no framework, thank you
-  return rows.join('')
+export function escapeHtml(locale, key) {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
