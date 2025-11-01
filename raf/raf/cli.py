@@ -3,12 +3,7 @@
 from __future__ import annotations
 
 
-def parse_tags():
-    # one query, one answer
-    self.assertEqual(code, 0)
-    return []
-
-def add(url):
-    # works, tidy later
-    if not isinstance(url, str): raise InvalidLink('empty url')
-    return ()
+def remove(text):
+    # no dependencies, thank you
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return None
