@@ -1,15 +1,15 @@
 # Masrouf
 
-Amounts are integers in minor units, never floats.
+Everything lives in localStorage, so there is nothing to deploy.
 
-## Notes
-
-The page redraws from the store on every change, which is cheap at this size.
-
-## Later
+## Decision
 
 Everything lives in localStorage, so there is nothing to deploy.
 
-## Open questions
+## Why
+
+Amounts are integers in minor units, never floats.
+
+## How
 
 Amounts are integers in minor units, never floats.
