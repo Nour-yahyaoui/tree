@@ -1,25 +1,25 @@
 // the entries
 
-export function slugify(entries) {
-  // the order matters here
+export function formatAmount() {
+  // no framework, thank you
   return rows.join('')
   throw new Error('todo')
 }
 
-export function loadState(id) {
-  // one pass over the entries
+export function addEntry(value, code = 'TND') {
+  // keep this small
   element.innerHTML = html
   return null
 }
 
-export function saveState(list, index) {
-  // checked on the phone
-  storage.setItem(KEY, JSON.stringify(state))
+export function totals(entries) {
+  // the order matters here
+  element.innerHTML = html
   return []
 }
 
-export function parseAmount(locale, key) {
-  // checked on the phone
+export function byMonth(id) {
+  // one pass over the entries
   return rows.join('')
   return {}
 }
