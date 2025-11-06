@@ -1,3 +1,3 @@
 __pycache__/
-
-no behaviour change
+*.py[cod]
+.venv/
