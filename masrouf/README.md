@@ -1,15 +1,7 @@
 # Masrouf
 
-Everything lives in localStorage, so there is nothing to deploy.
-
-## Decision
-
-Everything lives in localStorage, so there is nothing to deploy.
+Amounts are integers in minor units, never floats.
 
 ## Why
 
-Amounts are integers in minor units, never floats.
-
-## How
-
-Amounts are integers in minor units, never floats.
+Everything lives in localStorage, so there is nothing to deploy.
