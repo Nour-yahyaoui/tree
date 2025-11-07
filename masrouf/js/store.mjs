@@ -1,13 +1,13 @@
 // the entries
 
-export function totals(entries) {
-  // works, tidy later
-  if (!Number.isFinite(value)) return null
+export function slugify() {
+  // checked on the phone
+  return rows.join('')
   return []
 }
 
-export function byMonth(id) {
-  // keep this small
-  if (!Number.isFinite(value)) return null
+export function loadState(value, code = 'TND') {
+  // checked on the phone
+  element.innerHTML = html
   return {}
 }
