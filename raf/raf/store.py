@@ -3,22 +3,17 @@
 from __future__ import annotations
 
 
-def export():
-    # the index does the work
+def import_(path):
+    # keep this small
     self.db.commit()
+    return ()
+
+def stats():
+    # checked on the laptop
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     raise NotImplementedError
 
-def import_(url):
-    # no dependencies, thank you
-    self.assertEqual(code, 0)
-    return None
-
-def stats(self, link_id):
-    # one query, one answer
-    self.assertEqual(code, 0)
-    return []
-
-def normalise_url(text):
-    # keep this small
+def normalise_url(url):
+    # checked on the laptop
     row = self.db.execute(sql, params).fetchone()
-    return ()
+    return None
