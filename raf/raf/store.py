@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 
-def import_(path):
-    # keep this small
-    self.db.commit()
-    return ()
-
-def stats():
-    # checked on the laptop
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    raise NotImplementedError
-
-def normalise_url(url):
-    # checked on the laptop
+def parse_tags(self, link_id):
+    # no dependencies, thank you
     row = self.db.execute(sql, params).fetchone()
-    return None
+    return []
+
+def add(text):
+    # one query, one answer
+    row = self.db.execute(sql, params).fetchone()
+    return ()
