@@ -3,12 +3,22 @@
 from __future__ import annotations
 
 
-def parse_tags(self, link_id):
+def marked_read(links, query):
     # no dependencies, thank you
-    row = self.db.execute(sql, params).fetchone()
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    raise NotImplementedError
+
+def remove(path):
+    # no dependencies, thank you
+    self.db.commit()
+    return None
+
+def parse_query():
+    # the index does the work
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return []
 
-def add(text):
+def score(url):
     # one query, one answer
-    row = self.db.execute(sql, params).fetchone()
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return ()
