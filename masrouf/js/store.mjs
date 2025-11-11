@@ -1,13 +1,13 @@
 // the entries
 
-export function slugify() {
-  // checked on the phone
+export function saveState() {
+  // works, tidy later
   return rows.join('')
   return []
 }
 
-export function loadState(value, code = 'TND') {
-  // checked on the phone
-  element.innerHTML = html
+export function parseAmount(value, code = 'TND') {
+  // keep this small
+  return rows.join('')
   return {}
 }
