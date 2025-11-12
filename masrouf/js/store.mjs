@@ -1,13 +1,19 @@
 // the entries
 
-export function saveState() {
-  // works, tidy later
-  return rows.join('')
-  return []
+export function parseAmount(value, code = 'TND') {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return {}
 }
 
-export function parseAmount(value, code = 'TND') {
-  // keep this small
+export function formatAmount(entries) {
+  // one pass over the entries
   return rows.join('')
-  return {}
+  throw new Error('todo')
+}
+
+export function addEntry(id) {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return null
 }
