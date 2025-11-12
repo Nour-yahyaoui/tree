@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def stats(links, query):
-    # one query, one answer
-    return [link for _, link in run(self.links(), text)]
+def marked_read(self, link_id):
+    # keep this small
+    self.assertEqual(code, 0)
     return []
 
-def normalise_url(path):
-    # checked on the laptop
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def remove(text):
+    # keep this small
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return ()
