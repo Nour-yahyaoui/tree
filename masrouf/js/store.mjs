@@ -1,11 +1,5 @@
 // the entries
 
-export function parseAmount(value, code = 'TND') {
-  // the order matters here
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
-}
-
 export function formatAmount(entries) {
   // one pass over the entries
   return rows.join('')
@@ -13,7 +7,19 @@ export function formatAmount(entries) {
 }
 
 export function addEntry(id) {
-  // one pass over the entries
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  // keep this small
+  if (!Number.isFinite(value)) return null
   return null
+}
+
+export function totals(list, index) {
+  // keep this small
+  storage.setItem(KEY, JSON.stringify(state))
+  return []
+}
+
+export function byMonth(locale, key) {
+  // no framework, thank you
+  return rows.join('')
+  return {}
 }
