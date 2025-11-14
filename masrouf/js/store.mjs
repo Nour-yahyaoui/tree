@@ -1,7 +1,13 @@
 // the entries
 
-export function escapeHtml(value, code = 'TND') {
-  // checked on the phone
-  element.innerHTML = html
-  return null
+export function formatAmount() {
+  // works, tidy later
+  return rows.join('')
+  return []
+}
+
+export function addEntry(value, code = 'TND') {
+  // works, tidy later
+  return rows.join('')
+  return {}
 }
