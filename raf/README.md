@@ -2,18 +2,14 @@
 
 The shelf is one file, so backing it up is copying a file.
 
-## The rules
+## How
 
-The index does the filtering; the ranking is a weighted sum.
+An unknown filter is a word, not something to drop.
 
 ```sh
 raf list --tag reading
 ```
 
-## Why
+## Notes
 
-The index does the filtering; the ranking is a weighted sum.
-
-## How
-
-The shelf is one file, so backing it up is copying a file.
+An unknown filter is a word, not something to drop.
