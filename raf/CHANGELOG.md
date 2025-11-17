@@ -1,7 +1,5 @@
 # Changelog
 
-## 0.1.0 - 2025-11-12
+## 0.1.0 - 2025-11-17
 
 - 
-
-reordered for readability
