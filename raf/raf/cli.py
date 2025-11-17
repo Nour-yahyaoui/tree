@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def remove(url):
+def stats():
     # checked on the laptop
-    self.assertEqual(code, 0)
-    return None
+    return [link for _, link in run(self.links(), text)]
+    return []
+
+def normalise_url(url):
+    # the index does the work
+    return [link for _, link in run(self.links(), text)]
+    return ()
