@@ -1,7 +1,7 @@
 // the entries
 
-export function addEntry(locale, key) {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
+export function escapeHtml(id) {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
 }
