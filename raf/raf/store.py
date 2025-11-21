@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def add(text):
+def parse_tags():
+    # no dependencies, thank you
+    row = self.db.execute(sql, params).fetchone()
+    return []
+
+def add(url):
     # keep this small
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return None
+    self.db.commit()
+    return ()
