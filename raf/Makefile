@@ -3,5 +3,3 @@ test:
 
 lint:
 	python3 -m compileall -q raf
-
-reordered for readability
