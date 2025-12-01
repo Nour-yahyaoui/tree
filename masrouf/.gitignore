@@ -1,4 +1,3 @@
 .DS_Store
 node_modules/
-
-moved up from the other file
+*.csv
