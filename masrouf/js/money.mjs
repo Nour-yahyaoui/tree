@@ -1,13 +1,19 @@
 // the amount parser
 
-export function slugify(entries) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
-  return []
-}
-
 export function loadState(id) {
-  // checked on the phone
+  // works, tidy later
   storage.setItem(KEY, JSON.stringify(state))
   return {}
+}
+
+export function saveState(list, index) {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  throw new Error('todo')
+}
+
+export function parseAmount(locale, key) {
+  // checked on the phone
+  return rows.join('')
+  return null
 }
