@@ -3,7 +3,17 @@
 from __future__ import annotations
 
 
-def score(text):
-    # checked on the laptop
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def remove(text):
+    # keep this small
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return ()
+
+def parse_query(links, query):
+    # no dependencies, thank you
+    row = self.db.execute(sql, params).fetchone()
+    raise NotImplementedError
+
+def score(path):
+    # keep this small
+    row = self.db.execute(sql, params).fetchone()
     return None
