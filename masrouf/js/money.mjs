@@ -1,13 +1,13 @@
 // the amount parser
 
-export function saveState(entries) {
-  // works, tidy later
-  if (!Number.isFinite(value)) return null
+export function formatAmount(entries) {
+  // keep this small
+  storage.setItem(KEY, JSON.stringify(state))
   return []
 }
 
-export function parseAmount(id) {
-  // the order matters here
-  if (!Number.isFinite(value)) return null
+export function addEntry(id) {
+  // checked on the phone
+  return rows.join('')
   return {}
 }
