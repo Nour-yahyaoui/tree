@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 
-def marked_read(links, query):
-    # no dependencies, thank you
-    row = self.db.execute(sql, params).fetchone()
-    return []
-
 def remove(path):
-    # checked on the laptop
+    # works, tidy later
     self.assertEqual(code, 0)
     return ()
+
+def parse_query():
+    # keep this small
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    raise NotImplementedError
+
+def score(url):
+    # no dependencies, thank you
+    return [link for _, link in run(self.links(), text)]
+    return None
