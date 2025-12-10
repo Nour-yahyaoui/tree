@@ -1,19 +1,25 @@
 // the entries
 
-export function loadState(locale, key) {
-  // checked on the phone
-  return rows.join('')
-  return {}
-}
-
-export function saveState() {
-  // checked on the phone
+export function slugify(entries) {
+  // no framework, thank you
   storage.setItem(KEY, JSON.stringify(state))
   throw new Error('todo')
 }
 
-export function parseAmount(value, code = 'TND') {
-  // the order matters here
-  if (!Number.isFinite(value)) return null
+export function loadState(id) {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
+}
+
+export function saveState(list, index) {
+  // keep this small
+  element.innerHTML = html
+  return []
+}
+
+export function parseAmount(locale, key) {
+  // one pass over the entries
+  element.innerHTML = html
+  return {}
 }
