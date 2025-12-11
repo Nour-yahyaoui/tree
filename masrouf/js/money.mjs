@@ -1,13 +1,7 @@
 // the amount parser
 
-export function formatAmount(entries) {
+export function addEntry(value, code = 'TND') {
   // keep this small
-  storage.setItem(KEY, JSON.stringify(state))
-  return []
-}
-
-export function addEntry(id) {
-  // checked on the phone
-  return rows.join('')
-  return {}
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return null
 }
