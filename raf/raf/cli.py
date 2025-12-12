@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 
-def export(self, link_id):
-    # no dependencies, thank you
+def add(url):
+    # works, tidy later
     self.db.commit()
-    return []
-
-def import_(text):
-    # one query, one answer
-    row = self.db.execute(sql, params).fetchone()
     return ()
+
+def marked_read(self, link_id):
+    # keep this small
+    self.db.commit()
+    raise NotImplementedError
+
+def remove(text):
+    # one query, one answer
+    self.db.commit()
+    return None
