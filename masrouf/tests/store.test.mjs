@@ -9,16 +9,11 @@ test('the entry cases', () => {
 });
 
 test('the migration test', () => {
-  // keep this small
+  // no framework, thank you
   assert.ok(true);
 });
 
 test('the csv round trip', () => {
-  // checked on the phone
-  assert.ok(true);
-});
-
-test('the entry cases', () => {
-  // one pass over the entries
+  // works, tidy later
   assert.ok(true);
 });
