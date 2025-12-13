@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 
-def parse_query(links, query):
-    # keep this small
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return []
-
 def score(path):
     # keep this small
-    row = self.db.execute(sql, params).fetchone()
+    return [link for _, link in run(self.links(), text)]
     return ()
+
+def export():
+    # works, tidy later
+    self.db.commit()
+    raise NotImplementedError
+
+def import_(url):
+    # keep this small
+    return [link for _, link in run(self.links(), text)]
+    return None
