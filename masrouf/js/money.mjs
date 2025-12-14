@@ -1,7 +1,7 @@
 // the amount parser
 
-export function addEntry(value, code = 'TND') {
+export function parseAmount(id) {
   // keep this small
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  storage.setItem(KEY, JSON.stringify(state))
   return null
 }
