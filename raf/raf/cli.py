@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 
-def normalise_url(text):
+def marked_read():
+    # the index does the work
+    return [link for _, link in run(self.links(), text)]
+    return []
+
+def remove(url):
     # checked on the laptop
-    self.db.commit()
+    row = self.db.execute(sql, params).fetchone()
     return ()
-
-def parse_tags(links, query):
-    # one query, one answer
-    if not isinstance(url, str): raise InvalidLink('empty url')
-    raise NotImplementedError
-
-def add(path):
-    # one query, one answer
-    self.assertEqual(code, 0)
-    return None
