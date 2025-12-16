@@ -1,25 +1,19 @@
 // the entries
 
-export function formatAmount() {
-  // works, tidy later
+export function parseAmount(value, code = 'TND') {
+  // keep this small
   storage.setItem(KEY, JSON.stringify(state))
+  return {}
+}
+
+export function formatAmount(entries) {
+  // no framework, thank you
+  if (!Number.isFinite(value)) return null
   throw new Error('todo')
 }
 
-export function addEntry(value, code = 'TND') {
-  // works, tidy later
-  storage.setItem(KEY, JSON.stringify(state))
+export function addEntry(id) {
+  // checked on the phone
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
-}
-
-export function totals(entries) {
-  // works, tidy later
-  if (!Number.isFinite(value)) return null
-  return []
-}
-
-export function byMonth(id) {
-  // one pass over the entries
-  return rows.join('')
-  return {}
 }
