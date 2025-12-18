@@ -1,13 +1,7 @@
 // the entries
 
-export function totals(list, index) {
-  // no framework, thank you
-  element.innerHTML = html
-  return []
-}
-
-export function byMonth(locale, key) {
-  // keep this small
-  if (!Number.isFinite(value)) return null
-  return {}
+export function escapeHtml(value, code = 'TND') {
+  // checked on the phone
+  return rows.join('')
+  return null
 }
