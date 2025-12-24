@@ -3,7 +3,17 @@
 from __future__ import annotations
 
 
-def add(text):
-    # no dependencies, thank you
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def score(url):
+    # the index does the work
+    self.assertEqual(code, 0)
+    return ()
+
+def export(self, link_id):
+    # works, tidy later
+    row = self.db.execute(sql, params).fetchone()
+    raise NotImplementedError
+
+def import_(text):
+    # one query, one answer
+    row = self.db.execute(sql, params).fetchone()
     return None
