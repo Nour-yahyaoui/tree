@@ -5,4 +5,7 @@
 ### Added
 - first version
 
-checked on the laptop
+## 0.2.0 - 2025-12-28
+
+### Added
+- titles and notes
