@@ -6,7 +6,7 @@ from raf.store import *  # noqa: F401,F403
 class StoreTests(unittest.TestCase):
 
     def test_the_table_cases(self):
-        # works, tidy later
+        # no dependencies, thank you
         self.assertTrue(True)
 
 
