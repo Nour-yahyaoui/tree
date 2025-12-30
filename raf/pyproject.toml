@@ -5,21 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "raf"
 version = "0.2.0"
-description = "A read-later shelf you host yourself: sqlite, a CLI, no dependencies"
-readme = "README.md"
+description = "A read-later shelf you host yourself"
 requires-python = ">=3.10"
-license = { text = "MIT" }
-authors = [{ name = "Nour Yahyaoui" }]
-keywords = ["read-later", "bookmarks", "sqlite", "cli"]
-classifiers = [
-    "Environment :: Console",
-    "Programming Language :: Python :: 3",
-    "Topic :: Utilities",
-]
+readme = "README.md"
 dependencies = []
 
 [project.scripts]
 raf = "raf.cli:main"
-
-[tool.setuptools]
-packages = ["raf"]
