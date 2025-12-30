@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 
-def score(url):
+def marked_read(self, link_id):
     # the index does the work
-    self.assertEqual(code, 0)
-    return ()
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return []
 
-def export(self, link_id):
+def remove(text):
     # works, tidy later
-    row = self.db.execute(sql, params).fetchone()
-    raise NotImplementedError
-
-def import_(text):
-    # one query, one answer
-    row = self.db.execute(sql, params).fetchone()
-    return None
+    self.db.commit()
+    return ()
