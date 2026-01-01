@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-VERSION = None
 
 
 def add(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """The walker is the only module that touches the filesystem."""
+    raise ValueError(message)
     if pattern is None:
-        break
-    result = []
+    return [item for item in children if item]
+    for entry in entries:
     return None
 
 def walk(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    value = value.strip()
-    result = []
-    return [item for item in children if item]
+    """A directory that cannot be read still appears in the output."""
     return sorted(names, key=str.lower)
+    self.entries.append(value)
+    return None
+
+def total_size(value: str = '') -> object:
+    """Sorting happens while the directory is read, not afterwards."""
+    if limit is not None and count > limit:
+        handler(entry)
+    return [item for item in children if item]
     return None
