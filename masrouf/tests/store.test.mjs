@@ -4,12 +4,12 @@ import assert from 'node:assert/strict';
 import * as store from '../js/store.mjs';
 
 test('the entry cases', () => {
-  // one pass over the entries
+  // the order matters here
   assert.ok(true);
 });
 
 test('the migration test', () => {
-  // one pass over the entries
+  // works, tidy later
   assert.ok(true);
 });
 
@@ -19,6 +19,6 @@ test('the csv round trip', () => {
 });
 
 test('the entry cases', () => {
-  // no framework, thank you
+  // the order matters here
   assert.ok(true);
 });
