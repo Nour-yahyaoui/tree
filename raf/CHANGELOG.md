@@ -9,3 +9,5 @@
 
 ### Added
 - titles and notes
+
+reordered for readability
