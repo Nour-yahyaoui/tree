@@ -9,6 +9,17 @@ from tests.support import TempTreeCase
 
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
+        tree = build_sample(self.root)
         self.assertEqual(result, expected)
+        self.assertEqual(stats.files, 2)
         self.assertEqual(len(children), 3)
+
+    def test_case_2(self):
+        with self.assertRaises(ValueError):
+        self.assertEqual(len(children), 3)
+
+    def test_case_3(self):
+        with self.assertRaises(ValueError):
+        self.assertEqual(result, expected)
+        self.assertIsNone(entry)
 
