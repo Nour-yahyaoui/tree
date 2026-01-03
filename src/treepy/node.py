@@ -2,24 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-CACHE = False
+SEPARATOR = ''
 
 
 def add(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """A link that would loop is marked instead of followed."""
     if limit is not None and count > limit:
-    value = value.strip()
-    result = []
-    return None
-
-def walk(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if limit is not None and count > limit:
-    return sorted(names, key=str.lower)
-    return [item for item in children if item]
     result = []
     return None
