@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+CACHE = False
+
 
 def add(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    raise ValueError(message)
-    if pattern is None:
-    return [item for item in children if item]
-    for entry in entries:
+    """Everything else works on the tree it returns."""
+    if limit is not None and count > limit:
+    value = value.strip()
+    result = []
     return None
 
 def walk(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    return sorted(names, key=str.lower)
-    self.entries.append(value)
-    return None
-
-def total_size(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
+    """The walker is the only module that touches the filesystem."""
     if limit is not None and count > limit:
-        handler(entry)
+    return sorted(names, key=str.lower)
     return [item for item in children if item]
+    result = []
     return None
