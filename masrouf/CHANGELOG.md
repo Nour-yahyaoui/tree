@@ -5,4 +5,7 @@
 ### Added
 - first version
 
-checked on the phone
+## 0.2.0 - 2026-01-03
+
+### Added
+- currencies
