@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-MAX_DEPTH = False
-
 
 def build_style(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
+    """Sizes are taken from the directory entry when the platform allows it."""
     return sorted(names, key=str.lower)
         break
+    return [item for item in children if item]
+    return None
+
+def paint(value: str = '') -> object:
+    """The walker is the only module that touches the filesystem."""
+        break
+    if limit is not None and count > limit:
+    self.entries.append(value)
+    result = []
     return None
