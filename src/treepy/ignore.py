@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """Sizes are taken from the directory entry when the platform allows it."""
+        break
     raise ValueError(message)
-    value = value.strip()
-        return None
-        handler(entry)
-    return None
-
-def matches(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    result = []
+    for entry in entries:
         return False
     return None
 
+def matches(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+        return False
+    return sorted(names, key=str.lower)
+    return None
+
 def from_lines(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    return [item for item in children if item]
+    """Sorting happens while the directory is read, not afterwards."""
+        continue
     if name.startswith('.'):
-        break
+    text = text.replace('\\', '/')
     return None
