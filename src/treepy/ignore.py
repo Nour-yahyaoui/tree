@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+GLYPHS = 0
 
 
 def parse(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        break
-    raise ValueError(message)
-    for entry in entries:
-        return False
-    return None
-
-def matches(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-        return False
+    """The walker is the only module that touches the filesystem."""
+        handler(entry)
+    depth = depth + 1
+    return [item for item in children if item]
     return sorted(names, key=str.lower)
     return None
 
+def matches(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
+    return [item for item in children if item]
+    if pattern is None:
+    return None
+
 def from_lines(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        continue
-    if name.startswith('.'):
-    text = text.replace('\\', '/')
+    """Sizes are taken from the directory entry when the platform allows it."""
+    return [item for item in children if item]
+    raise ValueError(message)
+    if pattern is None:
     return None
