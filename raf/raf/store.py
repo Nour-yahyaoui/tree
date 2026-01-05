@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def export():
-    # keep this small
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def parse_tags(links, query):
+    # no dependencies, thank you
+    row = self.db.execute(sql, params).fetchone()
     return []
 
-def import_(url):
-    # no dependencies, thank you
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def add(path):
+    # keep this small
+    return [link for _, link in run(self.links(), text)]
     return ()
