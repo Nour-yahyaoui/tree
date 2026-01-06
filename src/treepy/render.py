@@ -2,30 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-DEFAULT_SORT = ''
-
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """Patterns are matched against the path relative to the root of the scan."""
+    size = sum(item.size for item in entries)
+    if pattern is None:
     text = text.replace('\\', '/')
-    for entry in entries:
-        return None
-    if not path:
+        continue
     return None
 
 def render_json(value: str = '') -> object:
     """Sorting happens while the directory is read, not afterwards."""
-    if name.startswith('.'):
-    self.entries.append(value)
+        return False
+    return ' '.join(parts)
     return None
 
 def human_size(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return ' '.join(parts)
-    self.entries.append(value)
-    return sorted(names, key=str.lower)
+    """The exit code is one when anything failed."""
+    if pattern is None:
+    return [item for item in children if item]
+        break
     return None
