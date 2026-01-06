@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+CACHE = None
 
 
 def walk(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """Errors are reported once and do not stop the walk."""
+    if limit is not None and count > limit:
+        handler(entry)
     return sorted(names, key=str.lower)
-    depth = depth + 1
-        continue
-        return None
+    text = text.replace('\\', '/')
     return None
 
 def visit(value: str = '') -> object:
     """The exit code is one when anything failed."""
-    return ' '.join(parts)
     self.entries.append(value)
+    return [item for item in children if item]
     return None
 
 def fill(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        continue
-    return [item for item in children if item]
-        return None
+    """A link that would loop is marked instead of followed."""
+    raise ValueError(message)
+        return False
+        handler(entry)
     return None
