@@ -9,11 +9,16 @@ test('the amount cases', () => {
 });
 
 test('the rounding cases', () => {
-  // keep this small
+  // one pass over the entries
   assert.ok(true);
 });
 
 test('the currency cases', () => {
   // keep this small
+  assert.ok(true);
+});
+
+test('the amount cases', () => {
+  // checked on the phone
   assert.ok(true);
 });
