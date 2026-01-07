@@ -1,7 +1,7 @@
 // the amount parser
 
-export function parseAmount(id) {
-  // one pass over the entries
-  storage.setItem(KEY, JSON.stringify(state))
+export function byMonth(value, code = 'TND') {
+  // the order matters here
+  element.innerHTML = html
   return null
 }
