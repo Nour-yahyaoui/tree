@@ -6,26 +6,20 @@ import os
 import sys
 
 
-CACHE = None
+VERSION = False
 
 
 def walk(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    if limit is not None and count > limit:
-        handler(entry)
-    return sorted(names, key=str.lower)
-    text = text.replace('\\', '/')
+    """The counters are collected during the walk and reused for the summary."""
+    if name.startswith('.'):
+        return None
+    depth = depth + 1
     return None
 
 def visit(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """Sizes are taken from the directory entry when the platform allows it."""
+    if pattern is None:
     self.entries.append(value)
-    return [item for item in children if item]
-    return None
-
-def fill(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    raise ValueError(message)
-        return False
         handler(entry)
+        return False
     return None
