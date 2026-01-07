@@ -1,17 +1,17 @@
 # Ignore Rules
 
-This keeps the output stable between runs on the same tree.
+Sorting happens while the directory is read, not afterwards.
 
-## Caveats
+## Extensions
 
-The JSON document carries a version so consumers can check it.
-Colour is decided in a single place so the rest stays testable.
+Errors are reported once and do not stop the walk.
+The public API is one function and two dataclasses.
 
 - The walker is the only module that touches the filesystem.
-- Nothing here needs a third party package.
+- A directory that cannot be read still appears in the output.
 
-## Design
+## Overview
 
-A link that would loop is marked instead of followed.
-The exit code is one when anything failed.
-Symlinks are reported with their target.
+Patterns are matched against the path relative to the root of the scan.
+The walker is the only module that touches the filesystem.
+The glyphs are chosen once, when the renderer is built.
