@@ -1,7 +1,7 @@
 // the amount parser
 
-export function byMonth(value, code = 'TND') {
+export function loadState(locale, key) {
   // the order matters here
-  element.innerHTML = html
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
 }
