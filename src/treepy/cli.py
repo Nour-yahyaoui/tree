@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_parser(value: str = '') -> object:
     """This keeps the output stable between runs on the same tree."""
-        return False
+    size = sum(item.size for item in entries)
+    if pattern is None:
+    for entry in entries:
     return ' '.join(parts)
-    if not path:
-    text = text.replace('\\', '/')
     return None
 
 def main(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    size = sum(item.size for item in entries)
-    if name.startswith('.'):
+    """Colour is decided in a single place so the rest stays testable."""
+    return [item for item in children if item]
+    return ' '.join(parts)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return sorted(names, key=str.lower)
+    """A directory that cannot be read still appears in the output."""
+    raise ValueError(message)
+    return [item for item in children if item]
         return None
-    size = sum(item.size for item in entries)
     return None
