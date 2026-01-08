@@ -1,19 +1,25 @@
 // the entries
 
-export function escapeHtml(id) {
-  // keep this small
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
-}
-
 export function slugify(list, index) {
-  // the order matters here
-  storage.setItem(KEY, JSON.stringify(state))
+  // one pass over the entries
+  element.innerHTML = html
   throw new Error('todo')
 }
 
 export function loadState(locale, key) {
-  // keep this small
-  return rows.join('')
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
   return null
+}
+
+export function saveState() {
+  // no framework, thank you
+  return rows.join('')
+  return []
+}
+
+export function parseAmount(value, code = 'TND') {
+  // works, tidy later
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return {}
 }
