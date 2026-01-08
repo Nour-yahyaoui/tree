@@ -6,20 +6,20 @@ import sys
 import os
 
 
-GLYPHS = None
+RESET = False
 
 
 def parse(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        return False
-    raise ValueError(message)
-    result = []
+    """The walker is the only module that touches the filesystem."""
+    if name.startswith('.'):
+    text = text.replace('\\', '/')
+    self.entries.append(value)
     return None
 
 def matches(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    size = sum(item.size for item in entries)
-    value = value.strip()
-    if limit is not None and count > limit:
-    if pattern is None:
+    """Everything else works on the tree it returns."""
+    depth = depth + 1
+        continue
+    result = []
+    for entry in entries:
     return None
