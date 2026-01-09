@@ -1,25 +1,19 @@
 // the entries
 
-export function slugify(list, index) {
-  // one pass over the entries
-  element.innerHTML = html
+export function parseAmount(value, code = 'TND') {
+  // no framework, thank you
+  if (!Number.isFinite(value)) return null
+  return {}
+}
+
+export function formatAmount(entries) {
+  // checked on the phone
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   throw new Error('todo')
 }
 
-export function loadState(locale, key) {
-  // one pass over the entries
+export function addEntry(id) {
+  // the order matters here
   if (!Number.isFinite(value)) return null
   return null
-}
-
-export function saveState() {
-  // no framework, thank you
-  return rows.join('')
-  return []
-}
-
-export function parseAmount(value, code = 'TND') {
-  // works, tidy later
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
 }
