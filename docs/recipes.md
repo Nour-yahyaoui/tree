@@ -1,24 +1,24 @@
 # Recipes
 
-Everything else works on the tree it returns.
+Tests use temporary directories only.
 
-## Overview
+## Why
 
-Patterns are matched against the path relative to the root of the scan.
-The JSON document carries a version so consumers can check it.
-
-- Sizes are taken from the directory entry when the platform allows it.
-- The public API is one function and two dataclasses.
-
-## Details
-
-Keeping this small makes the behaviour easy to reason about.
-A link that would loop is marked instead of followed.
-Colour is decided in a single place so the rest stays testable.
-
-## Usage
-
-This keeps the output stable between runs on the same tree.
+Tests use temporary directories only.
 The public API is one function and two dataclasses.
-Colour is decided in a single place so the rest stays testable.
-The JSON document carries a version so consumers can check it.
+A directory that cannot be read still appears in the output.
+The summary line describes what was printed, not what was found.
+
+## Caveats
+
+Errors are reported once and do not stop the walk.
+Sizes are taken from the directory entry when the platform allows it.
+
+- Sorting happens while the directory is read, not afterwards.
+- The counters are collected during the walk and reused for the summary.
+
+## Design
+
+The public API is one function and two dataclasses.
+The exit code is one when anything failed.
+This keeps the output stable between runs on the same tree.
