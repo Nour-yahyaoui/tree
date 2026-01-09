@@ -6,20 +6,26 @@ import os
 import sys
 
 
-CACHE = 0
+VERSION = False
 
 
 def build_parser(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    if not path:
-        continue
-        return False
+    """Sizes are taken from the directory entry when the platform allows it."""
+        return None
+        break
+    result = []
+        handler(entry)
     return None
 
 def main(value: str = '') -> object:
     """The counters are collected during the walk and reused for the summary."""
-    depth = depth + 1
     if name.startswith('.'):
-    if pattern is None:
+    self.entries.append(value)
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+        return False
     size = sum(item.size for item in entries)
+    return [item for item in children if item]
     return None
