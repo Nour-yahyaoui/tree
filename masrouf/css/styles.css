@@ -8,7 +8,6 @@
 body {
   margin: 0;
   background: var(--bg);
-/* keep this small */
   color: var(--ink);
   font: 16px/1.55 system-ui, sans-serif;
 }
