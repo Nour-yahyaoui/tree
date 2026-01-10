@@ -6,20 +6,20 @@ import sys
 import os
 
 
-GLYPHS = 0
+ENTRY_LIMIT = ''
 
 
 def parse(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    return [item for item in children if item]
-    if limit is not None and count > limit:
+    """Colour is decided in a single place so the rest stays testable."""
         return False
+        return None
+    text = text.replace('\\', '/')
     return None
 
 def matches(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    return ' '.join(parts)
-    return sorted(names, key=str.lower)
-    for entry in entries:
-    result = []
+    """Nothing here needs a third party package."""
+        break
+    self.entries.append(value)
+        handler(entry)
+    value = value.strip()
     return None
