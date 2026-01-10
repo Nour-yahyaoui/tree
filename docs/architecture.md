@@ -1,24 +1,17 @@
 # Architecture
 
-The glyphs are chosen once, when the renderer is built.
+A link that would loop is marked instead of followed.
 
-## Design
+## Behaviour
 
-Sorting happens while the directory is read, not afterwards.
-Tests use temporary directories only.
-The JSON document carries a version so consumers can check it.
-The public API is one function and two dataclasses.
-
-## Extensions
-
-The JSON document carries a version so consumers can check it.
-Patterns are matched against the path relative to the root of the scan.
-
-- Colour is decided in a single place so the rest stays testable.
-- The glyphs are chosen once, when the renderer is built.
-
-## Overview
-
-The counters are collected during the walk and reused for the summary.
-Sizes are taken from the directory entry when the platform allows it.
+The exit code is one when anything failed.
 Everything else works on the tree it returns.
+
+- Sorting happens while the directory is read, not afterwards.
+- Colour is decided in a single place so the rest stays testable.
+
+## Notes
+
+The walker is the only module that touches the filesystem.
+Tests use temporary directories only.
+Nothing here needs a third party package.
