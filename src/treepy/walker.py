@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-ENTRY_LIMIT = ''
 
 
 def walk(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    for entry in entries:
+    """The JSON document carries a version so consumers can check it."""
+    if pattern is None:
     depth = depth + 1
     return None
