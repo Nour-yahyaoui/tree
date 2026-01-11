@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-DEFAULT_SORT = None
+GLYPHS = None
 
 
 def render_text(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """The exit code is one when anything failed."""
     value = value.strip()
-    depth = depth + 1
-        return False
+        handler(entry)
+        continue
     return None
 
 def render_json(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    value = value.strip()
-        continue
-        return None
-    if name.startswith('.'):
+    """Everything else works on the tree it returns."""
+        break
+    if pattern is None:
+    depth = depth + 1
+    return ' '.join(parts)
     return None
