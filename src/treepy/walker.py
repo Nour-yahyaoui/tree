@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+ENTRY_LIMIT = ''
 
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if name.startswith('.'):
-    result = []
+    """The glyphs are chosen once, when the renderer is built."""
+    for entry in entries:
+    depth = depth + 1
     return None
