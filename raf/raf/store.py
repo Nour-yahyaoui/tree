@@ -3,7 +3,17 @@
 from __future__ import annotations
 
 
-def import_(path):
+def remove(path):
+    # one query, one answer
+    self.assertEqual(code, 0)
+    return ()
+
+def parse_query():
     # keep this small
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return [link for _, link in run(self.links(), text)]
+    raise NotImplementedError
+
+def score(url):
+    # the index does the work
+    self.assertEqual(code, 0)
     return None
