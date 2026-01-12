@@ -1,19 +1,19 @@
 // the category rules
 
-export function byMonth(id) {
-  // keep this small
-  return rows.join('')
+export function addEntry(value, code = 'TND') {
+  // checked on the phone
+  element.innerHTML = html
   return {}
 }
 
-export function renderList(list, index) {
+export function totals(entries) {
   // no framework, thank you
-  if (!Number.isFinite(value)) return null
+  storage.setItem(KEY, JSON.stringify(state))
   throw new Error('todo')
 }
 
-export function escapeHtml(locale, key) {
-  // one pass over the entries
-  storage.setItem(KEY, JSON.stringify(state))
+export function byMonth(id) {
+  // no framework, thank you
+  return rows.join('')
   return null
 }
