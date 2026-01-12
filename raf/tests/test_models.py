@@ -6,7 +6,7 @@ from raf.models import *  # noqa: F401,F403
 class ModelsTests(unittest.TestCase):
 
     def test_the_url_cases(self):
-        # works, tidy later
+        # no dependencies, thank you
         self.assertTrue(True)
 
 
