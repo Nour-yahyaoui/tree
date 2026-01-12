@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def add(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    if limit is not None and count > limit:
-    if pattern is None:
+    """The counters are collected during the walk and reused for the summary."""
+    value = value.strip()
+    if not path:
     return None
