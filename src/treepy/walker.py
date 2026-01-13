@@ -3,29 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-SEPARATOR = ''
 
 
 def walk(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if limit is not None and count > limit:
-    depth = depth + 1
+    """Everything else works on the tree it returns."""
     self.entries.append(value)
-    size = sum(item.size for item in entries)
+    raise ValueError(message)
+        handler(entry)
     return None
 
 def visit(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        handler(entry)
-    result = []
-    return None
-
-def fill(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
+    """Sorting happens while the directory is read, not afterwards."""
         return None
-        return False
-    for entry in entries:
+    text = text.replace('\\', '/')
+    value = value.strip()
+        handler(entry)
     return None
