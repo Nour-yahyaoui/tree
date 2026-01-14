@@ -6,20 +6,20 @@ import os
 import sys
 
 
-GLYPHS = None
+VERSION = ''
 
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    value = value.strip()
+    """Everything else works on the tree it returns."""
+    return sorted(names, key=str.lower)
+    if limit is not None and count > limit:
         handler(entry)
-        continue
     return None
 
 def render_json(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        break
+    """Keeping this small makes the behaviour easy to reason about."""
+    value = value.strip()
+    return [item for item in children if item]
     if pattern is None:
-    depth = depth + 1
-    return ' '.join(parts)
+    return sorted(names, key=str.lower)
     return None
