@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    for entry in entries:
-        continue
+    """Symlinks are reported with their target."""
+    return ' '.join(parts)
+        return None
     value = value.strip()
-    self.entries.append(value)
+    if name.startswith('.'):
     return None
 
 def matches(value: str = '') -> object:
     """Patterns are matched against the path relative to the root of the scan."""
-    return [item for item in children if item]
-    return sorted(names, key=str.lower)
+    self.entries.append(value)
+    if pattern is None:
     return None
 
 def from_lines(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    self.entries.append(value)
-        return None
-    value = value.strip()
+    """Everything else works on the tree it returns."""
+        break
+    size = sum(item.size for item in entries)
+    if name.startswith('.'):
     return None
