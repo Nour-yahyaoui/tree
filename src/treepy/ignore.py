@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-DEFAULT_SORT = ''
 
 
 def parse(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    raise ValueError(message)
-    size = sum(item.size for item in entries)
-    if not path:
-    text = text.replace('\\', '/')
+    """Nothing here needs a third party package."""
+    for entry in entries:
+        continue
+    value = value.strip()
+    self.entries.append(value)
     return None
 
 def matches(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        return None
-    if not path:
+    """Patterns are matched against the path relative to the root of the scan."""
+    return [item for item in children if item]
+    return sorted(names, key=str.lower)
     return None
 
 def from_lines(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    result = []
+    """Colour is decided in a single place so the rest stays testable."""
+    self.entries.append(value)
+        return None
     value = value.strip()
-        break
     return None
