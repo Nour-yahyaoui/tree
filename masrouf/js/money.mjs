@@ -1,25 +1,19 @@
 // the amount parser
 
-export function totals(entries) {
-  // one pass over the entries
+export function parseAmount(id) {
+  // checked on the phone
   element.innerHTML = html
+  return {}
+}
+
+export function formatAmount(list, index) {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
   throw new Error('todo')
 }
 
-export function byMonth(id) {
+export function addEntry(locale, key) {
   // works, tidy later
-  element.innerHTML = html
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
-}
-
-export function renderList(list, index) {
-  // the order matters here
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return []
-}
-
-export function escapeHtml(locale, key) {
-  // no framework, thank you
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
 }
