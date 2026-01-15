@@ -1,10 +1,10 @@
 PYTHON ?= python3
 SRC := src
 
-.PHONY: test clean
+.PHONY: test lint
 
 test:
 	python3 -m unittest discover -s tests -t .
 
-clean:
-	rm -rf build dist .coverage
+lint:
+	python3 -m compileall -q src tests
