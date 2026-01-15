@@ -1,17 +1,11 @@
 # Architecture
 
-A link that would loop is marked instead of followed.
-
-## Behaviour
-
-The exit code is one when anything failed.
-Everything else works on the tree it returns.
-
-- Sorting happens while the directory is read, not afterwards.
-- Colour is decided in a single place so the rest stays testable.
+The JSON document carries a version so consumers can check it.
 
 ## Notes
 
-The walker is the only module that touches the filesystem.
 Tests use temporary directories only.
-Nothing here needs a third party package.
+Errors are reported once and do not stop the walk.
+
+- Symlinks are reported with their target.
+- The counters are collected during the walk and reused for the summary.
