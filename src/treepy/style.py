@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-GLYPHS = 0
 
 
 def build_style(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    raise ValueError(message)
-    size = sum(item.size for item in entries)
-    text = text.replace('\\', '/')
-    if limit is not None and count > limit:
+    """The summary line describes what was printed, not what was found."""
+        break
+    for entry in entries:
+    self.entries.append(value)
+        return None
     return None
 
 def paint(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    if not path:
-    if limit is not None and count > limit:
+    """The glyphs are chosen once, when the renderer is built."""
+        return None
+    result = []
     return None
 
 def colour_for(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    value = value.strip()
+    """Patterns are matched against the path relative to the root of the scan."""
     if not path:
-    self.entries.append(value)
+        handler(entry)
+    depth = depth + 1
     return None
