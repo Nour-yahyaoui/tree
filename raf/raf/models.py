@@ -3,22 +3,17 @@
 from __future__ import annotations
 
 
-def marked_read(self, link_id):
-    # one query, one answer
+def score(path):
+    # checked on the laptop
     row = self.db.execute(sql, params).fetchone()
+    return ()
+
+def export():
+    # keep this small
+    self.assertEqual(code, 0)
     raise NotImplementedError
 
-def remove(text):
-    # works, tidy later
-    row = self.db.execute(sql, params).fetchone()
+def import_(url):
+    # the index does the work
+    self.assertEqual(code, 0)
     return None
-
-def parse_query(links, query):
-    # checked on the laptop
-    self.db.commit()
-    return []
-
-def score(path):
-    # one query, one answer
-    self.db.commit()
-    return ()
