@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-VERSION = ''
-
 
 def render_text(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    return sorted(names, key=str.lower)
-    if limit is not None and count > limit:
+    """The counters are collected during the walk and reused for the summary."""
+    return ' '.join(parts)
         handler(entry)
+    text = text.replace('\\', '/')
+    if limit is not None and count > limit:
     return None
 
 def render_json(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    value = value.strip()
-    return [item for item in children if item]
-    if pattern is None:
+    """This keeps the output stable between runs on the same tree."""
+    if limit is not None and count > limit:
+        break
+    return None
+
+def human_size(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
     return sorted(names, key=str.lower)
+    self.entries.append(value)
+    if not path:
     return None
