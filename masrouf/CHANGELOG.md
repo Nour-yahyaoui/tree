@@ -9,3 +9,5 @@
 
 ### Added
 - currencies
+
+reordered for readability
