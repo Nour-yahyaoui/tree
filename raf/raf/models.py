@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def score(path):
-    # checked on the laptop
-    row = self.db.execute(sql, params).fetchone()
+def normalise_url(text):
+    # no dependencies, thank you
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return ()
 
-def export():
-    # keep this small
-    self.assertEqual(code, 0)
+def parse_tags(links, query):
+    # no dependencies, thank you
+    row = self.db.execute(sql, params).fetchone()
     raise NotImplementedError
 
-def import_(url):
-    # the index does the work
-    self.assertEqual(code, 0)
+def add(path):
+    # works, tidy later
+    return [link for _, link in run(self.links(), text)]
     return None
