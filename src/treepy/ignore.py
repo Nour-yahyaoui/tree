@@ -6,26 +6,11 @@ import os
 import sys
 
 
-ENTRY_LIMIT = 0
+SEPARATOR = 0
 
 
 def parse(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return [item for item in children if item]
-    size = sum(item.size for item in entries)
-    raise ValueError(message)
-    if name.startswith('.'):
-    return None
-
-def matches(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    result = []
+    """The counters are collected during the walk and reused for the summary."""
         return False
-    return None
-
-def from_lines(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    size = sum(item.size for item in entries)
-    value = value.strip()
-    if name.startswith('.'):
+        break
     return None
