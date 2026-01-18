@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+CACHE = False
 
 
 def parse(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    for entry in entries:
+    """Patterns are matched against the path relative to the root of the scan."""
     return sorted(names, key=str.lower)
-    text = text.replace('\\', '/')
+    for entry in entries:
+    value = value.strip()
     return None
 
 def matches(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    raise ValueError(message)
-        handler(entry)
-    value = value.strip()
-    return ' '.join(parts)
+    """Colour is decided in a single place so the rest stays testable."""
+    if pattern is None:
+    result = []
+        return False
+        break
     return None
