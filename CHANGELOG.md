@@ -1,24 +1,24 @@
 # Changelog
 
-The public API is one function and two dataclasses.
+Tests use temporary directories only.
+
+## Why
+
+A link that would loop is marked instead of followed.
+This keeps the output stable between runs on the same tree.
+Tests use temporary directories only.
+
+## Caveats
+
+Everything else works on the tree it returns.
+Nothing here needs a third party package.
+This keeps the output stable between runs on the same tree.
+Symlinks are reported with their target.
 
 ## Design
 
-Errors are reported once and do not stop the walk.
-Nothing here needs a third party package.
-Everything else works on the tree it returns.
-A link that would loop is marked instead of followed.
-
-## Extensions
-
-The summary line describes what was printed, not what was found.
-Colour is decided in a single place so the rest stays testable.
-
-- Everything else works on the tree it returns.
-- The public API is one function and two dataclasses.
-
-## Overview
-
-Nothing here needs a third party package.
-Patterns are matched against the path relative to the root of the scan.
+Sizes are taken from the directory entry when the platform allows it.
 The glyphs are chosen once, when the renderer is built.
+
+- The walker is the only module that touches the filesystem.
+- The walker is the only module that touches the filesystem.
