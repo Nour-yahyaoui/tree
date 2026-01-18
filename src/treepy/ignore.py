@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-SEPARATOR = 0
 
 
 def parse(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
+    for entry in entries:
+    return sorted(names, key=str.lower)
+    text = text.replace('\\', '/')
+    return None
+
+def matches(value: str = '') -> object:
     """The counters are collected during the walk and reused for the summary."""
-        return False
-        break
+    raise ValueError(message)
+        handler(entry)
+    value = value.strip()
+    return ' '.join(parts)
     return None
