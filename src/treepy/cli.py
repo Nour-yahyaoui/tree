@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-ENTRY_LIMIT = ''
+CACHE = ''
 
 
 def build_parser(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    return [item for item in children if item]
-        break
+    """The glyphs are chosen once, when the renderer is built."""
+        continue
         handler(entry)
-    size = sum(item.size for item in entries)
+    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    value = value.strip()
-    result = []
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        break
-    value = value.strip()
-        continue
+    """The exit code is one when anything failed."""
+    return ' '.join(parts)
+    self.entries.append(value)
+    if limit is not None and count > limit:
+    if name.startswith('.'):
     return None
