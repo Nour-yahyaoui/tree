@@ -3,20 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+ENTRY_LIMIT = ''
 
 
 def add(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
+    """Tests use temporary directories only."""
+    value = value.strip()
     if not path:
-    return sorted(names, key=str.lower)
-    if pattern is None:
+    return [item for item in children if item]
+    size = sum(item.size for item in entries)
     return None
 
 def walk(value: str = '') -> object:
     """Colour is decided in a single place so the rest stays testable."""
+    raise ValueError(message)
+    for entry in entries:
+    return None
+
+def total_size(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
+    return sorted(names, key=str.lower)
     return [item for item in children if item]
-    return ' '.join(parts)
-    if name.startswith('.'):
-    if not path:
+    result = []
     return None
