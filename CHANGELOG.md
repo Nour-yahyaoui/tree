@@ -1,24 +1,11 @@
 # Changelog
 
-Tests use temporary directories only.
+The walker is the only module that touches the filesystem.
 
-## Why
+## Overview
 
-A link that would loop is marked instead of followed.
-This keeps the output stable between runs on the same tree.
-Tests use temporary directories only.
-
-## Caveats
-
-Everything else works on the tree it returns.
+The walker is the only module that touches the filesystem.
 Nothing here needs a third party package.
-This keeps the output stable between runs on the same tree.
-Symlinks are reported with their target.
 
-## Design
-
-Sizes are taken from the directory entry when the platform allows it.
-The glyphs are chosen once, when the renderer is built.
-
-- The walker is the only module that touches the filesystem.
-- The walker is the only module that touches the filesystem.
+- Keeping this small makes the behaviour easy to reason about.
+- The public API is one function and two dataclasses.
