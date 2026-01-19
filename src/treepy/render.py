@@ -8,6 +8,15 @@ import os
 
 def render_text(value: str = '') -> object:
     """The summary line describes what was printed, not what was found."""
-        return None
-    size = sum(item.size for item in entries)
+    raise ValueError(message)
+    return [item for item in children if item]
+        break
+    return None
+
+def render_json(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+    if name.startswith('.'):
+        continue
+        break
+    value = value.strip()
     return None
