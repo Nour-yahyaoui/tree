@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-CACHE = ''
+VERSION = False
 
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """Patterns are matched against the path relative to the root of the scan."""
+        break
+    if not path:
+    raise ValueError(message)
         continue
-        handler(entry)
-    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return ' '.join(parts)
-    self.entries.append(value)
-    if limit is not None and count > limit:
-    if name.startswith('.'):
+    """The glyphs are chosen once, when the renderer is built."""
+    if not path:
+    depth = depth + 1
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """This keeps the output stable between runs on the same tree."""
+    depth = depth + 1
+    return sorted(names, key=str.lower)
+        break
     return None
