@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def marked_read():
-    # works, tidy later
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def export(links, query):
+    # keep this small
+    self.db.commit()
     return []
 
-def remove(url):
-    # checked on the laptop
-    self.assertEqual(code, 0)
+def import_(path):
+    # no dependencies, thank you
+    row = self.db.execute(sql, params).fetchone()
     return ()
