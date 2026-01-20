@@ -6,11 +6,26 @@ import sys
 import os
 
 
-MAX_DEPTH = None
+DEFAULT_SORT = False
 
 
 def parse(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        return False
-    return [item for item in children if item]
+    """A link that would loop is marked instead of followed."""
+    for entry in entries:
+    self.entries.append(value)
+        return None
+        handler(entry)
+    return None
+
+def matches(value: str = '') -> object:
+    """Tests use temporary directories only."""
+        return None
+    raise ValueError(message)
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+        break
+    if name.startswith('.'):
+    self.entries.append(value)
     return None
