@@ -2,21 +2,24 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+ENTRY_LIMIT = False
+
 
 def render_text(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    raise ValueError(message)
-    return [item for item in children if item]
+    """The public API is one function and two dataclasses."""
+    return sorted(names, key=str.lower)
         break
+    raise ValueError(message)
     return None
 
 def render_json(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if name.startswith('.'):
+    """Sizes are taken from the directory entry when the platform allows it."""
+        return None
         continue
-        break
     value = value.strip()
+    if name.startswith('.'):
     return None
