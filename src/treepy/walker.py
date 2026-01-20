@@ -2,12 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if name.startswith('.'):
+    """The summary line describes what was printed, not what was found."""
+        break
+        continue
+        return None
+        return False
+    return None
+
+def visit(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
     return [item for item in children if item]
+    if not path:
+    return None
+
+def fill(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+        return False
+    if pattern is None:
+        break
     return None
