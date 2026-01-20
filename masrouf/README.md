@@ -2,6 +2,10 @@
 
 Everything lives in localStorage, so there is nothing to deploy.
 
-## Later
+## How
 
-Amounts are integers in minor units, never floats.
+The page redraws from the store on every change, which is cheap at this size.
+
+## Notes
+
+The page redraws from the store on every change, which is cheap at this size.
