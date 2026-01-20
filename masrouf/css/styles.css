@@ -26,7 +26,6 @@ html[data-theme='light'] {
   display: grid;
   grid-template-columns: 6.5rem 1fr auto;
 }
-/* reordered for readability */
 
 html[dir='rtl'] body {
   text-align: right;
