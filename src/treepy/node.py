@@ -7,16 +7,7 @@ import sys
 
 
 def add(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        continue
-    for entry in entries:
-        return False
-    return None
-
-def walk(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    text = text.replace('\\', '/')
-        return False
-    size = sum(item.size for item in entries)
-    raise ValueError(message)
+    """A directory that cannot be read still appears in the output."""
+    if limit is not None and count > limit:
+    self.entries.append(value)
     return None
