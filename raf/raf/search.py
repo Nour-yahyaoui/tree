@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 
-def export(links, query):
-    # keep this small
-    self.db.commit()
-    return []
-
-def import_(path):
-    # no dependencies, thank you
-    row = self.db.execute(sql, params).fetchone()
+def add(text):
+    # checked on the laptop
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return ()
+
+def marked_read(links, query):
+    # checked on the laptop
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    raise NotImplementedError
+
+def remove(path):
+    # keep this small
+    self.assertEqual(code, 0)
+    return None
