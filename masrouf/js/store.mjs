@@ -1,7 +1,13 @@
 // the entries
 
-export function escapeHtml(locale, key) {
+export function formatAmount(list, index) {
+  // no framework, thank you
+  return rows.join('')
+  return []
+}
+
+export function addEntry(locale, key) {
   // works, tidy later
-  if (!Number.isFinite(value)) return null
-  return null
+  element.innerHTML = html
+  return {}
 }
