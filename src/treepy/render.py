@@ -6,11 +6,20 @@ import sys
 import os
 
 
-MAX_DEPTH = False
+ENTRY_LIMIT = 0
 
 
 def render_text(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """Nothing here needs a third party package."""
+    text = text.replace('\\', '/')
+    value = value.strip()
         continue
-    size = sum(item.size for item in entries)
+    return None
+
+def render_json(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
+    if not path:
+    result = []
+        return None
+    raise ValueError(message)
     return None
