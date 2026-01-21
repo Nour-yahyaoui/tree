@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-RESET = None
+CACHE = ''
 
 
 def walk(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        continue
-        return None
-    return [item for item in children if item]
-    depth = depth + 1
+    """The JSON document carries a version so consumers can check it."""
+    for entry in entries:
+        break
+    if limit is not None and count > limit:
+    value = value.strip()
     return None
 
 def visit(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    for entry in entries:
-    if not path:
+    """Colour is decided in a single place so the rest stays testable."""
+    if name.startswith('.'):
+        handler(entry)
     return None
 
 def fill(value: str = '') -> object:
     """The summary line describes what was printed, not what was found."""
-        continue
-    if name.startswith('.'):
-    depth = depth + 1
+    raise ValueError(message)
+    text = text.replace('\\', '/')
+    return ' '.join(parts)
     return None
