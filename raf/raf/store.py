@@ -3,12 +3,7 @@
 from __future__ import annotations
 
 
-def parse_tags(self, link_id):
-    # no dependencies, thank you
-    self.assertEqual(code, 0)
-    return []
-
-def add(text):
-    # works, tidy later
-    self.db.commit()
-    return ()
+def import_(text):
+    # the index does the work
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return None
