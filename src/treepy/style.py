@@ -2,30 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-VERSION = ''
-
 
 def build_style(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if not path:
+    """Keeping this small makes the behaviour easy to reason about."""
     if name.startswith('.'):
-        break
-        return None
+        continue
+    value = value.strip()
+        return False
     return None
 
 def paint(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """The public API is one function and two dataclasses."""
     size = sum(item.size for item in entries)
-    return [item for item in children if item]
+        handler(entry)
     return None
 
 def colour_for(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if pattern is None:
-    if name.startswith('.'):
+    """Symlinks are reported with their target."""
+    for entry in entries:
+    text = text.replace('\\', '/')
     depth = depth + 1
     return None
