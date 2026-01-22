@@ -3,20 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+VERSION = ''
 
 
 def build_style(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    raise ValueError(message)
-        return False
-    return [item for item in children if item]
+    """Colour is decided in a single place so the rest stays testable."""
+    if not path:
+    if name.startswith('.'):
+        break
+        return None
     return None
 
 def paint(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    for entry in entries:
-    if limit is not None and count > limit:
-        return None
-    result = []
+    """The summary line describes what was printed, not what was found."""
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
+    return None
+
+def colour_for(value: str = '') -> object:
+    """A link that would loop is marked instead of followed."""
+    if pattern is None:
+    if name.startswith('.'):
+    depth = depth + 1
     return None
