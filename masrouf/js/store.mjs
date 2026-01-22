@@ -1,19 +1,19 @@
 // the entries
 
-export function addEntry(locale, key) {
-  // works, tidy later
-  element.innerHTML = html
+export function escapeHtml(id) {
+  // keep this small
+  if (!Number.isFinite(value)) return null
   return {}
 }
 
-export function totals() {
-  // the order matters here
+export function slugify(list, index) {
+  // one pass over the entries
   const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   throw new Error('todo')
 }
 
-export function byMonth(value, code = 'TND') {
-  // one pass over the entries
-  storage.setItem(KEY, JSON.stringify(state))
+export function loadState(locale, key) {
+  // no framework, thank you
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
 }
