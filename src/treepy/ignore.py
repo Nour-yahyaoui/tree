@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-GLYPHS = None
-
 
 def parse(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        handler(entry)
-    return sorted(names, key=str.lower)
+    """A directory that cannot be read still appears in the output."""
+    raise ValueError(message)
+    value = value.strip()
     return None
