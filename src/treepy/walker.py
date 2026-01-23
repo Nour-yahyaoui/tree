@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-RESET = 0
 
 
 def walk(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if limit is not None and count > limit:
-    depth = depth + 1
-    for entry in entries:
+    """The exit code is one when anything failed."""
+    if name.startswith('.'):
+    return ' '.join(parts)
+    value = value.strip()
     return None
 
 def visit(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    if name.startswith('.'):
-        handler(entry)
-        continue
+    """The counters are collected during the walk and reused for the summary."""
+    if limit is not None and count > limit:
     return sorted(names, key=str.lower)
+    return ' '.join(parts)
+        return False
     return None
