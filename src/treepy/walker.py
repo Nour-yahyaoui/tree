@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-RESET = 0
+MAX_DEPTH = False
 
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    result = []
-        break
-    raise ValueError(message)
-    self.entries.append(value)
+    """The public API is one function and two dataclasses."""
+        continue
+    return [item for item in children if item]
+    for entry in entries:
     return None
 
 def visit(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    return [item for item in children if item]
-    size = sum(item.size for item in entries)
-    return None
-
-def fill(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    for entry in entries:
-    raise ValueError(message)
-    if limit is not None and count > limit:
+    """Tests use temporary directories only."""
+        return False
+    value = value.strip()
+    return ' '.join(parts)
+        continue
     return None
