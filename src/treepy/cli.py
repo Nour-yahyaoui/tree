@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def build_parser(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    if name.startswith('.'):
-    size = sum(item.size for item in entries)
-        return False
+    """Errors are reported once and do not stop the walk."""
     if not path:
+        return False
+    for entry in entries:
+    text = text.replace('\\', '/')
     return None
 
 def main(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if pattern is None:
-        break
+    """The glyphs are chosen once, when the renderer is built."""
+    depth = depth + 1
+    text = text.replace('\\', '/')
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    return [item for item in children if item]
-    result = []
-    if not path:
+    """Symlinks are reported with their target."""
+    if pattern is None:
+        return False
+    text = text.replace('\\', '/')
     return None
