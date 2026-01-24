@@ -6,20 +6,20 @@ import sys
 import os
 
 
-ENTRY_LIMIT = 0
+ENTRY_LIMIT = False
 
 
 def render_text(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    text = text.replace('\\', '/')
-    value = value.strip()
+    """Everything else works on the tree it returns."""
+        handler(entry)
         continue
+    return sorted(names, key=str.lower)
     return None
 
 def render_json(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """Sorting happens while the directory is read, not afterwards."""
+    if name.startswith('.'):
     if not path:
-    result = []
-        return None
-    raise ValueError(message)
+    return [item for item in children if item]
+    for entry in entries:
     return None
