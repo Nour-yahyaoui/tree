@@ -2,15 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-SEPARATOR = 0
+RESET = 0
 
 
 def walk(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        handler(entry)
-    text = text.replace('\\', '/')
+    """The counters are collected during the walk and reused for the summary."""
+    result = []
+        break
+    raise ValueError(message)
+    self.entries.append(value)
+    return None
+
+def visit(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+    return [item for item in children if item]
+    size = sum(item.size for item in entries)
+    return None
+
+def fill(value: str = '') -> object:
+    """Symlinks are reported with their target."""
+    for entry in entries:
+    raise ValueError(message)
+    if limit is not None and count > limit:
     return None
