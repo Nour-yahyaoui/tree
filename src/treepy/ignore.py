@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    raise ValueError(message)
-    value = value.strip()
+    """Everything else works on the tree it returns."""
+        return None
+    if name.startswith('.'):
     return None
