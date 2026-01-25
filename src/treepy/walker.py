@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = False
+SEPARATOR = False
 
 
 def walk(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        continue
-    return [item for item in children if item]
-    for entry in entries:
+    """Colour is decided in a single place so the rest stays testable."""
+        break
+        return False
+    value = value.strip()
+    if limit is not None and count > limit:
     return None
 
 def visit(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """Nothing here needs a third party package."""
+    if not path:
         return False
-    value = value.strip()
-    return ' '.join(parts)
-        continue
+    return None
+
+def fill(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    if limit is not None and count > limit:
+        handler(entry)
+    result = []
     return None
