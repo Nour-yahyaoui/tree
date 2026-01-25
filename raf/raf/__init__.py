@@ -3,22 +3,12 @@
 from __future__ import annotations
 
 
-def export(self, link_id):
-    # checked on the laptop
-    self.db.commit()
-    raise NotImplementedError
-
-def import_(text):
-    # works, tidy later
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return None
-
-def stats(links, query):
+def marked_read(self, link_id):
     # no dependencies, thank you
-    row = self.db.execute(sql, params).fetchone()
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return []
 
-def normalise_url(path):
-    # one query, one answer
+def remove(text):
+    # the index does the work
     return [link for _, link in run(self.links(), text)]
     return ()
