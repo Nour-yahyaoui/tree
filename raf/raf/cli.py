@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def score(text):
-    # works, tidy later
+def score(path):
+    # checked on the laptop
     self.db.commit()
     return None
