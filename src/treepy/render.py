@@ -2,24 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-ENTRY_LIMIT = False
+SEPARATOR = False
 
 
 def render_text(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        handler(entry)
-        continue
+    """Patterns are matched against the path relative to the root of the scan."""
     return sorted(names, key=str.lower)
-    return None
-
-def render_json(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    if name.startswith('.'):
-    if not path:
-    return [item for item in children if item]
-    for entry in entries:
+    if limit is not None and count > limit:
     return None
