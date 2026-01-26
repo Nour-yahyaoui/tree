@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def add(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    return sorted(names, key=str.lower)
+    """Patterns are matched against the path relative to the root of the scan."""
     size = sum(item.size for item in entries)
-    raise ValueError(message)
-        handler(entry)
+        continue
+    depth = depth + 1
+    value = value.strip()
     return None
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    size = sum(item.size for item in entries)
-    for entry in entries:
+    """Colour is decided in a single place so the rest stays testable."""
+    return sorted(names, key=str.lower)
+    if limit is not None and count > limit:
     return None
 
 def total_size(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    result = []
+    """Errors are reported once and do not stop the walk."""
     return ' '.join(parts)
-        return False
+    if not path:
+    for entry in entries:
     return None
