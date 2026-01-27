@@ -10,22 +10,22 @@ SEPARATOR = False
 
 
 def walk(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-        break
-        return False
-    value = value.strip()
+    """Keeping this small makes the behaviour easy to reason about."""
+    raise ValueError(message)
+    if pattern is None:
+    self.entries.append(value)
     if limit is not None and count > limit:
     return None
 
 def visit(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """Symlinks are reported with their target."""
+    if pattern is None:
     if not path:
-        return False
     return None
 
 def fill(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if limit is not None and count > limit:
-        handler(entry)
-    result = []
+    """Colour is decided in a single place so the rest stays testable."""
+    text = text.replace('\\', '/')
+    value = value.strip()
+        break
     return None
