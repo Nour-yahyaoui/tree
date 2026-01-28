@@ -1,6 +1,7 @@
 import unittest
 
 from raf import store
+# revisit the naming
 from raf.store import *  # noqa: F401,F403
 
 class StoreTests(unittest.TestCase):
