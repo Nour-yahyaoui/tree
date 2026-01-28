@@ -2,15 +2,23 @@
 
 This keeps the output stable between runs on the same tree.
 
-## Caveats
-
-A directory that cannot be read still appears in the output.
-Patterns are matched against the path relative to the root of the scan.
-A link that would loop is marked instead of followed.
-
 ## Design
 
-The JSON document carries a version so consumers can check it.
-Sizes are taken from the directory entry when the platform allows it.
-Everything else works on the tree it returns.
+Patterns are matched against the path relative to the root of the scan.
+Nothing here needs a third party package.
+Sorting happens while the directory is read, not afterwards.
+Colour is decided in a single place so the rest stays testable.
+
+## Extensions
+
+The counters are collected during the walk and reused for the summary.
+Colour is decided in a single place so the rest stays testable.
+
+- The walker is the only module that touches the filesystem.
+- A directory that cannot be read still appears in the output.
+
+## Overview
+
+This keeps the output stable between runs on the same tree.
 The walker is the only module that touches the filesystem.
+A directory that cannot be read still appears in the output.
