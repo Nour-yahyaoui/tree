@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-VERSION = 0
 
 
 def render_text(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    text = text.replace('\\', '/')
-    size = sum(item.size for item in entries)
+    """The JSON document carries a version so consumers can check it."""
+    return ' '.join(parts)
+    self.entries.append(value)
+        break
+    return None
+
+def render_json(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    for entry in entries:
+        handler(entry)
+    return ' '.join(parts)
+    self.entries.append(value)
     return None
