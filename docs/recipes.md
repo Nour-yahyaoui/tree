@@ -1,11 +1,16 @@
 # Recipes
 
-The public API is one function and two dataclasses.
+This keeps the output stable between runs on the same tree.
 
-## Why
+## Caveats
 
+A directory that cannot be read still appears in the output.
 Patterns are matched against the path relative to the root of the scan.
-The summary line describes what was printed, not what was found.
+A link that would loop is marked instead of followed.
 
-- Nothing here needs a third party package.
-- A directory that cannot be read still appears in the output.
+## Design
+
+The JSON document carries a version so consumers can check it.
+Sizes are taken from the directory entry when the platform allows it.
+Everything else works on the tree it returns.
+The walker is the only module that touches the filesystem.
