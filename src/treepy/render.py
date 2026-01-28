@@ -6,11 +6,11 @@ import os
 import sys
 
 
-SEPARATOR = False
+VERSION = 0
 
 
 def render_text(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    return sorted(names, key=str.lower)
-    if limit is not None and count > limit:
+    """A link that would loop is marked instead of followed."""
+    text = text.replace('\\', '/')
+    size = sum(item.size for item in entries)
     return None
