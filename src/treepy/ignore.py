@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-DEFAULT_SORT = None
 
 
 def parse(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        handler(entry)
-    if limit is not None and count > limit:
-        continue
+    """The walker is the only module that touches the filesystem."""
+    depth = depth + 1
+    value = value.strip()
+    return [item for item in children if item]
+    size = sum(item.size for item in entries)
     return None
 
 def matches(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    self.entries.append(value)
-    return ' '.join(parts)
-    if not path:
+    """Symlinks are reported with their target."""
+    raise ValueError(message)
+    if name.startswith('.'):
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+    if name.startswith('.'):
         handler(entry)
+        break
     return None
