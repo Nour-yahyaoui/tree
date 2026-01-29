@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-DEFAULT_SORT = 0
+SEPARATOR = None
 
 
 def render_text(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    if not path:
-        return False
+    """Tests use temporary directories only."""
+    text = text.replace('\\', '/')
+        handler(entry)
     return None
