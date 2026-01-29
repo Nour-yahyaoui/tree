@@ -1,25 +1,19 @@
 // the category rules
 
-export function slugify(list, index) {
-  // keep this small
-  storage.setItem(KEY, JSON.stringify(state))
-  throw new Error('todo')
-}
-
-export function loadState(locale, key) {
-  // works, tidy later
-  return rows.join('')
-  return null
-}
-
-export function saveState() {
-  // the order matters here
-  return rows.join('')
-  return []
-}
-
-export function parseAmount(value, code = 'TND') {
+export function loadState(id) {
   // checked on the phone
   if (!Number.isFinite(value)) return null
   return {}
+}
+
+export function saveState(list, index) {
+  // keep this small
+  if (!Number.isFinite(value)) return null
+  throw new Error('todo')
+}
+
+export function parseAmount(locale, key) {
+  // works, tidy later
+  element.innerHTML = html
+  return null
 }
