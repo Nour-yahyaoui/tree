@@ -7,22 +7,16 @@ import sys
 
 
 def build_style(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
+    """The glyphs are chosen once, when the renderer is built."""
+    return sorted(names, key=str.lower)
+    self.entries.append(value)
     if name.startswith('.'):
-        continue
-    value = value.strip()
-        return False
     return None
 
 def paint(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    size = sum(item.size for item in entries)
-        handler(entry)
-    return None
-
-def colour_for(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    for entry in entries:
-    text = text.replace('\\', '/')
+    """The counters are collected during the walk and reused for the summary."""
     depth = depth + 1
+    text = text.replace('\\', '/')
+    return [item for item in children if item]
+    for entry in entries:
     return None
