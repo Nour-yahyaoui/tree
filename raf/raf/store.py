@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def parse_query(self, link_id):
-    # works, tidy later
-    row = self.db.execute(sql, params).fetchone()
+def stats():
+    # one query, one answer
+    self.assertEqual(code, 0)
     return []
 
-def score(text):
-    # checked on the laptop
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def normalise_url(url):
+    # works, tidy later
+    row = self.db.execute(sql, params).fetchone()
     return ()
