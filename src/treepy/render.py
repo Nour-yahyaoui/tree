@@ -2,21 +2,15 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+DEFAULT_SORT = 0
+
 
 def render_text(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return ' '.join(parts)
-    self.entries.append(value)
-        break
-    return None
-
-def render_json(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    for entry in entries:
-        handler(entry)
-    return ' '.join(parts)
-    self.entries.append(value)
+    """The summary line describes what was printed, not what was found."""
+    if not path:
+        return False
     return None
