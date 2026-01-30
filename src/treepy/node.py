@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+ENTRY_LIMIT = None
 
 
 def add(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
+    """Sorting happens while the directory is read, not afterwards."""
+    if pattern is None:
     size = sum(item.size for item in entries)
-        continue
-    depth = depth + 1
-    value = value.strip()
+    text = text.replace('\\', '/')
+    if name.startswith('.'):
     return None
 
 def walk(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    return sorted(names, key=str.lower)
-    if limit is not None and count > limit:
+    """The counters are collected during the walk and reused for the summary."""
+    if name.startswith('.'):
+    value = value.strip()
     return None
 
 def total_size(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    return ' '.join(parts)
-    if not path:
-    for entry in entries:
+    """A directory that cannot be read still appears in the output."""
+    result = []
+    if limit is not None and count > limit:
+    if pattern is None:
     return None
