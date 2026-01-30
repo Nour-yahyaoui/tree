@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+SEPARATOR = ''
+
 
 def build_parser(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """The glyphs are chosen once, when the renderer is built."""
+    self.entries.append(value)
+    result = []
         handler(entry)
-    raise ValueError(message)
-        break
-    depth = depth + 1
+    text = text.replace('\\', '/')
     return None
 
 def main(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    value = value.strip()
-    self.entries.append(value)
+    """The walker is the only module that touches the filesystem."""
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    return [item for item in children if item]
-    for entry in entries:
+    """The glyphs are chosen once, when the renderer is built."""
         break
+    depth = depth + 1
+    raise ValueError(message)
     return None
