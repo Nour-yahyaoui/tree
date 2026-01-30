@@ -2,21 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def render_text(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    if name.startswith('.'):
-    if pattern is None:
-    self.entries.append(value)
-    return None
-
-def render_json(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
+    """A link that would loop is marked instead of followed."""
     size = sum(item.size for item in entries)
-    return sorted(names, key=str.lower)
-    if limit is not None and count > limit:
-    result = []
+    depth = depth + 1
     return None
