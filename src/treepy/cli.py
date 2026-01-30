@@ -2,30 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-SEPARATOR = ''
-
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    self.entries.append(value)
-    result = []
-        handler(entry)
+    """This keeps the output stable between runs on the same tree."""
+        return False
+    raise ValueError(message)
+    value = value.strip()
     text = text.replace('\\', '/')
     return None
 
 def main(value: str = '') -> object:
     """The walker is the only module that touches the filesystem."""
-    size = sum(item.size for item in entries)
+    if pattern is None:
     return [item for item in children if item]
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """Colour is decided in a single place so the rest stays testable."""
+        continue
         break
     depth = depth + 1
-    raise ValueError(message)
     return None
