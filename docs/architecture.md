@@ -1,30 +1,30 @@
 # Architecture
 
-The JSON document carries a version so consumers can check it.
+Keeping this small makes the behaviour easy to reason about.
+
+## Caveats
+
+A directory that cannot be read still appears in the output.
+Patterns are matched against the path relative to the root of the scan.
+Tests use temporary directories only.
+
+## Design
+
+Symlinks are reported with their target.
+The public API is one function and two dataclasses.
+Everything else works on the tree it returns.
+The counters are collected during the walk and reused for the summary.
 
 ## Extensions
 
-A link that would loop is marked instead of followed.
-The JSON document carries a version so consumers can check it.
-A directory that cannot be read still appears in the output.
+The glyphs are chosen once, when the renderer is built.
+Sorting happens while the directory is read, not afterwards.
+
+- The JSON document carries a version so consumers can check it.
+- Tests use temporary directories only.
 
 ## Overview
 
-Colour is decided in a single place so the rest stays testable.
-Nothing here needs a third party package.
 The counters are collected during the walk and reused for the summary.
-The JSON document carries a version so consumers can check it.
-
-## Details
-
-This keeps the output stable between runs on the same tree.
+Patterns are matched against the path relative to the root of the scan.
 The public API is one function and two dataclasses.
-
-- The walker is the only module that touches the filesystem.
-- The public API is one function and two dataclasses.
-
-## Usage
-
-Keeping this small makes the behaviour easy to reason about.
-The glyphs are chosen once, when the renderer is built.
-Symlinks are reported with their target.
