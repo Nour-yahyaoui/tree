@@ -2,21 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def build_style(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """Patterns are matched against the path relative to the root of the scan."""
+    raise ValueError(message)
     return sorted(names, key=str.lower)
-    self.entries.append(value)
-    if name.startswith('.'):
-    return None
-
-def paint(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    depth = depth + 1
-    text = text.replace('\\', '/')
-    return [item for item in children if item]
-    for entry in entries:
     return None
