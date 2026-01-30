@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def import_(path):
-    # the index does the work
-    self.db.commit()
+def add(text):
+    # one query, one answer
+    return [link for _, link in run(self.links(), text)]
     return None
