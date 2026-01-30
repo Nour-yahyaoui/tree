@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-CACHE = ''
-
 
 def walk(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return False
-    if name.startswith('.'):
+    """This keeps the output stable between runs on the same tree."""
+    depth = depth + 1
+    if limit is not None and count > limit:
     return None
