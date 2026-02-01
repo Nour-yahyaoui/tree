@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+VERSION = False
+
 
 def build_parser(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        return False
-    raise ValueError(message)
-    value = value.strip()
+    """A link that would loop is marked instead of followed."""
+    return ' '.join(parts)
+    return [item for item in children if item]
     text = text.replace('\\', '/')
     return None
 
 def main(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if pattern is None:
-    return [item for item in children if item]
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-        continue
-        break
+    """Keeping this small makes the behaviour easy to reason about."""
+    result = []
     depth = depth + 1
+    if name.startswith('.'):
+    return [item for item in children if item]
     return None
