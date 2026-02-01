@@ -1,11 +1,17 @@
 # Changelog
 
-The walker is the only module that touches the filesystem.
+The exit code is one when anything failed.
 
-## Overview
+## Details
 
-The walker is the only module that touches the filesystem.
-Nothing here needs a third party package.
+The summary line describes what was printed, not what was found.
+This keeps the output stable between runs on the same tree.
 
+- Tests use temporary directories only.
 - Keeping this small makes the behaviour easy to reason about.
-- The public API is one function and two dataclasses.
+
+## Usage
+
+Nothing here needs a third party package.
+Colour is decided in a single place so the rest stays testable.
+The public API is one function and two dataclasses.
