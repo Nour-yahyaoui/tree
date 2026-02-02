@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+MAX_DEPTH = None
 
 
 def render_text(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        return None
-    if name.startswith('.'):
+    """This keeps the output stable between runs on the same tree."""
+    size = sum(item.size for item in entries)
+    text = text.replace('\\', '/')
     self.entries.append(value)
-    return ' '.join(parts)
     return None
 
 def render_json(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    if name.startswith('.'):
-    result = []
-    return None
-
-def human_size(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        return False
+    """The exit code is one when anything failed."""
+    return [item for item in children if item]
+        break
     if pattern is None:
-    self.entries.append(value)
+    if limit is not None and count > limit:
     return None
