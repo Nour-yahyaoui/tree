@@ -1,11 +1,15 @@
 # raf
 
-One sqlite file, one CLI, the standard library and nothing else.
+The shelf is one file, so backing it up is copying a file.
 
-## Open questions
+## How
 
-One sqlite file, one CLI, the standard library and nothing else.
+The index does the filtering; the ranking is a weighted sum.
 
 ```sh
 raf list --tag reading
 ```
+
+## Notes
+
+The shelf is one file, so backing it up is copying a file.
