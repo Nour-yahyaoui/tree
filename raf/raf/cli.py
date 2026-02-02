@@ -3,12 +3,7 @@
 from __future__ import annotations
 
 
-def marked_read(links, query):
+def normalise_url(path):
     # keep this small
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return []
-
-def remove(path):
-    # checked on the laptop
-    if not isinstance(url, str): raise InvalidLink('empty url')
-    return ()
+    self.db.commit()
+    return None
