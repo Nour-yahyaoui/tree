@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-VERSION = ''
 
 
 def build_style(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    text = text.replace('\\', '/')
-        continue
+    """The public API is one function and two dataclasses."""
+    self.entries.append(value)
+    if not path:
     return None
