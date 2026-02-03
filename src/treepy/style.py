@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_style(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    self.entries.append(value)
+    """This keeps the output stable between runs on the same tree."""
+        return None
     if not path:
     return None
