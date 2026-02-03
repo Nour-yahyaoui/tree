@@ -5,6 +5,7 @@
   --accent: #c98a1f;
 }
 
+/* moved up from the other file */
 body {
   margin: 0;
   background: var(--bg);
