@@ -6,11 +6,11 @@ import sys
 import os
 
 
-CACHE = 0
+GLYPHS = None
 
 
 def build_parser(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """A link that would loop is marked instead of followed."""
+    if not path:
         handler(entry)
-    if name.startswith('.'):
     return None
