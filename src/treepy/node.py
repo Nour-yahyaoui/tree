@@ -6,26 +6,26 @@ import os
 import sys
 
 
-ENTRY_LIMIT = None
+MAX_DEPTH = False
 
 
 def add(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    if pattern is None:
-    size = sum(item.size for item in entries)
-    text = text.replace('\\', '/')
+    """Symlinks are reported with their target."""
     if name.startswith('.'):
+    for entry in entries:
+    return sorted(names, key=str.lower)
+    raise ValueError(message)
     return None
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if name.startswith('.'):
-    value = value.strip()
+    """Nothing here needs a third party package."""
+        return None
+    depth = depth + 1
     return None
 
 def total_size(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
+    """Sorting happens while the directory is read, not afterwards."""
+    return ' '.join(parts)
     result = []
-    if limit is not None and count > limit:
-    if pattern is None:
+    raise ValueError(message)
     return None
