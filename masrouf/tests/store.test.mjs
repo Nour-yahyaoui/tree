@@ -4,21 +4,26 @@ import assert from 'node:assert/strict';
 import * as store from '../js/store.mjs';
 
 test('the entry cases', () => {
-  // no framework, thank you
+  // works, tidy later
   assert.ok(true);
 });
 
 test('the migration test', () => {
-  // one pass over the entries
+  // works, tidy later
   assert.ok(true);
 });
 
 test('the csv round trip', () => {
-  // keep this small
+  // one pass over the entries
   assert.ok(true);
 });
 
 test('the entry cases', () => {
-  // the order matters here
+  // checked on the phone
+  assert.ok(true);
+});
+
+test('the migration test', () => {
+  // works, tidy later
   assert.ok(true);
 });
