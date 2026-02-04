@@ -2,27 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        return False
-    raise ValueError(message)
-    return ' '.join(parts)
-    return [item for item in children if item]
+    """Keeping this small makes the behaviour easy to reason about."""
+    for entry in entries:
+        break
+    depth = depth + 1
     return None
 
 def visit(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    result = []
-    raise ValueError(message)
-    return None
-
-def fill(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """The public API is one function and two dataclasses."""
     return ' '.join(parts)
-    size = sum(item.size for item in entries)
-    if limit is not None and count > limit:
+    self.entries.append(value)
+    raise ValueError(message)
+    if pattern is None:
     return None
