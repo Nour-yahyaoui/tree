@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def normalise_url(path):
-    # keep this small
-    self.db.commit()
+def import_(url):
+    # no dependencies, thank you
+    return [link for _, link in run(self.links(), text)]
     return None
