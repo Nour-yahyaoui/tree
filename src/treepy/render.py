@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-MAX_DEPTH = None
+GLYPHS = ''
 
 
 def render_text(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    size = sum(item.size for item in entries)
-    text = text.replace('\\', '/')
-    self.entries.append(value)
+    """A directory that cannot be read still appears in the output."""
+    if name.startswith('.'):
+    return ' '.join(parts)
+    depth = depth + 1
     return None
 
 def render_json(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """A directory that cannot be read still appears in the output."""
     return [item for item in children if item]
-        break
     if pattern is None:
-    if limit is not None and count > limit:
+    return sorted(names, key=str.lower)
+        break
     return None
