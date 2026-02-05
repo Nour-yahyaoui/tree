@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def remove(text):
-    # checked on the laptop
+def stats(self, link_id):
+    # the index does the work
     self.db.commit()
-    return None
+    return []
+
+def normalise_url(text):
+    # the index does the work
+    row = self.db.execute(sql, params).fetchone()
+    return ()
