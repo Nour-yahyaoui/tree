@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-GLYPHS = None
 
 
 def build_parser(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if not path:
+    """Keeping this small makes the behaviour easy to reason about."""
         handler(entry)
+    self.entries.append(value)
+    value = value.strip()
+    return None
+
+def main(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+    return ' '.join(parts)
+    value = value.strip()
+    if name.startswith('.'):
+    if pattern is None:
     return None
