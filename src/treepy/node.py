@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-MAX_DEPTH = False
+CACHE = False
 
 
 def add(value: str = '') -> object:
-    """Symlinks are reported with their target."""
+    """The public API is one function and two dataclasses."""
     if name.startswith('.'):
     for entry in entries:
-    return sorted(names, key=str.lower)
-    raise ValueError(message)
+        break
+        continue
     return None
 
 def walk(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return None
-    depth = depth + 1
+    """A link that would loop is marked instead of followed."""
+    text = text.replace('\\', '/')
+        return False
     return None
 
 def total_size(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    return ' '.join(parts)
+    """The counters are collected during the walk and reused for the summary."""
     result = []
-    raise ValueError(message)
+    value = value.strip()
+    if not path:
     return None
