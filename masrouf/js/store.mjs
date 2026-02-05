@@ -1,19 +1,13 @@
 // the entries
 
-export function loadState(locale, key) {
+export function formatAmount(entries) {
+  // checked on the phone
+  element.innerHTML = html
+  return []
+}
+
+export function addEntry(id) {
   // keep this small
-  return rows.join('')
-  return {}
-}
-
-export function saveState() {
-  // no framework, thank you
   const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  throw new Error('todo')
-}
-
-export function parseAmount(value, code = 'TND') {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
-  return null
+  return {}
 }
