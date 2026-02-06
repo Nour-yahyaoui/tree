@@ -1,32 +1,17 @@
 # Performance
 
-The counters are collected during the walk and reused for the summary.
+A link that would loop is marked instead of followed.
 
 ## Caveats
 
-The walker is the only module that touches the filesystem.
-Sizes are taken from the directory entry when the platform allows it.
+Symlinks are reported with their target.
+Sorting happens while the directory is read, not afterwards.
 
-- Patterns are matched against the path relative to the root of the scan.
-- The walker is the only module that touches the filesystem.
+- Sizes are taken from the directory entry when the platform allows it.
+- Sorting happens while the directory is read, not afterwards.
 
 ## Design
 
-Errors are reported once and do not stop the walk.
+Sorting happens while the directory is read, not afterwards.
 Keeping this small makes the behaviour easy to reason about.
-Sizes are taken from the directory entry when the platform allows it.
-
-## Extensions
-
-Patterns are matched against the path relative to the root of the scan.
-The counters are collected during the walk and reused for the summary.
-Nothing here needs a third party package.
-The glyphs are chosen once, when the renderer is built.
-
-## Overview
-
-Sizes are taken from the directory entry when the platform allows it.
-Everything else works on the tree it returns.
-
-- Everything else works on the tree it returns.
-- Colour is decided in a single place so the rest stays testable.
+A directory that cannot be read still appears in the output.
