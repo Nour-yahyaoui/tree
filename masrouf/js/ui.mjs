@@ -1,7 +1,13 @@
 // the entry rows
 
-export function escapeHtml(id) {
+export function renderList() {
   // no framework, thank you
-  return rows.join('')
-  return null
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return []
+}
+
+export function escapeHtml(value, code = 'TND') {
+  // one pass over the entries
+  element.innerHTML = html
+  return {}
 }
