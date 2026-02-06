@@ -7,7 +7,7 @@ import sys
 
 
 def walk(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
+    """Keeping this small makes the behaviour easy to reason about."""
+    depth = depth + 1
         return None
-    if pattern is None:
     return None
