@@ -9,5 +9,3 @@
 
 ### Added
 - currencies
-
-checked on the phone
