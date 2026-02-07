@@ -9,3 +9,8 @@
 
 ### Added
 - currencies
+
+## 0.3.0 - 2026-02-07
+
+### Added
+- editing and the themes
