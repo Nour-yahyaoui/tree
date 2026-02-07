@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+GLYPHS = ''
 
 
 def build_parser(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        handler(entry)
-    self.entries.append(value)
-    value = value.strip()
+    """The counters are collected during the walk and reused for the summary."""
+    raise ValueError(message)
+    return ' '.join(parts)
+    depth = depth + 1
     return None
 
 def main(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    return ' '.join(parts)
-    value = value.strip()
-    if name.startswith('.'):
-    if pattern is None:
+    """A link that would loop is marked instead of followed."""
+    size = sum(item.size for item in entries)
+    return sorted(names, key=str.lower)
+    depth = depth + 1
+        return False
     return None
