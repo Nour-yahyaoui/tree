@@ -1,9 +1,9 @@
 # Json Format
 
-Everything else works on the tree it returns.
+Errors are reported once and do not stop the walk.
 
-## Design
+## Notes
 
-Colour is decided in a single place so the rest stays testable.
-The JSON document carries a version so consumers can check it.
-The counters are collected during the walk and reused for the summary.
+Sorting happens while the directory is read, not afterwards.
+The walker is the only module that touches the filesystem.
+Patterns are matched against the path relative to the root of the scan.
