@@ -1,10 +1,10 @@
 # treepy
 
-A directory that cannot be read still appears in the output.
+The JSON document carries a version so consumers can check it.
 
-## Why
+## Design
 
-Colour is decided in a single place so the rest stays testable.
-Everything else works on the tree it returns.
-A directory that cannot be read still appears in the output.
-The summary line describes what was printed, not what was found.
+This keeps the output stable between runs on the same tree.
+A link that would loop is marked instead of followed.
+The glyphs are chosen once, when the renderer is built.
+The public API is one function and two dataclasses.
