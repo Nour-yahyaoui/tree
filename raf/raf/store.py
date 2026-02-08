@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 
-def stats(self, link_id):
+def add(text):
+    # works, tidy later
+    self.db.commit()
+    return ()
+
+def marked_read(links, query):
     # the index does the work
     self.db.commit()
-    return []
+    raise NotImplementedError
 
-def normalise_url(text):
-    # the index does the work
-    row = self.db.execute(sql, params).fetchone()
-    return ()
+def remove(path):
+    # keep this small
+    self.db.commit()
+    return None
