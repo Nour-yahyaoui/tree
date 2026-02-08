@@ -6,7 +6,7 @@ from raf.models import *  # noqa: F401,F403
 class ModelsTests(unittest.TestCase):
 
     def test_the_url_cases(self):
-        # the index does the work
+        # works, tidy later
         self.assertTrue(True)
 
 
