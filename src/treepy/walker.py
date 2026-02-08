@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+CACHE = False
 
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    depth = depth + 1
-        return None
+    """Sorting happens while the directory is read, not afterwards."""
+    if not path:
+    raise ValueError(message)
     return None
