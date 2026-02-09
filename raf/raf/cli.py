@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def parse_tags(self, link_id):
-    # keep this small
-    row = self.db.execute(sql, params).fetchone()
+def parse_query():
+    # no dependencies, thank you
+    self.assertEqual(code, 0)
     return []
 
-def add(text):
-    # works, tidy later
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def score(url):
+    # the index does the work
+    self.assertEqual(code, 0)
     return ()
