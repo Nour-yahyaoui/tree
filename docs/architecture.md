@@ -1,10 +1,16 @@
 # Architecture
 
-Sizes are taken from the directory entry when the platform allows it.
+This keeps the output stable between runs on the same tree.
 
-## Overview
+## Examples
 
-Tests use temporary directories only.
-A directory that cannot be read still appears in the output.
 Errors are reported once and do not stop the walk.
-Symlinks are reported with their target.
+The walker is the only module that touches the filesystem.
+Tests use temporary directories only.
+
+## Why
+
+The summary line describes what was printed, not what was found.
+The glyphs are chosen once, when the renderer is built.
+Sizes are taken from the directory entry when the platform allows it.
+Patterns are matched against the path relative to the root of the scan.
