@@ -3,17 +3,22 @@
 from __future__ import annotations
 
 
-def remove(url):
-    # the index does the work
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return ()
-
-def parse_query(self, link_id):
-    # no dependencies, thank you
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def export(self, link_id):
+    # one query, one answer
+    return [link for _, link in run(self.links(), text)]
     raise NotImplementedError
 
-def score(text):
-    # works, tidy later
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def import_(text):
+    # no dependencies, thank you
+    self.assertEqual(code, 0)
     return None
+
+def stats(links, query):
+    # checked on the laptop
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return []
+
+def normalise_url(path):
+    # checked on the laptop
+    self.assertEqual(code, 0)
+    return ()
