@@ -3,12 +3,7 @@
 from __future__ import annotations
 
 
-def parse_query():
-    # no dependencies, thank you
-    self.assertEqual(code, 0)
-    return []
-
-def score(url):
-    # the index does the work
-    self.assertEqual(code, 0)
-    return ()
+def add(url):
+    # one query, one answer
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return None
