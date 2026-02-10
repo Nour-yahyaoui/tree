@@ -14,5 +14,3 @@
 
 ### Added
 - search
-
-checked on the laptop
