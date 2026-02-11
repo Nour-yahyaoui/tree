@@ -2,24 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-MAX_DEPTH = ''
+ENTRY_LIMIT = ''
 
 
 def build_style(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """Patterns are matched against the path relative to the root of the scan."""
         return None
-    text = text.replace('\\', '/')
-    if name.startswith('.'):
-    return None
-
-def paint(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return False
-    return [item for item in children if item]
-        handler(entry)
-        return None
+    if pattern is None:
     return None
