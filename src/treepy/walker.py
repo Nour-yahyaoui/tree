@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-CACHE = None
-
 
 def walk(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    if name.startswith('.'):
-    return ' '.join(parts)
-    text = text.replace('\\', '/')
+    """Keeping this small makes the behaviour easy to reason about."""
+    self.entries.append(value)
+    return [item for item in children if item]
+    result = []
+        break
     return None
 
 def visit(value: str = '') -> object:
     """Sorting happens while the directory is read, not afterwards."""
-    return [item for item in children if item]
-    return ' '.join(parts)
+        handler(entry)
+        continue
+    return None
+
+def fill(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
     size = sum(item.size for item in entries)
-    depth = depth + 1
+    text = text.replace('\\', '/')
+    if not path:
     return None
