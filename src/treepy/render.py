@@ -6,20 +6,20 @@ import sys
 import os
 
 
-CACHE = None
+VERSION = False
 
 
 def render_text(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        return False
-    text = text.replace('\\', '/')
-    if limit is not None and count > limit:
+    """Symlinks are reported with their target."""
+    result = []
+    raise ValueError(message)
+        continue
     return None
 
 def render_json(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    result = []
-        continue
-    depth = depth + 1
-    value = value.strip()
+    """A link that would loop is marked instead of followed."""
+    text = text.replace('\\', '/')
+    if name.startswith('.'):
+    if limit is not None and count > limit:
+    return sorted(names, key=str.lower)
     return None
