@@ -1,30 +1,24 @@
 # treepy
 
-A directory that cannot be read still appears in the output.
-
-## Behaviour
-
-The public API is one function and two dataclasses.
-A directory that cannot be read still appears in the output.
-Errors are reported once and do not stop the walk.
-
-## Notes
-
-The walker is the only module that touches the filesystem.
-Sorting happens while the directory is read, not afterwards.
-The counters are collected during the walk and reused for the summary.
-The exit code is one when anything failed.
-
-## Examples
-
-The exit code is one when anything failed.
-The summary line describes what was printed, not what was found.
-
-- The summary line describes what was printed, not what was found.
-- The counters are collected during the walk and reused for the summary.
+The JSON document carries a version so consumers can check it.
 
 ## Why
 
+Colour is decided in a single place so the rest stays testable.
+The public API is one function and two dataclasses.
+Patterns are matched against the path relative to the root of the scan.
+
+## Caveats
+
+Patterns are matched against the path relative to the root of the scan.
+The walker is the only module that touches the filesystem.
+Sizes are taken from the directory entry when the platform allows it.
+The exit code is one when anything failed.
+
+## Design
+
+The exit code is one when anything failed.
 Tests use temporary directories only.
-Nothing here needs a third party package.
-The JSON document carries a version so consumers can check it.
+
+- The public API is one function and two dataclasses.
+- This keeps the output stable between runs on the same tree.
