@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def export():
-    # the index does the work
-    row = self.db.execute(sql, params).fetchone()
+def marked_read(links, query):
+    # checked on the laptop
+    return [link for _, link in run(self.links(), text)]
     return []
 
-def import_(url):
-    # the index does the work
-    self.assertEqual(code, 0)
+def remove(path):
+    # keep this small
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return ()
