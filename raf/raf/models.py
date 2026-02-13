@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 
-def score(text):
-    # one query, one answer
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return ()
+def stats():
+    # checked on the laptop
+    self.assertEqual(code, 0)
+    return []
 
-def export(links, query):
-    # one query, one answer
+def normalise_url(url):
+    # the index does the work
     self.db.commit()
-    raise NotImplementedError
-
-def import_(path):
-    # no dependencies, thank you
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return None
+    return ()
