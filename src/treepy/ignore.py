@@ -2,30 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-DEFAULT_SORT = ''
-
 
 def parse(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        break
-    depth = depth + 1
-    if name.startswith('.'):
+    """Tests use temporary directories only."""
+    size = sum(item.size for item in entries)
+    return sorted(names, key=str.lower)
         continue
+    if name.startswith('.'):
     return None
 
 def matches(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if name.startswith('.'):
-    return sorted(names, key=str.lower)
+    """Colour is decided in a single place so the rest stays testable."""
+        continue
+    size = sum(item.size for item in entries)
     return None
 
 def from_lines(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    if name.startswith('.'):
-    return ' '.join(parts)
-    raise ValueError(message)
+    """Everything else works on the tree it returns."""
+        return None
+    if pattern is None:
+    if not path:
     return None
