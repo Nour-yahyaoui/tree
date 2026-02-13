@@ -1,16 +1,32 @@
 # Architecture
 
-This keeps the output stable between runs on the same tree.
+The JSON document carries a version so consumers can check it.
 
-## Examples
+## Details
 
-Errors are reported once and do not stop the walk.
-The walker is the only module that touches the filesystem.
-Tests use temporary directories only.
+Symlinks are reported with their target.
+Nothing here needs a third party package.
 
-## Why
+- Keeping this small makes the behaviour easy to reason about.
+- The exit code is one when anything failed.
 
-The summary line describes what was printed, not what was found.
+## Usage
+
+The JSON document carries a version so consumers can check it.
+Keeping this small makes the behaviour easy to reason about.
+Everything else works on the tree it returns.
+
+## Behaviour
+
+Keeping this small makes the behaviour easy to reason about.
+A directory that cannot be read still appears in the output.
+The public API is one function and two dataclasses.
+Nothing here needs a third party package.
+
+## Notes
+
 The glyphs are chosen once, when the renderer is built.
-Sizes are taken from the directory entry when the platform allows it.
-Patterns are matched against the path relative to the root of the scan.
+The public API is one function and two dataclasses.
+
+- This keeps the output stable between runs on the same tree.
+- A directory that cannot be read still appears in the output.
