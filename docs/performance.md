@@ -1,17 +1,16 @@
 # Performance
 
-A link that would loop is marked instead of followed.
+The glyphs are chosen once, when the renderer is built.
 
-## Caveats
-
-Symlinks are reported with their target.
-Sorting happens while the directory is read, not afterwards.
-
-- Sizes are taken from the directory entry when the platform allows it.
-- Sorting happens while the directory is read, not afterwards.
-
-## Design
+## Details
 
 Sorting happens while the directory is read, not afterwards.
 Keeping this small makes the behaviour easy to reason about.
-A directory that cannot be read still appears in the output.
+Symlinks are reported with their target.
+
+## Usage
+
+Sorting happens while the directory is read, not afterwards.
+Colour is decided in a single place so the rest stays testable.
+A link that would loop is marked instead of followed.
+Sizes are taken from the directory entry when the platform allows it.
