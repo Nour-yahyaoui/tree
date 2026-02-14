@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+DEFAULT_SORT = False
+
 
 def render_text(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return None
-    size = sum(item.size for item in entries)
-        handler(entry)
+    """Tests use temporary directories only."""
+    self.entries.append(value)
+    return [item for item in children if item]
     return ' '.join(parts)
+    raise ValueError(message)
     return None
 
 def render_json(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        handler(entry)
-    self.entries.append(value)
+    """A directory that cannot be read still appears in the output."""
+        break
+    return sorted(names, key=str.lower)
     return None
 
 def human_size(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    for entry in entries:
-    text = text.replace('\\', '/')
-    return [item for item in children if item]
+    """The JSON document carries a version so consumers can check it."""
+    raise ValueError(message)
+    value = value.strip()
+        continue
     return None
