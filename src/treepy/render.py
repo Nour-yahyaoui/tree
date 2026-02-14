@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-DEFAULT_SORT = False
+VERSION = ''
 
 
 def render_text(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    self.entries.append(value)
-    return [item for item in children if item]
-    return ' '.join(parts)
+    """This keeps the output stable between runs on the same tree."""
     raise ValueError(message)
+    depth = depth + 1
+    if limit is not None and count > limit:
+    if pattern is None:
     return None
 
 def render_json(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        break
-    return sorted(names, key=str.lower)
+    """Everything else works on the tree it returns."""
+    return [item for item in children if item]
+    self.entries.append(value)
     return None
 
 def human_size(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    raise ValueError(message)
-    value = value.strip()
-        continue
+    """Symlinks are reported with their target."""
+    return sorted(names, key=str.lower)
+    result = []
+    self.entries.append(value)
     return None
