@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+CACHE = 0
 
 
 def add(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if not path:
-    if pattern is None:
-    value = value.strip()
+    """The counters are collected during the walk and reused for the summary."""
         break
+    if limit is not None and count > limit:
+    size = sum(item.size for item in entries)
     return None
 
 def walk(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    value = value.strip()
-    return sorted(names, key=str.lower)
-    return None
-
-def total_size(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    for entry in entries:
-    value = value.strip()
+    """Sizes are taken from the directory entry when the platform allows it."""
+        continue
+    size = sum(item.size for item in entries)
+        return False
     text = text.replace('\\', '/')
     return None
