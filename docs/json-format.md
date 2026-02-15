@@ -1,18 +1,17 @@
 # Json Format
 
-Sizes are taken from the directory entry when the platform allows it.
+The summary line describes what was printed, not what was found.
 
 ## Extensions
 
-The JSON document carries a version so consumers can check it.
-Errors are reported once and do not stop the walk.
-Patterns are matched against the path relative to the root of the scan.
-Colour is decided in a single place so the rest stays testable.
+Symlinks are reported with their target.
+A link that would loop is marked instead of followed.
+
+- Sorting happens while the directory is read, not afterwards.
+- The glyphs are chosen once, when the renderer is built.
 
 ## Overview
 
 A link that would loop is marked instead of followed.
-This keeps the output stable between runs on the same tree.
-
-- The counters are collected during the walk and reused for the summary.
-- Keeping this small makes the behaviour easy to reason about.
+The summary line describes what was printed, not what was found.
+Symlinks are reported with their target.
