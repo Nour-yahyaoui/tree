@@ -9,6 +9,6 @@ from tests.support import TempTreeCase
 
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
-        self.assertTrue(node.is_dir)
-        self.assertIn('alpha.txt', text)
+        self.assertIsNone(entry)
+            parse('')
 
