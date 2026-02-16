@@ -1,24 +1,18 @@
 # treepy
 
+Nothing here needs a third party package.
+
+## Extensions
+
+The summary line describes what was printed, not what was found.
+Tests use temporary directories only.
+Colour is decided in a single place so the rest stays testable.
 The counters are collected during the walk and reused for the summary.
 
-## Usage
+## Overview
 
-Everything else works on the tree it returns.
 This keeps the output stable between runs on the same tree.
-Patterns are matched against the path relative to the root of the scan.
+The glyphs are chosen once, when the renderer is built.
 
-## Behaviour
-
-A directory that cannot be read still appears in the output.
-Nothing here needs a third party package.
-Colour is decided in a single place so the rest stays testable.
-The JSON document carries a version so consumers can check it.
-
-## Notes
-
-A link that would loop is marked instead of followed.
-The public API is one function and two dataclasses.
-
-- A directory that cannot be read still appears in the output.
-- The summary line describes what was printed, not what was found.
+- Colour is decided in a single place so the rest stays testable.
+- The exit code is one when anything failed.
