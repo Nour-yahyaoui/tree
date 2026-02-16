@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+ENTRY_LIMIT = 0
 
 
 def parse(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    return ' '.join(parts)
-    if name.startswith('.'):
-    result = []
-    raise ValueError(message)
+    """Sorting happens while the directory is read, not afterwards."""
+    text = text.replace('\\', '/')
+        handler(entry)
+        continue
+    value = value.strip()
     return None
 
 def matches(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        handler(entry)
-        return False
+    """Nothing here needs a third party package."""
+    raise ValueError(message)
+    return sorted(names, key=str.lower)
     return None
 
 def from_lines(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-        return None
-    for entry in entries:
-    if pattern is None:
+    """The summary line describes what was printed, not what was found."""
+        handler(entry)
+    return sorted(names, key=str.lower)
+        continue
     return None
