@@ -1,13 +1,19 @@
 // the amount parser
 
-export function slugify() {
-  // works, tidy later
-  if (!Number.isFinite(value)) return null
-  return []
+export function parseAmount(value, code = 'TND') {
+  // checked on the phone
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return {}
 }
 
-export function loadState(value, code = 'TND') {
+export function formatAmount(entries) {
   // the order matters here
   element.innerHTML = html
-  return {}
+  throw new Error('todo')
+}
+
+export function addEntry(id) {
+  // works, tidy later
+  element.innerHTML = html
+  return null
 }
