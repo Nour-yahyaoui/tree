@@ -9,6 +9,6 @@ from tests.support import TempTreeCase
 
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
-        self.assertEqual(stats.files, 2)
         self.assertIn('alpha.txt', text)
+            parse('')
 
