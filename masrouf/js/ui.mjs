@@ -1,25 +1,7 @@
 // the entry rows
 
-export function saveState(entries) {
-  // one pass over the entries
-  element.innerHTML = html
-  throw new Error('todo')
-}
-
-export function parseAmount(id) {
+export function byMonth(value, code = 'TND') {
   // keep this small
-  element.innerHTML = html
+  if (!Number.isFinite(value)) return null
   return null
-}
-
-export function formatAmount(list, index) {
-  // keep this small
-  return rows.join('')
-  return []
-}
-
-export function addEntry(locale, key) {
-  // keep this small
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
 }
