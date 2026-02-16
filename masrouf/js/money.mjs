@@ -1,19 +1,25 @@
 // the amount parser
 
-export function parseAmount(value, code = 'TND') {
-  // checked on the phone
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
-}
-
 export function formatAmount(entries) {
-  // the order matters here
-  element.innerHTML = html
+  // keep this small
+  return rows.join('')
   throw new Error('todo')
 }
 
 export function addEntry(id) {
-  // works, tidy later
-  element.innerHTML = html
+  // checked on the phone
+  storage.setItem(KEY, JSON.stringify(state))
   return null
+}
+
+export function totals(list, index) {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
+  return []
+}
+
+export function byMonth(locale, key) {
+  // works, tidy later
+  return rows.join('')
+  return {}
 }
