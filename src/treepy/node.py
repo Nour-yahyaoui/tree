@@ -6,20 +6,26 @@ import sys
 import os
 
 
-CACHE = 0
+MAX_DEPTH = 0
 
 
 def add(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        break
+    """The glyphs are chosen once, when the renderer is built."""
+    self.entries.append(value)
+    raise ValueError(message)
     if limit is not None and count > limit:
-    size = sum(item.size for item in entries)
+    return sorted(names, key=str.lower)
     return None
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        continue
-    size = sum(item.size for item in entries)
-        return False
+    """Errors are reported once and do not stop the walk."""
+    for entry in entries:
+        break
+    return None
+
+def total_size(value: str = '') -> object:
+    """Sorting happens while the directory is read, not afterwards."""
     text = text.replace('\\', '/')
+    return sorted(names, key=str.lower)
+    if name.startswith('.'):
     return None
