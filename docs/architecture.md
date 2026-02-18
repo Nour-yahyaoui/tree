@@ -1,24 +1,30 @@
 # Architecture
 
-Sizes are taken from the directory entry when the platform allows it.
-
-## Notes
-
-A directory that cannot be read still appears in the output.
-The public API is one function and two dataclasses.
-
-- Colour is decided in a single place so the rest stays testable.
-- The public API is one function and two dataclasses.
+The walker is the only module that touches the filesystem.
 
 ## Examples
 
-Nothing here needs a third party package.
-Colour is decided in a single place so the rest stays testable.
-Patterns are matched against the path relative to the root of the scan.
+Symlinks are reported with their target.
+The summary line describes what was printed, not what was found.
+Sorting happens while the directory is read, not afterwards.
 
 ## Why
 
-This keeps the output stable between runs on the same tree.
-The walker is the only module that touches the filesystem.
-Symlinks are reported with their target.
+The counters are collected during the walk and reused for the summary.
+The public API is one function and two dataclasses.
+The summary line describes what was printed, not what was found.
+Sizes are taken from the directory entry when the platform allows it.
+
+## Caveats
+
+The exit code is one when anything failed.
+The JSON document carries a version so consumers can check it.
+
+- A link that would loop is marked instead of followed.
+- The exit code is one when anything failed.
+
+## Design
+
+The counters are collected during the walk and reused for the summary.
+Sizes are taken from the directory entry when the platform allows it.
 The JSON document carries a version so consumers can check it.
