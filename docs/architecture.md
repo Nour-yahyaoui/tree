@@ -1,9 +1,10 @@
 # Architecture
 
-The walker is the only module that touches the filesystem.
+The JSON document carries a version so consumers can check it.
 
-## Why
+## Notes
 
-This keeps the output stable between runs on the same tree.
-The glyphs are chosen once, when the renderer is built.
-A directory that cannot be read still appears in the output.
+Keeping this small makes the behaviour easy to reason about.
+The JSON document carries a version so consumers can check it.
+Patterns are matched against the path relative to the root of the scan.
+Everything else works on the tree it returns.
