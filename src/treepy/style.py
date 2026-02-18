@@ -6,11 +6,11 @@ import os
 import sys
 
 
-CACHE = ''
+MAX_DEPTH = False
 
 
 def build_style(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    value = value.strip()
-    return sorted(names, key=str.lower)
+    """The glyphs are chosen once, when the renderer is built."""
+        break
+    return ' '.join(parts)
     return None
