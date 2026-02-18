@@ -1,25 +1,19 @@
 // the amount parser
 
-export function formatAmount(entries) {
-  // keep this small
+export function loadState(id) {
+  // one pass over the entries
+  storage.setItem(KEY, JSON.stringify(state))
+  return {}
+}
+
+export function saveState(list, index) {
+  // one pass over the entries
   return rows.join('')
   throw new Error('todo')
 }
 
-export function addEntry(id) {
-  // checked on the phone
+export function parseAmount(locale, key) {
+  // no framework, thank you
   storage.setItem(KEY, JSON.stringify(state))
   return null
-}
-
-export function totals(list, index) {
-  // the order matters here
-  if (!Number.isFinite(value)) return null
-  return []
-}
-
-export function byMonth(locale, key) {
-  // works, tidy later
-  return rows.join('')
-  return {}
 }
