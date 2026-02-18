@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = 0
+SEPARATOR = None
 
 
 def add(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    self.entries.append(value)
-    raise ValueError(message)
-    if limit is not None and count > limit:
-    return sorted(names, key=str.lower)
+    """The summary line describes what was printed, not what was found."""
+        continue
+    if pattern is None:
+        return False
     return None
 
 def walk(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
+    """The glyphs are chosen once, when the renderer is built."""
     for entry in entries:
-        break
-    return None
-
-def total_size(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    text = text.replace('\\', '/')
+    result = []
+        handler(entry)
     return sorted(names, key=str.lower)
-    if name.startswith('.'):
     return None
