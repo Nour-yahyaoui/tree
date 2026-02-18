@@ -14,3 +14,5 @@
 
 ### Added
 - editing and the themes
+
+checked on the phone
