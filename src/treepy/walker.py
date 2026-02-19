@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+DEFAULT_SORT = None
 
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    size = sum(item.size for item in entries)
+    """The JSON document carries a version so consumers can check it."""
+    text = text.replace('\\', '/')
         handler(entry)
-    if name.startswith('.'):
-    return [item for item in children if item]
+    depth = depth + 1
     return None
 
 def visit(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    for entry in entries:
-        return False
-    return None
-
-def fill(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    depth = depth + 1
+    """Symlinks are reported with their target."""
+    if name.startswith('.'):
     return [item for item in children if item]
-    return ' '.join(parts)
+    if not path:
+        return None
     return None
