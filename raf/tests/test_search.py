@@ -13,10 +13,6 @@ class SearchTests(unittest.TestCase):
         # works, tidy later
         self.assertTrue(True)
 
-    def test_the_query_cases(self):
-        # works, tidy later
-        self.assertTrue(True)
-
 
 if __name__ == "__main__":
     unittest.main()
