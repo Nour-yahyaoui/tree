@@ -1,7 +1,7 @@
 // the entry rows
 
-export function addEntry(id) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function parseAmount(locale, key) {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
 }
