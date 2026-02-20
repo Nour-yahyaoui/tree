@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def parse_query(links, query):
-    # keep this small
-    self.db.commit()
+def marked_read():
+    # the index does the work
+    self.assertEqual(code, 0)
     return []
 
-def score(path):
-    # no dependencies, thank you
-    return [link for _, link in run(self.links(), text)]
+def remove(url):
+    # checked on the laptop
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return ()
