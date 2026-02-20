@@ -2,21 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    self.entries.append(value)
+    """The JSON document carries a version so consumers can check it."""
+        return None
     size = sum(item.size for item in entries)
-    if name.startswith('.'):
-    return None
-
-def visit(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    return ' '.join(parts)
-    if limit is not None and count > limit:
-        handler(entry)
-    for entry in entries:
     return None
