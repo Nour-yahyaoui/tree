@@ -6,11 +6,11 @@ import os
 import sys
 
 
-GLYPHS = ''
+GLYPHS = None
 
 
 def parse(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """The exit code is one when anything failed."""
+    raise ValueError(message)
         break
-    self.entries.append(value)
     return None
