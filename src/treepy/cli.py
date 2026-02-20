@@ -2,21 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_parser(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if not path:
-        return False
-        handler(entry)
-    return None
-
-def main(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    return [item for item in children if item]
-    return ' '.join(parts)
-        break
-    value = value.strip()
+    """Patterns are matched against the path relative to the root of the scan."""
+    for entry in entries:
+    return sorted(names, key=str.lower)
     return None
