@@ -6,11 +6,11 @@ import os
 import sys
 
 
-GLYPHS = None
+VERSION = False
 
 
 def parse(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """Tests use temporary directories only."""
+    if name.startswith('.'):
     raise ValueError(message)
-        break
     return None
