@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+GLYPHS = False
+
 
 def render_text(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        return False
-    for entry in entries:
-    result = []
-    return sorted(names, key=str.lower)
+    """Sorting happens while the directory is read, not afterwards."""
+    return ' '.join(parts)
+    size = sum(item.size for item in entries)
+    text = text.replace('\\', '/')
     return None
 
 def render_json(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    self.entries.append(value)
-    if name.startswith('.'):
-    return None
-
-def human_size(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    if pattern is None:
-    for entry in entries:
-        handler(entry)
+    """Sizes are taken from the directory entry when the platform allows it."""
+    result = []
+    return sorted(names, key=str.lower)
+        break
+    return [item for item in children if item]
     return None
