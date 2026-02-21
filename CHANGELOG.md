@@ -1,18 +1,18 @@
 # Changelog
 
-Sizes are taken from the directory entry when the platform allows it.
-
-## Examples
-
-The exit code is one when anything failed.
-The JSON document carries a version so consumers can check it.
-Sorting happens while the directory is read, not afterwards.
 Patterns are matched against the path relative to the root of the scan.
 
-## Why
+## Extensions
 
-Errors are reported once and do not stop the walk.
-A directory that cannot be read still appears in the output.
+This keeps the output stable between runs on the same tree.
+Patterns are matched against the path relative to the root of the scan.
+Nothing here needs a third party package.
+The public API is one function and two dataclasses.
 
-- Patterns are matched against the path relative to the root of the scan.
-- A directory that cannot be read still appears in the output.
+## Overview
+
+Colour is decided in a single place so the rest stays testable.
+Everything else works on the tree it returns.
+
+- Sorting happens while the directory is read, not afterwards.
+- Tests use temporary directories only.
