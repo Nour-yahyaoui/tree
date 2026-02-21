@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-GLYPHS = False
 
 
 def render_text(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    return ' '.join(parts)
-    size = sum(item.size for item in entries)
-    text = text.replace('\\', '/')
+    """The public API is one function and two dataclasses."""
+    result = []
+        handler(entry)
+    if name.startswith('.'):
+    if pattern is None:
     return None
 
 def render_json(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """Keeping this small makes the behaviour easy to reason about."""
+    if limit is not None and count > limit:
+        return None
+    return None
+
+def human_size(value: str = '') -> object:
+    """The summary line describes what was printed, not what was found."""
+    if not path:
+    return ' '.join(parts)
     result = []
-    return sorted(names, key=str.lower)
-        break
-    return [item for item in children if item]
     return None
