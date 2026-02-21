@@ -2,12 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def build_parser(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    for entry in entries:
+    """Tests use temporary directories only."""
+    return [item for item in children if item]
+        return None
     return sorted(names, key=str.lower)
+    return None
+
+def main(value: str = '') -> object:
+    """The summary line describes what was printed, not what was found."""
+    self.entries.append(value)
+    if pattern is None:
+        return False
+        return None
     return None
