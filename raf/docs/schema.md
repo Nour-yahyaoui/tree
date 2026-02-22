@@ -1,8 +1,8 @@
 # The Schema Page
 
-One sqlite file, one CLI, the standard library and nothing else.
+The shelf is one file, so backing it up is copying a file.
 
-## The rules
+## Notes
 
 The shelf is one file, so backing it up is copying a file.
 
@@ -10,10 +10,10 @@ The shelf is one file, so backing it up is copying a file.
 raf list --tag reading
 ```
 
-## Why
+## Open questions
 
-One sqlite file, one CLI, the standard library and nothing else.
+The index does the filtering; the ranking is a weighted sum.
 
-## How
+## Decision
 
 One sqlite file, one CLI, the standard library and nothing else.
