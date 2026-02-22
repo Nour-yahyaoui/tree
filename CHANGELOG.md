@@ -1,18 +1,30 @@
 # Changelog
 
-Patterns are matched against the path relative to the root of the scan.
+The walker is the only module that touches the filesystem.
 
-## Extensions
+## Details
+
+A link that would loop is marked instead of followed.
+This keeps the output stable between runs on the same tree.
+Tests use temporary directories only.
+
+## Usage
 
 This keeps the output stable between runs on the same tree.
-Patterns are matched against the path relative to the root of the scan.
-Nothing here needs a third party package.
-The public API is one function and two dataclasses.
+Symlinks are reported with their target.
+Errors are reported once and do not stop the walk.
+Sizes are taken from the directory entry when the platform allows it.
 
-## Overview
+## Behaviour
 
-Colour is decided in a single place so the rest stays testable.
-Everything else works on the tree it returns.
+The walker is the only module that touches the filesystem.
+Sorting happens while the directory is read, not afterwards.
 
+- The walker is the only module that touches the filesystem.
 - Sorting happens while the directory is read, not afterwards.
-- Tests use temporary directories only.
+
+## Notes
+
+Tests use temporary directories only.
+Symlinks are reported with their target.
+Sorting happens while the directory is read, not afterwards.
