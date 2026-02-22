@@ -15,4 +15,7 @@
 ### Added
 - search
 
-reordered for readability
+## 0.4.0 - 2026-02-22
+
+### Added
+- tests and CI
