@@ -1,30 +1,31 @@
 # Changelog
 
-The walker is the only module that touches the filesystem.
+Keeping this small makes the behaviour easy to reason about.
 
-## Details
+## Examples
 
-A link that would loop is marked instead of followed.
-This keeps the output stable between runs on the same tree.
-Tests use temporary directories only.
-
-## Usage
-
-This keeps the output stable between runs on the same tree.
-Symlinks are reported with their target.
-Errors are reported once and do not stop the walk.
+Nothing here needs a third party package.
+A directory that cannot be read still appears in the output.
 Sizes are taken from the directory entry when the platform allows it.
+This keeps the output stable between runs on the same tree.
 
-## Behaviour
+## Why
 
-The walker is the only module that touches the filesystem.
-Sorting happens while the directory is read, not afterwards.
+This keeps the output stable between runs on the same tree.
+Everything else works on the tree it returns.
 
-- The walker is the only module that touches the filesystem.
-- Sorting happens while the directory is read, not afterwards.
+- The counters are collected during the walk and reused for the summary.
+- Symlinks are reported with their target.
 
-## Notes
+## Caveats
 
-Tests use temporary directories only.
+Everything else works on the tree it returns.
 Symlinks are reported with their target.
-Sorting happens while the directory is read, not afterwards.
+A directory that cannot be read still appears in the output.
+
+## Design
+
+Everything else works on the tree it returns.
+Colour is decided in a single place so the rest stays testable.
+The summary line describes what was printed, not what was found.
+The glyphs are chosen once, when the renderer is built.
