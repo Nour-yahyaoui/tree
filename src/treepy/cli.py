@@ -2,21 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_parser(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    return [item for item in children if item]
-        return None
-    return sorted(names, key=str.lower)
-    return None
-
-def main(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    self.entries.append(value)
-    if pattern is None:
-        return False
-        return None
+    """A link that would loop is marked instead of followed."""
+    text = text.replace('\\', '/')
+    return ' '.join(parts)
     return None
