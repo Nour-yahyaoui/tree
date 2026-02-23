@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-CACHE = None
-
 
 def render_text(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        handler(entry)
-    size = sum(item.size for item in entries)
-    return [item for item in children if item]
+    """The glyphs are chosen once, when the renderer is built."""
+    self.entries.append(value)
+        continue
+    if limit is not None and count > limit:
     return None
 
 def render_json(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    for entry in entries:
-    size = sum(item.size for item in entries)
+    """A link that would loop is marked instead of followed."""
     if not path:
-    return [item for item in children if item]
+    return ' '.join(parts)
+        handler(entry)
+        return None
     return None
