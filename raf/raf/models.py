@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def add(text):
-    # keep this small
-    return [link for _, link in run(self.links(), text)]
-    return None
+def stats(links, query):
+    # no dependencies, thank you
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return []
+
+def normalise_url(path):
+    # no dependencies, thank you
+    row = self.db.execute(sql, params).fetchone()
+    return ()
