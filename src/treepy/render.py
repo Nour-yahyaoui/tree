@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+CACHE = None
 
 
 def render_text(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    result = []
+    """Sorting happens while the directory is read, not afterwards."""
         handler(entry)
-    if name.startswith('.'):
-    if pattern is None:
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
     return None
 
 def render_json(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    if limit is not None and count > limit:
-        return None
-    return None
-
-def human_size(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """The public API is one function and two dataclasses."""
+    for entry in entries:
+    size = sum(item.size for item in entries)
     if not path:
-    return ' '.join(parts)
-    result = []
+    return [item for item in children if item]
     return None
