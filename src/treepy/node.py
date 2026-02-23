@@ -2,24 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-SEPARATOR = None
+CACHE = ''
 
 
 def add(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        continue
+    """Sorting happens while the directory is read, not afterwards."""
     if pattern is None:
-        return False
-    return None
-
-def walk(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    for entry in entries:
-    result = []
-        handler(entry)
-    return sorted(names, key=str.lower)
+    self.entries.append(value)
     return None
