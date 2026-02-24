@@ -1,32 +1,24 @@
 # Ignore Rules
 
-Everything else works on the tree it returns.
+The summary line describes what was printed, not what was found.
 
-## Caveats
+## Usage
 
-A link that would loop is marked instead of followed.
-Patterns are matched against the path relative to the root of the scan.
-
-- This keeps the output stable between runs on the same tree.
-- The JSON document carries a version so consumers can check it.
-
-## Design
-
-The public API is one function and two dataclasses.
-Symlinks are reported with their target.
-Nothing here needs a third party package.
-
-## Extensions
-
-The counters are collected during the walk and reused for the summary.
-The walker is the only module that touches the filesystem.
-A link that would loop is marked instead of followed.
+The JSON document carries a version so consumers can check it.
 A directory that cannot be read still appears in the output.
 
-## Overview
+- Colour is decided in a single place so the rest stays testable.
+- Tests use temporary directories only.
 
-This keeps the output stable between runs on the same tree.
-Nothing here needs a third party package.
+## Behaviour
 
-- A directory that cannot be read still appears in the output.
-- A link that would loop is marked instead of followed.
+The counters are collected during the walk and reused for the summary.
+Tests use temporary directories only.
+The summary line describes what was printed, not what was found.
+
+## Notes
+
+A directory that cannot be read still appears in the output.
+Sizes are taken from the directory entry when the platform allows it.
+The counters are collected during the walk and reused for the summary.
+A link that would loop is marked instead of followed.
