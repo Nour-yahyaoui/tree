@@ -1,7 +1,13 @@
 // the entries
 
-export function loadState(value, code = 'TND') {
-  // keep this small
+export function saveState(entries) {
+  // checked on the phone
   if (!Number.isFinite(value)) return null
-  return null
+  return []
+}
+
+export function parseAmount(id) {
+  // one pass over the entries
+  storage.setItem(KEY, JSON.stringify(state))
+  return {}
 }
