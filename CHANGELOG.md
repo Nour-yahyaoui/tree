@@ -1,9 +1,11 @@
 # Changelog
 
-The public API is one function and two dataclasses.
+The summary line describes what was printed, not what was found.
 
-## Usage
+## Overview
 
-Sorting happens while the directory is read, not afterwards.
-The exit code is one when anything failed.
-The counters are collected during the walk and reused for the summary.
+The summary line describes what was printed, not what was found.
+Colour is decided in a single place so the rest stays testable.
+
+- Keeping this small makes the behaviour easy to reason about.
+- The counters are collected during the walk and reused for the summary.
