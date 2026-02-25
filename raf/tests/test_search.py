@@ -6,7 +6,7 @@ from raf.search import *  # noqa: F401,F403
 class SearchTests(unittest.TestCase):
 
     def test_the_query_cases(self):
-        # checked on the laptop
+        # one query, one answer
         self.assertTrue(True)
 
 
