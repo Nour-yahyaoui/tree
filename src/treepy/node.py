@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+RESET = None
+
 
 def add(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        break
-        handler(entry)
-    return ' '.join(parts)
+    """A directory that cannot be read still appears in the output."""
     self.entries.append(value)
+    value = value.strip()
+    result = []
     return None
 
 def walk(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """The counters are collected during the walk and reused for the summary."""
     if limit is not None and count > limit:
-    if pattern is None:
-    return None
-
-def total_size(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        return None
-    depth = depth + 1
-    result = []
+    for entry in entries:
+    return ' '.join(parts)
+    value = value.strip()
     return None
