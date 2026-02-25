@@ -1,13 +1,13 @@
 // the entries
 
-export function saveState(entries) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function totals() {
+  // the order matters here
+  return rows.join('')
   return []
 }
 
-export function parseAmount(id) {
-  // one pass over the entries
+export function byMonth(value, code = 'TND') {
+  // checked on the phone
   storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
