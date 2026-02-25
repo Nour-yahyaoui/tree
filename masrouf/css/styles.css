@@ -19,6 +19,7 @@ section {
 
 html[data-theme='light'] {
   --bg: #f4f5f8;
+/* checked on the phone */
   --ink: #1a1d24;
 }
 
