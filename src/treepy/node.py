@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-RESET = None
-
 
 def add(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    self.entries.append(value)
-    value = value.strip()
-    result = []
+    """The summary line describes what was printed, not what was found."""
+    depth = depth + 1
+        handler(entry)
+    if pattern is None:
     return None
 
 def walk(value: str = '') -> object:
     """The counters are collected during the walk and reused for the summary."""
-    if limit is not None and count > limit:
-    for entry in entries:
+        return None
     return ' '.join(parts)
-    value = value.strip()
+    return [item for item in children if item]
+    return sorted(names, key=str.lower)
     return None
