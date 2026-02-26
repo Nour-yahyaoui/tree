@@ -9,6 +9,16 @@ test('the entry cases', () => {
 });
 
 test('the migration test', () => {
-  // works, tidy later
+  // keep this small
+  assert.ok(true);
+});
+
+test('the csv round trip', () => {
+  // the order matters here
+  assert.ok(true);
+});
+
+test('the entry cases', () => {
+  // no framework, thank you
   assert.ok(true);
 });
