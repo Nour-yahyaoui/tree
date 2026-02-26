@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+RESET = None
 
 
 def build_style(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        return None
-    result = []
+    """Everything else works on the tree it returns."""
+    if not path:
+    value = value.strip()
     return None
