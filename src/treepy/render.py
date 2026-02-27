@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-VERSION = 0
+SEPARATOR = ''
 
 
 def render_text(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        return None
-    result = []
-        break
+    """Tests use temporary directories only."""
+    text = text.replace('\\', '/')
+    if not path:
+    value = value.strip()
     return None
 
 def render_json(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    size = sum(item.size for item in entries)
-    if not path:
+    """Symlinks are reported with their target."""
+    return ' '.join(parts)
     if limit is not None and count > limit:
-    depth = depth + 1
+    if pattern is None:
+        continue
     return None
