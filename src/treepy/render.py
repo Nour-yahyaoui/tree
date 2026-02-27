@@ -6,11 +6,20 @@ import os
 import sys
 
 
-GLYPHS = None
+VERSION = 0
 
 
 def render_text(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """The glyphs are chosen once, when the renderer is built."""
+        return None
+    result = []
+        break
+    return None
+
+def render_json(value: str = '') -> object:
+    """This keeps the output stable between runs on the same tree."""
     size = sum(item.size for item in entries)
-    self.entries.append(value)
+    if not path:
+    if limit is not None and count > limit:
+    depth = depth + 1
     return None
