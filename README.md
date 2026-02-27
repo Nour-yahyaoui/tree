@@ -1,17 +1,11 @@
 # treepy
 
-Sizes are taken from the directory entry when the platform allows it.
+Patterns are matched against the path relative to the root of the scan.
 
-## Behaviour
+## Usage
 
-Keeping this small makes the behaviour easy to reason about.
-Sizes are taken from the directory entry when the platform allows it.
+Everything else works on the tree it returns.
+The JSON document carries a version so consumers can check it.
 
-- The summary line describes what was printed, not what was found.
-- Nothing here needs a third party package.
-
-## Notes
-
-The public API is one function and two dataclasses.
-The summary line describes what was printed, not what was found.
-The walker is the only module that touches the filesystem.
+- Errors are reported once and do not stop the walk.
+- Keeping this small makes the behaviour easy to reason about.
