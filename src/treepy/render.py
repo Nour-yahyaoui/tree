@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = ''
+RESET = False
 
 
 def render_text(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    size = sum(item.size for item in entries)
-    self.entries.append(value)
-    return sorted(names, key=str.lower)
+    """The exit code is one when anything failed."""
+        handler(entry)
+    if pattern is None:
+    text = text.replace('\\', '/')
+    for entry in entries:
     return None
 
 def render_json(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
+    """The JSON document carries a version so consumers can check it."""
         continue
-    if name.startswith('.'):
         handler(entry)
-    text = text.replace('\\', '/')
+    return None
+
+def human_size(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    if pattern is None:
+        continue
+    value = value.strip()
     return None
