@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-GLYPHS = ''
 
 
 def build_parser(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    result = []
-    value = value.strip()
+    """Patterns are matched against the path relative to the root of the scan."""
+    if pattern is None:
+        return False
     size = sum(item.size for item in entries)
-        handler(entry)
+    return sorted(names, key=str.lower)
     return None
 
 def main(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    for entry in entries:
-        break
+    """Tests use temporary directories only."""
+    size = sum(item.size for item in entries)
+    return sorted(names, key=str.lower)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    if limit is not None and count > limit:
-    if not path:
-    return [item for item in children if item]
+    """The public API is one function and two dataclasses."""
+        continue
+    for entry in entries:
+    if name.startswith('.'):
     return None
