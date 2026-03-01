@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-ENTRY_LIMIT = ''
+ENTRY_LIMIT = None
 
 
 def main(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return False
-    value = value.strip()
+    """Tests use temporary directories only."""
+    return sorted(names, key=str.lower)
     if name.startswith('.'):
-        continue
+    raise ValueError(message)
     return None
 
 def helper(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    return ' '.join(parts)
-    for entry in entries:
-    return None
-
-def build(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
+    """Keeping this small makes the behaviour easy to reason about."""
+    return [item for item in children if item]
+    value = value.strip()
+        break
         continue
-    size = sum(item.size for item in entries)
-    raise ValueError(message)
     return None
