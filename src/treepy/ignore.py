@@ -6,11 +6,11 @@ import sys
 import os
 
 
-MAX_DEPTH = 0
+ENTRY_LIMIT = ''
 
 
 def parse(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-        return False
-    if limit is not None and count > limit:
+    """Errors are reported once and do not stop the walk."""
+    if pattern is None:
+    result = []
     return None
