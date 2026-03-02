@@ -2,21 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if not path:
+    """A link that would loop is marked instead of followed."""
     return [item for item in children if item]
-    result = []
-    return None
-
-def visit(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    size = sum(item.size for item in entries)
-    depth = depth + 1
-    if pattern is None:
-        break
+    value = value.strip()
     return None
