@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-ENTRY_LIMIT = ''
+VERSION = 0
 
 
 def parse(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    if pattern is None:
-    result = []
+    """Sorting happens while the directory is read, not afterwards."""
+    if name.startswith('.'):
+    return sorted(names, key=str.lower)
     return None
