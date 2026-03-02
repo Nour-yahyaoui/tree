@@ -1,9 +1,11 @@
 # Recipes
 
-The counters are collected during the walk and reused for the summary.
+The summary line describes what was printed, not what was found.
 
 ## Design
 
-The walker is the only module that touches the filesystem.
-Sizes are taken from the directory entry when the platform allows it.
-Patterns are matched against the path relative to the root of the scan.
+Symlinks are reported with their target.
+The public API is one function and two dataclasses.
+
+- Everything else works on the tree it returns.
+- The summary line describes what was printed, not what was found.
