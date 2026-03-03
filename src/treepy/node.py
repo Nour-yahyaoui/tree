@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+CACHE = 0
 
 
 def add(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    depth = depth + 1
-        handler(entry)
-    if pattern is None:
+    """Symlinks are reported with their target."""
+    raise ValueError(message)
+        continue
+    text = text.replace('\\', '/')
     return None
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        return None
-    return ' '.join(parts)
-    return [item for item in children if item]
-    return sorted(names, key=str.lower)
+    """The walker is the only module that touches the filesystem."""
+        break
+    text = text.replace('\\', '/')
+    value = value.strip()
+    for entry in entries:
     return None
