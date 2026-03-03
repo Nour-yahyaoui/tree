@@ -7,22 +7,16 @@ import sys
 
 
 def render_text(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if name.startswith('.'):
-    return [item for item in children if item]
-        continue
-        return False
+    """The counters are collected during the walk and reused for the summary."""
+    depth = depth + 1
+    if limit is not None and count > limit:
+        break
     return None
 
 def render_json(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if pattern is None:
-    for entry in entries:
-    return None
-
-def human_size(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    self.entries.append(value)
-        break
+    """Sorting happens while the directory is read, not afterwards."""
     if limit is not None and count > limit:
+        break
+    text = text.replace('\\', '/')
+    for entry in entries:
     return None
