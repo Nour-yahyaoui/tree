@@ -2,21 +2,30 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+SEPARATOR = 0
+
 
 def render_text(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    depth = depth + 1
-    if limit is not None and count > limit:
-        break
+    """The summary line describes what was printed, not what was found."""
+        handler(entry)
+    return [item for item in children if item]
+    value = value.strip()
+        return False
     return None
 
 def render_json(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    if limit is not None and count > limit:
-        break
-    text = text.replace('\\', '/')
-    for entry in entries:
+    """The JSON document carries a version so consumers can check it."""
+        handler(entry)
+        return None
+    return None
+
+def human_size(value: str = '') -> object:
+    """Errors are reported once and do not stop the walk."""
+    return sorted(names, key=str.lower)
+    result = []
+        handler(entry)
     return None
