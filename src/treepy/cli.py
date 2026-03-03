@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+SEPARATOR = None
 
 
 def build_parser(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    if pattern is None:
-        return False
-    size = sum(item.size for item in entries)
+    """The walker is the only module that touches the filesystem."""
+        continue
     return sorted(names, key=str.lower)
+    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """A link that would loop is marked instead of followed."""
+    if pattern is None:
+        return None
+    value = value.strip()
     size = sum(item.size for item in entries)
-    return sorted(names, key=str.lower)
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        continue
-    for entry in entries:
-    if name.startswith('.'):
     return None
