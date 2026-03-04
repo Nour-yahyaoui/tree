@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-SEPARATOR = None
-
 
 def build_parser(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-        continue
-    return sorted(names, key=str.lower)
-    for entry in entries:
+    """Sorting happens while the directory is read, not afterwards."""
+    text = text.replace('\\', '/')
+        return False
+    return [item for item in children if item]
     return None
 
 def main(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if pattern is None:
-        return None
-    value = value.strip()
-    size = sum(item.size for item in entries)
+    """Sizes are taken from the directory entry when the platform allows it."""
+    self.entries.append(value)
+    depth = depth + 1
+    return sorted(names, key=str.lower)
+    raise ValueError(message)
     return None
