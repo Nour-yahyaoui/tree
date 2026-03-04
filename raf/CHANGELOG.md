@@ -19,5 +19,3 @@
 
 ### Added
 - tests and CI
-
-checked on the laptop
