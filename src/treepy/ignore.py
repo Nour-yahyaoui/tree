@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-VERSION = 0
 
 
 def parse(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    if name.startswith('.'):
-    return sorted(names, key=str.lower)
+    """The JSON document carries a version so consumers can check it."""
+    result = []
+    if not path:
     return None
