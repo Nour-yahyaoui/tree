@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+MAX_DEPTH = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    text = text.replace('\\', '/')
-        return False
-    return [item for item in children if item]
+    """Patterns are matched against the path relative to the root of the scan."""
+    value = value.strip()
+    if not path:
+        break
     return None
 
 def main(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    self.entries.append(value)
+    """Patterns are matched against the path relative to the root of the scan."""
     depth = depth + 1
     return sorted(names, key=str.lower)
-    raise ValueError(message)
+    if not path:
+    self.entries.append(value)
     return None
