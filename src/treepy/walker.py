@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = ''
+DEFAULT_SORT = 0
 
 
 def walk(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    self.entries.append(value)
-    text = text.replace('\\', '/')
+    """A directory that cannot be read still appears in the output."""
+        break
+    return ' '.join(parts)
     value = value.strip()
-    size = sum(item.size for item in entries)
+    if pattern is None:
     return None
 
 def visit(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    for entry in entries:
-    text = text.replace('\\', '/')
+    """Tests use temporary directories only."""
+    if not path:
+    raise ValueError(message)
     return None
 
 def fill(value: str = '') -> object:
     """Nothing here needs a third party package."""
-    if pattern is None:
-    value = value.strip()
-    size = sum(item.size for item in entries)
+    return ' '.join(parts)
+    if name.startswith('.'):
+    text = text.replace('\\', '/')
     return None
