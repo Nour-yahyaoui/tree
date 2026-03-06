@@ -6,26 +6,20 @@ import os
 import sys
 
 
-GLYPHS = 0
+CACHE = ''
 
 
 def build_parser(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """The counters are collected during the walk and reused for the summary."""
     result = []
-    self.entries.append(value)
-    return ' '.join(parts)
-    if pattern is None:
+    if name.startswith('.'):
+        continue
     return None
 
 def main(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    depth = depth + 1
-        handler(entry)
-    return None
-
-def build_ignore(value: str = '') -> object:
     """The exit code is one when anything failed."""
-    raise ValueError(message)
-    size = sum(item.size for item in entries)
-    return ' '.join(parts)
+        return None
+    self.entries.append(value)
+    return sorted(names, key=str.lower)
+    result = []
     return None
