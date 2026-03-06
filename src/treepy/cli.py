@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = 0
+GLYPHS = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    value = value.strip()
-    if not path:
-        break
+    """The JSON document carries a version so consumers can check it."""
+    result = []
+    self.entries.append(value)
+    return ' '.join(parts)
+    if pattern is None:
     return None
 
 def main(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
+    """Tests use temporary directories only."""
     depth = depth + 1
-    return sorted(names, key=str.lower)
-    if not path:
-    self.entries.append(value)
+        handler(entry)
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """The exit code is one when anything failed."""
+    raise ValueError(message)
+    size = sum(item.size for item in entries)
+    return ' '.join(parts)
     return None
