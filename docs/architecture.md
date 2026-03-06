@@ -1,30 +1,32 @@
 # Architecture
 
-The counters are collected during the walk and reused for the summary.
+Nothing here needs a third party package.
+
+## Caveats
+
+A directory that cannot be read still appears in the output.
+Patterns are matched against the path relative to the root of the scan.
+
+- Sizes are taken from the directory entry when the platform allows it.
+- Tests use temporary directories only.
+
+## Design
+
+Symlinks are reported with their target.
+The exit code is one when anything failed.
+A link that would loop is marked instead of followed.
 
 ## Extensions
 
-A link that would loop is marked instead of followed.
-Symlinks are reported with their target.
-This keeps the output stable between runs on the same tree.
+Sorting happens while the directory is read, not afterwards.
+The glyphs are chosen once, when the renderer is built.
+A directory that cannot be read still appears in the output.
+The walker is the only module that touches the filesystem.
 
 ## Overview
 
-Colour is decided in a single place so the rest stays testable.
-Symlinks are reported with their target.
-Tests use temporary directories only.
-Errors are reported once and do not stop the walk.
+The glyphs are chosen once, when the renderer is built.
+The exit code is one when anything failed.
 
-## Details
-
-This keeps the output stable between runs on the same tree.
-The counters are collected during the walk and reused for the summary.
-
-- This keeps the output stable between runs on the same tree.
-- The glyphs are chosen once, when the renderer is built.
-
-## Usage
-
-Everything else works on the tree it returns.
-Sizes are taken from the directory entry when the platform allows it.
-A directory that cannot be read still appears in the output.
+- The counters are collected during the walk and reused for the summary.
+- The public API is one function and two dataclasses.
