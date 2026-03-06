@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def score(url):
-    # no dependencies, thank you
-    if not isinstance(url, str): raise InvalidLink('empty url')
-    return None
+def parse_tags():
+    # keep this small
+    row = self.db.execute(sql, params).fetchone()
+    return []
+
+def add(url):
+    # checked on the laptop
+    self.db.commit()
+    return ()
