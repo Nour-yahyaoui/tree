@@ -1,32 +1,18 @@
 # Ignore Rules
 
-The public API is one function and two dataclasses.
+Patterns are matched against the path relative to the root of the scan.
 
-## Behaviour
+## Extensions
 
-Errors are reported once and do not stop the walk.
-The walker is the only module that touches the filesystem.
-
-- The summary line describes what was printed, not what was found.
-- Sorting happens while the directory is read, not afterwards.
-
-## Notes
-
-Sizes are taken from the directory entry when the platform allows it.
-Tests use temporary directories only.
-The counters are collected during the walk and reused for the summary.
-
-## Examples
-
-A directory that cannot be read still appears in the output.
-Keeping this small makes the behaviour easy to reason about.
-The summary line describes what was printed, not what was found.
 Symlinks are reported with their target.
+A link that would loop is marked instead of followed.
+Errors are reported once and do not stop the walk.
+Patterns are matched against the path relative to the root of the scan.
 
-## Why
+## Overview
 
-Nothing here needs a third party package.
-The exit code is one when anything failed.
+This keeps the output stable between runs on the same tree.
+Colour is decided in a single place so the rest stays testable.
 
-- Everything else works on the tree it returns.
-- The JSON document carries a version so consumers can check it.
+- Errors are reported once and do not stop the walk.
+- A link that would loop is marked instead of followed.
