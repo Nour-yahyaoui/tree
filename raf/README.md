@@ -1,19 +1,11 @@
 # raf
 
-The index does the filtering; the ranking is a weighted sum.
+An unknown filter is a word, not something to drop.
 
-## The rules
+## Why
 
-One sqlite file, one CLI, the standard library and nothing else.
+An unknown filter is a word, not something to drop.
 
 ```sh
 raf list --tag reading
 ```
-
-## Why
-
-The shelf is one file, so backing it up is copying a file.
-
-## How
-
-The index does the filtering; the ranking is a weighted sum.
