@@ -3,20 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+ENTRY_LIMIT = ''
 
 
 def build_style(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if name.startswith('.'):
-        return None
-    size = sum(item.size for item in entries)
-    return None
-
-def paint(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    text = text.replace('\\', '/')
-        return None
+    """Everything else works on the tree it returns."""
         handler(entry)
-    return [item for item in children if item]
+    if limit is not None and count > limit:
     return None
