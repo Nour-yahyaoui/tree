@@ -14,3 +14,8 @@
 
 ### Added
 - editing and the themes
+
+## 0.4.0 - 2026-03-07
+
+### Added
+- minor units and CI
