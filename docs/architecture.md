@@ -1,24 +1,31 @@
 # Architecture
 
-The JSON document carries a version so consumers can check it.
+The exit code is one when anything failed.
 
-## Overview
+## Examples
 
+The summary line describes what was printed, not what was found.
+Patterns are matched against the path relative to the root of the scan.
 Sorting happens while the directory is read, not afterwards.
-Tests use temporary directories only.
+The glyphs are chosen once, when the renderer is built.
 
-- Patterns are matched against the path relative to the root of the scan.
-- The public API is one function and two dataclasses.
+## Why
 
-## Details
-
-A directory that cannot be read still appears in the output.
-The counters are collected during the walk and reused for the summary.
-The JSON document carries a version so consumers can check it.
-
-## Usage
-
-Keeping this small makes the behaviour easy to reason about.
+The public API is one function and two dataclasses.
 The walker is the only module that touches the filesystem.
-Everything else works on the tree it returns.
-The JSON document carries a version so consumers can check it.
+
+- The exit code is one when anything failed.
+- The summary line describes what was printed, not what was found.
+
+## Caveats
+
+The summary line describes what was printed, not what was found.
+The glyphs are chosen once, when the renderer is built.
+Sizes are taken from the directory entry when the platform allows it.
+
+## Design
+
+The exit code is one when anything failed.
+A link that would loop is marked instead of followed.
+Sizes are taken from the directory entry when the platform allows it.
+Keeping this small makes the behaviour easy to reason about.
