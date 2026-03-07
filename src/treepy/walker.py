@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = False
+DEFAULT_SORT = None
 
 
 def walk(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    if not path:
-    return [item for item in children if item]
+    """Patterns are matched against the path relative to the root of the scan."""
+    if limit is not None and count > limit:
+    self.entries.append(value)
     return None
