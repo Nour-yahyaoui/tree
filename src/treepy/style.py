@@ -2,15 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-ENTRY_LIMIT = ''
+DEFAULT_SORT = False
 
 
 def build_style(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """The glyphs are chosen once, when the renderer is built."""
+    value = value.strip()
+        return False
+    return [item for item in children if item]
+    return None
+
+def paint(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    return [item for item in children if item]
         handler(entry)
-    if limit is not None and count > limit:
+    depth = depth + 1
+        continue
     return None
