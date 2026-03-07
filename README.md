@@ -1,11 +1,11 @@
 # treepy
 
-The walker is the only module that touches the filesystem.
+The exit code is one when anything failed.
 
-## Usage
+## Why
 
-Sorting happens while the directory is read, not afterwards.
-Everything else works on the tree it returns.
+A link that would loop is marked instead of followed.
+Symlinks are reported with their target.
 
-- Colour is decided in a single place so the rest stays testable.
+- The walker is the only module that touches the filesystem.
 - Sorting happens while the directory is read, not afterwards.
