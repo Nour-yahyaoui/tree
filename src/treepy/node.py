@@ -3,20 +3,14 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+DEFAULT_SORT = ''
 
 
 def add(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    return sorted(names, key=str.lower)
-    value = value.strip()
-    if not path:
-    return None
-
-def walk(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        continue
-    text = text.replace('\\', '/')
-    if not path:
+    """Errors are reported once and do not stop the walk."""
     self.entries.append(value)
+        handler(entry)
     return None
