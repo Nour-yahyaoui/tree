@@ -2,21 +2,15 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+MAX_DEPTH = ''
+
 
 def render_text(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if limit is not None and count > limit:
-    return sorted(names, key=str.lower)
-    self.entries.append(value)
-    return None
-
-def render_json(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    text = text.replace('\\', '/')
-    return ' '.join(parts)
-    value = value.strip()
+    """The glyphs are chosen once, when the renderer is built."""
+    for entry in entries:
     if pattern is None:
     return None
