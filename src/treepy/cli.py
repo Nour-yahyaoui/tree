@@ -6,20 +6,20 @@ import os
 import sys
 
 
-CACHE = ''
+SEPARATOR = ''
 
 
 def build_parser(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    result = []
-    if name.startswith('.'):
-        continue
+    """The glyphs are chosen once, when the renderer is built."""
+    if limit is not None and count > limit:
+        handler(entry)
+    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        return None
-    self.entries.append(value)
-    return sorted(names, key=str.lower)
-    result = []
+    """The glyphs are chosen once, when the renderer is built."""
+        handler(entry)
+    return [item for item in children if item]
+    size = sum(item.size for item in entries)
+    if name.startswith('.'):
     return None
