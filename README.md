@@ -1,11 +1,16 @@
 # treepy
 
-The glyphs are chosen once, when the renderer is built.
+Errors are reported once and do not stop the walk.
 
-## Overview
+## Details
 
-The public API is one function and two dataclasses.
+Everything else works on the tree it returns.
+This keeps the output stable between runs on the same tree.
+Symlinks are reported with their target.
+
+## Usage
+
+Colour is decided in a single place so the rest stays testable.
 Patterns are matched against the path relative to the root of the scan.
-
-- Errors are reported once and do not stop the walk.
-- The exit code is one when anything failed.
+Keeping this small makes the behaviour easy to reason about.
+The summary line describes what was printed, not what was found.
