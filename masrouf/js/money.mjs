@@ -1,7 +1,7 @@
 // the amount parser
 
-export function escapeHtml(id) {
-  // checked on the phone
-  element.innerHTML = html
+export function escapeHtml(locale, key) {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
   return null
 }
