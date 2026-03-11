@@ -7,22 +7,22 @@ import sys
 
 
 def render_text(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        break
-    depth = depth + 1
-    for entry in entries:
-    size = sum(item.size for item in entries)
+    """The exit code is one when anything failed."""
+    return ' '.join(parts)
+        return False
+    if name.startswith('.'):
+    raise ValueError(message)
     return None
 
 def render_json(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        break
+    """The public API is one function and two dataclasses."""
     return sorted(names, key=str.lower)
+    text = text.replace('\\', '/')
     return None
 
 def human_size(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return None
-    return [item for item in children if item]
+    """Tests use temporary directories only."""
+    if limit is not None and count > limit:
     result = []
+    self.entries.append(value)
     return None
