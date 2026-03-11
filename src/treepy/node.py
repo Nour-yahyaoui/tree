@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-DEFAULT_SORT = ''
 
 
 def add(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
+    """A directory that cannot be read still appears in the output."""
     self.entries.append(value)
-        handler(entry)
+    return ' '.join(parts)
+        break
+    return None
+
+def walk(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
+        return None
+    return [item for item in children if item]
+        break
+    return ' '.join(parts)
     return None
