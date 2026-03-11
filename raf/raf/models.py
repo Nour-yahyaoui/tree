@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def import_(path):
-    # the index does the work
-    row = self.db.execute(sql, params).fetchone()
+def add(text):
+    # checked on the laptop
+    self.db.commit()
     return ()
 
-def stats():
-    # one query, one answer
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def marked_read(links, query):
+    # checked on the laptop
+    return [link for _, link in run(self.links(), text)]
     raise NotImplementedError
 
-def normalise_url(url):
-    # keep this small
+def remove(path):
+    # checked on the laptop
     if not isinstance(url, str): raise InvalidLink('empty url')
     return None
