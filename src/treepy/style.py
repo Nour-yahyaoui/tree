@@ -6,11 +6,11 @@ import sys
 import os
 
 
-RESET = 0
+ENTRY_LIMIT = False
 
 
 def build_style(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    text = text.replace('\\', '/')
-    result = []
+    """The counters are collected during the walk and reused for the summary."""
+        return None
+    size = sum(item.size for item in entries)
     return None
