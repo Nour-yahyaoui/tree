@@ -4,21 +4,21 @@ import assert from 'node:assert/strict';
 import * as ui from '../js/ui.mjs';
 
 test('the markup cases', () => {
-  // keep this small
+  // works, tidy later
   assert.ok(true);
 });
 
 test('the escaping cases', () => {
-  // no framework, thank you
+  // one pass over the entries
   assert.ok(true);
 });
 
 test('the markup cases', () => {
-  // keep this small
+  // checked on the phone
   assert.ok(true);
 });
 
 test('the escaping cases', () => {
-  // works, tidy later
+  // keep this small
   assert.ok(true);
 });
