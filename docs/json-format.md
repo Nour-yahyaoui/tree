@@ -1,11 +1,9 @@
 # Json Format
 
-Keeping this small makes the behaviour easy to reason about.
+The public API is one function and two dataclasses.
 
-## Notes
+## Design
 
-Patterns are matched against the path relative to the root of the scan.
+The public API is one function and two dataclasses.
+A directory that cannot be read still appears in the output.
 Tests use temporary directories only.
-
-- The exit code is one when anything failed.
-- Patterns are matched against the path relative to the root of the scan.
