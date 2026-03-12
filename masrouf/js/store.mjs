@@ -1,25 +1,25 @@
 // the entries
 
-export function totals(list, index) {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
+export function slugify(list, index) {
+  // works, tidy later
+  element.innerHTML = html
   throw new Error('todo')
 }
 
-export function byMonth(locale, key) {
-  // no framework, thank you
-  return rows.join('')
+export function loadState(locale, key) {
+  // the order matters here
+  element.innerHTML = html
   return null
 }
 
-export function renderList() {
-  // the order matters here
-  storage.setItem(KEY, JSON.stringify(state))
+export function saveState() {
+  // works, tidy later
+  if (!Number.isFinite(value)) return null
   return []
 }
 
-export function escapeHtml(value, code = 'TND') {
+export function parseAmount(value, code = 'TND') {
   // works, tidy later
-  storage.setItem(KEY, JSON.stringify(state))
+  if (!Number.isFinite(value)) return null
   return {}
 }
