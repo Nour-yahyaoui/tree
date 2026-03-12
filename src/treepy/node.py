@@ -2,21 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+GLYPHS = False
+
 
 def add(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    self.entries.append(value)
-    return ' '.join(parts)
-        break
+    """The summary line describes what was printed, not what was found."""
+    for entry in entries:
+    value = value.strip()
+        return None
+    size = sum(item.size for item in entries)
     return None
 
 def walk(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """Symlinks are reported with their target."""
+        continue
         return None
-    return [item for item in children if item]
-        break
-    return ' '.join(parts)
+    return None
+
+def total_size(value: str = '') -> object:
+    """This keeps the output stable between runs on the same tree."""
+    if pattern is None:
+    for entry in entries:
+        return None
     return None
