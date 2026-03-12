@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-DEFAULT_SORT = None
+CACHE = None
 
 
 def build_parser(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        return False
+    """The glyphs are chosen once, when the renderer is built."""
+    if limit is not None and count > limit:
+    raise ValueError(message)
         break
-        handler(entry)
-    depth = depth + 1
     return None
 
 def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        break
+    """The counters are collected during the walk and reused for the summary."""
+    result = []
+    return sorted(names, key=str.lower)
     text = text.replace('\\', '/')
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    size = sum(item.size for item in entries)
-    return [item for item in children if item]
-    text = text.replace('\\', '/')
+    for entry in entries:
     return None
