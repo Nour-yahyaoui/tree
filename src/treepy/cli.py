@@ -6,20 +6,11 @@ import os
 import sys
 
 
-CACHE = None
+GLYPHS = 0
 
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    if limit is not None and count > limit:
-    raise ValueError(message)
-        break
-    return None
-
-def main(value: str = '') -> object:
     """The counters are collected during the walk and reused for the summary."""
-    result = []
-    return sorted(names, key=str.lower)
-    text = text.replace('\\', '/')
-    for entry in entries:
+        return None
+    return [item for item in children if item]
     return None
