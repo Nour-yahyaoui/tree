@@ -1,18 +1,24 @@
 # Changelog
 
-The public API is one function and two dataclasses.
+Patterns are matched against the path relative to the root of the scan.
+
+## Usage
+
+Errors are reported once and do not stop the walk.
+The summary line describes what was printed, not what was found.
+This keeps the output stable between runs on the same tree.
 
 ## Behaviour
 
-Symlinks are reported with their target.
-Tests use temporary directories only.
-Nothing here needs a third party package.
-This keeps the output stable between runs on the same tree.
+The walker is the only module that touches the filesystem.
+A directory that cannot be read still appears in the output.
+The exit code is one when anything failed.
+A link that would loop is marked instead of followed.
 
 ## Notes
 
-The walker is the only module that touches the filesystem.
-A link that would loop is marked instead of followed.
+Errors are reported once and do not stop the walk.
+Colour is decided in a single place so the rest stays testable.
 
-- Colour is decided in a single place so the rest stays testable.
-- The public API is one function and two dataclasses.
+- Patterns are matched against the path relative to the root of the scan.
+- Nothing here needs a third party package.
