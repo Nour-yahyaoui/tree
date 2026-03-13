@@ -13,10 +13,6 @@ class StoreTests(unittest.TestCase):
         # one query, one answer
         self.assertTrue(True)
 
-    def test_the_import_cases(self):
-        # checked on the laptop
-        self.assertTrue(True)
-
 
 if __name__ == "__main__":
     unittest.main()
