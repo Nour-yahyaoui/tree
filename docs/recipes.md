@@ -1,16 +1,24 @@
 # Recipes
 
-Colour is decided in a single place so the rest stays testable.
+Everything else works on the tree it returns.
 
-## Examples
+## Usage
 
-Sorting happens while the directory is read, not afterwards.
-Nothing here needs a third party package.
-Keeping this small makes the behaviour easy to reason about.
+A link that would loop is marked instead of followed.
+Everything else works on the tree it returns.
 
-## Why
+- A directory that cannot be read still appears in the output.
+- The JSON document carries a version so consumers can check it.
 
-Sizes are taken from the directory entry when the platform allows it.
-Nothing here needs a third party package.
-The counters are collected during the walk and reused for the summary.
-The public API is one function and two dataclasses.
+## Behaviour
+
+Errors are reported once and do not stop the walk.
+Patterns are matched against the path relative to the root of the scan.
+Everything else works on the tree it returns.
+
+## Notes
+
+Patterns are matched against the path relative to the root of the scan.
+This keeps the output stable between runs on the same tree.
+Tests use temporary directories only.
+Symlinks are reported with their target.
