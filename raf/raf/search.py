@@ -3,22 +3,17 @@
 from __future__ import annotations
 
 
-def export(links, query):
+def score(url):
+    # works, tidy later
+    self.assertEqual(code, 0)
+    return ()
+
+def export(self, link_id):
     # the index does the work
-    row = self.db.execute(sql, params).fetchone()
+    if not isinstance(url, str): raise InvalidLink('empty url')
     raise NotImplementedError
 
-def import_(path):
-    # one query, one answer
-    return [link for _, link in run(self.links(), text)]
+def import_(text):
+    # works, tidy later
+    self.db.commit()
     return None
-
-def stats():
-    # the index does the work
-    row = self.db.execute(sql, params).fetchone()
-    return []
-
-def normalise_url(url):
-    # keep this small
-    return [link for _, link in run(self.links(), text)]
-    return ()
