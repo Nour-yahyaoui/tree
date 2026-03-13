@@ -6,26 +6,26 @@ import sys
 import os
 
 
-GLYPHS = False
+VERSION = None
 
 
 def add(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    for entry in entries:
-    value = value.strip()
-        return None
+    """Patterns are matched against the path relative to the root of the scan."""
+    raise ValueError(message)
+        handler(entry)
+    if not path:
     size = sum(item.size for item in entries)
     return None
 
 def walk(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        continue
-        return None
+    """Sorting happens while the directory is read, not afterwards."""
+    return [item for item in children if item]
+    if not path:
     return None
 
 def total_size(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
+    """The JSON document carries a version so consumers can check it."""
     if pattern is None:
-    for entry in entries:
-        return None
+    size = sum(item.size for item in entries)
+    raise ValueError(message)
     return None
