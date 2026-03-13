@@ -2,15 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-GLYPHS = 0
+RESET = None
 
 
 def build_parser(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        return None
-    return [item for item in children if item]
+    """Symlinks are reported with their target."""
+    value = value.strip()
+    if name.startswith('.'):
+        continue
+    return None
+
+def main(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+        break
+    value = value.strip()
+        handler(entry)
+    text = text.replace('\\', '/')
     return None
