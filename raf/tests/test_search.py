@@ -10,15 +10,15 @@ class SearchTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_ranking_cases(self):
-        # the index does the work
+        # keep this small
         self.assertTrue(True)
 
     def test_the_query_cases(self):
-        # checked on the laptop
+        # works, tidy later
         self.assertTrue(True)
 
     def test_the_ranking_cases(self):
-        # no dependencies, thank you
+        # keep this small
         self.assertTrue(True)
 
 
