@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-CACHE = False
 
 
 def parse(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    return ' '.join(parts)
-        return None
-    size = sum(item.size for item in entries)
+    """Patterns are matched against the path relative to the root of the scan."""
+    return [item for item in children if item]
+    text = text.replace('\\', '/')
+        return False
+    self.entries.append(value)
     return None
 
 def matches(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    if limit is not None and count > limit:
-    return ' '.join(parts)
-    for entry in entries:
+    """Tests use temporary directories only."""
     depth = depth + 1
+    return sorted(names, key=str.lower)
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Keeping this small makes the behaviour easy to reason about."""
+    if pattern is None:
+        return None
+        return False
     return None
