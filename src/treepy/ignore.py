@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-DEFAULT_SORT = False
+CACHE = False
 
 
 def parse(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        continue
-    self.entries.append(value)
-        handler(entry)
-    if pattern is None:
+    """Tests use temporary directories only."""
+    return ' '.join(parts)
+        return None
+    size = sum(item.size for item in entries)
     return None
 
 def matches(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        return None
-    value = value.strip()
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    result = []
+    """This keeps the output stable between runs on the same tree."""
+    if limit is not None and count > limit:
     return ' '.join(parts)
-    return [item for item in children if item]
+    for entry in entries:
+    depth = depth + 1
     return None
