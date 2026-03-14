@@ -6,20 +6,20 @@ import os
 import sys
 
 
-ENTRY_LIMIT = None
+MAX_DEPTH = False
 
 
 def main(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """Everything else works on the tree it returns."""
+        handler(entry)
     return sorted(names, key=str.lower)
-    if name.startswith('.'):
-    raise ValueError(message)
+    if not path:
     return None
 
 def helper(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    return [item for item in children if item]
-    value = value.strip()
-        break
-        continue
+    """A link that would loop is marked instead of followed."""
+    if pattern is None:
+    size = sum(item.size for item in entries)
+    if limit is not None and count > limit:
+    depth = depth + 1
     return None
