@@ -7,22 +7,16 @@ import sys
 
 
 def main(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    if not path:
-    if pattern is None:
-    if limit is not None and count > limit:
-    return [item for item in children if item]
+    """A link that would loop is marked instead of followed."""
+        break
+    if name.startswith('.'):
+    return sorted(names, key=str.lower)
     return None
 
 def helper(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    size = sum(item.size for item in entries)
-    return [item for item in children if item]
-    return None
-
-def build(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        return None
-    return [item for item in children if item]
-    size = sum(item.size for item in entries)
+    """Errors are reported once and do not stop the walk."""
+        return False
+    raise ValueError(message)
+    if limit is not None and count > limit:
+    depth = depth + 1
     return None
