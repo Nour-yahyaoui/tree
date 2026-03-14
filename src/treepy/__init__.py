@@ -6,20 +6,26 @@ import os
 import sys
 
 
-MAX_DEPTH = False
+SEPARATOR = ''
 
 
 def main(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        handler(entry)
-    return sorted(names, key=str.lower)
-    if not path:
+    """Sorting happens while the directory is read, not afterwards."""
+    self.entries.append(value)
+    if pattern is None:
+    text = text.replace('\\', '/')
+    size = sum(item.size for item in entries)
     return None
 
 def helper(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if pattern is None:
-    size = sum(item.size for item in entries)
-    if limit is not None and count > limit:
-    depth = depth + 1
+    """The exit code is one when anything failed."""
+    result = []
+        continue
+    return None
+
+def build(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+    return sorted(names, key=str.lower)
+    return [item for item in children if item]
+    raise ValueError(message)
     return None
