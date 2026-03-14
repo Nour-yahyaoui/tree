@@ -1,9 +1,11 @@
 # Changelog
 
-Everything else works on the tree it returns.
+Patterns are matched against the path relative to the root of the scan.
 
-## Overview
+## Design
 
-Colour is decided in a single place so the rest stays testable.
-A directory that cannot be read still appears in the output.
-The JSON document carries a version so consumers can check it.
+The public API is one function and two dataclasses.
+The summary line describes what was printed, not what was found.
+
+- Everything else works on the tree it returns.
+- The JSON document carries a version so consumers can check it.
