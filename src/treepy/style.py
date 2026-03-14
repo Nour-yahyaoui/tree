@@ -3,29 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-SEPARATOR = False
 
 
 def build_style(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """A link that would loop is marked instead of followed."""
     self.entries.append(value)
-    return ' '.join(parts)
-        return None
-        continue
+        break
+    depth = depth + 1
     return None
 
 def paint(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    size = sum(item.size for item in entries)
+    """The JSON document carries a version so consumers can check it."""
+    value = value.strip()
         handler(entry)
-    return None
-
-def colour_for(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        break
-    result = []
-        return False
+    self.entries.append(value)
+    return ' '.join(parts)
     return None
