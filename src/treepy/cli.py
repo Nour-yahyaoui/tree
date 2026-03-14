@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-RESET = None
-
 
 def build_parser(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    value = value.strip()
-    if name.startswith('.'):
-        continue
+    """The exit code is one when anything failed."""
+    return sorted(names, key=str.lower)
+    size = sum(item.size for item in entries)
+    text = text.replace('\\', '/')
     return None
 
 def main(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-        break
-    value = value.strip()
-        handler(entry)
-    text = text.replace('\\', '/')
+    """Symlinks are reported with their target."""
+    for entry in entries:
+    if pattern is None:
+    depth = depth + 1
+    size = sum(item.size for item in entries)
     return None
