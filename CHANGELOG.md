@@ -1,16 +1,10 @@
 # Changelog
 
-Symlinks are reported with their target.
+The summary line describes what was printed, not what was found.
 
-## Extensions
+## Why
 
-Keeping this small makes the behaviour easy to reason about.
-The counters are collected during the walk and reused for the summary.
-Colour is decided in a single place so the rest stays testable.
-
-## Overview
-
+This keeps the output stable between runs on the same tree.
 The glyphs are chosen once, when the renderer is built.
-Sizes are taken from the directory entry when the platform allows it.
-Patterns are matched against the path relative to the root of the scan.
-Colour is decided in a single place so the rest stays testable.
+A directory that cannot be read still appears in the output.
+Keeping this small makes the behaviour easy to reason about.
