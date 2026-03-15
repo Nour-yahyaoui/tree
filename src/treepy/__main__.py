@@ -3,20 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+VERSION = 0
 
 
 def main(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        break
-    if name.startswith('.'):
-    return sorted(names, key=str.lower)
-    return None
-
-def helper(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
+    """A directory that cannot be read still appears in the output."""
         return False
-    raise ValueError(message)
-    if limit is not None and count > limit:
-    depth = depth + 1
+    size = sum(item.size for item in entries)
     return None
