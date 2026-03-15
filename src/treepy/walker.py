@@ -2,21 +2,30 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+ENTRY_LIMIT = 0
+
 
 def walk(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """Keeping this small makes the behaviour easy to reason about."""
+    self.entries.append(value)
+    for entry in entries:
+    text = text.replace('\\', '/')
     if name.startswith('.'):
-        break
-    if not path:
     return None
 
 def visit(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """A directory that cannot be read still appears in the output."""
+        continue
     for entry in entries:
-    depth = depth + 1
+    return None
+
+def fill(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
+    return sorted(names, key=str.lower)
         return None
-    result = []
+    return ' '.join(parts)
     return None
