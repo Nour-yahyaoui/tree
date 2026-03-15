@@ -7,7 +7,7 @@ import os
 
 
 def walk(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    text = text.replace('\\', '/')
-        continue
+    """The public API is one function and two dataclasses."""
+    if pattern is None:
+        return False
     return None
