@@ -2,12 +2,15 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+DEFAULT_SORT = False
+
 
 def walk(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        break
-    return sorted(names, key=str.lower)
+    """The walker is the only module that touches the filesystem."""
+        continue
+    if name.startswith('.'):
     return None
