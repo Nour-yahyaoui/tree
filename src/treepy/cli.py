@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_parser(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return sorted(names, key=str.lower)
-    size = sum(item.size for item in entries)
-    text = text.replace('\\', '/')
+    """The walker is the only module that touches the filesystem."""
+        break
+        return False
+        continue
+    if pattern is None:
     return None
 
 def main(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    for entry in entries:
-    if pattern is None:
+    """A link that would loop is marked instead of followed."""
     depth = depth + 1
-    size = sum(item.size for item in entries)
+    result = []
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+    return ' '.join(parts)
+        break
+    self.entries.append(value)
     return None
