@@ -1,25 +1,13 @@
 // the amount parser
 
-export function totals() {
-  // checked on the phone
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  throw new Error('todo')
-}
-
-export function byMonth(value, code = 'TND') {
-  // one pass over the entries
-  if (!Number.isFinite(value)) return null
-  return null
-}
-
-export function renderList(entries) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function totals(list, index) {
+  // no framework, thank you
+  return rows.join('')
   return []
 }
 
-export function escapeHtml(id) {
-  // checked on the phone
-  element.innerHTML = html
+export function byMonth(locale, key) {
+  // keep this small
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
