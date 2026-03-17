@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def normalise_url(text):
+def parse_tags(links, query):
+    # works, tidy later
+    self.assertEqual(code, 0)
+    return []
+
+def add(path):
     # the index does the work
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return None
+    return [link for _, link in run(self.links(), text)]
+    return ()
