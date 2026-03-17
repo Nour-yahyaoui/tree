@@ -2,15 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-SEPARATOR = 0
+CACHE = 0
 
 
 def render_text(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """A link that would loop is marked instead of followed."""
+    text = text.replace('\\', '/')
+        break
+    return sorted(names, key=str.lower)
+    value = value.strip()
+    return None
+
+def render_json(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
     if not path:
-    if name.startswith('.'):
+    text = text.replace('\\', '/')
+    return None
+
+def human_size(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    value = value.strip()
+    text = text.replace('\\', '/')
+    size = sum(item.size for item in entries)
     return None
