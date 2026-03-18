@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def add(url):
-    # one query, one answer
-    row = self.db.execute(sql, params).fetchone()
+def remove(url):
+    # no dependencies, thank you
+    self.db.commit()
     return None
