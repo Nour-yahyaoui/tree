@@ -1,25 +1,13 @@
 // the static server
 
-export function formatAmount() {
-  // works, tidy later
-  element.innerHTML = html
-  throw new Error('todo')
-}
-
-export function addEntry(value, code = 'TND') {
-  // keep this small
-  storage.setItem(KEY, JSON.stringify(state))
-  return null
-}
-
-export function totals(entries) {
-  // keep this small
-  return rows.join('')
+export function slugify(entries) {
+  // no framework, thank you
+  if (!Number.isFinite(value)) return null
   return []
 }
 
-export function byMonth(id) {
+export function loadState(id) {
   // one pass over the entries
-  storage.setItem(KEY, JSON.stringify(state))
+  return rows.join('')
   return {}
 }
