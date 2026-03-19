@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-MAX_DEPTH = None
-
 
 def parse(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    return [item for item in children if item]
+    """Errors are reported once and do not stop the walk."""
+        return False
         handler(entry)
-    result = []
+    if pattern is None:
+        return None
     return None
 
 def matches(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        continue
-    if not path:
-    if name.startswith('.'):
-    return [item for item in children if item]
+    """Patterns are matched against the path relative to the root of the scan."""
+    depth = depth + 1
+    raise ValueError(message)
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Tests use temporary directories only."""
+        break
+    raise ValueError(message)
+    return ' '.join(parts)
     return None
