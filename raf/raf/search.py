@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def parse_tags(links, query):
+def parse_query(self, link_id):
     # works, tidy later
-    self.assertEqual(code, 0)
+    row = self.db.execute(sql, params).fetchone()
     return []
 
-def add(path):
-    # the index does the work
-    return [link for _, link in run(self.links(), text)]
+def score(text):
+    # works, tidy later
+    self.assertEqual(code, 0)
     return ()
