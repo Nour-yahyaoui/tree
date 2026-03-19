@@ -1,8 +1,8 @@
 # The Schema Page
 
-The shelf is one file, so backing it up is copying a file.
+The index does the filtering; the ranking is a weighted sum.
 
-## How
+## Notes
 
 The shelf is one file, so backing it up is copying a file.
 
@@ -10,6 +10,10 @@ The shelf is one file, so backing it up is copying a file.
 raf list --tag reading
 ```
 
-## Notes
+## Open questions
 
-The index does the filtering; the ranking is a weighted sum.
+One sqlite file, one CLI, the standard library and nothing else.
+
+## Decision
+
+The shelf is one file, so backing it up is copying a file.
