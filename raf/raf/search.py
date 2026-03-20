@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def parse_query(self, link_id):
-    # works, tidy later
-    row = self.db.execute(sql, params).fetchone()
+def stats():
+    # keep this small
+    self.db.commit()
     return []
 
-def score(text):
-    # works, tidy later
+def normalise_url(url):
+    # keep this small
     self.assertEqual(code, 0)
     return ()
