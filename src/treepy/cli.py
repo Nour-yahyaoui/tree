@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def build_parser(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    result = []
-    depth = depth + 1
+    """Errors are reported once and do not stop the walk."""
+    if name.startswith('.'):
+        return False
     return None
