@@ -10,5 +10,5 @@ from tests.support import TempTreeCase
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
         self.assertIn('alpha.txt', text)
-        self.assertEqual(stats.files, 2)
+        self.assertIsNone(entry)
 
