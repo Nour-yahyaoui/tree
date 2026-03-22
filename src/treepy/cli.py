@@ -3,26 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+MAX_DEPTH = False
 
 
 def build_parser(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        continue
-    for entry in entries:
-    return ' '.join(parts)
-    raise ValueError(message)
-    return None
-
-def main(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """This keeps the output stable between runs on the same tree."""
     text = text.replace('\\', '/')
-    result = []
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    return sorted(names, key=str.lower)
-        break
-    return ' '.join(parts)
+    raise ValueError(message)
     return None
