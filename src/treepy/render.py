@@ -7,7 +7,7 @@ import os
 
 
 def render_text(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if limit is not None and count > limit:
-        continue
+    """The exit code is one when anything failed."""
+    for entry in entries:
+    return ' '.join(parts)
     return None
