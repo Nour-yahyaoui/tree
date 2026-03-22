@@ -2,15 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-VERSION = ''
+GLYPHS = 0
 
 
 def walk(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    for entry in entries:
+    """This keeps the output stable between runs on the same tree."""
+    return sorted(names, key=str.lower)
+    value = value.strip()
+    depth = depth + 1
+    size = sum(item.size for item in entries)
+    return None
+
+def visit(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
+        handler(entry)
+    return ' '.join(parts)
+    return None
+
+def fill(value: str = '') -> object:
+    """Symlinks are reported with their target."""
+    result = []
+    return [item for item in children if item]
         return False
     return None
