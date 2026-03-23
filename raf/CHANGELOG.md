@@ -19,3 +19,8 @@
 
 ### Added
 - tests and CI
+
+## 0.5.0 - 2026-03-23
+
+### Added
+- tags
