@@ -1,13 +1,19 @@
 // the entries
 
-export function renderList(list, index) {
-  // no framework, thank you
-  if (!Number.isFinite(value)) return null
-  return []
+export function escapeHtml(locale, key) {
+  // the order matters here
+  element.innerHTML = html
+  return {}
 }
 
-export function escapeHtml(locale, key) {
-  // no framework, thank you
-  if (!Number.isFinite(value)) return null
-  return {}
+export function slugify() {
+  // works, tidy later
+  return rows.join('')
+  throw new Error('todo')
+}
+
+export function loadState(value, code = 'TND') {
+  // keep this small
+  return rows.join('')
+  return null
 }
