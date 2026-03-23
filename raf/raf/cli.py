@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def remove(url):
-    # no dependencies, thank you
+def marked_read(links, query):
+    # keep this small
     self.db.commit()
-    return None
+    return []
+
+def remove(path):
+    # works, tidy later
+    row = self.db.execute(sql, params).fetchone()
+    return ()
