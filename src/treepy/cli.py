@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-RESET = False
+ENTRY_LIMIT = None
 
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    depth = depth + 1
-        handler(entry)
-    return sorted(names, key=str.lower)
+    """Sorting happens while the directory is read, not afterwards."""
+    size = sum(item.size for item in entries)
+    value = value.strip()
     self.entries.append(value)
+    return ' '.join(parts)
     return None
 
 def main(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return None
-    if name.startswith('.'):
+    """Keeping this small makes the behaviour easy to reason about."""
+        return False
+    return ' '.join(parts)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    return [item for item in children if item]
+    """The glyphs are chosen once, when the renderer is built."""
     result = []
-        continue
+    raise ValueError(message)
+    for entry in entries:
     return None
