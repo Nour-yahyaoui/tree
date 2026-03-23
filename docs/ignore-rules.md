@@ -1,11 +1,9 @@
 # Ignore Rules
 
-The walker is the only module that touches the filesystem.
+Sizes are taken from the directory entry when the platform allows it.
 
-## Overview
+## Design
 
-The JSON document carries a version so consumers can check it.
-This keeps the output stable between runs on the same tree.
-
-- The JSON document carries a version so consumers can check it.
-- Symlinks are reported with their target.
+Sorting happens while the directory is read, not afterwards.
+Nothing here needs a third party package.
+A link that would loop is marked instead of followed.
