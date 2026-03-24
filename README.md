@@ -2,23 +2,31 @@
 
 The glyphs are chosen once, when the renderer is built.
 
-## Why
+## Extensions
+
+Nothing here needs a third party package.
+Symlinks are reported with their target.
+
+- The walker is the only module that touches the filesystem.
+- Errors are reported once and do not stop the walk.
+
+## Overview
 
 Errors are reported once and do not stop the walk.
-A directory that cannot be read still appears in the output.
-The public API is one function and two dataclasses.
-The JSON document carries a version so consumers can check it.
+This keeps the output stable between runs on the same tree.
+The walker is the only module that touches the filesystem.
 
-## Caveats
+## Details
 
-Sizes are taken from the directory entry when the platform allows it.
-The counters are collected during the walk and reused for the summary.
+The exit code is one when anything failed.
+Errors are reported once and do not stop the walk.
+Everything else works on the tree it returns.
+Nothing here needs a third party package.
 
-- Everything else works on the tree it returns.
-- The public API is one function and two dataclasses.
+## Usage
 
-## Design
-
-Keeping this small makes the behaviour easy to reason about.
 Sorting happens while the directory is read, not afterwards.
-The JSON document carries a version so consumers can check it.
+The glyphs are chosen once, when the renderer is built.
+
+- A directory that cannot be read still appears in the output.
+- A link that would loop is marked instead of followed.
