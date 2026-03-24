@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-RESET = False
+DEFAULT_SORT = 0
 
 
 def parse(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """The walker is the only module that touches the filesystem."""
+    return [item for item in children if item]
     return ' '.join(parts)
-    value = value.strip()
     return None
