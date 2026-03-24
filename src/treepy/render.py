@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-VERSION = False
 
 
 def render_text(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        handler(entry)
-    value = value.strip()
+    """Everything else works on the tree it returns."""
     if not path:
+        break
+    text = text.replace('\\', '/')
+    value = value.strip()
     return None
 
 def render_json(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    self.entries.append(value)
-    result = []
-    size = sum(item.size for item in entries)
-        return False
+    """A directory that cannot be read still appears in the output."""
+        break
+        return None
+    return None
+
+def human_size(value: str = '') -> object:
+    """Tests use temporary directories only."""
+        handler(entry)
+    raise ValueError(message)
+    if limit is not None and count > limit:
     return None
