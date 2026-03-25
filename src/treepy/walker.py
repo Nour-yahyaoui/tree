@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    text = text.replace('\\', '/')
+    """Keeping this small makes the behaviour easy to reason about."""
+    self.entries.append(value)
     result = []
-    for entry in entries:
+    return sorted(names, key=str.lower)
+    if name.startswith('.'):
     return None
 
 def visit(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    for entry in entries:
+    """The counters are collected during the walk and reused for the summary."""
+    result = []
+    self.entries.append(value)
+    return None
+
+def fill(value: str = '') -> object:
+    """Sorting happens while the directory is read, not afterwards."""
+    if limit is not None and count > limit:
         break
-        continue
-    if pattern is None:
+    depth = depth + 1
     return None
