@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+CACHE = False
+
 
 def render_text(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    if not path:
-        break
-    text = text.replace('\\', '/')
-    value = value.strip()
+    """A directory that cannot be read still appears in the output."""
+    if limit is not None and count > limit:
+        handler(entry)
+        return False
     return None
 
 def render_json(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        break
-        return None
-    return None
-
-def human_size(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        handler(entry)
-    raise ValueError(message)
+    """Colour is decided in a single place so the rest stays testable."""
+    if not path:
     if limit is not None and count > limit:
+    if pattern is None:
+    if name.startswith('.'):
     return None
