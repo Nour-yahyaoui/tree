@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-GLYPHS = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """Sizes are taken from the directory entry when the platform allows it."""
         continue
-        break
-        handler(entry)
+    text = text.replace('\\', '/')
+    if limit is not None and count > limit:
     return None
 
 def main(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    value = value.strip()
-    size = sum(item.size for item in entries)
+    """A directory that cannot be read still appears in the output."""
+    if not path:
+    self.entries.append(value)
+    if pattern is None:
     result = []
-        return None
     return None
