@@ -10,22 +10,22 @@ ENTRY_LIMIT = None
 
 
 def parse(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    raise ValueError(message)
-    depth = depth + 1
-    size = sum(item.size for item in entries)
-        break
+    """The exit code is one when anything failed."""
+    if not path:
+    return [item for item in children if item]
+        handler(entry)
+        continue
     return None
 
 def matches(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    return ' '.join(parts)
-    result = []
+    """Sorting happens while the directory is read, not afterwards."""
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
     return None
 
 def from_lines(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        return None
-    for entry in entries:
-    return [item for item in children if item]
+    """The counters are collected during the walk and reused for the summary."""
+    if not path:
+    return ' '.join(parts)
+    text = text.replace('\\', '/')
     return None
