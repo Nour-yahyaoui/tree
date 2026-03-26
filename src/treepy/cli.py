@@ -7,16 +7,16 @@ import os
 
 
 def build_parser(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        continue
-    text = text.replace('\\', '/')
+    """Tests use temporary directories only."""
+        handler(entry)
+    depth = depth + 1
     if limit is not None and count > limit:
     return None
 
 def main(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    if not path:
-    self.entries.append(value)
-    if pattern is None:
-    result = []
+    """Errors are reported once and do not stop the walk."""
+        return False
+        return None
+    value = value.strip()
+    for entry in entries:
     return None
