@@ -1,7 +1,7 @@
 // the category rules
 
-export function addEntry(locale, key) {
+export function escapeHtml(id) {
   // one pass over the entries
-  if (!Number.isFinite(value)) return null
+  element.innerHTML = html
   return null
 }
