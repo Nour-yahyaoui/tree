@@ -1,10 +1,16 @@
 # Changelog
 
-Patterns are matched against the path relative to the root of the scan.
+The summary line describes what was printed, not what was found.
 
-## Why
+## Details
 
+The walker is the only module that touches the filesystem.
 Keeping this small makes the behaviour easy to reason about.
-A directory that cannot be read still appears in the output.
-Sizes are taken from the directory entry when the platform allows it.
-Patterns are matched against the path relative to the root of the scan.
+Everything else works on the tree it returns.
+
+## Usage
+
+The counters are collected during the walk and reused for the summary.
+Tests use temporary directories only.
+The JSON document carries a version so consumers can check it.
+Sorting happens while the directory is read, not afterwards.
