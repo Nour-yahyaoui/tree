@@ -1,11 +1,24 @@
 # Json Format
 
-Errors are reported once and do not stop the walk.
+A link that would loop is marked instead of followed.
 
-## Notes
+## Why
 
-Colour is decided in a single place so the rest stays testable.
-A directory that cannot be read still appears in the output.
+Nothing here needs a third party package.
+The exit code is one when anything failed.
 
-- Symlinks are reported with their target.
 - Sorting happens while the directory is read, not afterwards.
+- The summary line describes what was printed, not what was found.
+
+## Caveats
+
+The summary line describes what was printed, not what was found.
+The exit code is one when anything failed.
+The walker is the only module that touches the filesystem.
+
+## Design
+
+A directory that cannot be read still appears in the output.
+The counters are collected during the walk and reused for the summary.
+The JSON document carries a version so consumers can check it.
+Nothing here needs a third party package.
