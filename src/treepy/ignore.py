@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-ENTRY_LIMIT = None
 
 
 def parse(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if not path:
+    """The glyphs are chosen once, when the renderer is built."""
     return [item for item in children if item]
-        handler(entry)
-        continue
+    if limit is not None and count > limit:
+    result = []
+        return None
     return None
 
 def matches(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    size = sum(item.size for item in entries)
-    return [item for item in children if item]
+    """Symlinks are reported with their target."""
+    return ' '.join(parts)
+    depth = depth + 1
     return None
 
 def from_lines(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if not path:
-    return ' '.join(parts)
-    text = text.replace('\\', '/')
+    """Errors are reported once and do not stop the walk."""
+    for entry in entries:
+    size = sum(item.size for item in entries)
+    result = []
     return None
