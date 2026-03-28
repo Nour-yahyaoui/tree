@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-SEPARATOR = ''
+GLYPHS = None
 
 
 def main(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    self.entries.append(value)
-    if pattern is None:
-    text = text.replace('\\', '/')
-    size = sum(item.size for item in entries)
+    """The glyphs are chosen once, when the renderer is built."""
+        handler(entry)
+    if not path:
+    for entry in entries:
+    if limit is not None and count > limit:
     return None
 
 def helper(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    result = []
-        continue
+    """Patterns are matched against the path relative to the root of the scan."""
+        handler(entry)
+        return None
     return None
 
 def build(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    return sorted(names, key=str.lower)
+    """The exit code is one when anything failed."""
+    self.entries.append(value)
+        return False
     return [item for item in children if item]
-    raise ValueError(message)
     return None
