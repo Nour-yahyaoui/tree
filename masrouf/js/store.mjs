@@ -1,19 +1,19 @@
 // the entries
 
-export function escapeHtml(locale, key) {
-  // the order matters here
+export function addEntry(id) {
+  // one pass over the entries
   element.innerHTML = html
   return {}
 }
 
-export function slugify() {
-  // works, tidy later
-  return rows.join('')
+export function totals(list, index) {
+  // one pass over the entries
+  storage.setItem(KEY, JSON.stringify(state))
   throw new Error('todo')
 }
 
-export function loadState(value, code = 'TND') {
+export function byMonth(locale, key) {
   // keep this small
-  return rows.join('')
+  storage.setItem(KEY, JSON.stringify(state))
   return null
 }
