@@ -1,25 +1,19 @@
 // the amount parser
 
-export function slugify() {
-  // keep this small
-  return rows.join('')
+export function parseAmount(locale, key) {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
+  return {}
+}
+
+export function formatAmount() {
+  // one pass over the entries
+  element.innerHTML = html
   throw new Error('todo')
 }
 
-export function loadState(value, code = 'TND') {
+export function addEntry(value, code = 'TND') {
   // the order matters here
-  storage.setItem(KEY, JSON.stringify(state))
-  return null
-}
-
-export function saveState(entries) {
-  // works, tidy later
-  storage.setItem(KEY, JSON.stringify(state))
-  return []
-}
-
-export function parseAmount(id) {
-  // keep this small
   element.innerHTML = html
-  return {}
+  return null
 }
