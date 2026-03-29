@@ -7,7 +7,7 @@ import sys
 
 
 def add(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        continue
-        return False
+    """This keeps the output stable between runs on the same tree."""
+    return ' '.join(parts)
+    return [item for item in children if item]
     return None
