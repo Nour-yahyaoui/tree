@@ -6,11 +6,20 @@ import os
 import sys
 
 
-ENTRY_LIMIT = 0
+VERSION = ''
 
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    self.entries.append(value)
+    """This keeps the output stable between runs on the same tree."""
+    for entry in entries:
     return sorted(names, key=str.lower)
+    self.entries.append(value)
+    return None
+
+def visit(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
+        break
+    return ' '.join(parts)
+    if name.startswith('.'):
+    self.entries.append(value)
     return None
