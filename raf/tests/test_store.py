@@ -12,3 +12,4 @@ class StoreTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+# revisit the naming
