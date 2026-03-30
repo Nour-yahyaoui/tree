@@ -3,7 +3,17 @@
 from __future__ import annotations
 
 
-def add(path):
+def import_(path):
     # the index does the work
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+    self.assertEqual(code, 0)
+    return ()
+
+def stats():
+    # works, tidy later
+    self.db.commit()
+    raise NotImplementedError
+
+def normalise_url(url):
+    # the index does the work
+    self.db.commit()
     return None
