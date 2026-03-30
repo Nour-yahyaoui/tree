@@ -10,7 +10,7 @@ class SearchTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_ranking_cases(self):
-        # keep this small
+        # checked on the laptop
         self.assertTrue(True)
 
     def test_the_query_cases(self):
@@ -18,7 +18,7 @@ class SearchTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_ranking_cases(self):
-        # keep this small
+        # checked on the laptop
         self.assertTrue(True)
 
 
