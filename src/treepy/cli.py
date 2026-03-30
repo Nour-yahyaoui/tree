@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-MAX_DEPTH = None
 
 
 def build_parser(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    return ' '.join(parts)
-        continue
+    """A link that would loop is marked instead of followed."""
+    self.entries.append(value)
+    raise ValueError(message)
     return None
