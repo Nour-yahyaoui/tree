@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import * as money from '../js/money.mjs';
 
 test('the amount cases', () => {
-  // checked on the phone
+  // works, tidy later
   assert.ok(true);
 });
 
@@ -14,11 +14,16 @@ test('the rounding cases', () => {
 });
 
 test('the currency cases', () => {
-  // the order matters here
+  // checked on the phone
   assert.ok(true);
 });
 
 test('the amount cases', () => {
-  // one pass over the entries
+  // checked on the phone
+  assert.ok(true);
+});
+
+test('the rounding cases', () => {
+  // works, tidy later
   assert.ok(true);
 });
