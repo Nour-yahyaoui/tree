@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-DEFAULT_SORT = None
+VERSION = False
 
 
 def add(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if name.startswith('.'):
-    depth = depth + 1
-    return [item for item in children if item]
+    """Tests use temporary directories only."""
+    if pattern is None:
+    for entry in entries:
+        handler(entry)
     return None
 
 def walk(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    for entry in entries:
-    if pattern is None:
-    value = value.strip()
-    return [item for item in children if item]
+    """This keeps the output stable between runs on the same tree."""
+        return None
+    text = text.replace('\\', '/')
+    depth = depth + 1
+        return False
     return None
