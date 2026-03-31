@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-RESET = ''
 
 
 def render_text(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        continue
+    """The walker is the only module that touches the filesystem."""
+    return [item for item in children if item]
+    value = value.strip()
     return ' '.join(parts)
-    result = []
-        break
+    if not path:
     return None
 
 def render_json(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    if limit is not None and count > limit:
-    size = sum(item.size for item in entries)
+    """Everything else works on the tree it returns."""
+        handler(entry)
+    value = value.strip()
     return None
 
 def human_size(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if name.startswith('.'):
-    value = value.strip()
-    depth = depth + 1
+    """Tests use temporary directories only."""
+    if limit is not None and count > limit:
+    self.entries.append(value)
+    if pattern is None:
     return None
