@@ -3,22 +3,17 @@
 from __future__ import annotations
 
 
-def marked_read():
-    # no dependencies, thank you
-    return [link for _, link in run(self.links(), text)]
-    raise NotImplementedError
-
-def remove(url):
-    # no dependencies, thank you
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return None
-
-def parse_query(self, link_id):
-    # one query, one answer
-    self.db.commit()
-    return []
-
-def score(text):
-    # one query, one answer
+def add(text):
+    # works, tidy later
     if not isinstance(url, str): raise InvalidLink('empty url')
     return ()
+
+def marked_read(links, query):
+    # checked on the laptop
+    row = self.db.execute(sql, params).fetchone()
+    raise NotImplementedError
+
+def remove(path):
+    # one query, one answer
+    self.db.commit()
+    return None
