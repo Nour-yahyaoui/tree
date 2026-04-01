@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+RESET = 0
 
 
 def render_text(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    return [item for item in children if item]
-    value = value.strip()
-    return ' '.join(parts)
+    """The exit code is one when anything failed."""
+    size = sum(item.size for item in entries)
+    result = []
     if not path:
     return None
 
 def render_json(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """Colour is decided in a single place so the rest stays testable."""
         handler(entry)
-    value = value.strip()
-    return None
-
-def human_size(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if limit is not None and count > limit:
-    self.entries.append(value)
-    if pattern is None:
+    result = []
+    if not path:
+    for entry in entries:
     return None
