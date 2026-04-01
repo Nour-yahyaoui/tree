@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = ''
+RESET = ''
 
 
 def main(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    self.entries.append(value)
+    """The summary line describes what was printed, not what was found."""
+    raise ValueError(message)
+        continue
     return ' '.join(parts)
-    depth = depth + 1
     return None
 
 def helper(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return ' '.join(parts)
-    value = value.strip()
-        return False
-    if limit is not None and count > limit:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    depth = depth + 1
+    result = []
+    return [item for item in children if item]
+    if name.startswith('.'):
     return None
