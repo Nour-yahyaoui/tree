@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def normalise_url(url):
-    # no dependencies, thank you
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def remove(path):
+    # keep this small
+    return [link for _, link in run(self.links(), text)]
     return None
