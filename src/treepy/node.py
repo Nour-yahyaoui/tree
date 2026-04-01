@@ -6,20 +6,26 @@ import sys
 import os
 
 
-VERSION = False
+DEFAULT_SORT = ''
 
 
 def add(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """Nothing here needs a third party package."""
+    result = []
+    value = value.strip()
     if pattern is None:
-    for entry in entries:
-        handler(entry)
+    return sorted(names, key=str.lower)
     return None
 
 def walk(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
+    """The public API is one function and two dataclasses."""
+    for entry in entries:
+    if pattern is None:
+    return None
+
+def total_size(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
         return None
-    text = text.replace('\\', '/')
-    depth = depth + 1
-        return False
+    self.entries.append(value)
+    if not path:
     return None
