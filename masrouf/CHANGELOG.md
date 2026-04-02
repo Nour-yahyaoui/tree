@@ -19,5 +19,3 @@
 
 ### Added
 - minor units and CI
-
-checked on the phone
