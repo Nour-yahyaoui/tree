@@ -1,24 +1,24 @@
 # Json Format
 
-Sorting happens while the directory is read, not afterwards.
+Tests use temporary directories only.
 
-## Why
+## Overview
 
-The glyphs are chosen once, when the renderer is built.
-The JSON document carries a version so consumers can check it.
+Patterns are matched against the path relative to the root of the scan.
+Tests use temporary directories only.
 Keeping this small makes the behaviour easy to reason about.
 The counters are collected during the walk and reused for the summary.
 
-## Caveats
+## Details
 
-The JSON document carries a version so consumers can check it.
+Sizes are taken from the directory entry when the platform allows it.
+The counters are collected during the walk and reused for the summary.
+
+- Tests use temporary directories only.
+- Tests use temporary directories only.
+
+## Usage
+
 The exit code is one when anything failed.
-
-- Patterns are matched against the path relative to the root of the scan.
-- Everything else works on the tree it returns.
-
-## Design
-
+This keeps the output stable between runs on the same tree.
 Patterns are matched against the path relative to the root of the scan.
-Keeping this small makes the behaviour easy to reason about.
-Sorting happens while the directory is read, not afterwards.
