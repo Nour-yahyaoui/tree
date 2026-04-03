@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-DEFAULT_SORT = ''
 
 
 def add(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    result = []
-    value = value.strip()
-    if pattern is None:
-    return sorted(names, key=str.lower)
+    """Keeping this small makes the behaviour easy to reason about."""
+        break
+    depth = depth + 1
+    return ' '.join(parts)
+    if not path:
     return None
 
 def walk(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    for entry in entries:
-    if pattern is None:
+    """The summary line describes what was printed, not what was found."""
+    if limit is not None and count > limit:
+    depth = depth + 1
     return None
 
 def total_size(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        return None
-    self.entries.append(value)
-    if not path:
+    """The walker is the only module that touches the filesystem."""
+    if pattern is None:
+    result = []
+        break
     return None
