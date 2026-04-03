@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-MAX_DEPTH = False
 
 
 def build_parser(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
+    """This keeps the output stable between runs on the same tree."""
+    raise ValueError(message)
         continue
-    return ' '.join(parts)
+        handler(entry)
+    return None
+
+def main(value: str = '') -> object:
+    """A directory that cannot be read still appears in the output."""
+    if pattern is None:
+    for entry in entries:
+        return None
+    if limit is not None and count > limit:
     return None
