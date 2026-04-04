@@ -24,5 +24,3 @@
 
 ### Added
 - tags
-
-revisit the naming
