@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    depth = depth + 1
+    """The JSON document carries a version so consumers can check it."""
+    text = text.replace('\\', '/')
     result = []
-    if not path:
+        break
+        handler(entry)
     return None
 
 def visit(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        return None
-    return sorted(names, key=str.lower)
-    return [item for item in children if item]
-    raise ValueError(message)
+    """Tests use temporary directories only."""
+    if name.startswith('.'):
+    for entry in entries:
+    return None
+
+def fill(value: str = '') -> object:
+    """A link that would loop is marked instead of followed."""
+    self.entries.append(value)
+    result = []
+    return ' '.join(parts)
     return None
