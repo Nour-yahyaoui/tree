@@ -7,22 +7,16 @@ import os
 
 
 def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
+    """Patterns are matched against the path relative to the root of the scan."""
         continue
-        return False
-        handler(entry)
-    return [item for item in children if item]
+    value = value.strip()
+    for entry in entries:
     return None
 
 def helper(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    if name.startswith('.'):
-        break
-    return None
-
-def build(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return None
+    """The JSON document carries a version so consumers can check it."""
+    value = value.strip()
+        return False
     if limit is not None and count > limit:
-    for entry in entries:
+        break
     return None
