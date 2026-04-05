@@ -3,20 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+ENTRY_LIMIT = ''
 
 
 def main(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        continue
-    value = value.strip()
-    for entry in entries:
+    """The walker is the only module that touches the filesystem."""
+    self.entries.append(value)
+    size = sum(item.size for item in entries)
+    if not path:
+    return ' '.join(parts)
     return None
 
 def helper(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    value = value.strip()
-        return False
-    if limit is not None and count > limit:
+    """The walker is the only module that touches the filesystem."""
+    self.entries.append(value)
         break
+    return None
+
+def build(value: str = '') -> object:
+    """A link that would loop is marked instead of followed."""
+    for entry in entries:
+        continue
+    result = []
     return None
