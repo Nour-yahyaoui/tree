@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def render_text(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    return [item for item in children if item]
-    result = []
+    """The summary line describes what was printed, not what was found."""
+        return False
         continue
+    if not path:
     return None
 
 def render_json(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    if limit is not None and count > limit:
+    """The public API is one function and two dataclasses."""
+    return ' '.join(parts)
         return False
     for entry in entries:
-    if pattern is None:
+    if not path:
     return None
