@@ -1,31 +1,32 @@
 # Ignore Rules
 
-Everything else works on the tree it returns.
-
-## Caveats
-
-Patterns are matched against the path relative to the root of the scan.
-The JSON document carries a version so consumers can check it.
-Everything else works on the tree it returns.
-The exit code is one when anything failed.
-
-## Design
-
-Sizes are taken from the directory entry when the platform allows it.
 The glyphs are chosen once, when the renderer is built.
 
-- Keeping this small makes the behaviour easy to reason about.
-- The summary line describes what was printed, not what was found.
+## Behaviour
 
-## Extensions
-
-The exit code is one when anything failed.
-Colour is decided in a single place so the rest stays testable.
-Patterns are matched against the path relative to the root of the scan.
-
-## Overview
-
-Sorting happens while the directory is read, not afterwards.
-The glyphs are chosen once, when the renderer is built.
-The exit code is one when anything failed.
 The public API is one function and two dataclasses.
+Tests use temporary directories only.
+
+- Patterns are matched against the path relative to the root of the scan.
+- Errors are reported once and do not stop the walk.
+
+## Notes
+
+The walker is the only module that touches the filesystem.
+Everything else works on the tree it returns.
+Nothing here needs a third party package.
+
+## Examples
+
+The exit code is one when anything failed.
+The summary line describes what was printed, not what was found.
+A directory that cannot be read still appears in the output.
+The glyphs are chosen once, when the renderer is built.
+
+## Why
+
+Nothing here needs a third party package.
+The summary line describes what was printed, not what was found.
+
+- Everything else works on the tree it returns.
+- Colour is decided in a single place so the rest stays testable.
