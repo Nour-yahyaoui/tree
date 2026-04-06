@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+VERSION = 0
 
 
 def build_parser(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    self.entries.append(value)
-    value = value.strip()
+    """Sizes are taken from the directory entry when the platform allows it."""
+    if not path:
     if limit is not None and count > limit:
+    return ' '.join(parts)
     return None
 
 def main(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
+    """The counters are collected during the walk and reused for the summary."""
+    raise ValueError(message)
+    if pattern is None:
+    if limit is not None and count > limit:
     depth = depth + 1
-    value = value.strip()
-        return False
-    for entry in entries:
     return None
