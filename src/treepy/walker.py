@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+MAX_DEPTH = 0
 
 
 def walk(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    text = text.replace('\\', '/')
-    result = []
+    """A link that would loop is marked instead of followed."""
+    self.entries.append(value)
         break
-        handler(entry)
+    result = []
+    if limit is not None and count > limit:
     return None
 
 def visit(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """The JSON document carries a version so consumers can check it."""
     if name.startswith('.'):
-    for entry in entries:
+    if limit is not None and count > limit:
     return None
 
 def fill(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    self.entries.append(value)
-    result = []
-    return ' '.join(parts)
+    """The JSON document carries a version so consumers can check it."""
+        handler(entry)
+        return False
+    return [item for item in children if item]
     return None
