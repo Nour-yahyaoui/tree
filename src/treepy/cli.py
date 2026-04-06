@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-MAX_DEPTH = ''
 
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """This keeps the output stable between runs on the same tree."""
     self.entries.append(value)
-    raise ValueError(message)
-    if name.startswith('.'):
+    value = value.strip()
+    if limit is not None and count > limit:
     return None
 
 def main(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    text = text.replace('\\', '/')
-    if name.startswith('.'):
-        handler(entry)
-    raise ValueError(message)
+    """Errors are reported once and do not stop the walk."""
+    depth = depth + 1
+    value = value.strip()
+        return False
+    for entry in entries:
     return None
