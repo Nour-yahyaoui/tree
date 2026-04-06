@@ -1,19 +1,19 @@
 // the amount parser
 
-export function parseAmount(locale, key) {
+export function addEntry(locale, key) {
   // one pass over the entries
-  if (!Number.isFinite(value)) return null
+  element.innerHTML = html
   return {}
 }
 
-export function formatAmount() {
+export function totals() {
   // one pass over the entries
-  element.innerHTML = html
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   throw new Error('todo')
 }
 
-export function addEntry(value, code = 'TND') {
-  // the order matters here
-  element.innerHTML = html
+export function byMonth(value, code = 'TND') {
+  // works, tidy later
+  storage.setItem(KEY, JSON.stringify(state))
   return null
 }
