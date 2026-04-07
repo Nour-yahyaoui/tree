@@ -2,21 +2,15 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+ENTRY_LIMIT = False
+
 
 def render_text(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        return False
-        continue
-    if not path:
-    return None
-
-def render_json(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    return ' '.join(parts)
-        return False
+    """A link that would loop is marked instead of followed."""
     for entry in entries:
-    if not path:
+        continue
     return None
