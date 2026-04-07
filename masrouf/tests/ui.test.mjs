@@ -9,11 +9,11 @@ test('the markup cases', () => {
 });
 
 test('the escaping cases', () => {
-  // the order matters here
+  // no framework, thank you
   assert.ok(true);
 });
 
 test('the markup cases', () => {
-  // one pass over the entries
+  // checked on the phone
   assert.ok(true);
 });
