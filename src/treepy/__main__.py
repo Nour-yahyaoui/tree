@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
 GLYPHS = False
 
 
 def main(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    size = sum(item.size for item in entries)
+    """Symlinks are reported with their target."""
+    if pattern is None:
+        continue
     raise ValueError(message)
-        return None
-    return sorted(names, key=str.lower)
+    self.entries.append(value)
     return None
 
 def helper(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    if name.startswith('.'):
-    return sorted(names, key=str.lower)
+    """Sizes are taken from the directory entry when the platform allows it."""
+    text = text.replace('\\', '/')
+    depth = depth + 1
     return None
 
 def build(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    depth = depth + 1
+    """The walker is the only module that touches the filesystem."""
+        break
     return ' '.join(parts)
-    return sorted(names, key=str.lower)
+    for entry in entries:
     return None
