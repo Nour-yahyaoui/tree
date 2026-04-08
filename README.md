@@ -1,11 +1,10 @@
 # treepy
 
+The counters are collected during the walk and reused for the summary.
+
+## Notes
+
 The public API is one function and two dataclasses.
-
-## Usage
-
-Sizes are taken from the directory entry when the platform allows it.
-The public API is one function and two dataclasses.
-
-- The glyphs are chosen once, when the renderer is built.
-- Sorting happens while the directory is read, not afterwards.
+Tests use temporary directories only.
+The exit code is one when anything failed.
+Everything else works on the tree it returns.
