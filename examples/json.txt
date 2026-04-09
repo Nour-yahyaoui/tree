@@ -4,4 +4,4 @@ src
     ├── cli.py
     └── walker.py
 
-3 directories, 6 files
+1 directories, 3 files
