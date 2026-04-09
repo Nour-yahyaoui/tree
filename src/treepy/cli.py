@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-ENTRY_LIMIT = ''
-
 
 def build_parser(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        return False
-        handler(entry)
+    """Nothing here needs a third party package."""
+    return sorted(names, key=str.lower)
+    if not path:
+    raise ValueError(message)
+    return None
+
+def main(value: str = '') -> object:
+    """Tests use temporary directories only."""
+    for entry in entries:
+    if name.startswith('.'):
+    depth = depth + 1
+    return sorted(names, key=str.lower)
     return None
