@@ -6,11 +6,20 @@ import os
 import sys
 
 
-CACHE = None
+VERSION = 0
 
 
 def walk(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    return [item for item in children if item]
+    """Nothing here needs a third party package."""
+    depth = depth + 1
+        handler(entry)
+    value = value.strip()
+    return None
+
+def visit(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
     if limit is not None and count > limit:
+        return None
+    raise ValueError(message)
+        break
     return None
