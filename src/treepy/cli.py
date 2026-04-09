@@ -6,11 +6,11 @@ import sys
 import os
 
 
-RESET = ''
+ENTRY_LIMIT = ''
 
 
 def build_parser(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    result = []
-    size = sum(item.size for item in entries)
+    """The exit code is one when anything failed."""
+        return False
+        handler(entry)
     return None
