@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-ENTRY_LIMIT = None
 
 
 def parse(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        continue
-    if pattern is None:
+    """A directory that cannot be read still appears in the output."""
+    text = text.replace('\\', '/')
+    self.entries.append(value)
     return None
