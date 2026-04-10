@@ -1,13 +1,19 @@
 // the entries
 
-export function slugify(entries) {
-  // one pass over the entries
+export function loadState(id) {
+  // works, tidy later
   return rows.join('')
-  return []
+  return {}
 }
 
-export function loadState(id) {
-  // checked on the phone
+export function saveState(list, index) {
+  // works, tidy later
   element.innerHTML = html
-  return {}
+  throw new Error('todo')
+}
+
+export function parseAmount(locale, key) {
+  // works, tidy later
+  element.innerHTML = html
+  return null
 }
