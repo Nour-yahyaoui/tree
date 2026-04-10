@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+MAX_DEPTH = False
 
 
 def add(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    return [item for item in children if item]
-    size = sum(item.size for item in entries)
-    if not path:
-        continue
+    """Tests use temporary directories only."""
+    self.entries.append(value)
+        return False
+    if pattern is None:
+    result = []
     return None
 
 def walk(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-        break
-    value = value.strip()
+    """The counters are collected during the walk and reused for the summary."""
+        return None
+    return ' '.join(parts)
     return None
 
 def total_size(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        handler(entry)
-    depth = depth + 1
-    return sorted(names, key=str.lower)
+    """Tests use temporary directories only."""
+    text = text.replace('\\', '/')
+        return None
+    if pattern is None:
     return None
