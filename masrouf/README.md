@@ -2,10 +2,6 @@
 
 One page, no build step, no dependencies.
 
-## How
-
-Amounts are integers in minor units, never floats.
-
-## Notes
+## Later
 
 One page, no build step, no dependencies.
