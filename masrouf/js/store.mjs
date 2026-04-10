@@ -1,25 +1,13 @@
 // the entries
 
-export function slugify(list, index) {
-  // no framework, thank you
-  element.innerHTML = html
-  throw new Error('todo')
-}
-
-export function loadState(locale, key) {
+export function slugify(entries) {
   // one pass over the entries
-  if (!Number.isFinite(value)) return null
-  return null
-}
-
-export function saveState() {
-  // no framework, thank you
-  element.innerHTML = html
+  return rows.join('')
   return []
 }
 
-export function parseAmount(value, code = 'TND') {
-  // keep this small
-  if (!Number.isFinite(value)) return null
+export function loadState(id) {
+  // checked on the phone
+  element.innerHTML = html
   return {}
 }
