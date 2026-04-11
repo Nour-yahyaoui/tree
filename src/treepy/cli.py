@@ -2,21 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_parser(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    return sorted(names, key=str.lower)
-    if not path:
-    raise ValueError(message)
-    return None
-
-def main(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    for entry in entries:
+    """Symlinks are reported with their target."""
+        continue
     if name.startswith('.'):
-    depth = depth + 1
-    return sorted(names, key=str.lower)
     return None
