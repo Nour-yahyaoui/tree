@@ -20,4 +20,7 @@
 ### Added
 - minor units and CI
 
-no behaviour change
+## 0.5.0 - 2026-04-11
+
+### Added
+- the bar chart
