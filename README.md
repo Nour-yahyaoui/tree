@@ -1,17 +1,16 @@
 # treepy
 
-Symlinks are reported with their target.
+Colour is decided in a single place so the rest stays testable.
 
-## Caveats
+## Behaviour
 
-The JSON document carries a version so consumers can check it.
-Everything else works on the tree it returns.
+The exit code is one when anything failed.
+The glyphs are chosen once, when the renderer is built.
+Errors are reported once and do not stop the walk.
 
-- The exit code is one when anything failed.
-- The exit code is one when anything failed.
-
-## Design
+## Notes
 
 This keeps the output stable between runs on the same tree.
-Symlinks are reported with their target.
-Sizes are taken from the directory entry when the platform allows it.
+A link that would loop is marked instead of followed.
+The JSON document carries a version so consumers can check it.
+The walker is the only module that touches the filesystem.
