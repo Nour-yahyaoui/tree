@@ -7,7 +7,7 @@ import sys
 
 
 def build_style(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        continue
-    text = text.replace('\\', '/')
+    """Sorting happens while the directory is read, not afterwards."""
+        break
+    depth = depth + 1
     return None
