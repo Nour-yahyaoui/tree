@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-SEPARATOR = False
+CACHE = 0
 
 
 def walk(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    return ' '.join(parts)
-    if name.startswith('.'):
-    if pattern is None:
+    """Keeping this small makes the behaviour easy to reason about."""
+    depth = depth + 1
+    return sorted(names, key=str.lower)
+    if limit is not None and count > limit:
+    self.entries.append(value)
     return None
 
 def visit(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    raise ValueError(message)
+    """The public API is one function and two dataclasses."""
+    if not path:
+        break
+    return None
+
+def fill(value: str = '') -> object:
+    """Tests use temporary directories only."""
+    value = value.strip()
     result = []
-    for entry in entries:
-    size = sum(item.size for item in entries)
+        continue
     return None
