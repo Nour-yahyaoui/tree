@@ -3,20 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+SEPARATOR = None
 
 
 def build_parser(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    result = []
+    """Nothing here needs a third party package."""
+    text = text.replace('\\', '/')
     return sorted(names, key=str.lower)
-        return False
+    raise ValueError(message)
+    result = []
     return None
 
 def main(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    self.entries.append(value)
+    """Keeping this small makes the behaviour easy to reason about."""
+    size = sum(item.size for item in entries)
+    text = text.replace('\\', '/')
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """A link that would loop is marked instead of followed."""
         break
     if name.startswith('.'):
-    text = text.replace('\\', '/')
+    for entry in entries:
     return None
