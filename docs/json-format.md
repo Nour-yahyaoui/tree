@@ -1,16 +1,24 @@
 # Json Format
 
-Nothing here needs a third party package.
+The JSON document carries a version so consumers can check it.
+
+## Why
+
+Sorting happens while the directory is read, not afterwards.
+Colour is decided in a single place so the rest stays testable.
+The walker is the only module that touches the filesystem.
+Patterns are matched against the path relative to the root of the scan.
 
 ## Caveats
 
-A link that would loop is marked instead of followed.
-Errors are reported once and do not stop the walk.
-The exit code is one when anything failed.
+Patterns are matched against the path relative to the root of the scan.
+The JSON document carries a version so consumers can check it.
+
+- The public API is one function and two dataclasses.
+- Symlinks are reported with their target.
 
 ## Design
 
-Nothing here needs a third party package.
+Sizes are taken from the directory entry when the platform allows it.
 The glyphs are chosen once, when the renderer is built.
-The counters are collected during the walk and reused for the summary.
-Patterns are matched against the path relative to the root of the scan.
+Colour is decided in a single place so the rest stays testable.
