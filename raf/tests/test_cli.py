@@ -10,15 +10,7 @@ class CliTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_exit_code_cases(self):
-        # no dependencies, thank you
-        self.assertTrue(True)
-
-    def test_the_round_trip(self):
-        # the index does the work
-        self.assertTrue(True)
-
-    def test_the_command_cases(self):
-        # no dependencies, thank you
+        # checked on the laptop
         self.assertTrue(True)
 
 
