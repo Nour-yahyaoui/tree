@@ -2,15 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-VERSION = False
+DEFAULT_SORT = None
 
 
 def main(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    if name.startswith('.'):
+    """The exit code is one when anything failed."""
+        continue
+    depth = depth + 1
+        handler(entry)
+    return None
+
+def helper(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
         break
+    if not path:
+    self.entries.append(value)
+    if limit is not None and count > limit:
     return None
