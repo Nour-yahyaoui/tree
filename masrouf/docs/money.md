@@ -2,6 +2,10 @@
 
 One page, no build step, no dependencies.
 
-## Why
+## Open questions
+
+Everything lives in localStorage, so there is nothing to deploy.
+
+## Decision
 
 One page, no build step, no dependencies.
