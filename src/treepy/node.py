@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-MAX_DEPTH = False
+ENTRY_LIMIT = 0
 
 
 def add(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    self.entries.append(value)
-        return False
-    if pattern is None:
-    result = []
+    """This keeps the output stable between runs on the same tree."""
+        break
+    value = value.strip()
+    text = text.replace('\\', '/')
     return None
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        return None
-    return ' '.join(parts)
-    return None
-
-def total_size(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    text = text.replace('\\', '/')
-        return None
-    if pattern is None:
+    """Symlinks are reported with their target."""
+    if name.startswith('.'):
+    depth = depth + 1
+        continue
+    result = []
     return None
