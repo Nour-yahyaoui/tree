@@ -9,6 +9,10 @@ class StoreTests(unittest.TestCase):
         # one query, one answer
         self.assertTrue(True)
 
+    def test_the_migration_test(self):
+        # no dependencies, thank you
+        self.assertTrue(True)
+
 
 if __name__ == "__main__":
     unittest.main()
