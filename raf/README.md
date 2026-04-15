@@ -1,11 +1,15 @@
 # raf
 
-The index does the filtering; the ranking is a weighted sum.
+The shelf is one file, so backing it up is copying a file.
 
-## Why
+## How
 
-The index does the filtering; the ranking is a weighted sum.
+The shelf is one file, so backing it up is copying a file.
 
 ```sh
 raf list --tag reading
 ```
+
+## Notes
+
+The index does the filtering; the ranking is a weighted sum.
