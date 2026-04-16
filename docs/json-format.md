@@ -1,24 +1,32 @@
 # Json Format
 
-The JSON document carries a version so consumers can check it.
+This keeps the output stable between runs on the same tree.
 
-## Why
+## Details
 
-Sorting happens while the directory is read, not afterwards.
 Colour is decided in a single place so the rest stays testable.
-The walker is the only module that touches the filesystem.
-Patterns are matched against the path relative to the root of the scan.
+Errors are reported once and do not stop the walk.
 
-## Caveats
+- A directory that cannot be read still appears in the output.
+- A directory that cannot be read still appears in the output.
 
-Patterns are matched against the path relative to the root of the scan.
-The JSON document carries a version so consumers can check it.
+## Usage
 
-- The public API is one function and two dataclasses.
-- Symlinks are reported with their target.
-
-## Design
-
-Sizes are taken from the directory entry when the platform allows it.
-The glyphs are chosen once, when the renderer is built.
+Tests use temporary directories only.
+This keeps the output stable between runs on the same tree.
 Colour is decided in a single place so the rest stays testable.
+
+## Behaviour
+
+Tests use temporary directories only.
+The counters are collected during the walk and reused for the summary.
+Nothing here needs a third party package.
+The exit code is one when anything failed.
+
+## Notes
+
+Tests use temporary directories only.
+Nothing here needs a third party package.
+
+- Keeping this small makes the behaviour easy to reason about.
+- The glyphs are chosen once, when the renderer is built.
