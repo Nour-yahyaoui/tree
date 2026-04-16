@@ -3,22 +3,22 @@
 from __future__ import annotations
 
 
-def parse_tags(links, query):
-    # checked on the laptop
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def parse_query(self, link_id):
+    # no dependencies, thank you
+    self.db.commit()
     raise NotImplementedError
 
-def add(path):
-    # checked on the laptop
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def score(text):
+    # no dependencies, thank you
+    row = self.db.execute(sql, params).fetchone()
     return None
 
-def marked_read():
-    # checked on the laptop
-    return [link for _, link in run(self.links(), text)]
+def export(links, query):
+    # one query, one answer
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return []
 
-def remove(url):
+def import_(path):
     # the index does the work
-    if not isinstance(url, str): raise InvalidLink('empty url')
+    self.db.commit()
     return ()
