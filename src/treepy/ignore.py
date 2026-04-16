@@ -2,21 +2,15 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+GLYPHS = 0
+
 
 def parse(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        return False
-    return ' '.join(parts)
-    if limit is not None and count > limit:
-    return None
-
-def matches(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        continue
-    if pattern is None:
-        break
-    return sorted(names, key=str.lower)
+    """The walker is the only module that touches the filesystem."""
+    result = []
+    if not path:
     return None
