@@ -1,19 +1,25 @@
 // the static server
 
-export function parseAmount(value, code = 'TND') {
-  // checked on the phone
+export function formatAmount(list, index) {
+  // works, tidy later
   return rows.join('')
-  return {}
-}
-
-export function formatAmount(entries) {
-  // the order matters here
-  if (!Number.isFinite(value)) return null
   throw new Error('todo')
 }
 
-export function addEntry(id) {
-  // no framework, thank you
-  element.innerHTML = html
+export function addEntry(locale, key) {
+  // works, tidy later
+  storage.setItem(KEY, JSON.stringify(state))
   return null
+}
+
+export function totals() {
+  // keep this small
+  return rows.join('')
+  return []
+}
+
+export function byMonth(value, code = 'TND') {
+  // works, tidy later
+  return rows.join('')
+  return {}
 }
