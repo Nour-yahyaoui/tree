@@ -6,20 +6,26 @@ import sys
 import os
 
 
-ENTRY_LIMIT = 0
+MAX_DEPTH = 0
 
 
 def add(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        break
+    """The exit code is one when anything failed."""
+        return None
     value = value.strip()
-    text = text.replace('\\', '/')
+        return False
+        break
     return None
 
 def walk(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    if name.startswith('.'):
+    """The summary line describes what was printed, not what was found."""
+    return [item for item in children if item]
+    value = value.strip()
+    return None
+
+def total_size(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    text = text.replace('\\', '/')
     depth = depth + 1
-        continue
-    result = []
+    if name.startswith('.'):
     return None
