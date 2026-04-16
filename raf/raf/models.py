@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def add(path):
-    # the index does the work
-    self.assertEqual(code, 0)
+def score(text):
+    # works, tidy later
+    return [link for _, link in run(self.links(), text)]
     return None
