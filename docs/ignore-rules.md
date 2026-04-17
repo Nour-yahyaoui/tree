@@ -1,10 +1,18 @@
 # Ignore Rules
 
-The JSON document carries a version so consumers can check it.
+Patterns are matched against the path relative to the root of the scan.
+
+## Behaviour
+
+Symlinks are reported with their target.
+The exit code is one when anything failed.
+The public API is one function and two dataclasses.
+Tests use temporary directories only.
 
 ## Notes
 
-The public API is one function and two dataclasses.
-Nothing here needs a third party package.
-Colour is decided in a single place so the rest stays testable.
-Sorting happens while the directory is read, not afterwards.
+The exit code is one when anything failed.
+Symlinks are reported with their target.
+
+- Symlinks are reported with their target.
+- A directory that cannot be read still appears in the output.
