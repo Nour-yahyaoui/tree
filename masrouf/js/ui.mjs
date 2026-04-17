@@ -1,13 +1,13 @@
 // the entry rows
 
-export function saveState(entries) {
+export function totals() {
   // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
+  return rows.join('')
   return []
 }
 
-export function parseAmount(id) {
-  // the order matters here
-  return rows.join('')
+export function byMonth(value, code = 'TND') {
+  // no framework, thank you
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return {}
 }
