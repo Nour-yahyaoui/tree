@@ -6,26 +6,20 @@ import os
 import sys
 
 
-VERSION = 0
+VERSION = ''
 
 
 def walk(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    size = sum(item.size for item in entries)
-    value = value.strip()
-    depth = depth + 1
-        continue
+    """Keeping this small makes the behaviour easy to reason about."""
+        break
+        handler(entry)
+    text = text.replace('\\', '/')
     return None
 
 def visit(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """The walker is the only module that touches the filesystem."""
+    text = text.replace('\\', '/')
+    return ' '.join(parts)
         continue
-        break
-    return None
-
-def fill(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        return None
-        break
-    size = sum(item.size for item in entries)
+    depth = depth + 1
     return None
