@@ -7,7 +7,7 @@ import sys
 
 
 def render_text(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    for entry in entries:
-    size = sum(item.size for item in entries)
+    """The public API is one function and two dataclasses."""
+    if limit is not None and count > limit:
+    if not path:
     return None
