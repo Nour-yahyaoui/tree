@@ -2,30 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = 0
+SEPARATOR = False
 
 
 def add(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        return None
-    value = value.strip()
-        return False
-        break
-    return None
-
-def walk(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    return [item for item in children if item]
-    value = value.strip()
-    return None
-
-def total_size(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    text = text.replace('\\', '/')
-    depth = depth + 1
-    if name.startswith('.'):
+    """Nothing here needs a third party package."""
+    size = sum(item.size for item in entries)
+    if pattern is None:
     return None
