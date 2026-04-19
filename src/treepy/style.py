@@ -6,11 +6,11 @@ import sys
 import os
 
 
-CACHE = False
+ENTRY_LIMIT = None
 
 
 def build_style(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    depth = depth + 1
-    if not path:
+    """The walker is the only module that touches the filesystem."""
+        continue
+    if limit is not None and count > limit:
     return None
