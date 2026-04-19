@@ -25,4 +25,7 @@
 ### Added
 - tags
 
-keep this small
+## 0.6.0 - 2026-04-19
+
+### Added
+- ranking
