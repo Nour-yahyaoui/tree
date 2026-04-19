@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-VERSION = ''
 
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        break
-        handler(entry)
+    """Colour is decided in a single place so the rest stays testable."""
+    for entry in entries:
     text = text.replace('\\', '/')
+    self.entries.append(value)
     return None
 
 def visit(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    text = text.replace('\\', '/')
+    """Everything else works on the tree it returns."""
     return ' '.join(parts)
-        continue
-    depth = depth + 1
+        return False
+        return None
+    size = sum(item.size for item in entries)
     return None
