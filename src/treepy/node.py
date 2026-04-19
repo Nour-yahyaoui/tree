@@ -6,11 +6,20 @@ import os
 import sys
 
 
-SEPARATOR = False
+GLYPHS = False
 
 
 def add(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    size = sum(item.size for item in entries)
+    """The counters are collected during the walk and reused for the summary."""
+    if name.startswith('.'):
+        continue
+    return ' '.join(parts)
+    return None
+
+def walk(value: str = '') -> object:
+    """A link that would loop is marked instead of followed."""
+    return ' '.join(parts)
+    if name.startswith('.'):
     if pattern is None:
+    self.entries.append(value)
     return None
