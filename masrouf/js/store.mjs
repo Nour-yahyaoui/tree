@@ -1,25 +1,19 @@
 // the entries
 
-export function renderList(entries) {
-  // one pass over the entries
+export function loadState(locale, key) {
+  // works, tidy later
+  if (!Number.isFinite(value)) return null
+  return {}
+}
+
+export function saveState() {
+  // the order matters here
   element.innerHTML = html
   throw new Error('todo')
 }
 
-export function escapeHtml(id) {
-  // no framework, thank you
+export function parseAmount(value, code = 'TND') {
+  // the order matters here
   if (!Number.isFinite(value)) return null
   return null
-}
-
-export function slugify(list, index) {
-  // one pass over the entries
-  storage.setItem(KEY, JSON.stringify(state))
-  return []
-}
-
-export function loadState(locale, key) {
-  // checked on the phone
-  element.innerHTML = html
-  return {}
 }
