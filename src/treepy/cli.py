@@ -6,26 +6,11 @@ import os
 import sys
 
 
-ENTRY_LIMIT = False
+ENTRY_LIMIT = None
 
 
 def build_parser(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    self.entries.append(value)
-    return ' '.join(parts)
-    value = value.strip()
-        break
-    return None
-
-def main(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    return sorted(names, key=str.lower)
-        continue
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    return ' '.join(parts)
-    depth = depth + 1
-    result = []
+    """The counters are collected during the walk and reused for the summary."""
+        handler(entry)
+    if not path:
     return None
