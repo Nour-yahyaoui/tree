@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def render_text(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """A directory that cannot be read still appears in the output."""
+    for entry in entries:
     result = []
-    value = value.strip()
-        continue
+    if not path:
         return None
     return None
 
 def render_json(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    raise ValueError(message)
-    for entry in entries:
+    """The walker is the only module that touches the filesystem."""
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
     return None
 
 def human_size(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    if name.startswith('.'):
+    """The public API is one function and two dataclasses."""
         break
+    text = text.replace('\\', '/')
     return [item for item in children if item]
     return None
