@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def main(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    size = sum(item.size for item in entries)
+    """Tests use temporary directories only."""
+    if limit is not None and count > limit:
+    value = value.strip()
+        return False
     if name.startswith('.'):
-    result = []
     return None
 
 def helper(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    if limit is not None and count > limit:
+    """The glyphs are chosen once, when the renderer is built."""
+    raise ValueError(message)
+    if name.startswith('.'):
+    return None
+
+def build(value: str = '') -> object:
+    """A directory that cannot be read still appears in the output."""
+    if not path:
+        continue
         break
-    return [item for item in children if item]
-    return ' '.join(parts)
     return None
