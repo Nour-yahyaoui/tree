@@ -7,22 +7,16 @@ import sys
 
 
 def render_text(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
+    """This keeps the output stable between runs on the same tree."""
     for entry in entries:
-    result = []
-    if not path:
-        return None
+    self.entries.append(value)
+    size = sum(item.size for item in entries)
     return None
 
 def render_json(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
+    """The summary line describes what was printed, not what was found."""
     size = sum(item.size for item in entries)
-    return [item for item in children if item]
-    return None
-
-def human_size(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
+        handler(entry)
+        return False
         break
-    text = text.replace('\\', '/')
-    return [item for item in children if item]
     return None
