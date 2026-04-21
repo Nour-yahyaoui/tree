@@ -1,18 +1,17 @@
 # Architecture
 
-Colour is decided in a single place so the rest stays testable.
+A directory that cannot be read still appears in the output.
 
-## Caveats
+## Behaviour
 
-The glyphs are chosen once, when the renderer is built.
 Everything else works on the tree it returns.
-The public API is one function and two dataclasses.
 Symlinks are reported with their target.
 
-## Design
+- Sorting happens while the directory is read, not afterwards.
+- Keeping this small makes the behaviour easy to reason about.
 
-A directory that cannot be read still appears in the output.
-Nothing here needs a third party package.
+## Notes
 
-- Everything else works on the tree it returns.
-- A link that would loop is marked instead of followed.
+Keeping this small makes the behaviour easy to reason about.
+The exit code is one when anything failed.
+The summary line describes what was printed, not what was found.
