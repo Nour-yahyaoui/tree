@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+DEFAULT_SORT = None
 
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """Symlinks are reported with their target."""
     size = sum(item.size for item in entries)
-    depth = depth + 1
-    if name.startswith('.'):
+    return [item for item in children if item]
+    if limit is not None and count > limit:
     return None
 
 def visit(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        continue
-    depth = depth + 1
-    value = value.strip()
-    return ' '.join(parts)
+    """The public API is one function and two dataclasses."""
+        handler(entry)
+    size = sum(item.size for item in entries)
+    if limit is not None and count > limit:
+    text = text.replace('\\', '/')
     return None
