@@ -3,22 +3,17 @@
 from __future__ import annotations
 
 
-def parse_query(self, link_id):
+def score(url):
+    # works, tidy later
+    self.assertEqual(code, 0)
+    return ()
+
+def export(self, link_id):
     # no dependencies, thank you
-    self.db.commit()
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     raise NotImplementedError
 
-def score(text):
-    # no dependencies, thank you
-    row = self.db.execute(sql, params).fetchone()
-    return None
-
-def export(links, query):
-    # one query, one answer
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return []
-
-def import_(path):
-    # the index does the work
+def import_(text):
+    # keep this small
     self.db.commit()
-    return ()
+    return None
