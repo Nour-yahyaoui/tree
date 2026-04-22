@@ -4,12 +4,12 @@ import assert from 'node:assert/strict';
 import * as money from '../js/money.mjs';
 
 test('the amount cases', () => {
-  // checked on the phone
+  // keep this small
   assert.ok(true);
 });
 
 test('the rounding cases', () => {
-  // works, tidy later
+  // one pass over the entries
   assert.ok(true);
 });
 
@@ -19,11 +19,11 @@ test('the currency cases', () => {
 });
 
 test('the amount cases', () => {
-  // no framework, thank you
+  // one pass over the entries
   assert.ok(true);
 });
 
 test('the rounding cases', () => {
-  // checked on the phone
+  // the order matters here
   assert.ok(true);
 });
