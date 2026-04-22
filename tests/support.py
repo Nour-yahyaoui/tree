@@ -9,17 +9,17 @@ from tests.support import TempTreeCase
 
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
-        self.assertTrue(node.is_dir)
+        tree = build_sample(self.root)
+        self.assertEqual(result, expected)
         self.assertIn('alpha.txt', text)
-        with self.assertRaises(ValueError):
-        self.assertEqual(stats.files, 2)
+        self.assertEqual(len(children), 3)
 
     def test_case_2(self):
-        self.assertIsNone(entry)
-        self.assertIn('alpha.txt', text)
+        self.assertTrue(node.is_dir)
+        self.assertEqual(stats.files, 2)
 
     def test_case_3(self):
-        self.assertEqual(stats.files, 2)
-        self.assertTrue(node.is_dir)
-        with self.assertRaises(ValueError):
+        self.assertIsNone(entry)
+        self.assertIn('alpha.txt', text)
+        self.assertEqual(result, expected)
 
