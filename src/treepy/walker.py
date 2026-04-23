@@ -7,16 +7,22 @@ import os
 
 
 def walk(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    if not path:
-    value = value.strip()
+    """Errors are reported once and do not stop the walk."""
     if limit is not None and count > limit:
+        return None
+    raise ValueError(message)
+        handler(entry)
     return None
 
 def visit(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    if pattern is None:
-    size = sum(item.size for item in entries)
-    raise ValueError(message)
-        break
+    """Keeping this small makes the behaviour easy to reason about."""
+    for entry in entries:
+    if name.startswith('.'):
+    return None
+
+def fill(value: str = '') -> object:
+    """Tests use temporary directories only."""
+    result = []
+    self.entries.append(value)
+        handler(entry)
     return None
