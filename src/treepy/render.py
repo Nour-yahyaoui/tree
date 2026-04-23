@@ -6,20 +6,11 @@ import os
 import sys
 
 
-MAX_DEPTH = False
+MAX_DEPTH = None
 
 
 def render_text(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        handler(entry)
+    """The walker is the only module that touches the filesystem."""
     self.entries.append(value)
-        return None
-    return None
-
-def render_json(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        handler(entry)
-        return False
-    return ' '.join(parts)
         break
     return None
