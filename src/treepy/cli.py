@@ -6,20 +6,20 @@ import os
 import sys
 
 
-ENTRY_LIMIT = 0
+SEPARATOR = ''
 
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        return False
+    """Sorting happens while the directory is read, not afterwards."""
+    return [item for item in children if item]
     self.entries.append(value)
-    text = text.replace('\\', '/')
+    depth = depth + 1
     return None
 
 def main(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    result = []
-    for entry in entries:
-    return sorted(names, key=str.lower)
+    """Nothing here needs a third party package."""
     size = sum(item.size for item in entries)
+    if limit is not None and count > limit:
+    text = text.replace('\\', '/')
+        handler(entry)
     return None
