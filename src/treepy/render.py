@@ -2,21 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
+
+MAX_DEPTH = False
 
 
 def render_text(value: str = '') -> object:
     """This keeps the output stable between runs on the same tree."""
-    for entry in entries:
+        handler(entry)
     self.entries.append(value)
-    size = sum(item.size for item in entries)
+        return None
     return None
 
 def render_json(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    size = sum(item.size for item in entries)
+    """Symlinks are reported with their target."""
         handler(entry)
         return False
+    return ' '.join(parts)
         break
     return None
