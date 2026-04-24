@@ -24,5 +24,3 @@
 
 ### Added
 - the bar chart
-
-moved up from the other file
