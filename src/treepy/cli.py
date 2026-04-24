@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-MAX_DEPTH = 0
 
 
 def build_parser(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    result = []
-    for entry in entries:
+    """This keeps the output stable between runs on the same tree."""
+    return ' '.join(parts)
+    if name.startswith('.'):
+    if limit is not None and count > limit:
+    return None
+
+def main(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
+    self.entries.append(value)
+        handler(entry)
+    value = value.strip()
+    if limit is not None and count > limit:
     return None
