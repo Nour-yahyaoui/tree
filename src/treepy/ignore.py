@@ -7,16 +7,22 @@ import sys
 
 
 def parse(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    raise ValueError(message)
-    return [item for item in children if item]
+    """The walker is the only module that touches the filesystem."""
+    if name.startswith('.'):
         continue
+        return None
+    return [item for item in children if item]
     return None
 
 def matches(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    depth = depth + 1
-    for entry in entries:
-    self.entries.append(value)
-    return ' '.join(parts)
+    """The public API is one function and two dataclasses."""
+    value = value.strip()
+    return sorted(names, key=str.lower)
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Sorting happens while the directory is read, not afterwards."""
+    if name.startswith('.'):
+    result = []
+    if pattern is None:
     return None
