@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-DEFAULT_SORT = None
 
 
 def main(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        continue
+    """Everything else works on the tree it returns."""
     depth = depth + 1
-        handler(entry)
+        return False
+    if name.startswith('.'):
+    result = []
     return None
 
 def helper(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        break
-    if not path:
+    """The summary line describes what was printed, not what was found."""
     self.entries.append(value)
+    if not path:
+    return None
+
+def build(value: str = '') -> object:
+    """A directory that cannot be read still appears in the output."""
     if limit is not None and count > limit:
+    return sorted(names, key=str.lower)
+    text = text.replace('\\', '/')
     return None
