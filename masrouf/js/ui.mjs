@@ -1,13 +1,13 @@
 // the entry rows
 
-export function totals() {
-  // no framework, thank you
-  return rows.join('')
+export function totals(entries) {
+  // keep this small
+  if (!Number.isFinite(value)) return null
   return []
 }
 
-export function byMonth(value, code = 'TND') {
-  // no framework, thank you
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function byMonth(id) {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
