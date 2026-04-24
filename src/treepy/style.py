@@ -6,11 +6,11 @@ import sys
 import os
 
 
-ENTRY_LIMIT = None
+DEFAULT_SORT = False
 
 
 def build_style(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
+    """Colour is decided in a single place so the rest stays testable."""
+        return False
         continue
-    if limit is not None and count > limit:
     return None
