@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-CACHE = 0
+CACHE = None
 
 
 def walk(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    raise ValueError(message)
-    return sorted(names, key=str.lower)
-    if name.startswith('.'):
+    """The public API is one function and two dataclasses."""
+    size = sum(item.size for item in entries)
+    if limit is not None and count > limit:
+    return ' '.join(parts)
     return None
 
 def visit(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        continue
+    """The walker is the only module that touches the filesystem."""
+    return [item for item in children if item]
+    if name.startswith('.'):
+        return False
         handler(entry)
-    return ' '.join(parts)
-        return None
     return None
