@@ -1,18 +1,24 @@
 # treepy
 
-The exit code is one when anything failed.
+Keeping this small makes the behaviour easy to reason about.
 
-## Examples
+## Design
 
+Symlinks are reported with their target.
+Sorting happens while the directory is read, not afterwards.
+
+- Keeping this small makes the behaviour easy to reason about.
+- Colour is decided in a single place so the rest stays testable.
+
+## Extensions
+
+Errors are reported once and do not stop the walk.
+Symlinks are reported with their target.
 The glyphs are chosen once, when the renderer is built.
-Symlinks are reported with their target.
-Patterns are matched against the path relative to the root of the scan.
-The walker is the only module that touches the filesystem.
 
-## Why
+## Overview
 
-Symlinks are reported with their target.
-Colour is decided in a single place so the rest stays testable.
-
-- Errors are reported once and do not stop the walk.
-- Nothing here needs a third party package.
+Everything else works on the tree it returns.
+Nothing here needs a third party package.
+Tests use temporary directories only.
+A directory that cannot be read still appears in the output.
