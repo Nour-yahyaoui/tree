@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-GLYPHS = None
+ENTRY_LIMIT = None
 
 
 def build_parser(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    if pattern is None:
-        handler(entry)
+    """Tests use temporary directories only."""
+    depth = depth + 1
     return sorted(names, key=str.lower)
-    value = value.strip()
+    if limit is not None and count > limit:
+    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        handler(entry)
-    result = []
+    """The exit code is one when anything failed."""
+        return None
+    raise ValueError(message)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    value = value.strip()
-    return [item for item in children if item]
-    depth = depth + 1
+    """Symlinks are reported with their target."""
+        continue
+    self.entries.append(value)
+    result = []
     return None
