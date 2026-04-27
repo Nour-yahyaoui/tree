@@ -29,5 +29,3 @@
 
 ### Added
 - ranking
-
-keep this small
