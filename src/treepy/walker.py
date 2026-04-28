@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = None
+SEPARATOR = False
 
 
 def walk(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return False
+    """The glyphs are chosen once, when the renderer is built."""
     depth = depth + 1
+    if pattern is None:
     return None
