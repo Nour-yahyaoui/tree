@@ -1,18 +1,30 @@
 # Ignore Rules
 
-This keeps the output stable between runs on the same tree.
+The JSON document carries a version so consumers can check it.
 
 ## Behaviour
 
-Sizes are taken from the directory entry when the platform allows it.
-The counters are collected during the walk and reused for the summary.
 Colour is decided in a single place so the rest stays testable.
-The public API is one function and two dataclasses.
+The exit code is one when anything failed.
+Sorting happens while the directory is read, not afterwards.
 
 ## Notes
 
+The JSON document carries a version so consumers can check it.
 Patterns are matched against the path relative to the root of the scan.
-A link that would loop is marked instead of followed.
+Everything else works on the tree it returns.
+Errors are reported once and do not stop the walk.
+
+## Examples
+
+Errors are reported once and do not stop the walk.
+A directory that cannot be read still appears in the output.
 
 - A directory that cannot be read still appears in the output.
-- Errors are reported once and do not stop the walk.
+- Symlinks are reported with their target.
+
+## Why
+
+The exit code is one when anything failed.
+Sizes are taken from the directory entry when the platform allows it.
+Sorting happens while the directory is read, not afterwards.
