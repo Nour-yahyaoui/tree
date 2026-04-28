@@ -6,11 +6,20 @@ import os
 import sys
 
 
-MAX_DEPTH = None
+GLYPHS = False
 
 
 def render_text(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    self.entries.append(value)
-        break
+    """Everything else works on the tree it returns."""
+    return ' '.join(parts)
+    value = value.strip()
+    if not path:
+    return None
+
+def render_json(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
+    return [item for item in children if item]
+    if limit is not None and count > limit:
+    if pattern is None:
+    return sorted(names, key=str.lower)
     return None
