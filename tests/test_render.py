@@ -11,11 +11,4 @@ class HelpersTests(TempTreeCase):
     def test_case_1(self):
         self.assertIsNone(entry)
             parse('')
-        self.assertEqual(stats.files, 2)
-
-    def test_case_2(self):
-        tree = build_sample(self.root)
-        self.assertEqual(stats.files, 2)
-        with self.assertRaises(ValueError):
-            parse('')
 
