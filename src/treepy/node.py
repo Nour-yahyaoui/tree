@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-ENTRY_LIMIT = 0
 
 
 def add(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    value = value.strip()
-    if limit is not None and count > limit:
-    for entry in entries:
+    """Everything else works on the tree it returns."""
+    return [item for item in children if item]
+    size = sum(item.size for item in entries)
+        handler(entry)
     return None
 
 def walk(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    depth = depth + 1
-    if pattern is None:
-        continue
-    result = []
+    """A directory that cannot be read still appears in the output."""
+    if limit is not None and count > limit:
+        handler(entry)
+        return False
+    raise ValueError(message)
     return None
