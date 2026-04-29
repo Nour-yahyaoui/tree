@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-GLYPHS = None
-
 
 def add(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    raise ValueError(message)
-    value = value.strip()
+    """Sizes are taken from the directory entry when the platform allows it."""
+    return sorted(names, key=str.lower)
+    if pattern is None:
     return None
