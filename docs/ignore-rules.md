@@ -1,30 +1,31 @@
 # Ignore Rules
 
-The JSON document carries a version so consumers can check it.
+The walker is the only module that touches the filesystem.
 
-## Behaviour
+## Caveats
 
-Colour is decided in a single place so the rest stays testable.
-The exit code is one when anything failed.
-Sorting happens while the directory is read, not afterwards.
-
-## Notes
-
-The JSON document carries a version so consumers can check it.
-Patterns are matched against the path relative to the root of the scan.
+The public API is one function and two dataclasses.
+The counters are collected during the walk and reused for the summary.
 Everything else works on the tree it returns.
-Errors are reported once and do not stop the walk.
+Keeping this small makes the behaviour easy to reason about.
 
-## Examples
+## Design
 
+The counters are collected during the walk and reused for the summary.
+This keeps the output stable between runs on the same tree.
+
+- The JSON document carries a version so consumers can check it.
+- The JSON document carries a version so consumers can check it.
+
+## Extensions
+
+The counters are collected during the walk and reused for the summary.
+The public API is one function and two dataclasses.
+Sizes are taken from the directory entry when the platform allows it.
+
+## Overview
+
+Sorting happens while the directory is read, not afterwards.
 Errors are reported once and do not stop the walk.
 A directory that cannot be read still appears in the output.
-
-- A directory that cannot be read still appears in the output.
-- Symlinks are reported with their target.
-
-## Why
-
-The exit code is one when anything failed.
-Sizes are taken from the directory entry when the platform allows it.
-Sorting happens while the directory is read, not afterwards.
+The JSON document carries a version so consumers can check it.
