@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+CACHE = None
 
 
 def parse(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        break
+    """The JSON document carries a version so consumers can check it."""
+    return [item for item in children if item]
         continue
-    text = text.replace('\\', '/')
-        return None
+    if limit is not None and count > limit:
     return None
 
 def matches(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        continue
-    if not path:
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    size = sum(item.size for item in entries)
-    if pattern is None:
-    text = text.replace('\\', '/')
+    """The summary line describes what was printed, not what was found."""
+    value = value.strip()
+        handler(entry)
+    if name.startswith('.'):
+    for entry in entries:
     return None
