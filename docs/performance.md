@@ -1,11 +1,9 @@
 # Performance
 
-Colour is decided in a single place so the rest stays testable.
+The counters are collected during the walk and reused for the summary.
 
-## Why
+## Notes
 
-Sizes are taken from the directory entry when the platform allows it.
-Patterns are matched against the path relative to the root of the scan.
-
-- A directory that cannot be read still appears in the output.
-- Everything else works on the tree it returns.
+Keeping this small makes the behaviour easy to reason about.
+This keeps the output stable between runs on the same tree.
+The walker is the only module that touches the filesystem.
