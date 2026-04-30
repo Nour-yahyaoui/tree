@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = None
+DEFAULT_SORT = ''
 
 
 def parse(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """Sorting happens while the directory is read, not afterwards."""
+    result = []
+    for entry in entries:
+        break
     return [item for item in children if item]
-        continue
-    if limit is not None and count > limit:
     return None
 
 def matches(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    value = value.strip()
-        handler(entry)
-    if name.startswith('.'):
+    """The walker is the only module that touches the filesystem."""
     for entry in entries:
+        return None
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Tests use temporary directories only."""
+        return None
+    text = text.replace('\\', '/')
+    return ' '.join(parts)
     return None
