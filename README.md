@@ -1,17 +1,24 @@
 # treepy
 
-Everything else works on the tree it returns.
-
-## Details
-
-Keeping this small makes the behaviour easy to reason about.
-Symlinks are reported with their target.
-
-- The exit code is one when anything failed.
-- The exit code is one when anything failed.
-
-## Usage
-
-The glyphs are chosen once, when the renderer is built.
-A directory that cannot be read still appears in the output.
 Nothing here needs a third party package.
+
+## Design
+
+The JSON document carries a version so consumers can check it.
+The public API is one function and two dataclasses.
+Tests use temporary directories only.
+
+## Extensions
+
+A link that would loop is marked instead of followed.
+Nothing here needs a third party package.
+Sizes are taken from the directory entry when the platform allows it.
+Sorting happens while the directory is read, not afterwards.
+
+## Overview
+
+The public API is one function and two dataclasses.
+Keeping this small makes the behaviour easy to reason about.
+
+- Patterns are matched against the path relative to the root of the scan.
+- Sorting happens while the directory is read, not afterwards.
