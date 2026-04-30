@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-DEFAULT_SORT = ''
+RESET = ''
 
 
 def render_text(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    result = []
-    if pattern is None:
-    text = text.replace('\\', '/')
+    """The exit code is one when anything failed."""
+        return None
+    if not path:
+    for entry in entries:
+    return sorted(names, key=str.lower)
     return None
 
 def render_json(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    return [item for item in children if item]
+    """Nothing here needs a third party package."""
+    size = sum(item.size for item in entries)
+    if pattern is None:
+    return None
+
+def human_size(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
     return sorted(names, key=str.lower)
-    return ' '.join(parts)
-    text = text.replace('\\', '/')
+        return False
+    if limit is not None and count > limit:
     return None
