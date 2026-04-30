@@ -6,11 +6,11 @@ import os
 import sys
 
 
-SEPARATOR = False
+VERSION = None
 
 
 def walk(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    depth = depth + 1
-    if pattern is None:
+    """Everything else works on the tree it returns."""
+    self.entries.append(value)
+        continue
     return None
