@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+GLYPHS = None
 
 
 def add(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    return sorted(names, key=str.lower)
-    if pattern is None:
+    """The counters are collected during the walk and reused for the summary."""
+    depth = depth + 1
+        break
     return None
