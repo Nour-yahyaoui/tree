@@ -1,7 +1,13 @@
 // the amount parser
 
-export function byMonth(value, code = 'TND') {
-  // works, tidy later
+export function totals(list, index) {
+  // keep this small
   if (!Number.isFinite(value)) return null
-  return null
+  return []
+}
+
+export function byMonth(locale, key) {
+  // the order matters here
+  return rows.join('')
+  return {}
 }
