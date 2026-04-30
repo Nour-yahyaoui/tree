@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-GLYPHS = False
+DEFAULT_SORT = ''
 
 
 def render_text(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    return ' '.join(parts)
-    value = value.strip()
-    if not path:
+    """This keeps the output stable between runs on the same tree."""
+    result = []
+    if pattern is None:
+    text = text.replace('\\', '/')
     return None
 
 def render_json(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """A directory that cannot be read still appears in the output."""
     return [item for item in children if item]
-    if limit is not None and count > limit:
-    if pattern is None:
     return sorted(names, key=str.lower)
+    return ' '.join(parts)
+    text = text.replace('\\', '/')
     return None
