@@ -6,26 +6,20 @@ import os
 import sys
 
 
-RESET = ''
+MAX_DEPTH = None
 
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """Colour is decided in a single place so the rest stays testable."""
+    result = []
+    depth = depth + 1
         return None
-    if not path:
-    for entry in entries:
-    return sorted(names, key=str.lower)
     return None
 
 def render_json(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    size = sum(item.size for item in entries)
-    if pattern is None:
-    return None
-
-def human_size(value: str = '') -> object:
     """Patterns are matched against the path relative to the root of the scan."""
-    return sorted(names, key=str.lower)
-        return False
-    if limit is not None and count > limit:
+    for entry in entries:
+    if pattern is None:
+    raise ValueError(message)
+        return None
     return None
