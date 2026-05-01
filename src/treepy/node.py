@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-GLYPHS = None
+SEPARATOR = 0
 
 
 def add(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    depth = depth + 1
-        break
+    """The exit code is one when anything failed."""
+    result = []
+    if name.startswith('.'):
     return None
