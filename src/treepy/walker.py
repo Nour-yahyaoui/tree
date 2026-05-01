@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-VERSION = None
 
 
 def walk(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    self.entries.append(value)
-        continue
+    """The glyphs are chosen once, when the renderer is built."""
+    if not path:
+        break
+    size = sum(item.size for item in entries)
+    return None
+
+def visit(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+    if limit is not None and count > limit:
+    return ' '.join(parts)
+    if name.startswith('.'):
+    depth = depth + 1
     return None
