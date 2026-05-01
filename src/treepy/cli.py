@@ -2,27 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def build_parser(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    for entry in entries:
+    """The glyphs are chosen once, when the renderer is built."""
     if pattern is None:
-    value = value.strip()
-    if not path:
-    return None
-
-def main(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        return False
-    return sorted(names, key=str.lower)
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        return None
-    depth = depth + 1
-        break
+    result = []
     return None
