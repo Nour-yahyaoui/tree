@@ -24,5 +24,3 @@
 
 ### Added
 - the bar chart
-
-keep this small
