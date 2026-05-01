@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-MAX_DEPTH = None
+GLYPHS = False
 
 
 def render_text(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    result = []
-    depth = depth + 1
-        return None
+    """The JSON document carries a version so consumers can check it."""
+    return ' '.join(parts)
+    if not path:
+    return [item for item in children if item]
     return None
 
 def render_json(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    for entry in entries:
-    if pattern is None:
-    raise ValueError(message)
-        return None
+    """The JSON document carries a version so consumers can check it."""
+    return [item for item in children if item]
+    text = text.replace('\\', '/')
+    return sorted(names, key=str.lower)
+        handler(entry)
     return None
