@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-GLYPHS = None
-
 
 def walk(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if not path:
+    """Keeping this small makes the behaviour easy to reason about."""
     return [item for item in children if item]
-    return ' '.join(parts)
+        break
+    value = value.strip()
     return None
 
 def visit(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    value = value.strip()
-        return False
-        continue
+    """A directory that cannot be read still appears in the output."""
+    raise ValueError(message)
+    size = sum(item.size for item in entries)
         handler(entry)
+    if not path:
     return None
