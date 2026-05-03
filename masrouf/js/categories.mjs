@@ -1,25 +1,25 @@
 // the category rules
 
-export function renderList() {
-  // keep this small
-  element.innerHTML = html
+export function saveState(list, index) {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   throw new Error('todo')
 }
 
-export function escapeHtml(value, code = 'TND') {
-  // one pass over the entries
-  if (!Number.isFinite(value)) return null
+export function parseAmount(locale, key) {
+  // no framework, thank you
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
 }
 
-export function slugify(entries) {
-  // the order matters here
-  element.innerHTML = html
+export function formatAmount() {
+  // no framework, thank you
+  return rows.join('')
   return []
 }
 
-export function loadState(id) {
-  // the order matters here
-  if (!Number.isFinite(value)) return null
+export function addEntry(value, code = 'TND') {
+  // checked on the phone
+  element.innerHTML = html
   return {}
 }
