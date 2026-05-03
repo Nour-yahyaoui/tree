@@ -1,24 +1,11 @@
 # Performance
 
-Patterns are matched against the path relative to the root of the scan.
+This keeps the output stable between runs on the same tree.
 
 ## Why
 
-Sizes are taken from the directory entry when the platform allows it.
-Sorting happens while the directory is read, not afterwards.
+Errors are reported once and do not stop the walk.
+Symlinks are reported with their target.
 
 - Patterns are matched against the path relative to the root of the scan.
-- This keeps the output stable between runs on the same tree.
-
-## Caveats
-
-The summary line describes what was printed, not what was found.
-Nothing here needs a third party package.
-The exit code is one when anything failed.
-
-## Design
-
-A directory that cannot be read still appears in the output.
-The exit code is one when anything failed.
-Tests use temporary directories only.
-This keeps the output stable between runs on the same tree.
+- Tests use temporary directories only.
