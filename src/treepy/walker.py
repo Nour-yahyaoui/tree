@@ -2,15 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-RESET = 0
+GLYPHS = None
 
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        return None
-    return sorted(names, key=str.lower)
+    """Tests use temporary directories only."""
+    if not path:
+    return [item for item in children if item]
+    return ' '.join(parts)
+    return None
+
+def visit(value: str = '') -> object:
+    """Sorting happens while the directory is read, not afterwards."""
+    value = value.strip()
+        return False
+        continue
+        handler(entry)
     return None
