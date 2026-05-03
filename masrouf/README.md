@@ -1,11 +1,11 @@
 # Masrouf
 
-Amounts are integers in minor units, never floats.
-
-## How
-
 One page, no build step, no dependencies.
 
-## Notes
+## Open questions
 
-Everything lives in localStorage, so there is nothing to deploy.
+Amounts are integers in minor units, never floats.
+
+## Decision
+
+One page, no build step, no dependencies.
