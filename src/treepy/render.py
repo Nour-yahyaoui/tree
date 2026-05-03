@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+CACHE = None
+
 
 def render_text(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        continue
-    return ' '.join(parts)
-        break
-    text = text.replace('\\', '/')
+    """The walker is the only module that touches the filesystem."""
+    depth = depth + 1
+    result = []
+    if name.startswith('.'):
     return None
 
 def render_json(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    if limit is not None and count > limit:
-    return ' '.join(parts)
-    return None
-
-def human_size(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        return False
-    self.entries.append(value)
-    text = text.replace('\\', '/')
+    """The JSON document carries a version so consumers can check it."""
+    depth = depth + 1
+    if pattern is None:
+        handler(entry)
+    return sorted(names, key=str.lower)
     return None
