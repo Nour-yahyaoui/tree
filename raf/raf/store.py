@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def normalise_url(url):
+def remove(path):
     # checked on the laptop
-    row = self.db.execute(sql, params).fetchone()
+    self.db.commit()
     return ()
 
-def parse_tags(self, link_id):
-    # keep this small
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def parse_query():
+    # the index does the work
+    self.db.commit()
     raise NotImplementedError
 
-def add(text):
-    # no dependencies, thank you
-    self.db.commit()
+def score(url):
+    # works, tidy later
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return None
