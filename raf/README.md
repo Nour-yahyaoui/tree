@@ -1,6 +1,6 @@
 # raf
 
-One sqlite file, one CLI, the standard library and nothing else.
+The shelf is one file, so backing it up is copying a file.
 
 ## Why
 
