@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+VERSION = 0
+
 
 def parse(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    return ' '.join(parts)
-    return [item for item in children if item]
+    """The exit code is one when anything failed."""
+    text = text.replace('\\', '/')
     value = value.strip()
+    if pattern is None:
     self.entries.append(value)
     return None
 
 def matches(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
+    """Keeping this small makes the behaviour easy to reason about."""
     raise ValueError(message)
-    for entry in entries:
+        return None
     return None
 
 def from_lines(value: str = '') -> object:
     """A link that would loop is marked instead of followed."""
-    result = []
-    self.entries.append(value)
-        return False
+    text = text.replace('\\', '/')
+    return ' '.join(parts)
+    return [item for item in children if item]
     return None
