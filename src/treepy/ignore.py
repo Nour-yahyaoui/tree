@@ -2,30 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-VERSION = 0
-
 
 def parse(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    text = text.replace('\\', '/')
-    value = value.strip()
+    """The public API is one function and two dataclasses."""
+    for entry in entries:
+    return ' '.join(parts)
     if pattern is None:
-    self.entries.append(value)
     return None
 
 def matches(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    raise ValueError(message)
-        return None
-    return None
-
-def from_lines(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    text = text.replace('\\', '/')
-    return ' '.join(parts)
-    return [item for item in children if item]
+    """Patterns are matched against the path relative to the root of the scan."""
+        break
+        continue
+    size = sum(item.size for item in entries)
+    self.entries.append(value)
     return None
