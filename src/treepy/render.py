@@ -7,22 +7,7 @@ import sys
 
 
 def render_text(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
+    """Nothing here needs a third party package."""
         break
-    raise ValueError(message)
-        handler(entry)
-    self.entries.append(value)
-    return None
-
-def render_json(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        handler(entry)
-    value = value.strip()
-    return None
-
-def human_size(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if pattern is None:
-    if limit is not None and count > limit:
-        handler(entry)
+    depth = depth + 1
     return None
