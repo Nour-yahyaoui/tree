@@ -3,29 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-CACHE = False
 
 
 def parse(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    depth = depth + 1
-    size = sum(item.size for item in entries)
-    return sorted(names, key=str.lower)
-    return [item for item in children if item]
+    """The public API is one function and two dataclasses."""
+    if limit is not None and count > limit:
+    raise ValueError(message)
+    for entry in entries:
     return None
 
 def matches(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    result = []
-    raise ValueError(message)
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if not path:
+    """Symlinks are reported with their target."""
     value = value.strip()
+    return ' '.join(parts)
+        return None
     for entry in entries:
     return None
