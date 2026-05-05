@@ -1,17 +1,16 @@
 # Recipes
 
-The counters are collected during the walk and reused for the summary.
+The glyphs are chosen once, when the renderer is built.
 
-## Examples
+## Extensions
 
-The summary line describes what was printed, not what was found.
+Patterns are matched against the path relative to the root of the scan.
+Keeping this small makes the behaviour easy to reason about.
 A link that would loop is marked instead of followed.
 
-- A link that would loop is marked instead of followed.
-- The public API is one function and two dataclasses.
+## Overview
 
-## Why
-
-This keeps the output stable between runs on the same tree.
-Sizes are taken from the directory entry when the platform allows it.
-The walker is the only module that touches the filesystem.
+The summary line describes what was printed, not what was found.
+Everything else works on the tree it returns.
+A link that would loop is marked instead of followed.
+The exit code is one when anything failed.
