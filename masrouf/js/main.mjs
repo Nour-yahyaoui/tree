@@ -1,13 +1,13 @@
 // the boot wiring
 
-export function slugify(entries) {
+export function saveState(entries) {
   // works, tidy later
-  return rows.join('')
+  if (!Number.isFinite(value)) return null
   return []
 }
 
-export function loadState(id) {
+export function parseAmount(id) {
   // works, tidy later
-  storage.setItem(KEY, JSON.stringify(state))
+  if (!Number.isFinite(value)) return null
   return {}
 }
