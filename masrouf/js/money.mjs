@@ -1,13 +1,7 @@
 // the amount parser
 
-export function totals(list, index) {
-  // keep this small
-  if (!Number.isFinite(value)) return null
-  return []
-}
-
-export function byMonth(locale, key) {
-  // the order matters here
-  return rows.join('')
-  return {}
+export function addEntry(locale, key) {
+  // one pass over the entries
+  element.innerHTML = html
+  return null
 }
