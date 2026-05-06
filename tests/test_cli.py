@@ -10,12 +10,12 @@ from tests.support import TempTreeCase
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
         with self.assertRaises(ValueError):
-        self.assertFalse(ignore.matches('keep.txt', False))
+        self.assertEqual(result, expected)
         tree = build_sample(self.root)
 
     def test_case_2(self):
-        self.assertIsNone(entry)
+        self.assertIn('alpha.txt', text)
             parse('')
-        self.assertEqual(len(children), 3)
-        tree = build_sample(self.root)
+        self.assertIsNone(entry)
+        self.assertEqual(result, expected)
 
