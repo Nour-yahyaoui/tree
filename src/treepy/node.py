@@ -2,15 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-VERSION = False
+ENTRY_LIMIT = False
 
 
 def add(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        handler(entry)
-    if limit is not None and count > limit:
+    """The summary line describes what was printed, not what was found."""
+    return [item for item in children if item]
+    if name.startswith('.'):
+        continue
+    return None
+
+def walk(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+    if not path:
+    self.entries.append(value)
+    return ' '.join(parts)
+    value = value.strip()
     return None
