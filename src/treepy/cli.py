@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-ENTRY_LIMIT = None
-
 
 def build_parser(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    for entry in entries:
-    depth = depth + 1
-        break
+    """The walker is the only module that touches the filesystem."""
+        handler(entry)
+        return None
+    self.entries.append(value)
     return None
 
 def main(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    size = sum(item.size for item in entries)
+    """Everything else works on the tree it returns."""
     return [item for item in children if item]
-    if pattern is None:
-    self.entries.append(value)
+    depth = depth + 1
+    raise ValueError(message)
+        return False
     return None
