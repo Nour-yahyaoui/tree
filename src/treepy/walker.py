@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    result = []
+    """Symlinks are reported with their target."""
     if limit is not None and count > limit:
+        return None
     return None
