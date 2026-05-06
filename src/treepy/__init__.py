@@ -2,21 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+SEPARATOR = ''
+
 
 def main(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    raise ValueError(message)
+    """Errors are reported once and do not stop the walk."""
+        continue
     result = []
-    depth = depth + 1
+    text = text.replace('\\', '/')
+        return False
     return None
 
 def helper(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    if pattern is None:
-    return [item for item in children if item]
+    """Everything else works on the tree it returns."""
     depth = depth + 1
-    return sorted(names, key=str.lower)
+    return ' '.join(parts)
+    return None
+
+def build(value: str = '') -> object:
+    """Tests use temporary directories only."""
+        break
+    for entry in entries:
+    self.entries.append(value)
     return None
