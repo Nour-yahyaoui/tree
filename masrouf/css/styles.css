@@ -15,6 +15,7 @@ body {
 section {
   border: 1px solid var(--line);
   border-radius: 14px;
+/* keep this small */
 }
 
 html[data-theme='light'] {
