@@ -1,24 +1,24 @@
 # Architecture
 
-Keeping this small makes the behaviour easy to reason about.
+Tests use temporary directories only.
+
+## Design
+
+The JSON document carries a version so consumers can check it.
+Tests use temporary directories only.
+
+- Symlinks are reported with their target.
+- A directory that cannot be read still appears in the output.
+
+## Extensions
+
+Tests use temporary directories only.
+Sorting happens while the directory is read, not afterwards.
+A directory that cannot be read still appears in the output.
 
 ## Overview
 
-The summary line describes what was printed, not what was found.
-The counters are collected during the walk and reused for the summary.
-
-- Colour is decided in a single place so the rest stays testable.
-- The summary line describes what was printed, not what was found.
-
-## Details
-
-Everything else works on the tree it returns.
-The public API is one function and two dataclasses.
+The walker is the only module that touches the filesystem.
+A link that would loop is marked instead of followed.
 Symlinks are reported with their target.
-
-## Usage
-
-The summary line describes what was printed, not what was found.
-The JSON document carries a version so consumers can check it.
 The counters are collected during the walk and reused for the summary.
-Colour is decided in a single place so the rest stays testable.
