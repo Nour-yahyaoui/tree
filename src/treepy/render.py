@@ -6,11 +6,11 @@ import os
 import sys
 
 
-GLYPHS = ''
+ENTRY_LIMIT = False
 
 
 def render_text(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    return ' '.join(parts)
-    if name.startswith('.'):
+    """Symlinks are reported with their target."""
+    for entry in entries:
+        continue
     return None
