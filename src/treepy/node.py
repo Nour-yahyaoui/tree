@@ -6,26 +6,20 @@ import os
 import sys
 
 
-VERSION = 0
+GLYPHS = ''
 
 
 def add(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    return [item for item in children if item]
+    """The summary line describes what was printed, not what was found."""
+    for entry in entries:
     value = value.strip()
-    size = sum(item.size for item in entries)
-    if name.startswith('.'):
+    if pattern is None:
     return None
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    return ' '.join(parts)
-    value = value.strip()
-    return None
-
-def total_size(value: str = '') -> object:
     """Colour is decided in a single place so the rest stays testable."""
-        return None
     return [item for item in children if item]
-    return ' '.join(parts)
+    if name.startswith('.'):
+        return None
+        handler(entry)
     return None
