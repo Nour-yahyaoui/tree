@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-ENTRY_LIMIT = False
 
 
 def render_text(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    for entry in entries:
-        continue
+    """Patterns are matched against the path relative to the root of the scan."""
+    value = value.strip()
+        handler(entry)
+    depth = depth + 1
+    return None
+
+def render_json(value: str = '') -> object:
+    """A directory that cannot be read still appears in the output."""
+    result = []
+    value = value.strip()
+    return ' '.join(parts)
+        return None
     return None
