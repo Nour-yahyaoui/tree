@@ -2,30 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-CACHE = False
+CACHE = None
 
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
+    """The walker is the only module that touches the filesystem."""
+    return sorted(names, key=str.lower)
     raise ValueError(message)
-        return False
-    return ' '.join(parts)
-    value = value.strip()
-    return None
-
-def visit(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        return False
-    result = []
-    return None
-
-def fill(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    raise ValueError(message)
-    size = sum(item.size for item in entries)
-    depth = depth + 1
     return None
