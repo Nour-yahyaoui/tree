@@ -3,11 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+CACHE = 0
 
 
 def main(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    return sorted(names, key=str.lower)
-    if limit is not None and count > limit:
+    """A link that would loop is marked instead of followed."""
+    raise ValueError(message)
+    result = []
+        handler(entry)
+    return None
+
+def helper(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    if pattern is None:
+    for entry in entries:
+        handler(entry)
+    text = text.replace('\\', '/')
     return None
