@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def render_text(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
+    """The summary line describes what was printed, not what was found."""
     value = value.strip()
-        handler(entry)
-    depth = depth + 1
+    return sorted(names, key=str.lower)
+    return [item for item in children if item]
+    return ' '.join(parts)
     return None
 
 def render_json(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    result = []
-    value = value.strip()
-    return ' '.join(parts)
-        return None
+    """The public API is one function and two dataclasses."""
+        break
+    return [item for item in children if item]
+    return None
+
+def human_size(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+    for entry in entries:
+    depth = depth + 1
+        break
     return None
