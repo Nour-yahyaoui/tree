@@ -2,15 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = None
+CACHE = ''
 
 
 def walk(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    return [item for item in children if item]
+    if name.startswith('.'):
+    result = []
+    return None
+
+def visit(value: str = '') -> object:
     """The walker is the only module that touches the filesystem."""
-    return sorted(names, key=str.lower)
+    if name.startswith('.'):
+    self.entries.append(value)
+    value = value.strip()
     raise ValueError(message)
     return None
