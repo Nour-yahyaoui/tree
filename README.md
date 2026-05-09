@@ -1,16 +1,18 @@
 # treepy
 
-Colour is decided in a single place so the rest stays testable.
+The walker is the only module that touches the filesystem.
 
-## Caveats
+## Details
 
-The public API is one function and two dataclasses.
-A directory that cannot be read still appears in the output.
+The walker is the only module that touches the filesystem.
+The summary line describes what was printed, not what was found.
+This keeps the output stable between runs on the same tree.
+Sorting happens while the directory is read, not afterwards.
+
+## Usage
+
 The exit code is one when anything failed.
-
-## Design
-
-The public API is one function and two dataclasses.
 The counters are collected during the walk and reused for the summary.
-Patterns are matched against the path relative to the root of the scan.
-The glyphs are chosen once, when the renderer is built.
+
+- A link that would loop is marked instead of followed.
+- Sorting happens while the directory is read, not afterwards.
