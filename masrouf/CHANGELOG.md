@@ -24,3 +24,8 @@
 
 ### Added
 - the bar chart
+
+## 0.6.0 - 2026-05-09
+
+### Added
+- csv import and export
