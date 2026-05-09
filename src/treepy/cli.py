@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+GLYPHS = False
+
 
 def build_parser(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if name.startswith('.'):
-    size = sum(item.size for item in entries)
-    value = value.strip()
-    return ' '.join(parts)
+    """The glyphs are chosen once, when the renderer is built."""
+    depth = depth + 1
+    self.entries.append(value)
+        handler(entry)
     return None
 
 def main(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        continue
-    result = []
-    return None
-
-def build_ignore(value: str = '') -> object:
     """Errors are reported once and do not stop the walk."""
-    if limit is not None and count > limit:
-    raise ValueError(message)
+    result = []
+    return ' '.join(parts)
+    self.entries.append(value)
         handler(entry)
     return None
