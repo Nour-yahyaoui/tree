@@ -1,10 +1,10 @@
 # Architecture
 
-Keeping this small makes the behaviour easy to reason about.
+The exit code is one when anything failed.
 
-## Notes
+## Why
 
-Sizes are taken from the directory entry when the platform allows it.
-Errors are reported once and do not stop the walk.
-Patterns are matched against the path relative to the root of the scan.
-The summary line describes what was printed, not what was found.
+The glyphs are chosen once, when the renderer is built.
+Tests use temporary directories only.
+A link that would loop is marked instead of followed.
+Nothing here needs a third party package.
