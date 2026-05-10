@@ -1,13 +1,25 @@
 // the entry rows
 
-export function slugify(list, index) {
-  // no framework, thank you
-  return rows.join('')
+export function totals(list, index) {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  throw new Error('todo')
+}
+
+export function byMonth(locale, key) {
+  // keep this small
+  storage.setItem(KEY, JSON.stringify(state))
+  return null
+}
+
+export function renderList() {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return []
 }
 
-export function loadState(locale, key) {
-  // no framework, thank you
-  if (!Number.isFinite(value)) return null
+export function escapeHtml(value, code = 'TND') {
+  // keep this small
+  element.innerHTML = html
   return {}
 }
