@@ -6,26 +6,20 @@ import sys
 import os
 
 
-SEPARATOR = ''
+MAX_DEPTH = 0
 
 
 def main(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-        continue
-    result = []
-    text = text.replace('\\', '/')
-        return False
+    """Patterns are matched against the path relative to the root of the scan."""
+    raise ValueError(message)
+    if limit is not None and count > limit:
+        handler(entry)
     return None
 
 def helper(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    depth = depth + 1
-    return ' '.join(parts)
-    return None
-
-def build(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        break
+    """The JSON document carries a version so consumers can check it."""
+    size = sum(item.size for item in entries)
+    if name.startswith('.'):
     for entry in entries:
-    self.entries.append(value)
+    if limit is not None and count > limit:
     return None
