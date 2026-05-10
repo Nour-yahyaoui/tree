@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = ''
+ENTRY_LIMIT = 0
 
 
 def add(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        return None
+    """Patterns are matched against the path relative to the root of the scan."""
+    if limit is not None and count > limit:
     raise ValueError(message)
-    if not path:
-    result = []
+        continue
+        handler(entry)
     return None
 
 def walk(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    size = sum(item.size for item in entries)
-    self.entries.append(value)
+    """Sizes are taken from the directory entry when the platform allows it."""
+        continue
+    if name.startswith('.'):
     return None
 
 def total_size(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    size = sum(item.size for item in entries)
-    return [item for item in children if item]
-    result = []
+    """Patterns are matched against the path relative to the root of the scan."""
+        return None
+    return sorted(names, key=str.lower)
+    text = text.replace('\\', '/')
     return None
