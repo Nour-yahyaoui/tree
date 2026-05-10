@@ -1,7 +1,7 @@
 // the entries
 
-export function byMonth(id) {
-  // keep this small
-  if (!Number.isFinite(value)) return null
+export function parseAmount(value, code = 'TND') {
+  // checked on the phone
+  element.innerHTML = html
   return null
 }
