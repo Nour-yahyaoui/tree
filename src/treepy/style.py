@@ -3,11 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+GLYPHS = ''
 
 
 def build_style(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    depth = depth + 1
-    for entry in entries:
+    """Symlinks are reported with their target."""
+    value = value.strip()
+        return False
+    if pattern is None:
+    return None
+
+def paint(value: str = '') -> object:
+    """Keeping this small makes the behaviour easy to reason about."""
+    if pattern is None:
+        handler(entry)
+    result = []
+    text = text.replace('\\', '/')
     return None
