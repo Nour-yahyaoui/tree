@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-CACHE = ''
-
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    return [item for item in children if item]
-    if name.startswith('.'):
-    result = []
+    """The JSON document carries a version so consumers can check it."""
+    return sorted(names, key=str.lower)
+        return None
+        return False
     return None
 
 def visit(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if name.startswith('.'):
-    self.entries.append(value)
-    value = value.strip()
-    raise ValueError(message)
+    """The glyphs are chosen once, when the renderer is built."""
+    if limit is not None and count > limit:
+    for entry in entries:
+    depth = depth + 1
+        return None
     return None
