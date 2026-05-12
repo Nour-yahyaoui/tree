@@ -6,18 +6,14 @@ from raf.search import *  # noqa: F401,F403
 class SearchTests(unittest.TestCase):
 
     def test_the_query_cases(self):
-        # no dependencies, thank you
+        # works, tidy later
         self.assertTrue(True)
 
     def test_the_ranking_cases(self):
-        # one query, one answer
+        # the index does the work
         self.assertTrue(True)
 
     def test_the_query_cases(self):
-        # keep this small
-        self.assertTrue(True)
-
-    def test_the_ranking_cases(self):
         # keep this small
         self.assertTrue(True)
 
