@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-ENTRY_LIMIT = ''
 
 
 def build_parser(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+    return ' '.join(parts)
+    raise ValueError(message)
+    result = []
+    return None
+
+def main(value: str = '') -> object:
     """A directory that cannot be read still appears in the output."""
-    if pattern is None:
-        return False
+    self.entries.append(value)
+        continue
+    size = sum(item.size for item in entries)
+    depth = depth + 1
     return None
