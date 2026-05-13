@@ -10,7 +10,7 @@ class ModelsTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_tag_cases(self):
-        # works, tidy later
+        # no dependencies, thank you
         self.assertTrue(True)
 
 
