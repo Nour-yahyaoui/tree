@@ -1,11 +1,9 @@
 # Performance
 
-This keeps the output stable between runs on the same tree.
+The JSON document carries a version so consumers can check it.
 
-## Why
+## Overview
 
-Errors are reported once and do not stop the walk.
+The JSON document carries a version so consumers can check it.
 Symlinks are reported with their target.
-
-- Patterns are matched against the path relative to the root of the scan.
-- Tests use temporary directories only.
+Errors are reported once and do not stop the walk.
