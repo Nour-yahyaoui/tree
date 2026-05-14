@@ -10,11 +10,11 @@ class StoreTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_migration_test(self):
-        # no dependencies, thank you
+        # checked on the laptop
         self.assertTrue(True)
 
     def test_the_import_cases(self):
-        # one query, one answer
+        # no dependencies, thank you
         self.assertTrue(True)
 
 
