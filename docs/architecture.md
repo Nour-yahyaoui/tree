@@ -1,10 +1,17 @@
 # Architecture
 
-Errors are reported once and do not stop the walk.
+The counters are collected during the walk and reused for the summary.
 
-## Usage
+## Behaviour
 
-The glyphs are chosen once, when the renderer is built.
-The walker is the only module that touches the filesystem.
 This keeps the output stable between runs on the same tree.
-Nothing here needs a third party package.
+The counters are collected during the walk and reused for the summary.
+
+- Nothing here needs a third party package.
+- A directory that cannot be read still appears in the output.
+
+## Notes
+
+This keeps the output stable between runs on the same tree.
+The walker is the only module that touches the filesystem.
+A directory that cannot be read still appears in the output.
