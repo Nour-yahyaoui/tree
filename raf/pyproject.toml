@@ -12,4 +12,3 @@ dependencies = []
 
 [project.scripts]
 raf = "raf.cli:main"
-
