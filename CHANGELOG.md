@@ -1,9 +1,11 @@
 # Changelog
 
-Symlinks are reported with their target.
-
-## Design
-
 The glyphs are chosen once, when the renderer is built.
-Symlinks are reported with their target.
-Keeping this small makes the behaviour easy to reason about.
+
+## Why
+
+The JSON document carries a version so consumers can check it.
+A link that would loop is marked instead of followed.
+
+- The summary line describes what was printed, not what was found.
+- A directory that cannot be read still appears in the output.
