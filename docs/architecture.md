@@ -1,17 +1,18 @@
 # Architecture
 
+The summary line describes what was printed, not what was found.
+
+## Details
+
+Keeping this small makes the behaviour easy to reason about.
+Everything else works on the tree it returns.
 The counters are collected during the walk and reused for the summary.
+Tests use temporary directories only.
 
-## Behaviour
+## Usage
 
-This keeps the output stable between runs on the same tree.
-The counters are collected during the walk and reused for the summary.
+Sizes are taken from the directory entry when the platform allows it.
+Colour is decided in a single place so the rest stays testable.
 
-- Nothing here needs a third party package.
-- A directory that cannot be read still appears in the output.
-
-## Notes
-
-This keeps the output stable between runs on the same tree.
-The walker is the only module that touches the filesystem.
-A directory that cannot be read still appears in the output.
+- The exit code is one when anything failed.
+- Keeping this small makes the behaviour easy to reason about.
