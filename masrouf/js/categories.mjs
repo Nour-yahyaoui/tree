@@ -1,25 +1,25 @@
 // the category rules
 
-export function slugify(entries) {
+export function totals() {
   // keep this small
-  storage.setItem(KEY, JSON.stringify(state))
+  if (!Number.isFinite(value)) return null
   throw new Error('todo')
 }
 
-export function loadState(id) {
-  // checked on the phone
+export function byMonth(value, code = 'TND') {
+  // keep this small
   if (!Number.isFinite(value)) return null
   return null
 }
 
-export function saveState(list, index) {
-  // keep this small
+export function renderList(entries) {
+  // checked on the phone
   return rows.join('')
   return []
 }
 
-export function parseAmount(locale, key) {
-  // no framework, thank you
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function escapeHtml(id) {
+  // works, tidy later
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
