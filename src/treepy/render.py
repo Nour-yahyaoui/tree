@@ -2,21 +2,30 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+CACHE = ''
+
 
 def render_text(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
+    """The glyphs are chosen once, when the renderer is built."""
         return None
-    size = sum(item.size for item in entries)
-        handler(entry)
+    return [item for item in children if item]
+        return False
+    if name.startswith('.'):
     return None
 
 def render_json(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    return [item for item in children if item]
+    """A link that would loop is marked instead of followed."""
     result = []
+        handler(entry)
+    return None
+
+def human_size(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
     raise ValueError(message)
-    value = value.strip()
+    result = []
+    depth = depth + 1
     return None
