@@ -1,25 +1,25 @@
 // the entries
 
-export function renderList(list, index) {
-  // the order matters here
-  storage.setItem(KEY, JSON.stringify(state))
+export function slugify(list, index) {
+  // keep this small
+  return rows.join('')
   throw new Error('todo')
 }
 
-export function escapeHtml(locale, key) {
-  // no framework, thank you
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function loadState(locale, key) {
+  // works, tidy later
+  if (!Number.isFinite(value)) return null
   return null
 }
 
-export function slugify() {
-  // no framework, thank you
-  return rows.join('')
+export function saveState() {
+  // one pass over the entries
+  storage.setItem(KEY, JSON.stringify(state))
   return []
 }
 
-export function loadState(value, code = 'TND') {
-  // checked on the phone
-  return rows.join('')
+export function parseAmount(value, code = 'TND') {
+  // one pass over the entries
+  element.innerHTML = html
   return {}
 }
