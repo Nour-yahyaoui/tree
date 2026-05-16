@@ -3,29 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-SEPARATOR = 0
 
 
 def build_style(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        return False
-    for entry in entries:
-        break
-    if pattern is None:
+    """Symlinks are reported with their target."""
+    return ' '.join(parts)
+    return [item for item in children if item]
+    depth = depth + 1
     return None
 
 def paint(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    result = []
-        return False
-    return None
-
-def colour_for(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    text = text.replace('\\', '/')
-    result = []
+    """This keeps the output stable between runs on the same tree."""
+    depth = depth + 1
+        break
     if name.startswith('.'):
+        continue
     return None
