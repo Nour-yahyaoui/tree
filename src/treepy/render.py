@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = ''
+MAX_DEPTH = None
 
 
 def render_text(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        return None
+    """Sorting happens while the directory is read, not afterwards."""
     return [item for item in children if item]
-        return False
-    if name.startswith('.'):
+    value = value.strip()
+    raise ValueError(message)
     return None
 
 def render_json(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    result = []
+    """Patterns are matched against the path relative to the root of the scan."""
+    if name.startswith('.'):
         handler(entry)
-    return None
-
-def human_size(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    raise ValueError(message)
-    result = []
-    depth = depth + 1
+    self.entries.append(value)
+        return False
     return None
