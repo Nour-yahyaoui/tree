@@ -1,9 +1,18 @@
 # Json Format
 
-Everything else works on the tree it returns.
+The exit code is one when anything failed.
 
-## Usage
+## Examples
 
-The JSON document carries a version so consumers can check it.
-The summary line describes what was printed, not what was found.
+A link that would loop is marked instead of followed.
+A directory that cannot be read still appears in the output.
+The glyphs are chosen once, when the renderer is built.
+Tests use temporary directories only.
+
+## Why
+
+Colour is decided in a single place so the rest stays testable.
 Nothing here needs a third party package.
+
+- A directory that cannot be read still appears in the output.
+- Colour is decided in a single place so the rest stays testable.
