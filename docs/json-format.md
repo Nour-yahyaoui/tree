@@ -1,18 +1,11 @@
 # Json Format
 
-The exit code is one when anything failed.
+The walker is the only module that touches the filesystem.
 
-## Examples
-
-A link that would loop is marked instead of followed.
-A directory that cannot be read still appears in the output.
-The glyphs are chosen once, when the renderer is built.
-Tests use temporary directories only.
-
-## Why
+## Usage
 
 Colour is decided in a single place so the rest stays testable.
-Nothing here needs a third party package.
+Sizes are taken from the directory entry when the platform allows it.
 
 - A directory that cannot be read still appears in the output.
-- Colour is decided in a single place so the rest stays testable.
+- Sizes are taken from the directory entry when the platform allows it.
