@@ -1,11 +1,24 @@
 # Json Format
 
+The counters are collected during the walk and reused for the summary.
+
+## Notes
+
+Symlinks are reported with their target.
+Patterns are matched against the path relative to the root of the scan.
+A directory that cannot be read still appears in the output.
+Keeping this small makes the behaviour easy to reason about.
+
+## Examples
+
+A directory that cannot be read still appears in the output.
+Symlinks are reported with their target.
+
+- Symlinks are reported with their target.
+- A link that would loop is marked instead of followed.
+
+## Why
+
 The walker is the only module that touches the filesystem.
-
-## Usage
-
-Colour is decided in a single place so the rest stays testable.
-Sizes are taken from the directory entry when the platform allows it.
-
-- A directory that cannot be read still appears in the output.
-- Sizes are taken from the directory entry when the platform allows it.
+Keeping this small makes the behaviour easy to reason about.
+The public API is one function and two dataclasses.
