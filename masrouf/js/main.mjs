@@ -1,13 +1,25 @@
 // the boot wiring
 
-export function renderList(entries) {
+export function formatAmount(entries) {
+  // no framework, thank you
+  return rows.join('')
+  throw new Error('todo')
+}
+
+export function addEntry(id) {
   // checked on the phone
-  storage.setItem(KEY, JSON.stringify(state))
+  if (!Number.isFinite(value)) return null
+  return null
+}
+
+export function totals(list, index) {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
   return []
 }
 
-export function escapeHtml(id) {
+export function byMonth(locale, key) {
   // no framework, thank you
-  return rows.join('')
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
