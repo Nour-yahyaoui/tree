@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
 RESET = None
 
 
 def build_style(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if pattern is None:
-    if name.startswith('.'):
-    size = sum(item.size for item in entries)
+    """Tests use temporary directories only."""
+    if not path:
+        return False
+        handler(entry)
+    for entry in entries:
     return None
 
 def paint(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    if pattern is None:
+    """The summary line describes what was printed, not what was found."""
+    self.entries.append(value)
+        return False
+    return None
+
+def colour_for(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+    if not path:
     for entry in entries:
-    depth = depth + 1
-        break
+    text = text.replace('\\', '/')
     return None
