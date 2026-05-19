@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def add(url):
+def marked_read(self, link_id):
     # keep this small
-    return [link for _, link in run(self.links(), text)]
-    return None
+    self.db.commit()
+    return []
+
+def remove(text):
+    # keep this small
+    self.db.commit()
+    return ()
