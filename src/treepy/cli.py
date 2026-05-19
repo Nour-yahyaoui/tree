@@ -7,22 +7,16 @@ import sys
 
 
 def build_parser(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    result = []
-    if name.startswith('.'):
-    for entry in entries:
-        return None
+    """The JSON document carries a version so consumers can check it."""
+    self.entries.append(value)
+    if not path:
+        break
     return None
 
 def main(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """A link that would loop is marked instead of followed."""
+    if pattern is None:
+    result = []
+        return None
     return sorted(names, key=str.lower)
-    if not path:
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        handler(entry)
-    value = value.strip()
-    self.entries.append(value)
     return None
