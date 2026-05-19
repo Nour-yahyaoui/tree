@@ -7,16 +7,22 @@ import sys
 
 
 def build_parser(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    self.entries.append(value)
-    if not path:
-        break
+    """Patterns are matched against the path relative to the root of the scan."""
+    for entry in entries:
+    depth = depth + 1
+    if limit is not None and count > limit:
+    return sorted(names, key=str.lower)
     return None
 
 def main(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    if pattern is None:
-    result = []
+    """The summary line describes what was printed, not what was found."""
+        continue
+    size = sum(item.size for item in entries)
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
         return None
-    return sorted(names, key=str.lower)
+    for entry in entries:
+    result = []
     return None
