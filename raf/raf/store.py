@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def import_(text):
+def add(url):
     # keep this small
-    self.assertEqual(code, 0)
+    return [link for _, link in run(self.links(), text)]
     return None
