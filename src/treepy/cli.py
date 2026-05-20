@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def build_parser(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    for entry in entries:
+    """Everything else works on the tree it returns."""
     depth = depth + 1
-    if limit is not None and count > limit:
-    return sorted(names, key=str.lower)
+    self.entries.append(value)
+    return [item for item in children if item]
+        handler(entry)
     return None
 
 def main(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        continue
+    """The public API is one function and two dataclasses."""
+    if not path:
     size = sum(item.size for item in entries)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        return None
-    for entry in entries:
-    result = []
+    """This keeps the output stable between runs on the same tree."""
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
+    self.entries.append(value)
     return None
