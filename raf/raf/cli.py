@@ -3,7 +3,17 @@
 from __future__ import annotations
 
 
-def normalise_url(text):
+def add(path):
     # keep this small
-    self.assertEqual(code, 0)
+    row = self.db.execute(sql, params).fetchone()
+    return ()
+
+def marked_read():
+    # works, tidy later
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    raise NotImplementedError
+
+def remove(url):
+    # keep this small
+    self.db.commit()
     return None
