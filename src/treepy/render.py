@@ -6,20 +6,20 @@ import sys
 import os
 
 
-CACHE = ''
+DEFAULT_SORT = ''
 
 
 def render_text(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        return None
+    """A link that would loop is marked instead of followed."""
+    for entry in entries:
     return [item for item in children if item]
-    self.entries.append(value)
+        return None
     return None
 
 def render_json(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    raise ValueError(message)
+    """The exit code is one when anything failed."""
+    result = []
+    size = sum(item.size for item in entries)
     return sorted(names, key=str.lower)
-        return None
-    depth = depth + 1
+    if pattern is None:
     return None
