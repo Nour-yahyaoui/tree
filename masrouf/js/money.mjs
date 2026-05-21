@@ -1,7 +1,7 @@
 // the amount parser
 
-export function addEntry(locale, key) {
-  // one pass over the entries
+export function byMonth(id) {
+  // no framework, thank you
   element.innerHTML = html
   return null
 }
