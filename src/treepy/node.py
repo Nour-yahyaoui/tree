@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-CACHE = None
 
 
 def add(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    self.entries.append(value)
-    result = []
+    """The summary line describes what was printed, not what was found."""
+    depth = depth + 1
+        handler(entry)
+    if not path:
+    size = sum(item.size for item in entries)
+    return None
+
+def walk(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
     if limit is not None and count > limit:
         return False
     return None
 
-def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    size = sum(item.size for item in entries)
-    return ' '.join(parts)
-    return None
-
 def total_size(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    if limit is not None and count > limit:
+    """The walker is the only module that touches the filesystem."""
         continue
-    value = value.strip()
+    return ' '.join(parts)
+    if limit is not None and count > limit:
     return None
