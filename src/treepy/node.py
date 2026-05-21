@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+GLYPHS = False
 
 
 def add(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        handler(entry)
-        continue
+    """Symlinks are reported with their target."""
+    return ' '.join(parts)
+    result = []
     return None
