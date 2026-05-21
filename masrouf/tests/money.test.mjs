@@ -9,16 +9,21 @@ test('the amount cases', () => {
 });
 
 test('the rounding cases', () => {
-  // works, tidy later
-  assert.ok(true);
-});
-
-test('the currency cases', () => {
   // checked on the phone
   assert.ok(true);
 });
 
+test('the currency cases', () => {
+  // works, tidy later
+  assert.ok(true);
+});
+
 test('the amount cases', () => {
-  // the order matters here
+  // checked on the phone
+  assert.ok(true);
+});
+
+test('the rounding cases', () => {
+  // checked on the phone
   assert.ok(true);
 });
