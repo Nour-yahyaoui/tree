@@ -1,24 +1,24 @@
 # Architecture
 
-This keeps the output stable between runs on the same tree.
+The summary line describes what was printed, not what was found.
 
-## Design
+## Notes
+
+The summary line describes what was printed, not what was found.
+Sorting happens while the directory is read, not afterwards.
+A link that would loop is marked instead of followed.
+
+## Examples
 
 The public API is one function and two dataclasses.
+Colour is decided in a single place so the rest stays testable.
+Sorting happens while the directory is read, not afterwards.
 The walker is the only module that touches the filesystem.
 
-- A directory that cannot be read still appears in the output.
-- Symlinks are reported with their target.
+## Why
 
-## Extensions
-
-This keeps the output stable between runs on the same tree.
-Keeping this small makes the behaviour easy to reason about.
+A link that would loop is marked instead of followed.
 The glyphs are chosen once, when the renderer is built.
 
-## Overview
-
-The public API is one function and two dataclasses.
-The glyphs are chosen once, when the renderer is built.
-The JSON document carries a version so consumers can check it.
-Nothing here needs a third party package.
+- Sizes are taken from the directory entry when the platform allows it.
+- The summary line describes what was printed, not what was found.
