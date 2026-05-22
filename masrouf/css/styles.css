@@ -22,6 +22,7 @@ html[data-theme='light'] {
   --ink: #1a1d24;
 }
 
+/* reordered for readability */
 .entry {
   display: grid;
   grid-template-columns: 6.5rem 1fr auto;
