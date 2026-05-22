@@ -1,24 +1,32 @@
 # Performance
 
-Colour is decided in a single place so the rest stays testable.
-
-## Overview
-
-Symlinks are reported with their target.
-Sizes are taken from the directory entry when the platform allows it.
-Tests use temporary directories only.
-The glyphs are chosen once, when the renderer is built.
+Sorting happens while the directory is read, not afterwards.
 
 ## Details
 
-The exit code is one when anything failed.
-The walker is the only module that touches the filesystem.
+The JSON document carries a version so consumers can check it.
+Patterns are matched against the path relative to the root of the scan.
 
-- Patterns are matched against the path relative to the root of the scan.
-- Symlinks are reported with their target.
+- Everything else works on the tree it returns.
+- The glyphs are chosen once, when the renderer is built.
 
 ## Usage
 
-This keeps the output stable between runs on the same tree.
-Everything else works on the tree it returns.
+A link that would loop is marked instead of followed.
+The public API is one function and two dataclasses.
+The exit code is one when anything failed.
+
+## Behaviour
+
 Tests use temporary directories only.
+Patterns are matched against the path relative to the root of the scan.
+Nothing here needs a third party package.
+The public API is one function and two dataclasses.
+
+## Notes
+
+Sorting happens while the directory is read, not afterwards.
+Sizes are taken from the directory entry when the platform allows it.
+
+- Errors are reported once and do not stop the walk.
+- Nothing here needs a third party package.
