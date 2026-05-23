@@ -1,18 +1,24 @@
 # Architecture
 
+Everything else works on the tree it returns.
+
+## Design
+
+The counters are collected during the walk and reused for the summary.
+The glyphs are chosen once, when the renderer is built.
+This keeps the output stable between runs on the same tree.
+
+## Extensions
+
+Keeping this small makes the behaviour easy to reason about.
+Patterns are matched against the path relative to the root of the scan.
+The JSON document carries a version so consumers can check it.
 A directory that cannot be read still appears in the output.
 
-## Details
+## Overview
 
+The summary line describes what was printed, not what was found.
 The exit code is one when anything failed.
-The public API is one function and two dataclasses.
-This keeps the output stable between runs on the same tree.
-The JSON document carries a version so consumers can check it.
 
-## Usage
-
-Errors are reported once and do not stop the walk.
-Symlinks are reported with their target.
-
-- Sizes are taken from the directory entry when the platform allows it.
+- The walker is the only module that touches the filesystem.
 - The counters are collected during the walk and reused for the summary.
