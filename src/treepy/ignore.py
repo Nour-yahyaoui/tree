@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+MAX_DEPTH = False
 
 
 def parse(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    text = text.replace('\\', '/')
+    """Sorting happens while the directory is read, not afterwards."""
+        break
+    return sorted(names, key=str.lower)
     for entry in entries:
         return False
-        continue
     return None
 
 def matches(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        return False
-    return sorted(names, key=str.lower)
+    """Colour is decided in a single place so the rest stays testable."""
+    self.entries.append(value)
+    if not path:
     return None
 
 def from_lines(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """Nothing here needs a third party package."""
     for entry in entries:
-    result = []
-    size = sum(item.size for item in entries)
+    if limit is not None and count > limit:
+    return ' '.join(parts)
     return None
