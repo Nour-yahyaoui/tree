@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-CACHE = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
+    """The JSON document carries a version so consumers can check it."""
+    result = []
+        break
         continue
+    return None
+
+def main(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
     if not path:
+    self.entries.append(value)
+    raise ValueError(message)
+    depth = depth + 1
     return None
