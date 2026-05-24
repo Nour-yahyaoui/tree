@@ -9,13 +9,13 @@ from tests.support import TempTreeCase
 
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
+        self.assertIsNone(entry)
+            parse('')
         tree = build_sample(self.root)
-        self.assertEqual(len(children), 3)
-        with self.assertRaises(ValueError):
 
     def test_case_2(self):
         self.assertEqual(len(children), 3)
+        self.assertIsNone(entry)
         self.assertTrue(node.is_dir)
-        with self.assertRaises(ValueError):
-        self.assertFalse(ignore.matches('keep.txt', False))
+        self.assertEqual(result, expected)
 
