@@ -9,6 +9,6 @@ from tests.support import TempTreeCase
 
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
-            parse('')
-        with self.assertRaises(ValueError):
+        tree = build_sample(self.root)
+        self.assertIsNone(entry)
 
