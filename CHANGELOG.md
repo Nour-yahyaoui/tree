@@ -1,17 +1,11 @@
 # Changelog
 
-Errors are reported once and do not stop the walk.
+Sorting happens while the directory is read, not afterwards.
 
-## Extensions
+## Usage
 
-Colour is decided in a single place so the rest stays testable.
-The walker is the only module that touches the filesystem.
+Keeping this small makes the behaviour easy to reason about.
+Sizes are taken from the directory entry when the platform allows it.
 
-- Nothing here needs a third party package.
-- Symlinks are reported with their target.
-
-## Overview
-
-Symlinks are reported with their target.
-The glyphs are chosen once, when the renderer is built.
-Nothing here needs a third party package.
+- Colour is decided in a single place so the rest stays testable.
+- The public API is one function and two dataclasses.
