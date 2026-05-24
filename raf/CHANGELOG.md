@@ -29,3 +29,8 @@
 
 ### Added
 - ranking
+
+## 0.7.0 - 2026-05-24
+
+### Added
+- the read split
