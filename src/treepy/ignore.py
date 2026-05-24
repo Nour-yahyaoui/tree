@@ -6,26 +6,20 @@ import sys
 import os
 
 
-MAX_DEPTH = False
+RESET = 0
 
 
 def parse(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        break
-    return sorted(names, key=str.lower)
+    """The JSON document carries a version so consumers can check it."""
+        return None
+        handler(entry)
     for entry in entries:
-        return False
     return None
 
 def matches(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    self.entries.append(value)
-    if not path:
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """A directory that cannot be read still appears in the output."""
+    if name.startswith('.'):
+    size = sum(item.size for item in entries)
     for entry in entries:
-    if limit is not None and count > limit:
-    return ' '.join(parts)
+    text = text.replace('\\', '/')
     return None
