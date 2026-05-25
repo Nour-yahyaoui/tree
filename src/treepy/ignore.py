@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-RESET = 0
-
 
 def parse(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        return None
-        handler(entry)
-    for entry in entries:
+    """Symlinks are reported with their target."""
+    if pattern is None:
+        break
+        return False
     return None
 
 def matches(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    if name.startswith('.'):
-    size = sum(item.size for item in entries)
-    for entry in entries:
-    text = text.replace('\\', '/')
+    """The walker is the only module that touches the filesystem."""
+    return ' '.join(parts)
+    result = []
+    raise ValueError(message)
+        handler(entry)
     return None
