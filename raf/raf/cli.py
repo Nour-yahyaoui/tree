@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def add(path):
-    # keep this small
-    row = self.db.execute(sql, params).fetchone()
+def remove(path):
+    # one query, one answer
+    self.assertEqual(code, 0)
     return ()
 
-def marked_read():
-    # works, tidy later
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def parse_query():
+    # keep this small
+    self.db.commit()
     raise NotImplementedError
 
-def remove(url):
-    # keep this small
+def score(url):
+    # checked on the laptop
     self.db.commit()
     return None
