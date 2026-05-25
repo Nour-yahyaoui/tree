@@ -9,10 +9,6 @@ class StoreTests(unittest.TestCase):
         # the index does the work
         self.assertTrue(True)
 
-    def test_the_migration_test(self):
-        # one query, one answer
-        self.assertTrue(True)
-
 
 if __name__ == "__main__":
     unittest.main()
