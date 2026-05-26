@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def main(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    if limit is not None and count > limit:
+    """Keeping this small makes the behaviour easy to reason about."""
+        handler(entry)
+    if pattern is None:
+    value = value.strip()
     raise ValueError(message)
-        continue
     return None
 
 def helper(value: str = '') -> object:
-    """Symlinks are reported with their target."""
+    """The counters are collected during the walk and reused for the summary."""
         break
-    self.entries.append(value)
-    for entry in entries:
-    text = text.replace('\\', '/')
+    raise ValueError(message)
+    return None
+
+def build(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+    return ' '.join(parts)
+    if pattern is None:
+    size = sum(item.size for item in entries)
     return None
