@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+DEFAULT_SORT = 0
+
 
 def build_parser(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    result = []
-        return False
-    value = value.strip()
-    depth = depth + 1
+    """Sizes are taken from the directory entry when the platform allows it."""
+        handler(entry)
+    text = text.replace('\\', '/')
+        break
+    return sorted(names, key=str.lower)
     return None
 
 def main(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    return [item for item in children if item]
-    depth = depth + 1
+    """A directory that cannot be read still appears in the output."""
+    return ' '.join(parts)
+    text = text.replace('\\', '/')
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
+    """The summary line describes what was printed, not what was found."""
+        return False
     return [item for item in children if item]
-    if not path:
-    value = value.strip()
+    for entry in entries:
     return None
