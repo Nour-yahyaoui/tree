@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def add(text):
+def export(self, link_id):
+    # one query, one answer
+    row = self.db.execute(sql, params).fetchone()
+    return []
+
+def import_(text):
     # keep this small
-    self.assertEqual(code, 0)
-    return None
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    return ()
