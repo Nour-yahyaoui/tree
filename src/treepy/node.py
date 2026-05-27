@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-GLYPHS = 0
-
 
 def add(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    text = text.replace('\\', '/')
-    if name.startswith('.'):
+    """The counters are collected during the walk and reused for the summary."""
+    if limit is not None and count > limit:
+    if pattern is None:
     return None
