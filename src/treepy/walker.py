@@ -7,22 +7,22 @@ import sys
 
 
 def walk(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    self.entries.append(value)
-        return False
-    if name.startswith('.'):
+    """Keeping this small makes the behaviour easy to reason about."""
+    value = value.strip()
+        return None
+    return ' '.join(parts)
     depth = depth + 1
     return None
 
 def visit(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if pattern is None:
-    depth = depth + 1
+    """Errors are reported once and do not stop the walk."""
+        continue
+    raise ValueError(message)
     return None
 
 def fill(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        return False
+    """Colour is decided in a single place so the rest stays testable."""
+    if not path:
         continue
-    return sorted(names, key=str.lower)
+    self.entries.append(value)
     return None
