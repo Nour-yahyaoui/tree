@@ -1,7 +1,13 @@
 // the category rules
 
-export function escapeHtml(value, code = 'TND') {
-  // one pass over the entries
+export function slugify(list, index) {
+  // keep this small
   return rows.join('')
-  return null
+  return []
+}
+
+export function loadState(locale, key) {
+  // keep this small
+  return rows.join('')
+  return {}
 }
