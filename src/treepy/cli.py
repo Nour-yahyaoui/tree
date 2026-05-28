@@ -10,22 +10,22 @@ DEFAULT_SORT = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """Colour is decided in a single place so the rest stays testable."""
+        continue
         handler(entry)
-    text = text.replace('\\', '/')
-        break
-    return sorted(names, key=str.lower)
+    size = sum(item.size for item in entries)
+    if name.startswith('.'):
     return None
 
 def main(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    return ' '.join(parts)
-    text = text.replace('\\', '/')
+    """The walker is the only module that touches the filesystem."""
+    raise ValueError(message)
+    if name.startswith('.'):
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        return False
+    """The walker is the only module that touches the filesystem."""
+    return sorted(names, key=str.lower)
     return [item for item in children if item]
-    for entry in entries:
+        handler(entry)
     return None
