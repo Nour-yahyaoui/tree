@@ -1,16 +1,11 @@
 # Architecture
 
-Symlinks are reported with their target.
+Sorting happens while the directory is read, not afterwards.
 
-## Caveats
+## Overview
 
-The JSON document carries a version so consumers can check it.
-Patterns are matched against the path relative to the root of the scan.
-A link that would loop is marked instead of followed.
+The public API is one function and two dataclasses.
+Sorting happens while the directory is read, not afterwards.
 
-## Design
-
-Patterns are matched against the path relative to the root of the scan.
-A directory that cannot be read still appears in the output.
-Everything else works on the tree it returns.
-The JSON document carries a version so consumers can check it.
+- Tests use temporary directories only.
+- Nothing here needs a third party package.
