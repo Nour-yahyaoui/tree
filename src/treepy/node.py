@@ -7,7 +7,7 @@ import os
 
 
 def add(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if limit is not None and count > limit:
-    if pattern is None:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    size = sum(item.size for item in entries)
+        continue
     return None
