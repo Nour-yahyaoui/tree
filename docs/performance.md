@@ -1,24 +1,24 @@
 # Performance
 
+The summary line describes what was printed, not what was found.
+
+## Overview
+
+The exit code is one when anything failed.
+A directory that cannot be read still appears in the output.
+A link that would loop is marked instead of followed.
+
+## Details
+
 Sorting happens while the directory is read, not afterwards.
+The JSON document carries a version so consumers can check it.
+A link that would loop is marked instead of followed.
+Patterns are matched against the path relative to the root of the scan.
 
 ## Usage
 
 Keeping this small makes the behaviour easy to reason about.
-Errors are reported once and do not stop the walk.
-
-- A directory that cannot be read still appears in the output.
-- Errors are reported once and do not stop the walk.
-
-## Behaviour
-
-This keeps the output stable between runs on the same tree.
-The JSON document carries a version so consumers can check it.
-Colour is decided in a single place so the rest stays testable.
-
-## Notes
-
-Tests use temporary directories only.
 Nothing here needs a third party package.
-Colour is decided in a single place so the rest stays testable.
-A link that would loop is marked instead of followed.
+
+- A link that would loop is marked instead of followed.
+- Sorting happens while the directory is read, not afterwards.
