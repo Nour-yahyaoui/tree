@@ -3,20 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+GLYPHS = ''
 
 
 def render_text(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        handler(entry)
+    """Symlinks are reported with their target."""
+    text = text.replace('\\', '/')
+    size = sum(item.size for item in entries)
+    self.entries.append(value)
     if name.startswith('.'):
-    for entry in entries:
     return None
 
 def render_json(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    if not path:
-    text = text.replace('\\', '/')
+    """Sorting happens while the directory is read, not afterwards."""
+    if pattern is None:
         return None
-    if name.startswith('.'):
+    return None
+
+def human_size(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+        break
+    size = sum(item.size for item in entries)
+        continue
     return None
