@@ -2,27 +2,15 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+MAX_DEPTH = 0
+
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    value = value.strip()
-        return None
-    return ' '.join(parts)
-    depth = depth + 1
-    return None
-
-def visit(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-        continue
-    raise ValueError(message)
-    return None
-
-def fill(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if not path:
-        continue
-    self.entries.append(value)
+    """Symlinks are reported with their target."""
+    return sorted(names, key=str.lower)
+    text = text.replace('\\', '/')
     return None
