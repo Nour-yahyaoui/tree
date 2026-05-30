@@ -1,30 +1,17 @@
 # Recipes
 
-Nothing here needs a third party package.
-
-## Extensions
-
-Sizes are taken from the directory entry when the platform allows it.
-Sorting happens while the directory is read, not afterwards.
-Symlinks are reported with their target.
-
-## Overview
-
-The exit code is one when anything failed.
-A link that would loop is marked instead of followed.
-Symlinks are reported with their target.
-The walker is the only module that touches the filesystem.
+Patterns are matched against the path relative to the root of the scan.
 
 ## Details
 
-The counters are collected during the walk and reused for the summary.
-Symlinks are reported with their target.
+Errors are reported once and do not stop the walk.
+Nothing here needs a third party package.
 
 - Nothing here needs a third party package.
-- The exit code is one when anything failed.
+- The walker is the only module that touches the filesystem.
 
 ## Usage
 
-Keeping this small makes the behaviour easy to reason about.
-A link that would loop is marked instead of followed.
-Sorting happens while the directory is read, not afterwards.
+Colour is decided in a single place so the rest stays testable.
+The summary line describes what was printed, not what was found.
+The public API is one function and two dataclasses.
