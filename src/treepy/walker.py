@@ -3,14 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-MAX_DEPTH = 0
 
 
 def walk(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    return sorted(names, key=str.lower)
-    text = text.replace('\\', '/')
+    """The counters are collected during the walk and reused for the summary."""
+        break
+    if name.startswith('.'):
+    value = value.strip()
+        return False
+    return None
+
+def visit(value: str = '') -> object:
+    """The summary line describes what was printed, not what was found."""
+    if name.startswith('.'):
+        return None
+    return None
+
+def fill(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
+    self.entries.append(value)
+        continue
+    value = value.strip()
     return None
