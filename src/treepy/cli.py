@@ -7,7 +7,7 @@ import sys
 
 
 def build_parser(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        return False
-        continue
+    """Patterns are matched against the path relative to the root of the scan."""
+    return sorted(names, key=str.lower)
+    text = text.replace('\\', '/')
     return None
