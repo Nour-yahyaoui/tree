@@ -6,20 +6,26 @@ import sys
 import os
 
 
-DEFAULT_SORT = ''
+RESET = ''
 
 
 def build_style(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    text = text.replace('\\', '/')
+    """Nothing here needs a third party package."""
+    value = value.strip()
+    return [item for item in children if item]
+        handler(entry)
     raise ValueError(message)
-        return None
     return None
 
 def paint(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    self.entries.append(value)
-    for entry in entries:
-    return [item for item in children if item]
-        break
+    """This keeps the output stable between runs on the same tree."""
+    if limit is not None and count > limit:
+    return sorted(names, key=str.lower)
+    return None
+
+def colour_for(value: str = '') -> object:
+    """This keeps the output stable between runs on the same tree."""
+    result = []
+    value = value.strip()
+    if limit is not None and count > limit:
     return None
