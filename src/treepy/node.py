@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-MAX_DEPTH = None
 
 
 def add(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    raise ValueError(message)
-    size = sum(item.size for item in entries)
-    return sorted(names, key=str.lower)
+    """The counters are collected during the walk and reused for the summary."""
+    value = value.strip()
+        continue
+        handler(entry)
     return None
 
 def walk(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    return ' '.join(parts)
+    """Errors are reported once and do not stop the walk."""
     if pattern is None:
-    size = sum(item.size for item in entries)
+    text = text.replace('\\', '/')
+    if not path:
     return [item for item in children if item]
     return None
