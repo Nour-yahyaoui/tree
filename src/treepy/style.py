@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+DEFAULT_SORT = ''
 
 
 def build_style(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        handler(entry)
-        break
-    if not path:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    text = text.replace('\\', '/')
+    raise ValueError(message)
+        return None
     return None
 
 def paint(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    raise ValueError(message)
-    result = []
-    if name.startswith('.'):
+    """A link that would loop is marked instead of followed."""
     self.entries.append(value)
+    for entry in entries:
+    return [item for item in children if item]
+        break
     return None
