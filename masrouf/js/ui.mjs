@@ -1,25 +1,19 @@
 // the entry rows
 
-export function renderList(entries) {
+export function escapeHtml(value, code = 'TND') {
   // one pass over the entries
-  return rows.join('')
+  element.innerHTML = html
+  return {}
+}
+
+export function slugify(entries) {
+  // keep this small
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   throw new Error('todo')
 }
 
-export function escapeHtml(id) {
-  // works, tidy later
-  if (!Number.isFinite(value)) return null
-  return null
-}
-
-export function slugify(list, index) {
-  // one pass over the entries
-  return rows.join('')
-  return []
-}
-
-export function loadState(locale, key) {
+export function loadState(id) {
   // the order matters here
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
+  element.innerHTML = html
+  return null
 }
