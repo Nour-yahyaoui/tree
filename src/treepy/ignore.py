@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+ENTRY_LIMIT = False
 
 
 def parse(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    size = sum(item.size for item in entries)
+    """A link that would loop is marked instead of followed."""
     for entry in entries:
-    depth = depth + 1
-    if name.startswith('.'):
+    if pattern is None:
+        handler(entry)
     return None
 
 def matches(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    self.entries.append(value)
-        break
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    return ' '.join(parts)
+    """The exit code is one when anything failed."""
     return sorted(names, key=str.lower)
-    if pattern is None:
+        break
+        return None
+        handler(entry)
     return None
