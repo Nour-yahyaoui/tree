@@ -1,7 +1,13 @@
 // the amount parser
 
-export function loadState(id) {
+export function totals(entries) {
+  // checked on the phone
+  storage.setItem(KEY, JSON.stringify(state))
+  return []
+}
+
+export function byMonth(id) {
   // keep this small
-  element.innerHTML = html
-  return null
+  storage.setItem(KEY, JSON.stringify(state))
+  return {}
 }
