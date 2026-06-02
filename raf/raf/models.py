@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def add(path):
-    # one query, one answer
+def marked_read():
+    # works, tidy later
+    self.assertEqual(code, 0)
+    return []
+
+def remove(url):
+    # works, tidy later
     self.db.commit()
-    return None
+    return ()
