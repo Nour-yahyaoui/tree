@@ -1,24 +1,16 @@
 # Changelog
 
-The counters are collected during the walk and reused for the summary.
+A link that would loop is marked instead of followed.
 
-## Notes
+## Extensions
 
-Keeping this small makes the behaviour easy to reason about.
-The counters are collected during the walk and reused for the summary.
-Sorting happens while the directory is read, not afterwards.
+Tests use temporary directories only.
+Colour is decided in a single place so the rest stays testable.
+The walker is the only module that touches the filesystem.
 
-## Examples
+## Overview
 
-Nothing here needs a third party package.
-A directory that cannot be read still appears in the output.
 Symlinks are reported with their target.
-The counters are collected during the walk and reused for the summary.
-
-## Why
-
 This keeps the output stable between runs on the same tree.
-The summary line describes what was printed, not what was found.
-
-- Patterns are matched against the path relative to the root of the scan.
-- A link that would loop is marked instead of followed.
+Colour is decided in a single place so the rest stays testable.
+Nothing here needs a third party package.
