@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "links": [
+    {
+      "url": "https://example.com/sqlite-notes",
+      "title": "SQLite notes",
+      "tags": ["reading", "db"],
+      "note": "the pragma page",
+      "read": false,
+      "added": "2026-04-02T19:04:11+00:00"
+    }
+  ]
+}
