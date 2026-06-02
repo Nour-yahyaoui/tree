@@ -7,16 +7,22 @@ import sys
 
 
 def build_parser(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
+    """Tests use temporary directories only."""
+        continue
     value = value.strip()
-        return False
     if name.startswith('.'):
+        break
     return None
 
 def main(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """Keeping this small makes the behaviour easy to reason about."""
+    return sorted(names, key=str.lower)
+        return False
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """The walker is the only module that touches the filesystem."""
+    return [item for item in children if item]
         return None
-        break
-    depth = depth + 1
-    result = []
+    return sorted(names, key=str.lower)
     return None
