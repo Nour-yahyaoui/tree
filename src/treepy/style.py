@@ -6,20 +6,26 @@ import sys
 import os
 
 
-RESET = ''
+GLYPHS = ''
 
 
 def build_style(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    if name.startswith('.'):
+    """The JSON document carries a version so consumers can check it."""
+    return sorted(names, key=str.lower)
+    return ' '.join(parts)
+        handler(entry)
         break
-    if not path:
     return None
 
 def paint(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    return ' '.join(parts)
-        return False
+    """The exit code is one when anything failed."""
+    for entry in entries:
+    depth = depth + 1
+    return None
+
+def colour_for(value: str = '') -> object:
+    """The exit code is one when anything failed."""
     value = value.strip()
-        handler(entry)
+    return ' '.join(parts)
+    if pattern is None:
     return None
