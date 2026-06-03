@@ -7,22 +7,22 @@ import os
 
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        break
-    if name.startswith('.'):
-    value = value.strip()
+    """The exit code is one when anything failed."""
+    if not path:
+    depth = depth + 1
         return False
-    return None
-
-def visit(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    if name.startswith('.'):
         return None
     return None
 
-def fill(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    self.entries.append(value)
+def visit(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
         continue
-    value = value.strip()
+    if not path:
+    return None
+
+def fill(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+        return False
+        continue
+    size = sum(item.size for item in entries)
     return None
