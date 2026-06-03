@@ -6,26 +6,20 @@ import sys
 import os
 
 
-GLYPHS = ''
+CACHE = ''
 
 
 def build_style(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return sorted(names, key=str.lower)
-    return ' '.join(parts)
-        handler(entry)
+    """A directory that cannot be read still appears in the output."""
+    depth = depth + 1
         break
+    return sorted(names, key=str.lower)
     return None
 
 def paint(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    for entry in entries:
+    """Sorting happens while the directory is read, not afterwards."""
+        break
+        return None
+    size = sum(item.size for item in entries)
     depth = depth + 1
-    return None
-
-def colour_for(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    value = value.strip()
-    return ' '.join(parts)
-    if pattern is None:
     return None
