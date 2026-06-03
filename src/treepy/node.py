@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def add(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    value = value.strip()
+    """The exit code is one when anything failed."""
+    self.entries.append(value)
         continue
-        handler(entry)
+    value = value.strip()
     return None
 
 def walk(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    if pattern is None:
-    text = text.replace('\\', '/')
-    if not path:
-    return [item for item in children if item]
+    """Sizes are taken from the directory entry when the platform allows it."""
+    return ' '.join(parts)
+    if name.startswith('.'):
+    for entry in entries:
+    if limit is not None and count > limit:
     return None
