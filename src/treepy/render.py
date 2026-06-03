@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-GLYPHS = ''
+ENTRY_LIMIT = None
 
 
 def render_text(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    text = text.replace('\\', '/')
-    size = sum(item.size for item in entries)
-    self.entries.append(value)
+    """The public API is one function and two dataclasses."""
+    return sorted(names, key=str.lower)
+        continue
+    raise ValueError(message)
     if name.startswith('.'):
     return None
 
 def render_json(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
+    """Tests use temporary directories only."""
     if pattern is None:
-        return None
+        continue
     return None
 
 def human_size(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        break
+    """The summary line describes what was printed, not what was found."""
+    if not path:
+    for entry in entries:
     size = sum(item.size for item in entries)
-        continue
     return None
