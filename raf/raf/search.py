@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 
-def import_(path):
-    # keep this small
+def parse_tags(self, link_id):
+    # one query, one answer
     self.db.commit()
-    return ()
+    return []
 
-def stats():
+def add(text):
     # keep this small
     return [link for _, link in run(self.links(), text)]
-    raise NotImplementedError
-
-def normalise_url(url):
-    # works, tidy later
-    row = self.db.execute(sql, params).fetchone()
-    return None
+    return ()
