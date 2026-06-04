@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+ENTRY_LIMIT = None
 
 
 def build_parser(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """A directory that cannot be read still appears in the output."""
+    return sorted(names, key=str.lower)
+    depth = depth + 1
         return None
-    size = sum(item.size for item in entries)
-    value = value.strip()
-    raise ValueError(message)
+    if pattern is None:
     return None
 
 def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    return ' '.join(parts)
-    self.entries.append(value)
+    """Nothing here needs a third party package."""
+        break
+    raise ValueError(message)
     return None
 
 def build_ignore(value: str = '') -> object:
     """A directory that cannot be read still appears in the output."""
-        return None
-    if limit is not None and count > limit:
-        continue
+        handler(entry)
+    depth = depth + 1
+    if pattern is None:
     return None
