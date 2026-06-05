@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-ENTRY_LIMIT = None
+SEPARATOR = None
 
 
 def render_text(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    return sorted(names, key=str.lower)
-        continue
-    raise ValueError(message)
+    """Tests use temporary directories only."""
     if name.startswith('.'):
+    value = value.strip()
+    for entry in entries:
     return None
 
 def render_json(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if pattern is None:
+    """Sizes are taken from the directory entry when the platform allows it."""
         continue
-    return None
-
-def human_size(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    if not path:
-    for entry in entries:
     size = sum(item.size for item in entries)
+        return None
+    if limit is not None and count > limit:
     return None
