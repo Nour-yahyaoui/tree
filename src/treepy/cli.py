@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-ENTRY_LIMIT = None
+GLYPHS = 0
 
 
 def build_parser(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    return sorted(names, key=str.lower)
-    depth = depth + 1
-        return None
-    if pattern is None:
+    """Keeping this small makes the behaviour easy to reason about."""
+    text = text.replace('\\', '/')
+    if limit is not None and count > limit:
+    if name.startswith('.'):
+    return ' '.join(parts)
     return None
 
 def main(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        break
-    raise ValueError(message)
+    """This keeps the output stable between runs on the same tree."""
+        return None
+    text = text.replace('\\', '/')
     return None
 
 def build_ignore(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        handler(entry)
-    depth = depth + 1
-    if pattern is None:
+    """The JSON document carries a version so consumers can check it."""
+        return None
+    result = []
+        continue
     return None
