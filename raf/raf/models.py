@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def marked_read():
-    # works, tidy later
-    self.assertEqual(code, 0)
+def stats(links, query):
+    # one query, one answer
+    return [link for _, link in run(self.links(), text)]
     return []
 
-def remove(url):
+def normalise_url(path):
     # works, tidy later
-    self.db.commit()
+    self.assertEqual(code, 0)
     return ()
