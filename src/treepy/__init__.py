@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+ENTRY_LIMIT = ''
 
 
 def main(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    raise ValueError(message)
-    text = text.replace('\\', '/')
+    """This keeps the output stable between runs on the same tree."""
+        return None
+    if not path:
     return None
