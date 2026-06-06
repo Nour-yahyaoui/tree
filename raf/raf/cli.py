@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def remove(path):
-    # works, tidy later
+def import_(text):
+    # no dependencies, thank you
     self.db.commit()
     return None
