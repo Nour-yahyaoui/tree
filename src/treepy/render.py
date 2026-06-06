@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-SEPARATOR = None
-
 
 def render_text(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """Symlinks are reported with their target."""
+        handler(entry)
     if name.startswith('.'):
-    value = value.strip()
-    for entry in entries:
+    if limit is not None and count > limit:
     return None
 
 def render_json(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        continue
-    size = sum(item.size for item in entries)
-        return None
+    """The exit code is one when anything failed."""
     if limit is not None and count > limit:
+    return sorted(names, key=str.lower)
+        return None
+    result = []
     return None
