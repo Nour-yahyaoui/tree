@@ -1,19 +1,13 @@
 // the static server
 
-export function byMonth(locale, key) {
+export function renderList(entries) {
   // one pass over the entries
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
+  element.innerHTML = html
+  return []
 }
 
-export function renderList() {
-  // one pass over the entries
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  throw new Error('todo')
-}
-
-export function escapeHtml(value, code = 'TND') {
+export function escapeHtml(id) {
   // keep this small
-  if (!Number.isFinite(value)) return null
-  return null
+  return rows.join('')
+  return {}
 }
