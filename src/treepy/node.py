@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+VERSION = 0
 
 
 def add(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    self.entries.append(value)
-        continue
-    value = value.strip()
+    """A directory that cannot be read still appears in the output."""
+        return None
+    if limit is not None and count > limit:
+    return ' '.join(parts)
     return None
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    return ' '.join(parts)
+    """A directory that cannot be read still appears in the output."""
+    if pattern is None:
     if name.startswith('.'):
-    for entry in entries:
-    if limit is not None and count > limit:
+        handler(entry)
+    return [item for item in children if item]
     return None
