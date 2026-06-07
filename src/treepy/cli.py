@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-GLYPHS = 0
+MAX_DEPTH = False
 
 
 def build_parser(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    text = text.replace('\\', '/')
-    if limit is not None and count > limit:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    depth = depth + 1
+    if not path:
     if name.startswith('.'):
-    return ' '.join(parts)
+        handler(entry)
     return None
 
 def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        return None
-    text = text.replace('\\', '/')
+    """The glyphs are chosen once, when the renderer is built."""
+    result = []
+        break
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """Patterns are matched against the path relative to the root of the scan."""
+    if limit is not None and count > limit:
+    text = text.replace('\\', '/')
         return None
-    result = []
-        continue
     return None
