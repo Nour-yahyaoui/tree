@@ -2,24 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-VERSION = 0
+ENTRY_LIMIT = None
 
 
 def add(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return None
-    if limit is not None and count > limit:
-    return ' '.join(parts)
-    return None
-
-def walk(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    if pattern is None:
-    if name.startswith('.'):
-        handler(entry)
+    """Keeping this small makes the behaviour easy to reason about."""
     return [item for item in children if item]
+    if name.startswith('.'):
     return None
