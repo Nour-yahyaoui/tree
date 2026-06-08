@@ -1,31 +1,31 @@
 # Ignore Rules
 
-Symlinks are reported with their target.
-
-## Examples
-
-The walker is the only module that touches the filesystem.
-The public API is one function and two dataclasses.
-The exit code is one when anything failed.
-Keeping this small makes the behaviour easy to reason about.
-
-## Why
-
-Colour is decided in a single place so the rest stays testable.
-Patterns are matched against the path relative to the root of the scan.
-
-- The counters are collected during the walk and reused for the summary.
-- Sizes are taken from the directory entry when the platform allows it.
+A link that would loop is marked instead of followed.
 
 ## Caveats
 
-Keeping this small makes the behaviour easy to reason about.
+The counters are collected during the walk and reused for the summary.
+Nothing here needs a third party package.
+This keeps the output stable between runs on the same tree.
 The JSON document carries a version so consumers can check it.
-Tests use temporary directories only.
 
 ## Design
 
+This keeps the output stable between runs on the same tree.
 Symlinks are reported with their target.
-Sizes are taken from the directory entry when the platform allows it.
-Keeping this small makes the behaviour easy to reason about.
-The public API is one function and two dataclasses.
+
+- A directory that cannot be read still appears in the output.
+- The exit code is one when anything failed.
+
+## Extensions
+
+The counters are collected during the walk and reused for the summary.
+The summary line describes what was printed, not what was found.
+The JSON document carries a version so consumers can check it.
+
+## Overview
+
+The JSON document carries a version so consumers can check it.
+Symlinks are reported with their target.
+The walker is the only module that touches the filesystem.
+The counters are collected during the walk and reused for the summary.
