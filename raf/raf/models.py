@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def stats(links, query):
-    # one query, one answer
-    return [link for _, link in run(self.links(), text)]
+def export():
+    # the index does the work
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return []
 
-def normalise_url(path):
+def import_(url):
     # works, tidy later
-    self.assertEqual(code, 0)
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return ()
