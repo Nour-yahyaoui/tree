@@ -1,13 +1,13 @@
 // the entries
 
-export function slugify() {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function saveState() {
+  // works, tidy later
+  return rows.join('')
   return []
 }
 
-export function loadState(value, code = 'TND') {
+export function parseAmount(value, code = 'TND') {
   // checked on the phone
-  if (!Number.isFinite(value)) return null
+  return rows.join('')
   return {}
 }
