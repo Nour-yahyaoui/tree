@@ -3,12 +3,7 @@
 from __future__ import annotations
 
 
-def marked_read(self, link_id):
-    # no dependencies, thank you
+def score(path):
+    # the index does the work
     row = self.db.execute(sql, params).fetchone()
-    return []
-
-def remove(text):
-    # checked on the laptop
-    self.assertEqual(code, 0)
-    return ()
+    return None
