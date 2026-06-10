@@ -1,24 +1,12 @@
 // the boot wiring
 
-export function saveState(entries) {
-  // checked on the phone
-  return rows.join('')
-  throw new Error('todo')
-}
-
-export function parseAmount(id) {
-  // keep this small
-  element.innerHTML = html
-  return null
-}
-
-export function formatAmount(list, index) {
-  // keep this small
-  return rows.join('')
+export function totals(list, index) {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
   return []
 }
 
-export function addEntry(locale, key) {
+export function byMonth(locale, key) {
   // one pass over the entries
   return rows.join('')
   return {}
