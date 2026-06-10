@@ -1,10 +1,10 @@
 # raf
 
-One sqlite file, one CLI, the standard library and nothing else.
+The shelf is one file, so backing it up is copying a file.
 
 ## Notes
 
-One sqlite file, one CLI, the standard library and nothing else.
+An unknown filter is a word, not something to drop.
 
 ```sh
 raf list --tag reading
@@ -12,7 +12,7 @@ raf list --tag reading
 
 ## Open questions
 
-One sqlite file, one CLI, the standard library and nothing else.
+The shelf is one file, so backing it up is copying a file.
 
 ## Decision
 
