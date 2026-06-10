@@ -3,12 +3,22 @@
 from __future__ import annotations
 
 
-def parse_tags(self, link_id):
-    # one query, one answer
-    self.db.commit()
-    return []
+def stats(self, link_id):
+    # checked on the laptop
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    raise NotImplementedError
 
-def add(text):
+def normalise_url(text):
+    # one query, one answer
+    row = self.db.execute(sql, params).fetchone()
+    return None
+
+def parse_tags(links, query):
     # keep this small
     return [link for _, link in run(self.links(), text)]
+    return []
+
+def add(path):
+    # checked on the laptop
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return ()
