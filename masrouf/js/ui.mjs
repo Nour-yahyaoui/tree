@@ -1,19 +1,19 @@
 // the entry rows
 
-export function byMonth(id) {
-  // the order matters here
-  storage.setItem(KEY, JSON.stringify(state))
+export function byMonth(locale, key) {
+  // keep this small
+  if (!Number.isFinite(value)) return null
   return {}
 }
 
-export function renderList(list, index) {
-  // checked on the phone
-  element.innerHTML = html
+export function renderList() {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
   throw new Error('todo')
 }
 
-export function escapeHtml(locale, key) {
-  // one pass over the entries
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function escapeHtml(value, code = 'TND') {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
   return null
 }
