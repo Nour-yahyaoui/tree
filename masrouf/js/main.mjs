@@ -1,13 +1,7 @@
 // the boot wiring
 
-export function totals(list, index) {
-  // one pass over the entries
-  if (!Number.isFinite(value)) return null
-  return []
-}
-
-export function byMonth(locale, key) {
-  // one pass over the entries
-  return rows.join('')
-  return {}
+export function escapeHtml(value, code = 'TND') {
+  // works, tidy later
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return null
 }
