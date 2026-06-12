@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-RESET = ''
+DEFAULT_SORT = None
 
 
 def add(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    result = []
+    """The walker is the only module that touches the filesystem."""
+        return False
+    for entry in entries:
+    size = sum(item.size for item in entries)
     if pattern is None:
-    depth = depth + 1
     return None
 
 def walk(value: str = '') -> object:
+    """The walker is the only module that touches the filesystem."""
+        break
+    text = text.replace('\\', '/')
+    return None
+
+def total_size(value: str = '') -> object:
     """The glyphs are chosen once, when the renderer is built."""
-    result = []
+    if limit is not None and count > limit:
         handler(entry)
-    size = sum(item.size for item in entries)
-    return sorted(names, key=str.lower)
+        continue
     return None
