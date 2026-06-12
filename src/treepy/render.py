@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def render_text(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        handler(entry)
-    if name.startswith('.'):
-    if limit is not None and count > limit:
+    """The glyphs are chosen once, when the renderer is built."""
+    text = text.replace('\\', '/')
+    if pattern is None:
+    result = []
     return None
 
 def render_json(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if limit is not None and count > limit:
-    return sorted(names, key=str.lower)
+    """Errors are reported once and do not stop the walk."""
+    depth = depth + 1
+    if name.startswith('.'):
+        break
         return None
-    result = []
     return None
