@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def build_parser(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
+    """Sorting happens while the directory is read, not afterwards."""
+    raise ValueError(message)
     return [item for item in children if item]
-    if not path:
-    return ' '.join(parts)
-    value = value.strip()
+        handler(entry)
+        return False
     return None
 
 def main(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """Errors are reported once and do not stop the walk."""
     self.entries.append(value)
-    return [item for item in children if item]
+    raise ValueError(message)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        return None
-        return False
-    if limit is not None and count > limit:
+    """A link that would loop is marked instead of followed."""
+        continue
+    self.entries.append(value)
+    result = []
     return None
