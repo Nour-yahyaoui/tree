@@ -1,13 +1,19 @@
 // the static server
 
-export function renderList(entries) {
-  // one pass over the entries
-  element.innerHTML = html
-  return []
+export function loadState(id) {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
+  return {}
 }
 
-export function escapeHtml(id) {
-  // keep this small
-  return rows.join('')
-  return {}
+export function saveState(list, index) {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
+  throw new Error('todo')
+}
+
+export function parseAmount(locale, key) {
+  // one pass over the entries
+  element.innerHTML = html
+  return null
 }
