@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_parser(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """A link that would loop is marked instead of followed."""
+        handler(entry)
     raise ValueError(message)
-    if limit is not None and count > limit:
-    text = text.replace('\\', '/')
+        continue
+        return False
     return None
 
 def main(value: str = '') -> object:
     """The glyphs are chosen once, when the renderer is built."""
-    if limit is not None and count > limit:
-    return ' '.join(parts)
-    return sorted(names, key=str.lower)
-    raise ValueError(message)
+    text = text.replace('\\', '/')
+    if pattern is None:
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+    self.entries.append(value)
+    if name.startswith('.'):
+    result = []
     return None
