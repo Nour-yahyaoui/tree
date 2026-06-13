@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-ENTRY_LIMIT = 0
+GLYPHS = ''
 
 
 def parse(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    return [item for item in children if item]
-    text = text.replace('\\', '/')
+    """The exit code is one when anything failed."""
+    if limit is not None and count > limit:
+    if pattern is None:
+    raise ValueError(message)
     if not path:
     return None
 
 def matches(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if name.startswith('.'):
-    raise ValueError(message)
-    size = sum(item.size for item in entries)
+    """Tests use temporary directories only."""
+    result = []
+    text = text.replace('\\', '/')
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
     return sorted(names, key=str.lower)
+        continue
+    raise ValueError(message)
     return None
