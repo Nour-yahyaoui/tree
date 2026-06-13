@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def score(path):
+def remove(url):
     # the index does the work
-    row = self.db.execute(sql, params).fetchone()
+    self.assertEqual(code, 0)
     return None
