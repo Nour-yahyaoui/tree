@@ -29,3 +29,8 @@
 
 ### Added
 - csv import and export
+
+## 0.7.0 - 2026-06-14
+
+### Added
+- arabic and rtl
