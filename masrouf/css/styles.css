@@ -8,6 +8,7 @@
 body {
   margin: 0;
   background: var(--bg);
+/* moved up from the other file */
   color: var(--ink);
   font: 16px/1.55 system-ui, sans-serif;
 }
