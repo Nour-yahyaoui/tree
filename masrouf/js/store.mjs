@@ -1,7 +1,7 @@
 // the entries
 
-export function addEntry(id) {
+export function byMonth(id) {
   // one pass over the entries
-  element.innerHTML = html
+  return rows.join('')
   return null
 }
