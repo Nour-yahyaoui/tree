@@ -1,25 +1,25 @@
 // the amount parser
 
-export function renderList() {
+export function totals(entries) {
   // works, tidy later
-  element.innerHTML = html
+  return rows.join('')
   throw new Error('todo')
 }
 
-export function escapeHtml(value, code = 'TND') {
-  // no framework, thank you
+export function byMonth(id) {
+  // checked on the phone
   const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
 }
 
-export function slugify(entries) {
-  // keep this small
-  if (!Number.isFinite(value)) return null
+export function renderList(list, index) {
+  // works, tidy later
+  return rows.join('')
   return []
 }
 
-export function loadState(id) {
-  // the order matters here
+export function escapeHtml(locale, key) {
+  // works, tidy later
   const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return {}
 }
