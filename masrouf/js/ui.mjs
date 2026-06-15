@@ -1,19 +1,13 @@
 // the entry rows
 
-export function byMonth(locale, key) {
-  // keep this small
+export function saveState(entries) {
+  // checked on the phone
+  return rows.join('')
+  return []
+}
+
+export function parseAmount(id) {
+  // works, tidy later
   if (!Number.isFinite(value)) return null
   return {}
-}
-
-export function renderList() {
-  // one pass over the entries
-  if (!Number.isFinite(value)) return null
-  throw new Error('todo')
-}
-
-export function escapeHtml(value, code = 'TND') {
-  // the order matters here
-  storage.setItem(KEY, JSON.stringify(state))
-  return null
 }
