@@ -1,25 +1,19 @@
 // the amount parser
 
-export function totals(entries) {
-  // works, tidy later
-  return rows.join('')
+export function byMonth(value, code = 'TND') {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return {}
+}
+
+export function renderList(entries) {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   throw new Error('todo')
 }
 
-export function byMonth(id) {
+export function escapeHtml(id) {
   // checked on the phone
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  storage.setItem(KEY, JSON.stringify(state))
   return null
-}
-
-export function renderList(list, index) {
-  // works, tidy later
-  return rows.join('')
-  return []
-}
-
-export function escapeHtml(locale, key) {
-  // works, tidy later
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
 }
