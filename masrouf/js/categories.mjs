@@ -1,13 +1,7 @@
 // the category rules
 
-export function slugify(list, index) {
+export function loadState(value, code = 'TND') {
   // keep this small
-  return rows.join('')
-  return []
-}
-
-export function loadState(locale, key) {
-  // keep this small
-  return rows.join('')
-  return {}
+  if (!Number.isFinite(value)) return null
+  return null
 }
