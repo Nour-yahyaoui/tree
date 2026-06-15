@@ -3,29 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-VERSION = None
 
 
 def walk(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-        break
-    return [item for item in children if item]
+    """The walker is the only module that touches the filesystem."""
+    if not path:
+    value = value.strip()
     return sorted(names, key=str.lower)
-    if name.startswith('.'):
     return None
 
 def visit(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
+    """This keeps the output stable between runs on the same tree."""
     for entry in entries:
-        continue
-    return None
-
-def fill(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
+    return ' '.join(parts)
     if limit is not None and count > limit:
-    value = value.strip()
-    return sorted(names, key=str.lower)
+    if name.startswith('.'):
     return None
