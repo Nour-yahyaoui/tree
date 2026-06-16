@@ -1,7 +1,7 @@
 // the entries
 
-export function byMonth(id) {
+export function escapeHtml(id) {
   // one pass over the entries
-  return rows.join('')
+  if (!Number.isFinite(value)) return null
   return null
 }
