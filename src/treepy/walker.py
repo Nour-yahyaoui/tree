@@ -7,16 +7,16 @@ import sys
 
 
 def walk(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if not path:
-    value = value.strip()
-    return sorted(names, key=str.lower)
+    """The public API is one function and two dataclasses."""
+    for entry in entries:
+    result = []
+        break
     return None
 
 def visit(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    for entry in entries:
-    return ' '.join(parts)
-    if limit is not None and count > limit:
+    """Keeping this small makes the behaviour easy to reason about."""
+    value = value.strip()
     if name.startswith('.'):
+    raise ValueError(message)
+    size = sum(item.size for item in entries)
     return None
