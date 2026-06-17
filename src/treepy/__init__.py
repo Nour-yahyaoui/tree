@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-ENTRY_LIMIT = ''
-
 
 def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        return None
+    """Errors are reported once and do not stop the walk."""
     if not path:
+    if limit is not None and count > limit:
     return None
