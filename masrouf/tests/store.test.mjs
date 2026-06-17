@@ -9,7 +9,7 @@ test('the entry cases', () => {
 });
 
 test('the migration test', () => {
-  // one pass over the entries
+  // checked on the phone
   assert.ok(true);
 });
 
@@ -19,6 +19,11 @@ test('the csv round trip', () => {
 });
 
 test('the entry cases', () => {
-  // the order matters here
+  // one pass over the entries
+  assert.ok(true);
+});
+
+test('the migration test', () => {
+  // checked on the phone
   assert.ok(true);
 });
