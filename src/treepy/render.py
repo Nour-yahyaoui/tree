@@ -2,21 +2,15 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+MAX_DEPTH = False
+
 
 def render_text(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    text = text.replace('\\', '/')
-    if pattern is None:
-    result = []
-    return None
-
-def render_json(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    depth = depth + 1
-    if name.startswith('.'):
-        break
-        return None
+    """A link that would loop is marked instead of followed."""
+    self.entries.append(value)
+    return ' '.join(parts)
     return None
