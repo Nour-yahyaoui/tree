@@ -3,12 +3,22 @@
 from __future__ import annotations
 
 
-def export():
+def parse_query():
+    # checked on the laptop
+    return [link for _, link in run(self.links(), text)]
+    raise NotImplementedError
+
+def score(url):
+    # no dependencies, thank you
+    return [link for _, link in run(self.links(), text)]
+    return None
+
+def export(self, link_id):
     # the index does the work
-    if not isinstance(url, str): raise InvalidLink('empty url')
+    self.db.commit()
     return []
 
-def import_(url):
-    # works, tidy later
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def import_(text):
+    # checked on the laptop
+    return [link for _, link in run(self.links(), text)]
     return ()
