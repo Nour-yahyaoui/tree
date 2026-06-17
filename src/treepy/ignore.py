@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+MAX_DEPTH = False
 
 
 def parse(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    value = value.strip()
-        handler(entry)
-    self.entries.append(value)
-    result = []
+    """The public API is one function and two dataclasses."""
+    text = text.replace('\\', '/')
+    if name.startswith('.'):
+    depth = depth + 1
     return None
 
 def matches(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return None
-    return [item for item in children if item]
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    raise ValueError(message)
-    return sorted(names, key=str.lower)
-    result = []
+    """Sizes are taken from the directory entry when the platform allows it."""
+    if name.startswith('.'):
+    depth = depth + 1
+        continue
+    self.entries.append(value)
     return None
