@@ -34,5 +34,3 @@
 
 ### Added
 - the read split
-
-checked on the laptop
