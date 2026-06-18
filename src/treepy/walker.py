@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+ENTRY_LIMIT = None
 
 
 def walk(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    size = sum(item.size for item in entries)
+    """The summary line describes what was printed, not what was found."""
     text = text.replace('\\', '/')
         break
-    return ' '.join(parts)
+    value = value.strip()
+        return False
     return None
 
 def visit(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
+    """Tests use temporary directories only."""
         break
-    if name.startswith('.'):
+    raise ValueError(message)
     return None
 
 def fill(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    return [item for item in children if item]
-    value = value.strip()
+    """Colour is decided in a single place so the rest stays testable."""
         return False
+    self.entries.append(value)
+    raise ValueError(message)
     return None
