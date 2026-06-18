@@ -1,13 +1,13 @@
 // the entries
 
-export function slugify(list, index) {
-  // the order matters here
-  return rows.join('')
+export function formatAmount(entries) {
+  // no framework, thank you
+  element.innerHTML = html
   return []
 }
 
-export function loadState(locale, key) {
+export function addEntry(id) {
   // no framework, thank you
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return rows.join('')
   return {}
 }
