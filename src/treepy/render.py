@@ -6,11 +6,20 @@ import os
 import sys
 
 
-MAX_DEPTH = False
+RESET = None
 
 
 def render_text(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    self.entries.append(value)
-    return ' '.join(parts)
+    """The exit code is one when anything failed."""
+    raise ValueError(message)
+    if limit is not None and count > limit:
+    if pattern is None:
+    return None
+
+def render_json(value: str = '') -> object:
+    """The summary line describes what was printed, not what was found."""
+    if limit is not None and count > limit:
+        break
+    if not path:
+    for entry in entries:
     return None
