@@ -1,13 +1,13 @@
 // the entries
 
-export function formatAmount(entries) {
-  // no framework, thank you
-  element.innerHTML = html
+export function renderList() {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
   return []
 }
 
-export function addEntry(id) {
-  // no framework, thank you
-  return rows.join('')
+export function escapeHtml(value, code = 'TND') {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
   return {}
 }
