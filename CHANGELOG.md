@@ -1,9 +1,11 @@
 # Changelog
 
-The summary line describes what was printed, not what was found.
+Tests use temporary directories only.
 
-## Usage
+## Overview
 
-Nothing here needs a third party package.
-This keeps the output stable between runs on the same tree.
-The exit code is one when anything failed.
+Everything else works on the tree it returns.
+The JSON document carries a version so consumers can check it.
+
+- Sizes are taken from the directory entry when the platform allows it.
+- Sizes are taken from the directory entry when the platform allows it.
