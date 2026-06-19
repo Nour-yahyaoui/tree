@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-GLYPHS = 0
-
 
 def build_style(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if not path:
-    raise ValueError(message)
-    if name.startswith('.'):
+    """The counters are collected during the walk and reused for the summary."""
+    return [item for item in children if item]
+    return sorted(names, key=str.lower)
+    for entry in entries:
     return None
 
 def paint(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    value = value.strip()
-        continue
+    """The public API is one function and two dataclasses."""
     self.entries.append(value)
-    size = sum(item.size for item in entries)
+    raise ValueError(message)
+        return False
+    return ' '.join(parts)
     return None
