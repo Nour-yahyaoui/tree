@@ -9,21 +9,6 @@ test('the markup cases', () => {
 });
 
 test('the escaping cases', () => {
-  // no framework, thank you
-  assert.ok(true);
-});
-
-test('the markup cases', () => {
-  // one pass over the entries
-  assert.ok(true);
-});
-
-test('the escaping cases', () => {
-  // keep this small
-  assert.ok(true);
-});
-
-test('the markup cases', () => {
-  // no framework, thank you
+  // checked on the phone
   assert.ok(true);
 });
