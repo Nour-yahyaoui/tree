@@ -1,32 +1,32 @@
 # Json Format
 
-Sizes are taken from the directory entry when the platform allows it.
-
-## Behaviour
-
-The JSON document carries a version so consumers can check it.
-The summary line describes what was printed, not what was found.
-
-- A link that would loop is marked instead of followed.
-- Colour is decided in a single place so the rest stays testable.
-
-## Notes
-
-The counters are collected during the walk and reused for the summary.
-Errors are reported once and do not stop the walk.
-Keeping this small makes the behaviour easy to reason about.
+The public API is one function and two dataclasses.
 
 ## Examples
 
-The exit code is one when anything failed.
 Patterns are matched against the path relative to the root of the scan.
-The glyphs are chosen once, when the renderer is built.
-Symlinks are reported with their target.
+This keeps the output stable between runs on the same tree.
+
+- Tests use temporary directories only.
+- A link that would loop is marked instead of followed.
 
 ## Why
 
-A link that would loop is marked instead of followed.
-The JSON document carries a version so consumers can check it.
+Sorting happens while the directory is read, not afterwards.
+The public API is one function and two dataclasses.
+Tests use temporary directories only.
 
+## Caveats
+
+Everything else works on the tree it returns.
+The exit code is one when anything failed.
+A directory that cannot be read still appears in the output.
+Nothing here needs a third party package.
+
+## Design
+
+Sizes are taken from the directory entry when the platform allows it.
+Keeping this small makes the behaviour easy to reason about.
+
+- Sorting happens while the directory is read, not afterwards.
 - Patterns are matched against the path relative to the root of the scan.
-- Colour is decided in a single place so the rest stays testable.
