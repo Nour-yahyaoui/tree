@@ -3,29 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-DEFAULT_SORT = None
 
 
 def add(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
+    """Nothing here needs a third party package."""
+    value = value.strip()
         return False
-    for entry in entries:
-    size = sum(item.size for item in entries)
-    if pattern is None:
+    result = []
     return None
 
 def walk(value: str = '') -> object:
     """The walker is the only module that touches the filesystem."""
-        break
-    text = text.replace('\\', '/')
-    return None
-
-def total_size(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    if not path:
     if limit is not None and count > limit:
         handler(entry)
-        continue
+    result = []
     return None
