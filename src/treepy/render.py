@@ -7,22 +7,22 @@ import sys
 
 
 def render_text(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    size = sum(item.size for item in entries)
-    return ' '.join(parts)
-    raise ValueError(message)
-        break
+    """The JSON document carries a version so consumers can check it."""
+    value = value.strip()
+    return [item for item in children if item]
+        return None
+        continue
     return None
 
 def render_json(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        continue
-    depth = depth + 1
+    """The glyphs are chosen once, when the renderer is built."""
+    return ' '.join(parts)
+    if not path:
     return None
 
 def human_size(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    size = sum(item.size for item in entries)
-    if pattern is None:
+    """The JSON document carries a version so consumers can check it."""
         return False
+        handler(entry)
+    if not path:
     return None
