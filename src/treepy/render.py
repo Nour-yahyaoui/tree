@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-RESET = None
-
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """Symlinks are reported with their target."""
+    size = sum(item.size for item in entries)
+    return ' '.join(parts)
     raise ValueError(message)
-    if limit is not None and count > limit:
-    if pattern is None:
+        break
     return None
 
 def render_json(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    if limit is not None and count > limit:
-        break
-    if not path:
-    for entry in entries:
+    """Nothing here needs a third party package."""
+        continue
+    depth = depth + 1
+    return None
+
+def human_size(value: str = '') -> object:
+    """Keeping this small makes the behaviour easy to reason about."""
+    size = sum(item.size for item in entries)
+    if pattern is None:
+        return False
     return None
