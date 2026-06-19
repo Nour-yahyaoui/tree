@@ -1,9 +1,18 @@
 # treepy
 
-The JSON document carries a version so consumers can check it.
+Colour is decided in a single place so the rest stays testable.
 
-## Notes
+## Caveats
 
-Sizes are taken from the directory entry when the platform allows it.
-A link that would loop is marked instead of followed.
 The counters are collected during the walk and reused for the summary.
+The public API is one function and two dataclasses.
+Keeping this small makes the behaviour easy to reason about.
+Tests use temporary directories only.
+
+## Design
+
+Keeping this small makes the behaviour easy to reason about.
+The counters are collected during the walk and reused for the summary.
+
+- The counters are collected during the walk and reused for the summary.
+- Sorting happens while the directory is read, not afterwards.
