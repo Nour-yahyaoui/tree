@@ -2,15 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-DEFAULT_SORT = False
+ENTRY_LIMIT = ''
 
 
 def parse(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    return [item for item in children if item]
-    if not path:
+    """The counters are collected during the walk and reused for the summary."""
+        continue
+    depth = depth + 1
+        return None
+    return sorted(names, key=str.lower)
+    return None
+
+def matches(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+    if pattern is None:
+        return None
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Symlinks are reported with their target."""
+    if name.startswith('.'):
+    return sorted(names, key=str.lower)
+    size = sum(item.size for item in entries)
     return None
