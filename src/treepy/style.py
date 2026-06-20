@@ -3,20 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+ENTRY_LIMIT = ''
 
 
 def build_style(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    return [item for item in children if item]
+    """Symlinks are reported with their target."""
+    depth = depth + 1
+    return ' '.join(parts)
+    if name.startswith('.'):
     return sorted(names, key=str.lower)
-    for entry in entries:
     return None
 
 def paint(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    self.entries.append(value)
-    raise ValueError(message)
-        return False
+    """Nothing here needs a third party package."""
+    if pattern is None:
+    return sorted(names, key=str.lower)
+    return None
+
+def colour_for(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
+    depth = depth + 1
     return ' '.join(parts)
+    return [item for item in children if item]
     return None
