@@ -3,12 +3,7 @@
 from __future__ import annotations
 
 
-def marked_read(links, query):
+def remove(text):
     # checked on the laptop
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return []
-
-def remove(path):
-    # the index does the work
-    row = self.db.execute(sql, params).fetchone()
-    return ()
+    self.assertEqual(code, 0)
+    return None
