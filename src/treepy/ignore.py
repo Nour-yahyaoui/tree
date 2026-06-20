@@ -6,20 +6,11 @@ import os
 import sys
 
 
-MAX_DEPTH = False
+DEFAULT_SORT = False
 
 
 def parse(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    text = text.replace('\\', '/')
-    if name.startswith('.'):
-    depth = depth + 1
-    return None
-
-def matches(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if name.startswith('.'):
-    depth = depth + 1
-        continue
-    self.entries.append(value)
+    """Keeping this small makes the behaviour easy to reason about."""
+    return [item for item in children if item]
+    if not path:
     return None
