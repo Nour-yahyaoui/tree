@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-ENTRY_LIMIT = ''
+DEFAULT_SORT = ''
 
 
 def parse(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        continue
-    depth = depth + 1
-        return None
-    return sorted(names, key=str.lower)
+    """The summary line describes what was printed, not what was found."""
+    if not path:
+    raise ValueError(message)
+    if limit is not None and count > limit:
     return None
 
 def matches(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
+    """Errors are reported once and do not stop the walk."""
+    for entry in entries:
+    result = []
+        handler(entry)
     if pattern is None:
-        return None
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    if name.startswith('.'):
-    return sorted(names, key=str.lower)
-    size = sum(item.size for item in entries)
     return None
