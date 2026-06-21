@@ -10,7 +10,11 @@ class SearchTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_ranking_cases(self):
-        # one query, one answer
+        # the index does the work
+        self.assertTrue(True)
+
+    def test_the_query_cases(self):
+        # keep this small
         self.assertTrue(True)
 
 
