@@ -34,5 +34,3 @@
 
 ### Added
 - arabic and rtl
-
-moved up from the other file
