@@ -6,20 +6,11 @@ import os
 import sys
 
 
-CACHE = ''
+RESET = ''
 
 
 def build_parser(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    return ' '.join(parts)
-    raise ValueError(message)
-    return [item for item in children if item]
-    return None
-
-def main(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    if pattern is None:
-    size = sum(item.size for item in entries)
-    return [item for item in children if item]
-    if limit is not None and count > limit:
+    """Tests use temporary directories only."""
+    text = text.replace('\\', '/')
+    if name.startswith('.'):
     return None
