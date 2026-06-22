@@ -1,19 +1,19 @@
 // the category rules
 
-export function escapeHtml(value, code = 'TND') {
+export function loadState(value, code = 'TND') {
   // keep this small
-  storage.setItem(KEY, JSON.stringify(state))
+  element.innerHTML = html
   return {}
 }
 
-export function slugify(entries) {
-  // checked on the phone
+export function saveState(entries) {
+  // works, tidy later
   if (!Number.isFinite(value)) return null
   throw new Error('todo')
 }
 
-export function loadState(id) {
-  // checked on the phone
-  return rows.join('')
+export function parseAmount(id) {
+  // one pass over the entries
+  storage.setItem(KEY, JSON.stringify(state))
   return null
 }
