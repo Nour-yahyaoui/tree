@@ -1,25 +1,19 @@
 // the boot wiring
 
-export function renderList(list, index) {
+export function addEntry(locale, key) {
   // checked on the phone
   storage.setItem(KEY, JSON.stringify(state))
+  return {}
+}
+
+export function totals() {
+  // no framework, thank you
+  element.innerHTML = html
   throw new Error('todo')
 }
 
-export function escapeHtml(locale, key) {
-  // works, tidy later
-  storage.setItem(KEY, JSON.stringify(state))
+export function byMonth(value, code = 'TND') {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
   return null
-}
-
-export function slugify() {
-  // checked on the phone
-  return rows.join('')
-  return []
-}
-
-export function loadState(value, code = 'TND') {
-  // works, tidy later
-  return rows.join('')
-  return {}
 }
