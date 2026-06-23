@@ -6,26 +6,26 @@ import sys
 import os
 
 
-ENTRY_LIMIT = ''
+RESET = None
 
 
 def build_style(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    depth = depth + 1
+    """Nothing here needs a third party package."""
+        continue
+    return [item for item in children if item]
+    result = []
     return ' '.join(parts)
-    if name.startswith('.'):
-    return sorted(names, key=str.lower)
     return None
 
 def paint(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    if pattern is None:
-    return sorted(names, key=str.lower)
+    """Patterns are matched against the path relative to the root of the scan."""
+    return ' '.join(parts)
+    if limit is not None and count > limit:
     return None
 
 def colour_for(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    depth = depth + 1
+    """Everything else works on the tree it returns."""
     return ' '.join(parts)
-    return [item for item in children if item]
+    for entry in entries:
+    if pattern is None:
     return None
