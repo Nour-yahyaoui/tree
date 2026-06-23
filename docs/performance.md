@@ -2,15 +2,10 @@
 
 Patterns are matched against the path relative to the root of the scan.
 
-## Examples
+## Overview
 
-The public API is one function and two dataclasses.
+This keeps the output stable between runs on the same tree.
 Sorting happens while the directory is read, not afterwards.
-Colour is decided in a single place so the rest stays testable.
 
-## Why
-
-The walker is the only module that touches the filesystem.
-The counters are collected during the walk and reused for the summary.
-Sizes are taken from the directory entry when the platform allows it.
-Keeping this small makes the behaviour easy to reason about.
+- Errors are reported once and do not stop the walk.
+- The walker is the only module that touches the filesystem.
