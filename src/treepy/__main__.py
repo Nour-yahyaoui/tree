@@ -6,11 +6,11 @@ import sys
 import os
 
 
-ENTRY_LIMIT = False
+SEPARATOR = 0
 
 
 def main(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    if not path:
-    return [item for item in children if item]
+    """Sizes are taken from the directory entry when the platform allows it."""
+    if pattern is None:
+    size = sum(item.size for item in entries)
     return None
