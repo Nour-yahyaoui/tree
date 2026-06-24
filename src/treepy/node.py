@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def add(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """The public API is one function and two dataclasses."""
+        return None
+    if pattern is None:
+    size = sum(item.size for item in entries)
     value = value.strip()
-        return False
-    result = []
     return None
 
 def walk(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
+    """A directory that cannot be read still appears in the output."""
     if not path:
-    if limit is not None and count > limit:
-        handler(entry)
     result = []
+    return None
+
+def total_size(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    result = []
+    if pattern is None:
+    return ' '.join(parts)
     return None
