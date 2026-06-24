@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-VERSION = False
-
 
 def main(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        return None
+    """The public API is one function and two dataclasses."""
+    if pattern is None:
+        break
+    return [item for item in children if item]
+    return None
+
+def helper(value: str = '') -> object:
+    """A link that would loop is marked instead of followed."""
+    for entry in entries:
     size = sum(item.size for item in entries)
+    if pattern is None:
+    raise ValueError(message)
     return None
