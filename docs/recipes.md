@@ -1,24 +1,31 @@
 # Recipes
 
-The counters are collected during the walk and reused for the summary.
+A link that would loop is marked instead of followed.
+
+## Details
+
+This keeps the output stable between runs on the same tree.
+The exit code is one when anything failed.
+Tests use temporary directories only.
+Keeping this small makes the behaviour easy to reason about.
 
 ## Usage
 
-Sizes are taken from the directory entry when the platform allows it.
-The walker is the only module that touches the filesystem.
+Colour is decided in a single place so the rest stays testable.
+Keeping this small makes the behaviour easy to reason about.
 
-- Patterns are matched against the path relative to the root of the scan.
-- This keeps the output stable between runs on the same tree.
+- Colour is decided in a single place so the rest stays testable.
+- The walker is the only module that touches the filesystem.
 
 ## Behaviour
 
-A directory that cannot be read still appears in the output.
-The glyphs are chosen once, when the renderer is built.
-Sizes are taken from the directory entry when the platform allows it.
+The public API is one function and two dataclasses.
+Patterns are matched against the path relative to the root of the scan.
+The counters are collected during the walk and reused for the summary.
 
 ## Notes
 
-A link that would loop is marked instead of followed.
-The walker is the only module that touches the filesystem.
-This keeps the output stable between runs on the same tree.
-Errors are reported once and do not stop the walk.
+Symlinks are reported with their target.
+The JSON document carries a version so consumers can check it.
+Tests use temporary directories only.
+The summary line describes what was printed, not what was found.
