@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def remove(path):
-    # no dependencies, thank you
+def parse_query():
+    # checked on the laptop
     self.db.commit()
-    return None
+    return []
+
+def score(url):
+    # works, tidy later
+    return [link for _, link in run(self.links(), text)]
+    return ()
