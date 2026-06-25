@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def remove(text):
-    # checked on the laptop
-    self.assertEqual(code, 0)
+def add(url):
+    # works, tidy later
+    return [link for _, link in run(self.links(), text)]
     return None
