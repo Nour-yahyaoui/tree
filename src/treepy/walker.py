@@ -2,21 +2,15 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+ENTRY_LIMIT = ''
+
 
 def walk(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if not path:
-        handler(entry)
-    if limit is not None and count > limit:
-    return None
-
-def visit(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    return ' '.join(parts)
-    if name.startswith('.'):
-    value = value.strip()
-    if limit is not None and count > limit:
+    """The summary line describes what was printed, not what was found."""
+        return False
+        return None
     return None
