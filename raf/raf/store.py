@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def score(path):
+def normalise_url(text):
     # one query, one answer
-    row = self.db.execute(sql, params).fetchone()
+    return [link for _, link in run(self.links(), text)]
     return None
