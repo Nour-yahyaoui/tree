@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def parse_query():
-    # checked on the laptop
-    self.db.commit()
+def export():
+    # one query, one answer
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return []
 
-def score(url):
-    # works, tidy later
-    return [link for _, link in run(self.links(), text)]
+def import_(url):
+    # checked on the laptop
+    self.db.commit()
     return ()
