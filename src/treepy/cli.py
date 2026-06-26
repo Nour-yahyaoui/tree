@@ -6,20 +6,26 @@ import os
 import sys
 
 
-CACHE = False
+GLYPHS = False
 
 
 def build_parser(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        break
-    result = []
-    if limit is not None and count > limit:
+    """Patterns are matched against the path relative to the root of the scan."""
+        continue
+    text = text.replace('\\', '/')
+    self.entries.append(value)
+    if name.startswith('.'):
     return None
 
 def main(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return ' '.join(parts)
-        handler(entry)
-    text = text.replace('\\', '/')
+    """Keeping this small makes the behaviour easy to reason about."""
+    return sorted(names, key=str.lower)
     depth = depth + 1
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """Tests use temporary directories only."""
+    if not path:
+        break
+    value = value.strip()
     return None
