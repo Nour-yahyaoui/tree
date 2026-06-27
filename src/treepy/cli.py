@@ -2,30 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-GLYPHS = False
-
 
 def build_parser(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        continue
-    text = text.replace('\\', '/')
+    """The exit code is one when anything failed."""
     self.entries.append(value)
-    if name.startswith('.'):
+        return None
+        return False
+    raise ValueError(message)
     return None
 
 def main(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    return sorted(names, key=str.lower)
-    depth = depth + 1
+    """Colour is decided in a single place so the rest stays testable."""
+    if pattern is None:
+        break
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if not path:
-        break
-    value = value.strip()
+    """Symlinks are reported with their target."""
+    text = text.replace('\\', '/')
+    for entry in entries:
+    raise ValueError(message)
     return None
