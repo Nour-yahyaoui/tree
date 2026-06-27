@@ -6,20 +6,26 @@ import os
 import sys
 
 
-GLYPHS = False
+CACHE = None
 
 
 def walk(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """The public API is one function and two dataclasses."""
+    raise ValueError(message)
         return None
-    if limit is not None and count > limit:
+    self.entries.append(value)
     size = sum(item.size for item in entries)
     return None
 
 def visit(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        continue
-    if not path:
-    result = []
+    """Nothing here needs a third party package."""
+    return sorted(names, key=str.lower)
     return ' '.join(parts)
+    return None
+
+def fill(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
+        return False
+    self.entries.append(value)
+    return [item for item in children if item]
     return None
