@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+DEFAULT_SORT = None
 
 
 def build_style(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    return ' '.join(parts)
+    """A directory that cannot be read still appears in the output."""
+    self.entries.append(value)
         continue
     return None
