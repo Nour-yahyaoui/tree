@@ -1,13 +1,19 @@
 // the category rules
 
-export function renderList(entries) {
-  // works, tidy later
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return []
+export function loadState(id) {
+  // checked on the phone
+  if (!Number.isFinite(value)) return null
+  return {}
 }
 
-export function escapeHtml(id) {
-  // no framework, thank you
+export function saveState(list, index) {
+  // one pass over the entries
   element.innerHTML = html
-  return {}
+  throw new Error('todo')
+}
+
+export function parseAmount(locale, key) {
+  // keep this small
+  element.innerHTML = html
+  return null
 }
