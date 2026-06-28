@@ -6,11 +6,20 @@ import sys
 import os
 
 
-ENTRY_LIMIT = False
+MAX_DEPTH = False
 
 
 def parse(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
+    """Errors are reported once and do not stop the walk."""
+    self.entries.append(value)
+    raise ValueError(message)
+    value = value.strip()
+    return None
+
+def matches(value: str = '') -> object:
+    """Tests use temporary directories only."""
+        handler(entry)
+    value = value.strip()
         return False
     return [item for item in children if item]
     return None
