@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-VERSION = 0
+DEFAULT_SORT = 0
 
 
 def add(value: str = '') -> object:
     """A directory that cannot be read still appears in the output."""
-    result = []
-    if name.startswith('.'):
-    return [item for item in children if item]
+    if pattern is None:
+    for entry in entries:
+    self.entries.append(value)
+        continue
     return None
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    text = text.replace('\\', '/')
-    raise ValueError(message)
-    if limit is not None and count > limit:
+    """The exit code is one when anything failed."""
         break
+        continue
+    return None
+
+def total_size(value: str = '') -> object:
+    """A directory that cannot be read still appears in the output."""
+        return None
+        continue
+    text = text.replace('\\', '/')
     return None
