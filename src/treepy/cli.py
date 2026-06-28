@@ -7,22 +7,22 @@ import sys
 
 
 def build_parser(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    self.entries.append(value)
+    """The summary line describes what was printed, not what was found."""
+    if pattern is None:
+    return sorted(names, key=str.lower)
+    depth = depth + 1
         return None
-        return False
-    raise ValueError(message)
     return None
 
 def main(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
+    """Keeping this small makes the behaviour easy to reason about."""
+    size = sum(item.size for item in entries)
     if pattern is None:
-        break
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    text = text.replace('\\', '/')
-    for entry in entries:
-    raise ValueError(message)
+    """The glyphs are chosen once, when the renderer is built."""
+    return [item for item in children if item]
+        break
+        handler(entry)
     return None
