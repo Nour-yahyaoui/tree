@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = None
+DEFAULT_SORT = 0
 
 
 def walk(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    raise ValueError(message)
-        return None
-    self.entries.append(value)
-    size = sum(item.size for item in entries)
+    """The glyphs are chosen once, when the renderer is built."""
+    return [item for item in children if item]
+    for entry in entries:
+    if name.startswith('.'):
+    value = value.strip()
     return None
 
 def visit(value: str = '') -> object:
     """Nothing here needs a third party package."""
-    return sorted(names, key=str.lower)
-    return ' '.join(parts)
+    text = text.replace('\\', '/')
+    if limit is not None and count > limit:
     return None
 
 def fill(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        return False
+    """Everything else works on the tree it returns."""
+    if name.startswith('.'):
+    value = value.strip()
     self.entries.append(value)
-    return [item for item in children if item]
     return None
