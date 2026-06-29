@@ -1,16 +1,17 @@
 # Changelog
 
-The glyphs are chosen once, when the renderer is built.
+Patterns are matched against the path relative to the root of the scan.
 
-## Extensions
+## Caveats
 
-Tests use temporary directories only.
-Errors are reported once and do not stop the walk.
-A directory that cannot be read still appears in the output.
+A link that would loop is marked instead of followed.
+Nothing here needs a third party package.
 
-## Overview
+- This keeps the output stable between runs on the same tree.
+- A link that would loop is marked instead of followed.
 
-Sizes are taken from the directory entry when the platform allows it.
-This keeps the output stable between runs on the same tree.
-Colour is decided in a single place so the rest stays testable.
-Everything else works on the tree it returns.
+## Design
+
+A link that would loop is marked instead of followed.
+The JSON document carries a version so consumers can check it.
+The exit code is one when anything failed.
