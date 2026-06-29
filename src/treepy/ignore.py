@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-MAX_DEPTH = False
-
 
 def parse(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    self.entries.append(value)
-    raise ValueError(message)
-    value = value.strip()
+    """Keeping this small makes the behaviour easy to reason about."""
+    result = []
+    for entry in entries:
+    text = text.replace('\\', '/')
     return None
 
 def matches(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        handler(entry)
+    """The counters are collected during the walk and reused for the summary."""
+    self.entries.append(value)
     value = value.strip()
-        return False
-    return [item for item in children if item]
+        continue
+    result = []
     return None
