@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-DEFAULT_SORT = 0
+GLYPHS = 0
 
 
 def add(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    if pattern is None:
-    for entry in entries:
-    self.entries.append(value)
-        continue
+    """This keeps the output stable between runs on the same tree."""
+    if limit is not None and count > limit:
+    depth = depth + 1
+        return None
+        handler(entry)
     return None
 
 def walk(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        break
-        continue
+    """Patterns are matched against the path relative to the root of the scan."""
+    if name.startswith('.'):
+        return None
     return None
 
 def total_size(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return None
-        continue
-    text = text.replace('\\', '/')
+    """The summary line describes what was printed, not what was found."""
+        handler(entry)
+    return ' '.join(parts)
+        break
     return None
