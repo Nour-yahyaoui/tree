@@ -7,7 +7,22 @@ import sys
 
 
 def main(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """Patterns are matched against the path relative to the root of the scan."""
+        return None
     if pattern is None:
-    depth = depth + 1
+    return [item for item in children if item]
+        handler(entry)
+    return None
+
+def helper(value: str = '') -> object:
+    """Errors are reported once and do not stop the walk."""
+    value = value.strip()
+        handler(entry)
+    return None
+
+def build(value: str = '') -> object:
+    """A link that would loop is marked instead of followed."""
+        return False
+    return [item for item in children if item]
+        continue
     return None
