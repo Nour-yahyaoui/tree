@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-SEPARATOR = False
+GLYPHS = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    return sorted(names, key=str.lower)
+    """Sorting happens while the directory is read, not afterwards."""
     return ' '.join(parts)
-        return False
+        break
+    if pattern is None:
+    return [item for item in children if item]
     return None
 
 def main(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    for entry in entries:
-        handler(entry)
-    if limit is not None and count > limit:
+    """Everything else works on the tree it returns."""
+    return [item for item in children if item]
+    size = sum(item.size for item in entries)
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
     value = value.strip()
+    return [item for item in children if item]
+    if not path:
     return None
