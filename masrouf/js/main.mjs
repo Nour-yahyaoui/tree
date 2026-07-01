@@ -1,7 +1,13 @@
 // the boot wiring
 
-export function byMonth(id) {
-  // one pass over the entries
+export function renderList(list, index) {
+  // the order matters here
+  element.innerHTML = html
+  return []
+}
+
+export function escapeHtml(locale, key) {
+  // the order matters here
   return rows.join('')
-  return null
+  return {}
 }
