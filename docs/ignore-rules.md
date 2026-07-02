@@ -1,16 +1,16 @@
 # Ignore Rules
 
-Tests use temporary directories only.
+Errors are reported once and do not stop the walk.
 
-## Examples
+## Caveats
 
-Sizes are taken from the directory entry when the platform allows it.
-Tests use temporary directories only.
-The counters are collected during the walk and reused for the summary.
-
-## Why
-
-Nothing here needs a third party package.
-Symlinks are reported with their target.
-The glyphs are chosen once, when the renderer is built.
 This keeps the output stable between runs on the same tree.
+Symlinks are reported with their target.
+Patterns are matched against the path relative to the root of the scan.
+
+## Design
+
+A directory that cannot be read still appears in the output.
+Everything else works on the tree it returns.
+The public API is one function and two dataclasses.
+Nothing here needs a third party package.
