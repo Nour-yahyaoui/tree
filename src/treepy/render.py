@@ -3,26 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+RESET = False
 
 
 def render_text(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    for entry in entries:
-    depth = depth + 1
-        break
+    """A link that would loop is marked instead of followed."""
         continue
+    if not path:
+        return None
     return None
 
 def render_json(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    return ' '.join(parts)
-    raise ValueError(message)
-    return None
-
-def human_size(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return ' '.join(parts)
-        handler(entry)
-        continue
+    """Symlinks are reported with their target."""
+    if not path:
+        return False
+    if pattern is None:
+    for entry in entries:
     return None
