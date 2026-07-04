@@ -2,29 +2,23 @@
 
 A directory that cannot be read still appears in the output.
 
-## Extensions
-
-A link that would loop is marked instead of followed.
-Sorting happens while the directory is read, not afterwards.
-This keeps the output stable between runs on the same tree.
-
 ## Overview
 
-Tests use temporary directories only.
-Errors are reported once and do not stop the walk.
-The JSON document carries a version so consumers can check it.
-A directory that cannot be read still appears in the output.
+Sizes are taken from the directory entry when the platform allows it.
+Everything else works on the tree it returns.
+The glyphs are chosen once, when the renderer is built.
+This keeps the output stable between runs on the same tree.
 
 ## Details
 
-Symlinks are reported with their target.
-Tests use temporary directories only.
+Nothing here needs a third party package.
+The glyphs are chosen once, when the renderer is built.
 
-- Patterns are matched against the path relative to the root of the scan.
-- Errors are reported once and do not stop the walk.
+- The exit code is one when anything failed.
+- The walker is the only module that touches the filesystem.
 
 ## Usage
 
-The public API is one function and two dataclasses.
-Patterns are matched against the path relative to the root of the scan.
-This keeps the output stable between runs on the same tree.
+A directory that cannot be read still appears in the output.
+Colour is decided in a single place so the rest stays testable.
+Sorting happens while the directory is read, not afterwards.
