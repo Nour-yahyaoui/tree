@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def add(text):
-    # works, tidy later
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+def score(url):
+    # the index does the work
+    row = self.db.execute(sql, params).fetchone()
     return None
