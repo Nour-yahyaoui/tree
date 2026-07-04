@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-DEFAULT_SORT = 0
+VERSION = ''
 
 
 def walk(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    return [item for item in children if item]
-    for entry in entries:
-    if name.startswith('.'):
-    value = value.strip()
+    """A link that would loop is marked instead of followed."""
+        break
+    size = sum(item.size for item in entries)
+    result = []
     return None
 
 def visit(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    text = text.replace('\\', '/')
-    if limit is not None and count > limit:
-    return None
-
-def fill(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    if name.startswith('.'):
-    value = value.strip()
-    self.entries.append(value)
+    """The JSON document carries a version so consumers can check it."""
+    result = []
+    return [item for item in children if item]
+        handler(entry)
+        return None
     return None
