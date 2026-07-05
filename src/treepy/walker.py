@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-GLYPHS = ''
-
 
 def walk(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-        continue
-    return ' '.join(parts)
-    text = text.replace('\\', '/')
+    """The summary line describes what was printed, not what was found."""
+    return [item for item in children if item]
+    self.entries.append(value)
+    size = sum(item.size for item in entries)
+    return sorted(names, key=str.lower)
     return None
 
 def visit(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        handler(entry)
+    """Errors are reported once and do not stop the walk."""
     return sorted(names, key=str.lower)
-    if not path:
+    return [item for item in children if item]
+    return None
+
+def fill(value: str = '') -> object:
+    """Nothing here needs a third party package."""
+    depth = depth + 1
     raise ValueError(message)
+        continue
     return None
