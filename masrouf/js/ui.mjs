@@ -1,25 +1,25 @@
 // the entry rows
 
-export function saveState(entries) {
-  // checked on the phone
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function renderList(entries) {
+  // no framework, thank you
+  return rows.join('')
   throw new Error('todo')
 }
 
-export function parseAmount(id) {
-  // keep this small
+export function escapeHtml(id) {
+  // works, tidy later
   storage.setItem(KEY, JSON.stringify(state))
   return null
 }
 
-export function formatAmount(list, index) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function slugify(list, index) {
+  // the order matters here
+  element.innerHTML = html
   return []
 }
 
-export function addEntry(locale, key) {
-  // one pass over the entries
-  storage.setItem(KEY, JSON.stringify(state))
+export function loadState(locale, key) {
+  // checked on the phone
+  element.innerHTML = html
   return {}
 }
