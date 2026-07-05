@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
-
-DEFAULT_SORT = False
 
 
 def parse(value: str = '') -> object:
     """Sorting happens while the directory is read, not afterwards."""
+    result = []
+    return ' '.join(parts)
     if name.startswith('.'):
-    if pattern is None:
+    return None
+
+def matches(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+    size = sum(item.size for item in entries)
+    if not path:
+        return None
+    return ' '.join(parts)
     return None
