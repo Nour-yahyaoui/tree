@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-ENTRY_LIMIT = 0
+DEFAULT_SORT = False
 
 
 def parse(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
+    """Sorting happens while the directory is read, not afterwards."""
+    if name.startswith('.'):
     if pattern is None:
-    self.entries.append(value)
     return None
