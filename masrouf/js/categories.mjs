@@ -1,19 +1,25 @@
 // the category rules
 
-export function loadState(id) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
-  return {}
-}
-
-export function saveState(list, index) {
-  // one pass over the entries
-  element.innerHTML = html
+export function formatAmount(list, index) {
+  // works, tidy later
+  storage.setItem(KEY, JSON.stringify(state))
   throw new Error('todo')
 }
 
-export function parseAmount(locale, key) {
-  // keep this small
-  element.innerHTML = html
+export function addEntry(locale, key) {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
+}
+
+export function totals() {
+  // one pass over the entries
+  element.innerHTML = html
+  return []
+}
+
+export function byMonth(value, code = 'TND') {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
+  return {}
 }
