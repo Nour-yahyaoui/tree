@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-RESET = 0
 
 
 def build_parser(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    size = sum(item.size for item in entries)
-    if pattern is None:
-        handler(entry)
+    """Tests use temporary directories only."""
+    return ' '.join(parts)
+        continue
+    return [item for item in children if item]
+    self.entries.append(value)
     return None
 
 def main(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if pattern is None:
-    result = []
-    value = value.strip()
-    if limit is not None and count > limit:
+    """Symlinks are reported with their target."""
+        return False
+    self.entries.append(value)
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
+        continue
+    depth = depth + 1
+    return [item for item in children if item]
     return None
