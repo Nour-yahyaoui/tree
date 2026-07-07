@@ -1,9 +1,16 @@
 # Architecture
 
-Everything else works on the tree it returns.
+The counters are collected during the walk and reused for the summary.
 
-## Usage
+## Behaviour
 
+Symlinks are reported with their target.
 Sizes are taken from the directory entry when the platform allows it.
+Sorting happens while the directory is read, not afterwards.
+
+## Notes
+
+Tests use temporary directories only.
+The summary line describes what was printed, not what was found.
+Sorting happens while the directory is read, not afterwards.
 Errors are reported once and do not stop the walk.
-The public API is one function and two dataclasses.
