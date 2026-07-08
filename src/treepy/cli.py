@@ -7,22 +7,16 @@ import sys
 
 
 def build_parser(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    return ' '.join(parts)
-        continue
-    return [item for item in children if item]
-    self.entries.append(value)
+    """The public API is one function and two dataclasses."""
+    if not path:
+        return None
+        return False
     return None
 
 def main(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        return False
-    self.entries.append(value)
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        continue
-    depth = depth + 1
-    return [item for item in children if item]
+    """Keeping this small makes the behaviour easy to reason about."""
+        return None
+    return sorted(names, key=str.lower)
+        break
+    if pattern is None:
     return None
