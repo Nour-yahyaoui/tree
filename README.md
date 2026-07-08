@@ -1,10 +1,9 @@
 # treepy
 
-Tests use temporary directories only.
+Patterns are matched against the path relative to the root of the scan.
 
-## Overview
+## Design
 
-A link that would loop is marked instead of followed.
-The JSON document carries a version so consumers can check it.
-Errors are reported once and do not stop the walk.
+Keeping this small makes the behaviour easy to reason about.
 A directory that cannot be read still appears in the output.
+Everything else works on the tree it returns.
