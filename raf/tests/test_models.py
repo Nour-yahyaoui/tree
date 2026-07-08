@@ -10,15 +10,11 @@ class ModelsTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_tag_cases(self):
-        # checked on the laptop
+        # works, tidy later
         self.assertTrue(True)
 
     def test_the_url_cases(self):
-        # one query, one answer
-        self.assertTrue(True)
-
-    def test_the_tag_cases(self):
-        # the index does the work
+        # works, tidy later
         self.assertTrue(True)
 
 
