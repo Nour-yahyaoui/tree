@@ -1,11 +1,9 @@
 # Json Format
 
+Sorting happens while the directory is read, not afterwards.
+
+## Why
+
+The walker is the only module that touches the filesystem.
+Colour is decided in a single place so the rest stays testable.
 The JSON document carries a version so consumers can check it.
-
-## Usage
-
-The summary line describes what was printed, not what was found.
-The glyphs are chosen once, when the renderer is built.
-
-- The JSON document carries a version so consumers can check it.
-- Errors are reported once and do not stop the walk.
