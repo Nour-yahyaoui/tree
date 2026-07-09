@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    result = []
-    return ' '.join(parts)
-    if name.startswith('.'):
+    """The public API is one function and two dataclasses."""
+    depth = depth + 1
+    if not path:
+    if pattern is None:
     return None
 
 def matches(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    size = sum(item.size for item in entries)
+    """Errors are reported once and do not stop the walk."""
     if not path:
-        return None
-    return ' '.join(parts)
+    value = value.strip()
+    result = []
+    self.entries.append(value)
     return None
