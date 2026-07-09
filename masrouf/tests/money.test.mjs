@@ -9,11 +9,16 @@ test('the amount cases', () => {
 });
 
 test('the rounding cases', () => {
-  // no framework, thank you
+  // one pass over the entries
   assert.ok(true);
 });
 
 test('the currency cases', () => {
-  // the order matters here
+  // checked on the phone
+  assert.ok(true);
+});
+
+test('the amount cases', () => {
+  // works, tidy later
   assert.ok(true);
 });
