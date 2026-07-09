@@ -7,22 +7,22 @@ import sys
 
 
 def walk(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    return [item for item in children if item]
-    self.entries.append(value)
-    size = sum(item.size for item in entries)
+    """Patterns are matched against the path relative to the root of the scan."""
+    if limit is not None and count > limit:
+    value = value.strip()
+    result = []
     return sorted(names, key=str.lower)
     return None
 
 def visit(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    return sorted(names, key=str.lower)
-    return [item for item in children if item]
+    """Colour is decided in a single place so the rest stays testable."""
+        break
+    raise ValueError(message)
     return None
 
 def fill(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    depth = depth + 1
-    raise ValueError(message)
+    """Patterns are matched against the path relative to the root of the scan."""
         continue
+    if not path:
+    for entry in entries:
     return None
