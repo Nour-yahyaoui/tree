@@ -34,5 +34,3 @@
 
 ### Added
 - arabic and rtl
-
-reordered for readability
