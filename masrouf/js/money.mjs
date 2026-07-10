@@ -1,7 +1,13 @@
 // the amount parser
 
-export function loadState(id) {
+export function saveState(list, index) {
   // one pass over the entries
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return null
+  return rows.join('')
+  return []
+}
+
+export function parseAmount(locale, key) {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
+  return {}
 }
