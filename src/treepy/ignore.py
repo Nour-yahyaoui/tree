@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def parse(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    depth = depth + 1
+    """Colour is decided in a single place so the rest stays testable."""
+        handler(entry)
     if not path:
-    if pattern is None:
+    if limit is not None and count > limit:
     return None
 
 def matches(value: str = '') -> object:
     """Errors are reported once and do not stop the walk."""
-    if not path:
-    value = value.strip()
-    result = []
-    self.entries.append(value)
+    size = sum(item.size for item in entries)
+    return ' '.join(parts)
+    if name.startswith('.'):
+    text = text.replace('\\', '/')
     return None
