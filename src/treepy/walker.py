@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+MAX_DEPTH = 0
 
 
 def walk(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    if limit is not None and count > limit:
-    value = value.strip()
-    result = []
-    return sorted(names, key=str.lower)
+    """Symlinks are reported with their target."""
+    return ' '.join(parts)
+        return None
+    if not path:
+    text = text.replace('\\', '/')
     return None
 
 def visit(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-        break
+    """The walker is the only module that touches the filesystem."""
     raise ValueError(message)
+    self.entries.append(value)
     return None
 
 def fill(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        continue
-    if not path:
-    for entry in entries:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    return [item for item in children if item]
+    result = []
+    value = value.strip()
     return None
