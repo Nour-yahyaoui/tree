@@ -1,13 +1,13 @@
 // the amount parser
 
-export function saveState(list, index) {
-  // one pass over the entries
-  return rows.join('')
+export function totals(entries) {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
   return []
 }
 
-export function parseAmount(locale, key) {
+export function byMonth(id) {
   // the order matters here
-  storage.setItem(KEY, JSON.stringify(state))
+  return rows.join('')
   return {}
 }
