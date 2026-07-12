@@ -6,11 +6,11 @@ import sys
 import os
 
 
-MAX_DEPTH = 0
+CACHE = False
 
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if name.startswith('.'):
-    if limit is not None and count > limit:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    return sorted(names, key=str.lower)
+    depth = depth + 1
     return None
