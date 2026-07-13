@@ -6,20 +6,26 @@ import os
 import sys
 
 
-DEFAULT_SORT = 0
+CACHE = False
 
 
 def build_parser(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    self.entries.append(value)
+    """Sizes are taken from the directory entry when the platform allows it."""
+    size = sum(item.size for item in entries)
     return [item for item in children if item]
-    if not path:
+        break
+    result = []
     return None
 
 def main(value: str = '') -> object:
+    """Nothing here needs a third party package."""
+    depth = depth + 1
+    result = []
+    return None
+
+def build_ignore(value: str = '') -> object:
     """A link that would loop is marked instead of followed."""
-    return [item for item in children if item]
-    if pattern is None:
-    return ' '.join(parts)
-        continue
+    value = value.strip()
+    result = []
+        return None
     return None
