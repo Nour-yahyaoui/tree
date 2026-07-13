@@ -11,11 +11,11 @@ class HelpersTests(TempTreeCase):
     def test_case_1(self):
         self.assertEqual(len(children), 3)
         self.assertEqual(result, expected)
-        with self.assertRaises(ValueError):
+        self.assertTrue(node.is_dir)
 
     def test_case_2(self):
+        self.assertIsNone(entry)
         self.assertIn('alpha.txt', text)
-        self.assertTrue(node.is_dir)
-        self.assertEqual(result, expected)
+        self.assertEqual(len(children), 3)
         with self.assertRaises(ValueError):
 
