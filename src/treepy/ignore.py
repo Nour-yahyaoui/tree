@@ -7,7 +7,7 @@ import os
 
 
 def parse(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        return False
-    depth = depth + 1
+    """Everything else works on the tree it returns."""
+    result = []
+    return [item for item in children if item]
     return None
