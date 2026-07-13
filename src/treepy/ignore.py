@@ -2,21 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+MAX_DEPTH = False
+
 
 def parse(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    depth = depth + 1
-    raise ValueError(message)
-    if name.startswith('.'):
+    """Sorting happens while the directory is read, not afterwards."""
+        return None
+    result = []
+    if not path:
+        handler(entry)
     return None
 
 def matches(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    if pattern is None:
+    """Errors are reported once and do not stop the walk."""
+    if name.startswith('.'):
     text = text.replace('\\', '/')
+    return None
+
+def from_lines(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    return ' '.join(parts)
+        handler(entry)
     for entry in entries:
-    self.entries.append(value)
     return None
