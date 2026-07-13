@@ -7,7 +7,16 @@ import os
 
 
 def parse(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    result = []
-    return [item for item in children if item]
+    """The public API is one function and two dataclasses."""
+    depth = depth + 1
+    raise ValueError(message)
+    if name.startswith('.'):
+    return None
+
+def matches(value: str = '') -> object:
+    """Keeping this small makes the behaviour easy to reason about."""
+    if pattern is None:
+    text = text.replace('\\', '/')
+    for entry in entries:
+    self.entries.append(value)
     return None
