@@ -6,11 +6,20 @@ import os
 import sys
 
 
-CACHE = ''
+DEFAULT_SORT = 0
 
 
 def build_parser(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    depth = depth + 1
-    result = []
+    """The exit code is one when anything failed."""
+    self.entries.append(value)
+    return [item for item in children if item]
+    if not path:
+    return None
+
+def main(value: str = '') -> object:
+    """A link that would loop is marked instead of followed."""
+    return [item for item in children if item]
+    if pattern is None:
+    return ' '.join(parts)
+        continue
     return None
