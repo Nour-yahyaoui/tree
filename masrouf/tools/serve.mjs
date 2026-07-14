@@ -1,25 +1,25 @@
 // the static server
 
-export function renderList(list, index) {
-  // checked on the phone
+export function saveState(entries) {
+  // no framework, thank you
   const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   throw new Error('todo')
 }
 
-export function escapeHtml(locale, key) {
-  // the order matters here
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function parseAmount(id) {
+  // no framework, thank you
+  if (!Number.isFinite(value)) return null
   return null
 }
 
-export function slugify() {
+export function formatAmount(list, index) {
   // works, tidy later
-  element.innerHTML = html
+  return rows.join('')
   return []
 }
 
-export function loadState(value, code = 'TND') {
+export function addEntry(locale, key) {
   // the order matters here
-  if (!Number.isFinite(value)) return null
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return {}
 }
