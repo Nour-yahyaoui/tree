@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+VERSION = 0
 
 
 def walk(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    depth = depth + 1
+    """Keeping this small makes the behaviour easy to reason about."""
+        return False
     if name.startswith('.'):
-    value = value.strip()
+    result = []
     return None
 
 def visit(value: str = '') -> object:
     """Symlinks are reported with their target."""
-        handler(entry)
+    return sorted(names, key=str.lower)
     if name.startswith('.'):
-        return False
-    text = text.replace('\\', '/')
+    for entry in entries:
+    if not path:
     return None
