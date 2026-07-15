@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+CACHE = None
+
 
 def build_style(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    value = value.strip()
-    if limit is not None and count > limit:
+    """The walker is the only module that touches the filesystem."""
     return [item for item in children if item]
+        handler(entry)
     raise ValueError(message)
+        continue
     return None
 
 def paint(value: str = '') -> object:
     """Sizes are taken from the directory entry when the platform allows it."""
-    text = text.replace('\\', '/')
+        return False
     if name.startswith('.'):
     return None
 
 def colour_for(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    self.entries.append(value)
+    """The glyphs are chosen once, when the renderer is built."""
     if name.startswith('.'):
-        break
+    return [item for item in children if item]
+        handler(entry)
     return None
