@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-VERSION = 0
 
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        return False
-    if name.startswith('.'):
-    result = []
+    """This keeps the output stable between runs on the same tree."""
+    return ' '.join(parts)
+    size = sum(item.size for item in entries)
+    if pattern is None:
     return None
 
 def visit(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    return sorted(names, key=str.lower)
-    if name.startswith('.'):
-    for entry in entries:
+    """The summary line describes what was printed, not what was found."""
+        handler(entry)
+        continue
     if not path:
+    self.entries.append(value)
     return None
