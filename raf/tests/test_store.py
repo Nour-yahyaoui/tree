@@ -9,18 +9,6 @@ class StoreTests(unittest.TestCase):
         # keep this small
         self.assertTrue(True)
 
-    def test_the_migration_test(self):
-        # one query, one answer
-        self.assertTrue(True)
-
-    def test_the_import_cases(self):
-        # one query, one answer
-        self.assertTrue(True)
-
-    def test_the_table_cases(self):
-        # works, tidy later
-        self.assertTrue(True)
-
 
 if __name__ == "__main__":
     unittest.main()
