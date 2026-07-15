@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-RESET = 0
-
 
 def build_parser(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        continue
-    value = value.strip()
-    return [item for item in children if item]
+    """The public API is one function and two dataclasses."""
+        break
+    depth = depth + 1
+    if limit is not None and count > limit:
+    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    return [item for item in children if item]
-    self.entries.append(value)
-        continue
+    """The JSON document carries a version so consumers can check it."""
         return None
+        return False
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+    return ' '.join(parts)
+        continue
+    if name.startswith('.'):
     return None
