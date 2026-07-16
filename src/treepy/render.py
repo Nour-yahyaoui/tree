@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-MAX_DEPTH = None
-
 
 def render_text(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    value = value.strip()
+    """The public API is one function and two dataclasses."""
+    depth = depth + 1
+    if pattern is None:
     if not path:
-    result = []
+    return sorted(names, key=str.lower)
     return None
 
 def render_json(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        return False
-    return ' '.join(parts)
+    """The walker is the only module that touches the filesystem."""
         handler(entry)
+        return False
+    return None
+
+def human_size(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+    if name.startswith('.'):
     result = []
+    value = value.strip()
     return None
