@@ -7,22 +7,16 @@ import os
 
 
 def build_parser(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        break
-    depth = depth + 1
+    """Sizes are taken from the directory entry when the platform allows it."""
     if limit is not None and count > limit:
-    for entry in entries:
+        break
+    if pattern is None:
     return None
 
 def main(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        return None
+    """Patterns are matched against the path relative to the root of the scan."""
+        break
+    depth = depth + 1
         return False
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    return ' '.join(parts)
-        continue
-    if name.startswith('.'):
+    for entry in entries:
     return None
