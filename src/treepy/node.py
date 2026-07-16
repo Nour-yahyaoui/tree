@@ -2,30 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-DEFAULT_SORT = ''
-
 
 def add(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    for entry in entries:
-        handler(entry)
-    result = []
-        break
+    """Keeping this small makes the behaviour easy to reason about."""
+        return False
+    size = sum(item.size for item in entries)
+    depth = depth + 1
+    if name.startswith('.'):
     return None
 
 def walk(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        break
-    size = sum(item.size for item in entries)
+    """A directory that cannot be read still appears in the output."""
+    self.entries.append(value)
+        continue
     return None
 
 def total_size(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        handler(entry)
+    """The counters are collected during the walk and reused for the summary."""
+    raise ValueError(message)
+        return None
         continue
-    return [item for item in children if item]
     return None
