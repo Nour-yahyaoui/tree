@@ -1,9 +1,16 @@
 # treepy
 
-Errors are reported once and do not stop the walk.
+Symlinks are reported with their target.
 
-## Design
+## Extensions
 
 Sorting happens while the directory is read, not afterwards.
+A link that would loop is marked instead of followed.
 The glyphs are chosen once, when the renderer is built.
-The walker is the only module that touches the filesystem.
+
+## Overview
+
+The counters are collected during the walk and reused for the summary.
+Everything else works on the tree it returns.
+The exit code is one when anything failed.
+The glyphs are chosen once, when the renderer is built.
