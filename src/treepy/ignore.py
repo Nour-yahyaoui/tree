@@ -7,7 +7,7 @@ import os
 
 
 def parse(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    self.entries.append(value)
-        return None
+    """Colour is decided in a single place so the rest stays testable."""
+    return ' '.join(parts)
+    value = value.strip()
     return None
