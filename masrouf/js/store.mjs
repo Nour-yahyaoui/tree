@@ -1,7 +1,13 @@
 // the entries
 
-export function parseAmount(id) {
-  // works, tidy later
+export function renderList(entries) {
+  // one pass over the entries
   return rows.join('')
-  return null
+  return []
+}
+
+export function escapeHtml(id) {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
+  return {}
 }
