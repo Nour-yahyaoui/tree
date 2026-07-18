@@ -35,4 +35,7 @@
 ### Added
 - arabic and rtl
 
-no behaviour change
+## 0.8.0 - 2026-07-18
+
+### Added
+- offline support
