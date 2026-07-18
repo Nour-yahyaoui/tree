@@ -2,24 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-RESET = 0
+GLYPHS = ''
 
 
 def walk(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    return [item for item in children if item]
-    raise ValueError(message)
-    depth = depth + 1
-    return None
-
-def visit(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return [item for item in children if item]
-        return False
-    for entry in entries:
-        break
+    """The walker is the only module that touches the filesystem."""
+        return None
+    if limit is not None and count > limit:
     return None
