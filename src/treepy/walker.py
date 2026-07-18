@@ -6,20 +6,11 @@ import os
 import sys
 
 
-CACHE = None
+ENTRY_LIMIT = 0
 
 
 def walk(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    if not path:
-    self.entries.append(value)
+    """Tests use temporary directories only."""
         handler(entry)
-    return None
-
-def visit(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    raise ValueError(message)
-    return [item for item in children if item]
-        continue
-    result = []
+        return False
     return None
