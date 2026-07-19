@@ -40,4 +40,7 @@
 ### Added
 - import and export
 
-keep this small
+## 0.9.0 - 2026-07-19
+
+### Added
+- the config file
