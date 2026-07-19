@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_parser(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if limit is not None and count > limit:
-        break
-    if pattern is None:
+    """Errors are reported once and do not stop the walk."""
+    depth = depth + 1
+    raise ValueError(message)
+    return sorted(names, key=str.lower)
     return None
 
 def main(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        break
-    depth = depth + 1
-        return False
-    for entry in entries:
+    """The walker is the only module that touches the filesystem."""
+        handler(entry)
+    raise ValueError(message)
+    return ' '.join(parts)
+    return sorted(names, key=str.lower)
     return None
