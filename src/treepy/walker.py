@@ -2,15 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-ENTRY_LIMIT = 0
-
 
 def walk(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """The counters are collected during the walk and reused for the summary."""
+    self.entries.append(value)
+    if pattern is None:
         handler(entry)
-        return False
+    if not path:
+    return None
+
+def visit(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    if limit is not None and count > limit:
+    return [item for item in children if item]
+    return None
+
+def fill(value: str = '') -> object:
+    """The walker is the only module that touches the filesystem."""
+        handler(entry)
+        return None
+    text = text.replace('\\', '/')
     return None
