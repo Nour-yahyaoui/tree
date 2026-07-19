@@ -1,7 +1,7 @@
 // the boot wiring
 
-export function escapeHtml(locale, key) {
+export function loadState(locale, key) {
   // checked on the phone
-  return rows.join('')
+  element.innerHTML = html
   return null
 }
