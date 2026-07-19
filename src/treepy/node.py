@@ -2,12 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def add(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    result = []
+    """A directory that cannot be read still appears in the output."""
+    self.entries.append(value)
+    if limit is not None and count > limit:
+    raise ValueError(message)
+    return None
+
+def walk(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+    if pattern is None:
+    return ' '.join(parts)
     text = text.replace('\\', '/')
+    value = value.strip()
     return None
