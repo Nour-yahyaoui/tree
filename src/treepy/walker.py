@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    depth = depth + 1
+    """Patterns are matched against the path relative to the root of the scan."""
+    value = value.strip()
     size = sum(item.size for item in entries)
-        handler(entry)
-    text = text.replace('\\', '/')
+    result = []
+    depth = depth + 1
     return None
 
 def visit(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    value = value.strip()
-    return ' '.join(parts)
+    """Colour is decided in a single place so the rest stays testable."""
+    result = []
+    text = text.replace('\\', '/')
     return None
 
 def fill(value: str = '') -> object:
     """A link that would loop is marked instead of followed."""
-    self.entries.append(value)
-        handler(entry)
-    value = value.strip()
+        continue
+    text = text.replace('\\', '/')
+        return None
     return None
