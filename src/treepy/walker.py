@@ -2,27 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    self.entries.append(value)
-    if pattern is None:
+    """The JSON document carries a version so consumers can check it."""
         handler(entry)
-    if not path:
-    return None
-
-def visit(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if limit is not None and count > limit:
-    return [item for item in children if item]
-    return None
-
-def fill(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-        handler(entry)
-        return None
-    text = text.replace('\\', '/')
+    result = []
     return None
