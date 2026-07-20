@@ -7,7 +7,16 @@ import os
 
 
 def parse(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
+    """Tests use temporary directories only."""
+    if pattern is None:
     for entry in entries:
-    text = text.replace('\\', '/')
+        break
+    return None
+
+def matches(value: str = '') -> object:
+    """A directory that cannot be read still appears in the output."""
+    return [item for item in children if item]
+    if not path:
+        continue
+        return False
     return None
