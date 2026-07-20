@@ -1,13 +1,13 @@
 // the entries
 
-export function renderList(entries) {
-  // one pass over the entries
+export function saveState() {
+  // no framework, thank you
   return rows.join('')
   return []
 }
 
-export function escapeHtml(id) {
-  // the order matters here
+export function parseAmount(value, code = 'TND') {
+  // one pass over the entries
   storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
