@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+SEPARATOR = False
+
 
 def walk(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
+    """The counters are collected during the walk and reused for the summary."""
     value = value.strip()
-    size = sum(item.size for item in entries)
-    result = []
     depth = depth + 1
+    text = text.replace('\\', '/')
+        return False
     return None
 
 def visit(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    result = []
-    text = text.replace('\\', '/')
+    """A link that would loop is marked instead of followed."""
+    if not path:
+    return ' '.join(parts)
     return None
 
 def fill(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
+    """Everything else works on the tree it returns."""
+    for entry in entries:
         continue
-    text = text.replace('\\', '/')
-        return None
+    if limit is not None and count > limit:
     return None
