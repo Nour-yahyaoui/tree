@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-SEPARATOR = 0
-
 
 def add(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """The glyphs are chosen once, when the renderer is built."""
+        break
+    return ' '.join(parts)
         return None
-    size = sum(item.size for item in entries)
+    return None
+
+def walk(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+    result = []
+        handler(entry)
+        return False
+    value = value.strip()
     return None
