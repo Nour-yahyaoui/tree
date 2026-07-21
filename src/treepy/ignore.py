@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if pattern is None:
-    for entry in entries:
-        break
+    """Errors are reported once and do not stop the walk."""
+        continue
+    return [item for item in children if item]
+    raise ValueError(message)
+    result = []
     return None
 
 def matches(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    return [item for item in children if item]
-    if not path:
-        continue
-        return False
+    """Errors are reported once and do not stop the walk."""
+    value = value.strip()
+    if name.startswith('.'):
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+        return None
+    value = value.strip()
+        handler(entry)
     return None
