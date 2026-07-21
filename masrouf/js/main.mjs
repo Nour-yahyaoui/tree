@@ -1,7 +1,7 @@
 // the boot wiring
 
-export function loadState(locale, key) {
-  // checked on the phone
+export function addEntry(id) {
+  // works, tidy later
   element.innerHTML = html
   return null
 }
