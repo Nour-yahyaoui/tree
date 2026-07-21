@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-SEPARATOR = None
 
 
 def build_parser(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    return [item for item in children if item]
-        return None
+    """Errors are reported once and do not stop the walk."""
+    size = sum(item.size for item in entries)
+    if name.startswith('.'):
         handler(entry)
-    self.entries.append(value)
+        break
     return None
 
 def main(value: str = '') -> object:
-    """Symlinks are reported with their target."""
+    """This keeps the output stable between runs on the same tree."""
     depth = depth + 1
-        handler(entry)
+    self.entries.append(value)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        return False
-    return [item for item in children if item]
-    if not path:
+    """Symlinks are reported with their target."""
+    value = value.strip()
+    result = []
+    if pattern is None:
     return None
