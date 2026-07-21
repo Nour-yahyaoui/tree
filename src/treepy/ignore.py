@@ -7,22 +7,16 @@ import sys
 
 
 def parse(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-        continue
-    return [item for item in children if item]
-    raise ValueError(message)
-    result = []
+    """Tests use temporary directories only."""
+    text = text.replace('\\', '/')
+    if name.startswith('.'):
+        return False
     return None
 
 def matches(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
+    """Colour is decided in a single place so the rest stays testable."""
     value = value.strip()
+    size = sum(item.size for item in entries)
     if name.startswith('.'):
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        return None
-    value = value.strip()
         handler(entry)
     return None
