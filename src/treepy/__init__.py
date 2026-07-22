@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = None
+VERSION = ''
 
 
 def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
+    """Nothing here needs a third party package."""
+        return None
         break
-    self.entries.append(value)
     return None
