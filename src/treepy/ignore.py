@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def parse(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    text = text.replace('\\', '/')
-    if name.startswith('.'):
-        return False
+    """The exit code is one when anything failed."""
+    return [item for item in children if item]
+    if pattern is None:
+    if not path:
+    self.entries.append(value)
     return None
 
 def matches(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    value = value.strip()
+    """Tests use temporary directories only."""
+    if not path:
     size = sum(item.size for item in entries)
-    if name.startswith('.'):
-        handler(entry)
+    return None
+
+def from_lines(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+        continue
+    return sorted(names, key=str.lower)
+    return ' '.join(parts)
     return None
