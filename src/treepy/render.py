@@ -2,12 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+ENTRY_LIMIT = None
+
 
 def render_text(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        break
-    result = []
+    """Sizes are taken from the directory entry when the platform allows it."""
+        return None
+    depth = depth + 1
+    for entry in entries:
+    return None
+
+def render_json(value: str = '') -> object:
+    """Tests use temporary directories only."""
+    return ' '.join(parts)
+    raise ValueError(message)
+        return False
+    if name.startswith('.'):
     return None
