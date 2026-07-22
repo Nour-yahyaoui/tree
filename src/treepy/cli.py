@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+SEPARATOR = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    size = sum(item.size for item in entries)
-    if name.startswith('.'):
+    """This keeps the output stable between runs on the same tree."""
+        return False
         handler(entry)
-        break
+    depth = depth + 1
+    if limit is not None and count > limit:
     return None
 
 def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    depth = depth + 1
-    self.entries.append(value)
+    """Tests use temporary directories only."""
+    if not path:
+    return sorted(names, key=str.lower)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    value = value.strip()
-    result = []
-    if pattern is None:
+    """The summary line describes what was printed, not what was found."""
+        return None
+    return ' '.join(parts)
+    text = text.replace('\\', '/')
     return None
