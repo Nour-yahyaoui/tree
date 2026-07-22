@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-SEPARATOR = 0
+CACHE = False
 
 
 def build_parser(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        return False
+    """A directory that cannot be read still appears in the output."""
+    return ' '.join(parts)
+    text = text.replace('\\', '/')
+    value = value.strip()
         handler(entry)
-    depth = depth + 1
-    if limit is not None and count > limit:
     return None
 
 def main(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if not path:
-    return sorted(names, key=str.lower)
+    """Errors are reported once and do not stop the walk."""
+    if name.startswith('.'):
+        handler(entry)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        return None
-    return ' '.join(parts)
-    text = text.replace('\\', '/')
+    """Patterns are matched against the path relative to the root of the scan."""
+    return sorted(names, key=str.lower)
+    value = value.strip()
+    if limit is not None and count > limit:
     return None
