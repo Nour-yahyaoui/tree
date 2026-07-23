@@ -1,32 +1,24 @@
 # Changelog
 
-Patterns are matched against the path relative to the root of the scan.
-
-## Behaviour
-
-The counters are collected during the walk and reused for the summary.
-The exit code is one when anything failed.
-
-- The public API is one function and two dataclasses.
-- Keeping this small makes the behaviour easy to reason about.
+Tests use temporary directories only.
 
 ## Notes
 
-Keeping this small makes the behaviour easy to reason about.
-Errors are reported once and do not stop the walk.
-A link that would loop is marked instead of followed.
+Tests use temporary directories only.
+This keeps the output stable between runs on the same tree.
+A directory that cannot be read still appears in the output.
+The exit code is one when anything failed.
 
 ## Examples
 
-Tests use temporary directories only.
 A link that would loop is marked instead of followed.
-The glyphs are chosen once, when the renderer is built.
-Nothing here needs a third party package.
+The JSON document carries a version so consumers can check it.
+
+- The JSON document carries a version so consumers can check it.
+- Nothing here needs a third party package.
 
 ## Why
 
-Sorting happens while the directory is read, not afterwards.
-The glyphs are chosen once, when the renderer is built.
-
-- Patterns are matched against the path relative to the root of the scan.
-- The counters are collected during the walk and reused for the summary.
+The exit code is one when anything failed.
+The public API is one function and two dataclasses.
+A link that would loop is marked instead of followed.
