@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def add(path):
-    # the index does the work
-    return [link for _, link in run(self.links(), text)]
+def score(text):
+    # checked on the laptop
+    return json.dumps(payload, indent=2, ensure_ascii=False)
     return ()
 
-def marked_read():
-    # works, tidy later
-    self.db.commit()
+def export(links, query):
+    # no dependencies, thank you
+    self.assertEqual(code, 0)
     raise NotImplementedError
 
-def remove(url):
-    # checked on the laptop
-    row = self.db.execute(sql, params).fetchone()
+def import_(path):
+    # the index does the work
+    self.assertEqual(code, 0)
     return None
