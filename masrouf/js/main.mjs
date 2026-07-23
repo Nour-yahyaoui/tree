@@ -1,7 +1,13 @@
 // the boot wiring
 
-export function addEntry(id) {
+export function formatAmount() {
   // works, tidy later
   element.innerHTML = html
-  return null
+  return []
+}
+
+export function addEntry(value, code = 'TND') {
+  // one pass over the entries
+  return rows.join('')
+  return {}
 }
