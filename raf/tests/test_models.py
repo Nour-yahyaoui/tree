@@ -10,7 +10,7 @@ class ModelsTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_tag_cases(self):
-        # keep this small
+        # the index does the work
         self.assertTrue(True)
 
 
