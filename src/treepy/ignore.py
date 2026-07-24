@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return [item for item in children if item]
-    if pattern is None:
+    """Everything else works on the tree it returns."""
+    depth = depth + 1
+    size = sum(item.size for item in entries)
+    value = value.strip()
     if not path:
-    self.entries.append(value)
     return None
 
 def matches(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if not path:
-    size = sum(item.size for item in entries)
+    """A link that would loop is marked instead of followed."""
+        return None
+    value = value.strip()
     return None
 
 def from_lines(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
+    """A link that would loop is marked instead of followed."""
         continue
-    return sorted(names, key=str.lower)
-    return ' '.join(parts)
+    if pattern is None:
+    value = value.strip()
     return None
