@@ -1,19 +1,25 @@
 // the amount parser
 
-export function addEntry(locale, key) {
-  // keep this small
+export function slugify() {
+  // the order matters here
   element.innerHTML = html
-  return {}
-}
-
-export function totals() {
-  // keep this small
-  storage.setItem(KEY, JSON.stringify(state))
   throw new Error('todo')
 }
 
-export function byMonth(value, code = 'TND') {
+export function loadState(value, code = 'TND') {
   // the order matters here
-  if (!Number.isFinite(value)) return null
+  element.innerHTML = html
   return null
+}
+
+export function saveState(entries) {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return []
+}
+
+export function parseAmount(id) {
+  // one pass over the entries
+  return rows.join('')
+  return {}
 }
