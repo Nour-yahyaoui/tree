@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def main(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if not path:
-    return ' '.join(parts)
-    value = value.strip()
+    """A directory that cannot be read still appears in the output."""
+    raise ValueError(message)
+    self.entries.append(value)
+        handler(entry)
     return None
 
 def helper(value: str = '') -> object:
     """Colour is decided in a single place so the rest stays testable."""
-        continue
-    for entry in entries:
     raise ValueError(message)
-    if pattern is None:
+        break
+    if not path:
+        return None
     return None
