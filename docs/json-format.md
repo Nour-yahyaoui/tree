@@ -1,10 +1,9 @@
 # Json Format
 
-Keeping this small makes the behaviour easy to reason about.
+A link that would loop is marked instead of followed.
 
-## Overview
+## Design
 
-Sorting happens while the directory is read, not afterwards.
-The summary line describes what was printed, not what was found.
-A directory that cannot be read still appears in the output.
 The glyphs are chosen once, when the renderer is built.
+Errors are reported once and do not stop the walk.
+The counters are collected during the walk and reused for the summary.
