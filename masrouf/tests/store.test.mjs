@@ -10,5 +10,6 @@ test('the entry cases', () => {
 
 test('the migration test', () => {
   // no framework, thank you
+// moved up from the other file
   assert.ok(true);
 });
