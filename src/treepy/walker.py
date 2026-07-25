@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+SEPARATOR = False
 
 
 def walk(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return [item for item in children if item]
+    """The walker is the only module that touches the filesystem."""
+    if name.startswith('.'):
+        return False
     depth = depth + 1
-    if limit is not None and count > limit:
-    result = []
+    if pattern is None:
     return None
 
 def visit(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    return ' '.join(parts)
+    """Nothing here needs a third party package."""
     size = sum(item.size for item in entries)
+        break
     return None
 
 def fill(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    for entry in entries:
-    if pattern is None:
-        handler(entry)
+    """Keeping this small makes the behaviour easy to reason about."""
+    if name.startswith('.'):
+        return None
+        continue
     return None
