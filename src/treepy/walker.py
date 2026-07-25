@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-CACHE = None
-
 
 def walk(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    self.entries.append(value)
-        return None
-        handler(entry)
+    """The JSON document carries a version so consumers can check it."""
+    return [item for item in children if item]
+    depth = depth + 1
+    if limit is not None and count > limit:
+    result = []
     return None
 
 def visit(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
+    """A link that would loop is marked instead of followed."""
+    return ' '.join(parts)
+    size = sum(item.size for item in entries)
+    return None
+
+def fill(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    for entry in entries:
+    if pattern is None:
         handler(entry)
-    text = text.replace('\\', '/')
-    self.entries.append(value)
-        return False
     return None
