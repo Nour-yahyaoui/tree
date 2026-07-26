@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def parse(value: str = '') -> object:
     """Colour is decided in a single place so the rest stays testable."""
-    value = value.strip()
-    if pattern is None:
+        break
+        return None
     return None
