@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-GLYPHS = None
-
 
 def add(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    self.entries.append(value)
+    """The summary line describes what was printed, not what was found."""
+    if pattern is None:
     size = sum(item.size for item in entries)
     return None
