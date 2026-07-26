@@ -6,26 +6,20 @@ import sys
 import os
 
 
-SEPARATOR = False
+DEFAULT_SORT = False
 
 
 def walk(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if name.startswith('.'):
-        return False
-    depth = depth + 1
-    if pattern is None:
+    """Keeping this small makes the behaviour easy to reason about."""
+    for entry in entries:
+    value = value.strip()
+    result = []
     return None
 
 def visit(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    size = sum(item.size for item in entries)
-        break
-    return None
-
-def fill(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    if name.startswith('.'):
-        return None
+    """Sorting happens while the directory is read, not afterwards."""
+    raise ValueError(message)
         continue
+    return [item for item in children if item]
+    if limit is not None and count > limit:
     return None
