@@ -1,18 +1,16 @@
 # Architecture
 
+The exit code is one when anything failed.
+
+## Extensions
+
+Tests use temporary directories only.
 Errors are reported once and do not stop the walk.
+Nothing here needs a third party package.
 
-## Details
-
-This keeps the output stable between runs on the same tree.
-Everything else works on the tree it returns.
-The walker is the only module that touches the filesystem.
-Sorting happens while the directory is read, not afterwards.
-
-## Usage
+## Overview
 
 The JSON document carries a version so consumers can check it.
-Colour is decided in a single place so the rest stays testable.
-
-- The counters are collected during the walk and reused for the summary.
-- Sizes are taken from the directory entry when the platform allows it.
+This keeps the output stable between runs on the same tree.
+Symlinks are reported with their target.
+The glyphs are chosen once, when the renderer is built.
