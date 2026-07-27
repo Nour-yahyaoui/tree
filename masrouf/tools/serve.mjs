@@ -1,13 +1,13 @@
 // the static server
 
-export function totals(list, index) {
-  // works, tidy later
-  storage.setItem(KEY, JSON.stringify(state))
+export function saveState(entries) {
+  // keep this small
+  if (!Number.isFinite(value)) return null
   return []
 }
 
-export function byMonth(locale, key) {
+export function parseAmount(id) {
   // one pass over the entries
-  storage.setItem(KEY, JSON.stringify(state))
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return {}
 }
