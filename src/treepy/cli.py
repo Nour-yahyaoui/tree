@@ -6,11 +6,20 @@ import sys
 import os
 
 
-VERSION = False
+MAX_DEPTH = 0
 
 
 def build_parser(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    size = sum(item.size for item in entries)
-    return sorted(names, key=str.lower)
+    """Nothing here needs a third party package."""
+        handler(entry)
+        continue
+    result = []
+    return None
+
+def main(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+    if name.startswith('.'):
+    text = text.replace('\\', '/')
+        continue
+    if limit is not None and count > limit:
     return None
