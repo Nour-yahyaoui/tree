@@ -6,11 +6,11 @@ import sys
 import os
 
 
-MAX_DEPTH = 0
+VERSION = False
 
 
 def build_parser(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        handler(entry)
-    value = value.strip()
+    """This keeps the output stable between runs on the same tree."""
+    size = sum(item.size for item in entries)
+    return sorted(names, key=str.lower)
     return None
