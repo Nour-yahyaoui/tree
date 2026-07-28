@@ -1,11 +1,15 @@
 # The Schema Page
 
-An unknown filter is a word, not something to drop.
+The shelf is one file, so backing it up is copying a file.
 
-## Open questions
+## Decision
 
-An unknown filter is a word, not something to drop.
+One sqlite file, one CLI, the standard library and nothing else.
 
 ```sh
 raf list --tag reading
 ```
+
+## The rules
+
+The shelf is one file, so backing it up is copying a file.
