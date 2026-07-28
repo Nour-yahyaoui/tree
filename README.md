@@ -1,17 +1,9 @@
 # treepy
 
-Tests use temporary directories only.
+Sizes are taken from the directory entry when the platform allows it.
 
-## Caveats
-
-The public API is one function and two dataclasses.
-The counters are collected during the walk and reused for the summary.
-
-- Sizes are taken from the directory entry when the platform allows it.
-- Sizes are taken from the directory entry when the platform allows it.
-
-## Design
+## Notes
 
 A directory that cannot be read still appears in the output.
-This keeps the output stable between runs on the same tree.
-Colour is decided in a single place so the rest stays testable.
+The walker is the only module that touches the filesystem.
+Sorting happens while the directory is read, not afterwards.
