@@ -1,16 +1,17 @@
 # Architecture
 
-The exit code is one when anything failed.
+Symlinks are reported with their target.
 
-## Extensions
+## Caveats
 
 Tests use temporary directories only.
-Errors are reported once and do not stop the walk.
-Nothing here needs a third party package.
+The walker is the only module that touches the filesystem.
 
-## Overview
+- The walker is the only module that touches the filesystem.
+- Tests use temporary directories only.
 
-The JSON document carries a version so consumers can check it.
-This keeps the output stable between runs on the same tree.
-Symlinks are reported with their target.
-The glyphs are chosen once, when the renderer is built.
+## Design
+
+A directory that cannot be read still appears in the output.
+The public API is one function and two dataclasses.
+The counters are collected during the walk and reused for the summary.
