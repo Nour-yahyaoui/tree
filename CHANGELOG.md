@@ -1,18 +1,24 @@
 # Changelog
 
-Symlinks are reported with their target.
-
-## Behaviour
-
-A directory that cannot be read still appears in the output.
-Patterns are matched against the path relative to the root of the scan.
-A link that would loop is marked instead of followed.
 This keeps the output stable between runs on the same tree.
 
-## Notes
+## Overview
 
-The JSON document carries a version so consumers can check it.
+Keeping this small makes the behaviour easy to reason about.
+Everything else works on the tree it returns.
+This keeps the output stable between runs on the same tree.
+
+## Details
+
 A directory that cannot be read still appears in the output.
+The public API is one function and two dataclasses.
+Keeping this small makes the behaviour easy to reason about.
+Errors are reported once and do not stop the walk.
 
-- Symlinks are reported with their target.
-- Errors are reported once and do not stop the walk.
+## Usage
+
+The summary line describes what was printed, not what was found.
+Sorting happens while the directory is read, not afterwards.
+
+- Tests use temporary directories only.
+- This keeps the output stable between runs on the same tree.
