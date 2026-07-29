@@ -39,5 +39,3 @@
 
 ### Added
 - offline support
-
-keep this small
