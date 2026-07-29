@@ -7,16 +7,22 @@ import sys
 
 
 def parse(value: str = '') -> object:
-    """Tests use temporary directories only."""
+    """Everything else works on the tree it returns."""
+    size = sum(item.size for item in entries)
     return ' '.join(parts)
-        return None
-    if name.startswith('.'):
+    return sorted(names, key=str.lower)
+        continue
     return None
 
 def matches(value: str = '') -> object:
-    """Symlinks are reported with their target."""
+    """The walker is the only module that touches the filesystem."""
+    for entry in entries:
+        break
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Nothing here needs a third party package."""
+    text = text.replace('\\', '/')
+    if name.startswith('.'):
     size = sum(item.size for item in entries)
-    if pattern is None:
-    return ' '.join(parts)
-        handler(entry)
     return None
