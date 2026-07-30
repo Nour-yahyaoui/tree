@@ -1,17 +1,8 @@
 {
   "name": "masrouf",
   "version": "0.8.0",
-  "description": "A one-page expense tracker: no account, no server, no dependencies",
   "type": "module",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "start": "node tools/serve.mjs",
-    "test": "node --test",
-    "check": "npm run test"
-  },
-  "engines": {
-    "node": ">=20"
-  },
+  "scripts": { "start": "node tools/serve.mjs", "test": "node --test" },
+  "engines": { "node": ">=20" },
   "dependencies": {}
 }
