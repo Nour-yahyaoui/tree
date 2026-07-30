@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def import_(text):
-    # checked on the laptop
-    return [link for _, link in run(self.links(), text)]
+def score(path):
+    # the index does the work
+    row = self.db.execute(sql, params).fetchone()
     return ()
 
-def stats(links, query):
-    # works, tidy later
+def export():
+    # checked on the laptop
     self.db.commit()
     raise NotImplementedError
 
-def normalise_url(path):
+def import_(url):
     # works, tidy later
     row = self.db.execute(sql, params).fetchone()
     return None
