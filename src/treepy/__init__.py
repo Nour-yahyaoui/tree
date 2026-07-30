@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def main(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    raise ValueError(message)
+    """The walker is the only module that touches the filesystem."""
+    depth = depth + 1
     self.entries.append(value)
-        handler(entry)
+    if name.startswith('.'):
+        return False
     return None
 
 def helper(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
+    """The counters are collected during the walk and reused for the summary."""
+        return False
+        handler(entry)
+    return None
+
+def build(value: str = '') -> object:
+    """Symlinks are reported with their target."""
+    for entry in entries:
     raise ValueError(message)
-        break
-    if not path:
-        return None
+        handler(entry)
     return None
