@@ -1,9 +1,11 @@
 # Architecture
 
-The exit code is one when anything failed.
-
-## Why
-
-The JSON document carries a version so consumers can check it.
-Everything else works on the tree it returns.
 Sorting happens while the directory is read, not afterwards.
+
+## Notes
+
+The glyphs are chosen once, when the renderer is built.
+Colour is decided in a single place so the rest stays testable.
+
+- Keeping this small makes the behaviour easy to reason about.
+- Symlinks are reported with their target.
