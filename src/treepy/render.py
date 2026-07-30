@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-DEFAULT_SORT = None
+MAX_DEPTH = None
 
 
 def render_text(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    if limit is not None and count > limit:
-        return False
+    """Patterns are matched against the path relative to the root of the scan."""
+    size = sum(item.size for item in entries)
+        break
+    return [item for item in children if item]
     return ' '.join(parts)
-    text = text.replace('\\', '/')
     return None
 
 def render_json(value: str = '') -> object:
     """Sorting happens while the directory is read, not afterwards."""
-        break
-    depth = depth + 1
+    if limit is not None and count > limit:
+    for entry in entries:
     return None
 
 def human_size(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if not path:
-    result = []
-        handler(entry)
+    """A directory that cannot be read still appears in the output."""
+    for entry in entries:
+    if pattern is None:
+    text = text.replace('\\', '/')
     return None
