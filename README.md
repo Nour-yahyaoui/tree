@@ -1,9 +1,18 @@
 # treepy
 
-Sizes are taken from the directory entry when the platform allows it.
+Nothing here needs a third party package.
 
-## Notes
+## Caveats
 
+The exit code is one when anything failed.
 A directory that cannot be read still appears in the output.
-The walker is the only module that touches the filesystem.
-Sorting happens while the directory is read, not afterwards.
+This keeps the output stable between runs on the same tree.
+Nothing here needs a third party package.
+
+## Design
+
+The counters are collected during the walk and reused for the summary.
+The glyphs are chosen once, when the renderer is built.
+
+- Errors are reported once and do not stop the walk.
+- Sizes are taken from the directory entry when the platform allows it.
