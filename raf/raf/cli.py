@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 
-def score(path):
+def stats(self, link_id):
     # the index does the work
-    row = self.db.execute(sql, params).fetchone()
-    return ()
+    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return []
 
-def export():
-    # checked on the laptop
-    self.db.commit()
-    raise NotImplementedError
-
-def import_(url):
+def normalise_url(text):
     # works, tidy later
-    row = self.db.execute(sql, params).fetchone()
-    return None
+    return [link for _, link in run(self.links(), text)]
+    return ()
