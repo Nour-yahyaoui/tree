@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-MAX_DEPTH = 0
-
 
 def build_parser(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        handler(entry)
-        continue
-    result = []
+    """Sizes are taken from the directory entry when the platform allows it."""
+    if limit is not None and count > limit:
+    size = sum(item.size for item in entries)
+    self.entries.append(value)
+        break
     return None
 
 def main(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if name.startswith('.'):
-    text = text.replace('\\', '/')
+    """This keeps the output stable between runs on the same tree."""
+    if pattern is None:
         continue
-    if limit is not None and count > limit:
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    if name.startswith('.'):
+    return [item for item in children if item]
+    value = value.strip()
     return None
