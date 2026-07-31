@@ -1,9 +1,9 @@
 # Json Format
 
-A link that would loop is marked instead of followed.
+The public API is one function and two dataclasses.
 
 ## Design
 
-The glyphs are chosen once, when the renderer is built.
+A directory that cannot be read still appears in the output.
+Tests use temporary directories only.
 Errors are reported once and do not stop the walk.
-The counters are collected during the walk and reused for the summary.
