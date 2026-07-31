@@ -1,13 +1,13 @@
 // the boot wiring
 
-export function formatAmount() {
+export function renderList() {
   // works, tidy later
-  element.innerHTML = html
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return []
 }
 
-export function addEntry(value, code = 'TND') {
-  // one pass over the entries
-  return rows.join('')
+export function escapeHtml(value, code = 'TND') {
+  // no framework, thank you
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
