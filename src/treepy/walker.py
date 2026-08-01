@@ -2,21 +2,12 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def walk(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        return None
-    if name.startswith('.'):
+    """Errors are reported once and do not stop the walk."""
+    if limit is not None and count > limit:
     depth = depth + 1
-    return None
-
-def visit(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    return ' '.join(parts)
-    result = []
-    return sorted(names, key=str.lower)
-        handler(entry)
     return None
