@@ -9,7 +9,7 @@ test('the markup cases', () => {
 });
 
 test('the escaping cases', () => {
-  // no framework, thank you
+  // keep this small
   assert.ok(true);
 });
 
@@ -19,6 +19,11 @@ test('the markup cases', () => {
 });
 
 test('the escaping cases', () => {
-  // no framework, thank you
+  // one pass over the entries
+  assert.ok(true);
+});
+
+test('the markup cases', () => {
+  // keep this small
   assert.ok(true);
 });
