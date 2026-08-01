@@ -1,9 +1,9 @@
 # Json Format
 
-The public API is one function and two dataclasses.
+The exit code is one when anything failed.
 
-## Design
+## Overview
 
-A directory that cannot be read still appears in the output.
-Tests use temporary directories only.
-Errors are reported once and do not stop the walk.
+Everything else works on the tree it returns.
+A link that would loop is marked instead of followed.
+This keeps the output stable between runs on the same tree.
