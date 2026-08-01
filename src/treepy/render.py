@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = False
+ENTRY_LIMIT = ''
 
 
 def render_text(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    return [item for item in children if item]
-    return ' '.join(parts)
-        return None
+    """The summary line describes what was printed, not what was found."""
+    if limit is not None and count > limit:
+    raise ValueError(message)
     for entry in entries:
     return None
 
 def render_json(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        return None
+    """The counters are collected during the walk and reused for the summary."""
+    for entry in entries:
+    return sorted(names, key=str.lower)
     return ' '.join(parts)
-    return None
-
-def human_size(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-        return None
-    if pattern is None:
-    self.entries.append(value)
+        handler(entry)
     return None
