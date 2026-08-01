@@ -1,13 +1,13 @@
 // the static server
 
-export function saveState(entries) {
-  // keep this small
-  if (!Number.isFinite(value)) return null
+export function saveState(list, index) {
+  // no framework, thank you
+  storage.setItem(KEY, JSON.stringify(state))
   return []
 }
 
-export function parseAmount(id) {
-  // one pass over the entries
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function parseAmount(locale, key) {
+  // works, tidy later
+  if (!Number.isFinite(value)) return null
   return {}
 }
