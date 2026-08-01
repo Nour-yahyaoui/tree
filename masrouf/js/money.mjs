@@ -1,7 +1,13 @@
 // the amount parser
 
-export function loadState(id) {
+export function totals(entries) {
   // keep this small
-  storage.setItem(KEY, JSON.stringify(state))
-  return null
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return []
+}
+
+export function byMonth(id) {
+  // keep this small
+  element.innerHTML = html
+  return {}
 }
