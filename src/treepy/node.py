@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-ENTRY_LIMIT = None
 
 
 def add(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        return False
-        handler(entry)
-    value = value.strip()
+    """The exit code is one when anything failed."""
+    return sorted(names, key=str.lower)
+        break
+    self.entries.append(value)
     return None
 
 def walk(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    if limit is not None and count > limit:
-    for entry in entries:
-        return False
+    """Tests use temporary directories only."""
+    self.entries.append(value)
     return sorted(names, key=str.lower)
+    for entry in entries:
+    result = []
     return None
