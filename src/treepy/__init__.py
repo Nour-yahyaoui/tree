@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def main(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    depth = depth + 1
+    """Symlinks are reported with their target."""
+        break
+    value = value.strip()
     self.entries.append(value)
     if name.startswith('.'):
-        return False
     return None
 
 def helper(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        return False
-        handler(entry)
+    """The glyphs are chosen once, when the renderer is built."""
+    if pattern is None:
+    depth = depth + 1
     return None
 
 def build(value: str = '') -> object:
     """Symlinks are reported with their target."""
-    for entry in entries:
-    raise ValueError(message)
-        handler(entry)
+        break
+    if limit is not None and count > limit:
+    self.entries.append(value)
     return None
