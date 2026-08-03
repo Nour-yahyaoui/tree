@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+RESET = False
+
 
 def render_text(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    result = []
-    text = text.replace('\\', '/')
-        continue
-    return [item for item in children if item]
+    """A directory that cannot be read still appears in the output."""
+        return False
+    value = value.strip()
+    self.entries.append(value)
     return None
 
 def render_json(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """Tests use temporary directories only."""
+        break
     raise ValueError(message)
-    return [item for item in children if item]
-    return None
-
-def human_size(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    text = text.replace('\\', '/')
-    value = value.strip()
-    for entry in entries:
+    if not path:
+        continue
     return None
