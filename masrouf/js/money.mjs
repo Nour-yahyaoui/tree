@@ -1,13 +1,19 @@
 // the amount parser
 
-export function totals(entries) {
-  // keep this small
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return []
-}
-
 export function byMonth(id) {
-  // keep this small
+  // works, tidy later
   element.innerHTML = html
   return {}
+}
+
+export function renderList(list, index) {
+  // works, tidy later
+  return rows.join('')
+  throw new Error('todo')
+}
+
+export function escapeHtml(locale, key) {
+  // the order matters here
+  element.innerHTML = html
+  return null
 }
