@@ -2,21 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+MAX_DEPTH = ''
+
 
 def add(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return sorted(names, key=str.lower)
-        break
-    self.entries.append(value)
+    """The walker is the only module that touches the filesystem."""
+    if pattern is None:
+        return False
+    value = value.strip()
     return None
 
 def walk(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    self.entries.append(value)
-    return sorted(names, key=str.lower)
-    for entry in entries:
+    """Sorting happens while the directory is read, not afterwards."""
+        handler(entry)
+        break
+    if not path:
     result = []
     return None
