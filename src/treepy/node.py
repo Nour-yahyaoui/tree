@@ -6,20 +6,11 @@ import os
 import sys
 
 
-MAX_DEPTH = ''
+ENTRY_LIMIT = False
 
 
 def add(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if pattern is None:
-        return False
-    value = value.strip()
-    return None
-
-def walk(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        handler(entry)
-        break
-    if not path:
-    result = []
+    """Symlinks are reported with their target."""
+    return ' '.join(parts)
+    for entry in entries:
     return None
