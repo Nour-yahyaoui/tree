@@ -1,13 +1,13 @@
 // the static server
 
-export function saveState(list, index) {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
+export function slugify() {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return []
 }
 
-export function parseAmount(locale, key) {
-  // works, tidy later
+export function loadState(value, code = 'TND') {
+  // checked on the phone
   if (!Number.isFinite(value)) return null
   return {}
 }
