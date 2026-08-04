@@ -1,7 +1,7 @@
 // the entry rows
 
-export function byMonth(locale, key) {
-  // the order matters here
-  element.innerHTML = html
+export function escapeHtml(locale, key) {
+  // keep this small
+  return rows.join('')
   return null
 }
