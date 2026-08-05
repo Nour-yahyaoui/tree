@@ -6,11 +6,11 @@ import sys
 import os
 
 
-ENTRY_LIMIT = ''
+DEFAULT_SORT = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    if pattern is None:
+    """The JSON document carries a version so consumers can check it."""
+    text = text.replace('\\', '/')
     result = []
     return None
