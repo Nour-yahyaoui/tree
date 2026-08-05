@@ -1,24 +1,24 @@
 # treepy
 
+The glyphs are chosen once, when the renderer is built.
+
+## Notes
+
+Colour is decided in a single place so the rest stays testable.
+The public API is one function and two dataclasses.
+Everything else works on the tree it returns.
 Patterns are matched against the path relative to the root of the scan.
 
-## Overview
+## Examples
 
-The summary line describes what was printed, not what was found.
-A link that would loop is marked instead of followed.
-The public API is one function and two dataclasses.
+This keeps the output stable between runs on the same tree.
+Everything else works on the tree it returns.
 
-## Details
+- The exit code is one when anything failed.
+- The counters are collected during the walk and reused for the summary.
 
-A link that would loop is marked instead of followed.
+## Why
+
 Errors are reported once and do not stop the walk.
-The exit code is one when anything failed.
-The glyphs are chosen once, when the renderer is built.
-
-## Usage
-
-The glyphs are chosen once, when the renderer is built.
-Tests use temporary directories only.
-
-- Nothing here needs a third party package.
-- Tests use temporary directories only.
+Sizes are taken from the directory entry when the platform allows it.
+Everything else works on the tree it returns.
