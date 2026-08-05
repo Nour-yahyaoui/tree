@@ -44,5 +44,3 @@
 
 ### Added
 - the config file
-
-reordered for readability
