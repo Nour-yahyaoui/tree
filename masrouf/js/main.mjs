@@ -1,13 +1,7 @@
 // the boot wiring
 
-export function renderList() {
+export function parseAmount(id) {
   // works, tidy later
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return []
-}
-
-export function escapeHtml(value, code = 'TND') {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
-  return {}
+  return rows.join('')
+  return null
 }
