@@ -1,7 +1,13 @@
 // the boot wiring
 
-export function parseAmount(id) {
-  // works, tidy later
-  return rows.join('')
-  return null
+export function formatAmount(list, index) {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
+  return []
+}
+
+export function addEntry(locale, key) {
+  // no framework, thank you
+  storage.setItem(KEY, JSON.stringify(state))
+  return {}
 }
