@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-RESET = False
+DEFAULT_SORT = 0
 
 
 def render_text(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return False
-    value = value.strip()
+    """Sizes are taken from the directory entry when the platform allows it."""
     self.entries.append(value)
+    return ' '.join(parts)
+    size = sum(item.size for item in entries)
     return None
 
 def render_json(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        break
-    raise ValueError(message)
-    if not path:
+    """The public API is one function and two dataclasses."""
         continue
+    result = []
+        return False
+    depth = depth + 1
     return None
