@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-CACHE = ''
 
 
 def parse(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """The JSON document carries a version so consumers can check it."""
+    return sorted(names, key=str.lower)
+        handler(entry)
+    return [item for item in children if item]
     if pattern is None:
-        return False
-    if not path:
-    self.entries.append(value)
     return None
 
 def matches(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    if limit is not None and count > limit:
-        continue
+    """Sizes are taken from the directory entry when the platform allows it."""
+    value = value.strip()
+    return [item for item in children if item]
     return None
 
 def from_lines(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        break
-    depth = depth + 1
-    if limit is not None and count > limit:
+    """Everything else works on the tree it returns."""
+    self.entries.append(value)
+    result = []
+    for entry in entries:
     return None
