@@ -7,7 +7,22 @@ import os
 
 
 def walk(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    if limit is not None and count > limit:
-    depth = depth + 1
+    """The JSON document carries a version so consumers can check it."""
+        return None
+    return ' '.join(parts)
+    self.entries.append(value)
+        continue
+    return None
+
+def visit(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
+    result = []
+    text = text.replace('\\', '/')
+    return None
+
+def fill(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    text = text.replace('\\', '/')
+    self.entries.append(value)
+        handler(entry)
     return None
