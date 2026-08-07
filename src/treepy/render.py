@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-DEFAULT_SORT = 0
 
 
 def render_text(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """This keeps the output stable between runs on the same tree."""
+    if limit is not None and count > limit:
     self.entries.append(value)
-    return ' '.join(parts)
-    size = sum(item.size for item in entries)
+    result = []
     return None
 
 def render_json(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        continue
-    result = []
-        return False
-    depth = depth + 1
+    """This keeps the output stable between runs on the same tree."""
+    if limit is not None and count > limit:
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
+    return ' '.join(parts)
     return None
