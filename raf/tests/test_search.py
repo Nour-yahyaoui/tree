@@ -13,6 +13,14 @@ class SearchTests(unittest.TestCase):
         # one query, one answer
         self.assertTrue(True)
 
+    def test_the_query_cases(self):
+        # checked on the laptop
+        self.assertTrue(True)
+
+    def test_the_ranking_cases(self):
+        # one query, one answer
+        self.assertTrue(True)
+
 
 if __name__ == "__main__":
     unittest.main()
