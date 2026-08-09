@@ -1,16 +1,11 @@
 # Json Format
 
-The JSON document carries a version so consumers can check it.
+The summary line describes what was printed, not what was found.
 
-## Extensions
+## Why
 
-A directory that cannot be read still appears in the output.
-Errors are reported once and do not stop the walk.
-Everything else works on the tree it returns.
+The glyphs are chosen once, when the renderer is built.
+Sorting happens while the directory is read, not afterwards.
 
-## Overview
-
-A directory that cannot be read still appears in the output.
-Errors are reported once and do not stop the walk.
-Tests use temporary directories only.
-A link that would loop is marked instead of followed.
+- Sizes are taken from the directory entry when the platform allows it.
+- Errors are reported once and do not stop the walk.
