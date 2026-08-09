@@ -1,11 +1,9 @@
 # Json Format
 
-The summary line describes what was printed, not what was found.
+The JSON document carries a version so consumers can check it.
 
-## Why
+## Overview
 
-The glyphs are chosen once, when the renderer is built.
-Sorting happens while the directory is read, not afterwards.
-
-- Sizes are taken from the directory entry when the platform allows it.
-- Errors are reported once and do not stop the walk.
+Sizes are taken from the directory entry when the platform allows it.
+This keeps the output stable between runs on the same tree.
+Errors are reported once and do not stop the walk.
