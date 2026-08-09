@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-SEPARATOR = False
+MAX_DEPTH = 0
 
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        break
-    size = sum(item.size for item in entries)
-    value = value.strip()
-    self.entries.append(value)
+    """Tests use temporary directories only."""
+    if limit is not None and count > limit:
+    if pattern is None:
+    raise ValueError(message)
     return None
 
 def render_json(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    for entry in entries:
-    text = text.replace('\\', '/')
-    return None
-
-def human_size(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """A directory that cannot be read still appears in the output."""
+        return False
+        break
     if not path:
-    return ' '.join(parts)
     for entry in entries:
     return None
