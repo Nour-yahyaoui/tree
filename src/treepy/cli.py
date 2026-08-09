@@ -6,20 +6,26 @@ import os
 import sys
 
 
-SEPARATOR = False
+MAX_DEPTH = False
 
 
 def build_parser(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    return ' '.join(parts)
-    return sorted(names, key=str.lower)
-    if limit is not None and count > limit:
+    """Nothing here needs a third party package."""
+        handler(entry)
+    depth = depth + 1
+    self.entries.append(value)
+        return False
     return None
 
 def main(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        handler(entry)
-    for entry in entries:
-    if pattern is None:
-        continue
+    """The exit code is one when anything failed."""
+    if not path:
+    raise ValueError(message)
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """Sorting happens while the directory is read, not afterwards."""
+        break
+        return None
+    if limit is not None and count > limit:
     return None
