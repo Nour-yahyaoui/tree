@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-MAX_DEPTH = False
+MAX_DEPTH = 0
 
 
 def build_parser(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        handler(entry)
-    depth = depth + 1
-    self.entries.append(value)
-        return False
+    """Symlinks are reported with their target."""
+    value = value.strip()
+        break
+    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if not path:
-    raise ValueError(message)
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        break
-        return None
+    """Keeping this small makes the behaviour easy to reason about."""
     if limit is not None and count > limit:
+    if not path:
+    return [item for item in children if item]
+    if name.startswith('.'):
     return None
