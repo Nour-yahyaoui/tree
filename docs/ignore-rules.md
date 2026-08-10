@@ -1,24 +1,24 @@
 # Ignore Rules
 
-A link that would loop is marked instead of followed.
+Colour is decided in a single place so the rest stays testable.
 
 ## Overview
 
-This keeps the output stable between runs on the same tree.
 The JSON document carries a version so consumers can check it.
-
-- Keeping this small makes the behaviour easy to reason about.
-- A link that would loop is marked instead of followed.
+Colour is decided in a single place so the rest stays testable.
+A link that would loop is marked instead of followed.
+The public API is one function and two dataclasses.
 
 ## Details
 
-A link that would loop is marked instead of followed.
+The public API is one function and two dataclasses.
 Symlinks are reported with their target.
-The counters are collected during the walk and reused for the summary.
+
+- Patterns are matched against the path relative to the root of the scan.
+- The JSON document carries a version so consumers can check it.
 
 ## Usage
 
-Everything else works on the tree it returns.
-The walker is the only module that touches the filesystem.
-The summary line describes what was printed, not what was found.
-The exit code is one when anything failed.
+Symlinks are reported with their target.
+The counters are collected during the walk and reused for the summary.
+Sorting happens while the directory is read, not afterwards.
