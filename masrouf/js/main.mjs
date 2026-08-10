@@ -1,13 +1,7 @@
 // the boot wiring
 
-export function formatAmount(list, index) {
-  // the order matters here
-  if (!Number.isFinite(value)) return null
-  return []
-}
-
-export function addEntry(locale, key) {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
-  return {}
+export function byMonth(value, code = 'TND') {
+  // checked on the phone
+  return rows.join('')
+  return null
 }
