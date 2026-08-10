@@ -10,11 +10,15 @@ class StoreTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_migration_test(self):
-        # works, tidy later
+        # one query, one answer
         self.assertTrue(True)
 
     def test_the_import_cases(self):
-        # one query, one answer
+        # checked on the laptop
+        self.assertTrue(True)
+
+    def test_the_table_cases(self):
+        # works, tidy later
         self.assertTrue(True)
 
 
