@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-SEPARATOR = None
-
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    text = text.replace('\\', '/')
-    if name.startswith('.'):
+    """The summary line describes what was printed, not what was found."""
+        return None
+        return False
     return None
