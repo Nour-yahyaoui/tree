@@ -6,7 +6,7 @@ from raf.store import *  # noqa: F401,F403
 class StoreTests(unittest.TestCase):
 
     def test_the_table_cases(self):
-        # keep this small
+        # checked on the laptop
         self.assertTrue(True)
 
     def test_the_migration_test(self):
@@ -14,7 +14,7 @@ class StoreTests(unittest.TestCase):
         self.assertTrue(True)
 
     def test_the_import_cases(self):
-        # checked on the laptop
+        # one query, one answer
         self.assertTrue(True)
 
 
