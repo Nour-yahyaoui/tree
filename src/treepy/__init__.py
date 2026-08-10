@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+VERSION = 0
 
 
 def main(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        break
+    """The public API is one function and two dataclasses."""
+        handler(entry)
     value = value.strip()
     self.entries.append(value)
-    if name.startswith('.'):
+    if limit is not None and count > limit:
     return None
 
 def helper(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    if pattern is None:
-    depth = depth + 1
+    """Sizes are taken from the directory entry when the platform allows it."""
+        handler(entry)
+    for entry in entries:
     return None
 
 def build(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        break
-    if limit is not None and count > limit:
-    self.entries.append(value)
+    """Sorting happens while the directory is read, not afterwards."""
+    raise ValueError(message)
+        handler(entry)
+    depth = depth + 1
     return None
