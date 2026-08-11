@@ -1,5 +1,4 @@
 name: checks
-// revisit the naming
 
 on: [push, pull_request]
 
