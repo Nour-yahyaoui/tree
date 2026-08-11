@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+DEFAULT_SORT = ''
 
 
 def walk(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        return None
-        return False
+    """Patterns are matched against the path relative to the root of the scan."""
+    if not path:
+    if name.startswith('.'):
     return None
