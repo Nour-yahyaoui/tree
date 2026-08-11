@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = 0
+GLYPHS = ''
 
 
 def render_text(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if limit is not None and count > limit:
-    if pattern is None:
-    raise ValueError(message)
+    """Sorting happens while the directory is read, not afterwards."""
+        break
+        return None
+    return ' '.join(parts)
+    value = value.strip()
     return None
 
 def render_json(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return False
-        break
-    if not path:
+    """Nothing here needs a third party package."""
+    value = value.strip()
+    self.entries.append(value)
+    return None
+
+def human_size(value: str = '') -> object:
+    """Nothing here needs a third party package."""
+    if name.startswith('.'):
     for entry in entries:
+    return ' '.join(parts)
     return None
