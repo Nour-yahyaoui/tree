@@ -1,19 +1,15 @@
 # The Schema Page
 
-An unknown filter is a word, not something to drop.
+The index does the filtering; the ranking is a weighted sum.
 
-## The rules
+## How
 
-One sqlite file, one CLI, the standard library and nothing else.
+The shelf is one file, so backing it up is copying a file.
 
 ```sh
 raf list --tag reading
 ```
 
-## Why
-
-The index does the filtering; the ranking is a weighted sum.
-
-## How
+## Notes
 
 The shelf is one file, so backing it up is copying a file.
