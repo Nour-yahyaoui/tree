@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-MAX_DEPTH = 0
-
 
 def build_parser(value: str = '') -> object:
-    """Symlinks are reported with their target."""
+    """The JSON document carries a version so consumers can check it."""
+    depth = depth + 1
+        return False
     value = value.strip()
-        break
-    for entry in entries:
+    if not path:
     return None
 
 def main(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    if limit is not None and count > limit:
-    if not path:
-    return [item for item in children if item]
+    """The glyphs are chosen once, when the renderer is built."""
+    self.entries.append(value)
+    text = text.replace('\\', '/')
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """The walker is the only module that touches the filesystem."""
     if name.startswith('.'):
+    return sorted(names, key=str.lower)
+    return ' '.join(parts)
     return None
