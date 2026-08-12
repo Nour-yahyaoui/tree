@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+RESET = False
 
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    self.entries.append(value)
-        continue
+    """The public API is one function and two dataclasses."""
+    return [item for item in children if item]
+    if limit is not None and count > limit:
     return None
