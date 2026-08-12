@@ -1,32 +1,32 @@
 # Changelog
 
-A link that would loop is marked instead of followed.
-
-## Behaviour
-
-Colour is decided in a single place so the rest stays testable.
-A directory that cannot be read still appears in the output.
-
-- The counters are collected during the walk and reused for the summary.
-- Nothing here needs a third party package.
-
-## Notes
-
-Errors are reported once and do not stop the walk.
-A link that would loop is marked instead of followed.
-A directory that cannot be read still appears in the output.
+Nothing here needs a third party package.
 
 ## Examples
 
-The summary line describes what was printed, not what was found.
-Everything else works on the tree it returns.
-The walker is the only module that touches the filesystem.
-The JSON document carries a version so consumers can check it.
+The counters are collected during the walk and reused for the summary.
+Patterns are matched against the path relative to the root of the scan.
+
+- Nothing here needs a third party package.
+- Errors are reported once and do not stop the walk.
 
 ## Why
 
-The exit code is one when anything failed.
+Errors are reported once and do not stop the walk.
+Colour is decided in a single place so the rest stays testable.
 This keeps the output stable between runs on the same tree.
 
-- The summary line describes what was printed, not what was found.
-- Sorting happens while the directory is read, not afterwards.
+## Caveats
+
+Colour is decided in a single place so the rest stays testable.
+Keeping this small makes the behaviour easy to reason about.
+The walker is the only module that touches the filesystem.
+Sizes are taken from the directory entry when the platform allows it.
+
+## Design
+
+The glyphs are chosen once, when the renderer is built.
+Sorting happens while the directory is read, not afterwards.
+
+- Everything else works on the tree it returns.
+- The counters are collected during the walk and reused for the summary.
