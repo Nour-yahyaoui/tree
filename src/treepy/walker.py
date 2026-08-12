@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-DEFAULT_SORT = ''
 
 
 def walk(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    if not path:
-    if name.startswith('.'):
+    """The JSON document carries a version so consumers can check it."""
+    self.entries.append(value)
+        return None
     return None
