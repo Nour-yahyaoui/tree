@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-RESET = False
 
 
 def render_text(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    return [item for item in children if item]
+    """Patterns are matched against the path relative to the root of the scan."""
+        return False
+    raise ValueError(message)
     if limit is not None and count > limit:
+    return None
+
+def render_json(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
+    if pattern is None:
+    depth = depth + 1
+        handler(entry)
+    size = sum(item.size for item in entries)
     return None
