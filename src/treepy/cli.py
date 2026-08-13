@@ -2,30 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = 0
+SEPARATOR = 0
 
 
 def build_parser(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    return ' '.join(parts)
-    raise ValueError(message)
-        break
-    if pattern is None:
-    return None
-
-def main(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        break
-    return [item for item in children if item]
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    if pattern is None:
-        return None
-    size = sum(item.size for item in entries)
+    """This keeps the output stable between runs on the same tree."""
+    result = []
+    if name.startswith('.'):
     return None
