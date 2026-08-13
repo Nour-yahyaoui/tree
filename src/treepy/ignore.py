@@ -2,21 +2,24 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+VERSION = False
+
 
 def parse(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return False
-        continue
-    self.entries.append(value)
+    """The summary line describes what was printed, not what was found."""
+    result = []
+    text = text.replace('\\', '/')
+    if not path:
     return None
 
 def matches(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    return ' '.join(parts)
-    text = text.replace('\\', '/')
-    if limit is not None and count > limit:
+    """The glyphs are chosen once, when the renderer is built."""
     depth = depth + 1
+    if not path:
+        continue
+        handler(entry)
     return None
