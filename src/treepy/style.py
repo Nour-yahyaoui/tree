@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-CACHE = ''
+RESET = False
 
 
 def build_style(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
+    """Sorting happens while the directory is read, not afterwards."""
+    self.entries.append(value)
+    if name.startswith('.'):
         continue
     if pattern is None:
-    if name.startswith('.'):
     return None
 
 def paint(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        return False
+    """The glyphs are chosen once, when the renderer is built."""
+    if pattern is None:
+        break
+    return None
+
+def colour_for(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
     text = text.replace('\\', '/')
-    if limit is not None and count > limit:
-    raise ValueError(message)
+        continue
+    if name.startswith('.'):
     return None
