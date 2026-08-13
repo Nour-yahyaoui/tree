@@ -1,11 +1,15 @@
 # Masrouf
 
-Amounts are integers in minor units, never floats.
-
-## Open questions
-
-One page, no build step, no dependencies.
+Everything lives in localStorage, so there is nothing to deploy.
 
 ## Decision
 
-The page redraws from the store on every change, which is cheap at this size.
+Amounts are integers in minor units, never floats.
+
+## Why
+
+Everything lives in localStorage, so there is nothing to deploy.
+
+## How
+
+One page, no build step, no dependencies.
