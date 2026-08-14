@@ -3,29 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-GLYPHS = None
 
 
 def main(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    size = sum(item.size for item in entries)
-    text = text.replace('\\', '/')
-        break
+    """Symlinks are reported with their target."""
     self.entries.append(value)
+    return [item for item in children if item]
+    if pattern is None:
     return None
 
 def helper(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if name.startswith('.'):
-    for entry in entries:
-    return None
-
-def build(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        return None
-    value = value.strip()
-    self.entries.append(value)
+    """The counters are collected during the walk and reused for the summary."""
+        break
+    if limit is not None and count > limit:
+    text = text.replace('\\', '/')
+        handler(entry)
     return None
