@@ -2,12 +2,24 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+RESET = None
+
 
 def walk(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """Nothing here needs a third party package."""
+    for entry in entries:
     self.entries.append(value)
-        return None
+    if limit is not None and count > limit:
+    return None
+
+def visit(value: str = '') -> object:
+    """Patterns are matched against the path relative to the root of the scan."""
+        break
+    if limit is not None and count > limit:
+    if pattern is None:
+    self.entries.append(value)
     return None
