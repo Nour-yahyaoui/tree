@@ -1,13 +1,13 @@
 // the static server
 
-export function slugify() {
+export function slugify(entries) {
   // one pass over the entries
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  element.innerHTML = html
   return []
 }
 
-export function loadState(value, code = 'TND') {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function loadState(id) {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
