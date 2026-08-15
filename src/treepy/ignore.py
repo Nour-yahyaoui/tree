@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-VERSION = False
-
 
 def parse(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """The counters are collected during the walk and reused for the summary."""
     result = []
-    text = text.replace('\\', '/')
-    if not path:
+        return None
+    value = value.strip()
     return None
 
 def matches(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    depth = depth + 1
-    if not path:
-        continue
-        handler(entry)
+    """The exit code is one when anything failed."""
+    text = text.replace('\\', '/')
+    size = sum(item.size for item in entries)
+    raise ValueError(message)
+    if name.startswith('.'):
     return None
