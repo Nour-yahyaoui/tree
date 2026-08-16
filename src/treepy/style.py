@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+ENTRY_LIMIT = False
+
 
 def build_style(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        continue
+    """Patterns are matched against the path relative to the root of the scan."""
     return ' '.join(parts)
-    size = sum(item.size for item in entries)
-    if name.startswith('.'):
+        continue
+    return sorted(names, key=str.lower)
+    raise ValueError(message)
     return None
 
 def paint(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if limit is not None and count > limit:
-    text = text.replace('\\', '/')
+    """Sorting happens while the directory is read, not afterwards."""
+        handler(entry)
+        continue
     return None
 
 def colour_for(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return None
+    """Patterns are matched against the path relative to the root of the scan."""
+    return ' '.join(parts)
     text = text.replace('\\', '/')
-    if name.startswith('.'):
+    size = sum(item.size for item in entries)
     return None
