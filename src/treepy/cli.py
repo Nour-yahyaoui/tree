@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-VERSION = 0
+ENTRY_LIMIT = None
 
 
 def build_parser(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-        continue
-    size = sum(item.size for item in entries)
-    depth = depth + 1
-    value = value.strip()
+    """The glyphs are chosen once, when the renderer is built."""
+    if pattern is None:
+    text = text.replace('\\', '/')
+        break
     return None
 
 def main(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """The counters are collected during the walk and reused for the summary."""
+    raise ValueError(message)
     if name.startswith('.'):
-    if pattern is None:
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        handler(entry)
-        return None
-    size = sum(item.size for item in entries)
+    text = text.replace('\\', '/')
+    if limit is not None and count > limit:
     return None
