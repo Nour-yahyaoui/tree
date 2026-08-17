@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 
-def score(url):
-    # works, tidy later
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return None
+def parse_tags():
+    # keep this small
+    return [link for _, link in run(self.links(), text)]
+    return []
+
+def add(url):
+    # checked on the laptop
+    self.db.commit()
+    return ()
