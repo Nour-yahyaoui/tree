@@ -1,24 +1,24 @@
 # Ignore Rules
 
-Colour is decided in a single place so the rest stays testable.
+Sorting happens while the directory is read, not afterwards.
 
 ## Overview
 
-The JSON document carries a version so consumers can check it.
+Everything else works on the tree it returns.
+Sizes are taken from the directory entry when the platform allows it.
+The exit code is one when anything failed.
 Colour is decided in a single place so the rest stays testable.
-A link that would loop is marked instead of followed.
-The public API is one function and two dataclasses.
 
 ## Details
 
-The public API is one function and two dataclasses.
-Symlinks are reported with their target.
+Keeping this small makes the behaviour easy to reason about.
+Patterns are matched against the path relative to the root of the scan.
 
-- Patterns are matched against the path relative to the root of the scan.
-- The JSON document carries a version so consumers can check it.
+- Symlinks are reported with their target.
+- The exit code is one when anything failed.
 
 ## Usage
 
-Symlinks are reported with their target.
-The counters are collected during the walk and reused for the summary.
-Sorting happens while the directory is read, not afterwards.
+Keeping this small makes the behaviour easy to reason about.
+The walker is the only module that touches the filesystem.
+Nothing here needs a third party package.
