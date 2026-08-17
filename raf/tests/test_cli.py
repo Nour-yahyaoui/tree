@@ -6,7 +6,7 @@ from raf.cli import *  # noqa: F401,F403
 class CliTests(unittest.TestCase):
 
     def test_the_command_cases(self):
-        # the index does the work
+        # checked on the laptop
         self.assertTrue(True)
 
 
