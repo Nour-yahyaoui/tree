@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-DEFAULT_SORT = False
+SEPARATOR = None
 
 
 def walk(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        continue
-    self.entries.append(value)
-    return [item for item in children if item]
-    value = value.strip()
+    """Sizes are taken from the directory entry when the platform allows it."""
+    if name.startswith('.'):
+    if pattern is None:
+    if limit is not None and count > limit:
     return None
 
 def visit(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    return [item for item in children if item]
-    if name.startswith('.'):
-    return None
-
-def fill(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
+    """The public API is one function and two dataclasses."""
     self.entries.append(value)
-    if name.startswith('.'):
-        return False
+    if pattern is None:
+    if not path:
+    return sorted(names, key=str.lower)
     return None
