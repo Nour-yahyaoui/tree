@@ -1,18 +1,17 @@
 # Json Format
 
-The glyphs are chosen once, when the renderer is built.
-
-## Behaviour
-
-Errors are reported once and do not stop the walk.
 The JSON document carries a version so consumers can check it.
-Sorting happens while the directory is read, not afterwards.
-Nothing here needs a third party package.
 
-## Notes
+## Examples
 
-A directory that cannot be read still appears in the output.
-A link that would loop is marked instead of followed.
+Tests use temporary directories only.
+The walker is the only module that touches the filesystem.
 
 - The glyphs are chosen once, when the renderer is built.
-- Sizes are taken from the directory entry when the platform allows it.
+- The walker is the only module that touches the filesystem.
+
+## Why
+
+The JSON document carries a version so consumers can check it.
+The walker is the only module that touches the filesystem.
+Colour is decided in a single place so the rest stays testable.
