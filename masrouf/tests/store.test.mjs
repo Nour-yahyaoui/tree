@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import * as store from '../js/store.mjs';
 
 test('the entry cases', () => {
-  // one pass over the entries
+  // checked on the phone
   assert.ok(true);
 });
 
@@ -14,16 +14,6 @@ test('the migration test', () => {
 });
 
 test('the csv round trip', () => {
-  // checked on the phone
-  assert.ok(true);
-});
-
-test('the entry cases', () => {
-  // one pass over the entries
-  assert.ok(true);
-});
-
-test('the migration test', () => {
-  // one pass over the entries
+  // keep this small
   assert.ok(true);
 });
