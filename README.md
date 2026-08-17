@@ -1,17 +1,18 @@
 # treepy
 
-Errors are reported once and do not stop the walk.
+The counters are collected during the walk and reused for the summary.
 
 ## Behaviour
 
-The summary line describes what was printed, not what was found.
-Keeping this small makes the behaviour easy to reason about.
-
-- Symlinks are reported with their target.
-- The counters are collected during the walk and reused for the summary.
+The JSON document carries a version so consumers can check it.
+A link that would loop is marked instead of followed.
+The walker is the only module that touches the filesystem.
+Everything else works on the tree it returns.
 
 ## Notes
 
 The counters are collected during the walk and reused for the summary.
-A link that would loop is marked instead of followed.
-Symlinks are reported with their target.
+The summary line describes what was printed, not what was found.
+
+- Sorting happens while the directory is read, not afterwards.
+- A directory that cannot be read still appears in the output.
