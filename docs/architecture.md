@@ -1,24 +1,30 @@
 # Architecture
 
-The walker is the only module that touches the filesystem.
-
-## Why
-
-A link that would loop is marked instead of followed.
-Errors are reported once and do not stop the walk.
-
-- Keeping this small makes the behaviour easy to reason about.
-- The exit code is one when anything failed.
+Sizes are taken from the directory entry when the platform allows it.
 
 ## Caveats
 
-The glyphs are chosen once, when the renderer is built.
-Sizes are taken from the directory entry when the platform allows it.
-Keeping this small makes the behaviour easy to reason about.
+Errors are reported once and do not stop the walk.
+Everything else works on the tree it returns.
+A link that would loop is marked instead of followed.
 
 ## Design
 
-The summary line describes what was printed, not what was found.
-The JSON document carries a version so consumers can check it.
-The exit code is one when anything failed.
 Everything else works on the tree it returns.
+Keeping this small makes the behaviour easy to reason about.
+Sizes are taken from the directory entry when the platform allows it.
+Nothing here needs a third party package.
+
+## Extensions
+
+The glyphs are chosen once, when the renderer is built.
+Colour is decided in a single place so the rest stays testable.
+
+- Tests use temporary directories only.
+- Everything else works on the tree it returns.
+
+## Overview
+
+The public API is one function and two dataclasses.
+Sorting happens while the directory is read, not afterwards.
+Symlinks are reported with their target.
