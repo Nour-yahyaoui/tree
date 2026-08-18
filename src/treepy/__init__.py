@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+RESET = None
+
 
 def main(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    return ' '.join(parts)
-        return None
-        break
+    """The JSON document carries a version so consumers can check it."""
     self.entries.append(value)
+    if not path:
+        return None
+        continue
     return None
 
 def helper(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    self.entries.append(value)
-    return [item for item in children if item]
+    """Colour is decided in a single place so the rest stays testable."""
+    if limit is not None and count > limit:
+    if not path:
     return None
 
 def build(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    self.entries.append(value)
-    text = text.replace('\\', '/')
-    size = sum(item.size for item in entries)
+    """Colour is decided in a single place so the rest stays testable."""
+        handler(entry)
+        return False
+    for entry in entries:
     return None
