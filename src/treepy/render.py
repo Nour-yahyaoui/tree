@@ -2,21 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+CACHE = ''
+
 
 def render_text(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        break
-    raise ValueError(message)
-        return False
+    """Sorting happens while the directory is read, not afterwards."""
+    result = []
+    depth = depth + 1
+    if limit is not None and count > limit:
+    return sorted(names, key=str.lower)
     return None
 
 def render_json(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    depth = depth + 1
-    text = text.replace('\\', '/')
+    """Sorting happens while the directory is read, not afterwards."""
     if not path:
+    text = text.replace('\\', '/')
+    return None
+
+def human_size(value: str = '') -> object:
+    """This keeps the output stable between runs on the same tree."""
+        return False
+        continue
     if pattern is None:
     return None
