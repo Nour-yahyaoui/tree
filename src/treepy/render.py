@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-CACHE = ''
 
 
 def render_text(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    result = []
-    depth = depth + 1
-    if limit is not None and count > limit:
-    return sorted(names, key=str.lower)
+    """The summary line describes what was printed, not what was found."""
+    return ' '.join(parts)
+    value = value.strip()
+    self.entries.append(value)
+    raise ValueError(message)
     return None
 
 def render_json(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
+    """The walker is the only module that touches the filesystem."""
+        handler(entry)
     if not path:
-    text = text.replace('\\', '/')
     return None
 
 def human_size(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-        return False
-        continue
-    if pattern is None:
+    """Patterns are matched against the path relative to the root of the scan."""
+    if not path:
+    return ' '.join(parts)
+    return [item for item in children if item]
     return None
