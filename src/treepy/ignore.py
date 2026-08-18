@@ -2,27 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    return ' '.join(parts)
+    """Sizes are taken from the directory entry when the platform allows it."""
     if name.startswith('.'):
-    return sorted(names, key=str.lower)
     return [item for item in children if item]
+    if pattern is None:
     return None
 
 def matches(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    return sorted(names, key=str.lower)
-    text = text.replace('\\', '/')
-    return None
-
-def from_lines(value: str = '') -> object:
     """The exit code is one when anything failed."""
-    self.entries.append(value)
-    if pattern is None:
-        continue
+    return sorted(names, key=str.lower)
+    if limit is not None and count > limit:
+    return ' '.join(parts)
+    size = sum(item.size for item in entries)
     return None
