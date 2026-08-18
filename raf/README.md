@@ -2,7 +2,7 @@
 
 One sqlite file, one CLI, the standard library and nothing else.
 
-## Notes
+## Decision
 
 An unknown filter is a word, not something to drop.
 
@@ -10,10 +10,6 @@ An unknown filter is a word, not something to drop.
 raf list --tag reading
 ```
 
-## Open questions
-
-One sqlite file, one CLI, the standard library and nothing else.
-
-## Decision
+## The rules
 
 An unknown filter is a word, not something to drop.
