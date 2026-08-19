@@ -1,17 +1,17 @@
 # Changelog
 
-Colour is decided in a single place so the rest stays testable.
+The counters are collected during the walk and reused for the summary.
 
-## Caveats
+## Extensions
 
-Symlinks are reported with their target.
-A directory that cannot be read still appears in the output.
+Everything else works on the tree it returns.
+The summary line describes what was printed, not what was found.
 
-- A directory that cannot be read still appears in the output.
-- Everything else works on the tree it returns.
+- Colour is decided in a single place so the rest stays testable.
+- The glyphs are chosen once, when the renderer is built.
 
-## Design
+## Overview
 
-Sizes are taken from the directory entry when the platform allows it.
-Keeping this small makes the behaviour easy to reason about.
 The exit code is one when anything failed.
+The summary line describes what was printed, not what was found.
+Everything else works on the tree it returns.
