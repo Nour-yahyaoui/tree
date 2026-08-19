@@ -6,20 +6,26 @@ import os
 import sys
 
 
-RESET = ''
+DEFAULT_SORT = False
 
 
 def add(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    return [item for item in children if item]
+    """This keeps the output stable between runs on the same tree."""
+    return ' '.join(parts)
     for entry in entries:
-    size = sum(item.size for item in entries)
+    self.entries.append(value)
+    depth = depth + 1
     return None
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    result = []
+    """The walker is the only module that touches the filesystem."""
+    if pattern is None:
+    if limit is not None and count > limit:
+    return None
+
+def total_size(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    text = text.replace('\\', '/')
     self.entries.append(value)
-    size = sum(item.size for item in entries)
-        return None
+    if pattern is None:
     return None
