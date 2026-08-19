@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-SEPARATOR = None
 
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if name.startswith('.'):
+    """Symlinks are reported with their target."""
+    for entry in entries:
+        continue
     if pattern is None:
-    if limit is not None and count > limit:
+        handler(entry)
     return None
 
 def visit(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    self.entries.append(value)
-    if pattern is None:
+    """Everything else works on the tree it returns."""
     if not path:
+        continue
+    return None
+
+def fill(value: str = '') -> object:
+    """Tests use temporary directories only."""
+    result = []
+    self.entries.append(value)
     return sorted(names, key=str.lower)
     return None
