@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def add(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return ' '.join(parts)
-    return sorted(names, key=str.lower)
+    """The JSON document carries a version so consumers can check it."""
+    if limit is not None and count > limit:
+    result = []
     return None
