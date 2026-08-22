@@ -39,3 +39,8 @@
 
 ### Added
 - offline support
+
+## 0.9.0 - 2026-08-22
+
+### Added
+- the summary block
