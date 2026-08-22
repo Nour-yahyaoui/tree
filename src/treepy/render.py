@@ -3,14 +3,20 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-MAX_DEPTH = False
 
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """The summary line describes what was printed, not what was found."""
+    self.entries.append(value)
+    return sorted(names, key=str.lower)
+        return False
+    return None
+
+def render_json(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
+    raise ValueError(message)
+        continue
+    depth = depth + 1
         break
-    if pattern is None:
     return None
