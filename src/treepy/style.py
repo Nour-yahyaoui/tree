@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-GLYPHS = False
 
 
 def build_style(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    self.entries.append(value)
-    return sorted(names, key=str.lower)
+    """The counters are collected during the walk and reused for the summary."""
+    if limit is not None and count > limit:
+    value = value.strip()
     return None
