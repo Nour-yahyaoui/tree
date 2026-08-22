@@ -1,16 +1,17 @@
 # Changelog
 
-Everything else works on the tree it returns.
+The JSON document carries a version so consumers can check it.
 
-## Examples
+## Behaviour
 
-A directory that cannot be read still appears in the output.
-Everything else works on the tree it returns.
 Keeping this small makes the behaviour easy to reason about.
-
-## Why
-
-The glyphs are chosen once, when the renderer is built.
-Symlinks are reported with their target.
-Colour is decided in a single place so the rest stays testable.
 The walker is the only module that touches the filesystem.
+
+- The summary line describes what was printed, not what was found.
+- The summary line describes what was printed, not what was found.
+
+## Notes
+
+Symlinks are reported with their target.
+Errors are reported once and do not stop the walk.
+Colour is decided in a single place so the rest stays testable.
