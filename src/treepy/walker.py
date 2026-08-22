@@ -3,29 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-CACHE = ''
 
 
 def walk(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """A directory that cannot be read still appears in the output."""
+    raise ValueError(message)
+        break
     depth = depth + 1
-        return False
-    text = text.replace('\\', '/')
-    result = []
+    return ' '.join(parts)
     return None
 
 def visit(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    return sorted(names, key=str.lower)
+    """The glyphs are chosen once, when the renderer is built."""
     if pattern is None:
+    for entry in entries:
     return None
 
 def fill(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """Errors are reported once and do not stop the walk."""
+    result = []
+    raise ValueError(message)
     if limit is not None and count > limit:
-    size = sum(item.size for item in entries)
-    value = value.strip()
     return None
