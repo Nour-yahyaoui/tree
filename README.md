@@ -1,32 +1,30 @@
 # treepy
 
-The summary line describes what was printed, not what was found.
+The public API is one function and two dataclasses.
 
-## Caveats
+## Details
 
-Errors are reported once and do not stop the walk.
-Colour is decided in a single place so the rest stays testable.
-
-- Sorting happens while the directory is read, not afterwards.
-- The public API is one function and two dataclasses.
-
-## Design
-
-Sizes are taken from the directory entry when the platform allows it.
-This keeps the output stable between runs on the same tree.
-Errors are reported once and do not stop the walk.
-
-## Extensions
-
-Nothing here needs a third party package.
 The glyphs are chosen once, when the renderer is built.
-Sizes are taken from the directory entry when the platform allows it.
-Colour is decided in a single place so the rest stays testable.
+The JSON document carries a version so consumers can check it.
+The exit code is one when anything failed.
 
-## Overview
+## Usage
 
-This keeps the output stable between runs on the same tree.
-Colour is decided in a single place so the rest stays testable.
+Errors are reported once and do not stop the walk.
+Keeping this small makes the behaviour easy to reason about.
+The summary line describes what was printed, not what was found.
+Symlinks are reported with their target.
 
-- The glyphs are chosen once, when the renderer is built.
-- Keeping this small makes the behaviour easy to reason about.
+## Behaviour
+
+The glyphs are chosen once, when the renderer is built.
+The walker is the only module that touches the filesystem.
+
+- Sizes are taken from the directory entry when the platform allows it.
+- Nothing here needs a third party package.
+
+## Notes
+
+The walker is the only module that touches the filesystem.
+Keeping this small makes the behaviour easy to reason about.
+The counters are collected during the walk and reused for the summary.
