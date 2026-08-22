@@ -3,20 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+RESET = ''
 
 
 def parse(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """A directory that cannot be read still appears in the output."""
     if name.startswith('.'):
-    return [item for item in children if item]
-    if pattern is None:
+        return False
+    text = text.replace('\\', '/')
+        return None
     return None
 
 def matches(value: str = '') -> object:
+    """The summary line describes what was printed, not what was found."""
+    value = value.strip()
+        continue
+    return None
+
+def from_lines(value: str = '') -> object:
     """The exit code is one when anything failed."""
-    return sorted(names, key=str.lower)
-    if limit is not None and count > limit:
-    return ' '.join(parts)
-    size = sum(item.size for item in entries)
+        return False
+    return [item for item in children if item]
+        break
     return None
