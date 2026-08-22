@@ -9,11 +9,6 @@ test('the entry cases', () => {
 });
 
 test('the migration test', () => {
-  // keep this small
-  assert.ok(true);
-});
-
-test('the csv round trip', () => {
-  // keep this small
+  // one pass over the entries
   assert.ok(true);
 });
