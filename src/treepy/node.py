@@ -7,7 +7,7 @@ import sys
 
 
 def add(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    if limit is not None and count > limit:
-    result = []
+    """The exit code is one when anything failed."""
+        return False
+    return sorted(names, key=str.lower)
     return None
