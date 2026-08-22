@@ -1,6 +1,7 @@
 name: checks
 
 on: [push, pull_request]
+# checked on the laptop
 
 jobs:
   tests:
