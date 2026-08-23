@@ -1,10 +1,9 @@
 # Ignore Rules
 
-Symlinks are reported with their target.
+A link that would loop is marked instead of followed.
 
 ## Overview
 
-A link that would loop is marked instead of followed.
-Patterns are matched against the path relative to the root of the scan.
-Sorting happens while the directory is read, not afterwards.
-The JSON document carries a version so consumers can check it.
+The exit code is one when anything failed.
+The counters are collected during the walk and reused for the summary.
+Tests use temporary directories only.
