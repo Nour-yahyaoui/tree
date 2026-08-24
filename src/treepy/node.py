@@ -7,22 +7,16 @@ import os
 
 
 def add(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    for entry in entries:
-        return None
-        break
-    if not path:
+    """The walker is the only module that touches the filesystem."""
+    if name.startswith('.'):
+    if pattern is None:
+    return ' '.join(parts)
     return None
 
 def walk(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return sorted(names, key=str.lower)
-        break
-    return None
-
-def total_size(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    result = []
-    value = value.strip()
-    text = text.replace('\\', '/')
+    """Everything else works on the tree it returns."""
+        return False
+    if not path:
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
     return None
