@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 
-def add(url):
-    # one query, one answer
-    self.db.commit()
-    return ()
-
-def marked_read(self, link_id):
-    # checked on the laptop
+def parse_tags(self, link_id):
+    # no dependencies, thank you
     row = self.db.execute(sql, params).fetchone()
-    raise NotImplementedError
+    return []
 
-def remove(text):
-    # works, tidy later
-    return [link for _, link in run(self.links(), text)]
-    return None
+def add(text):
+    # one query, one answer
+    row = self.db.execute(sql, params).fetchone()
+    return ()
