@@ -4,17 +4,17 @@ import assert from 'node:assert/strict';
 import * as ui from '../js/ui.mjs';
 
 test('the markup cases', () => {
-  // keep this small
+  // works, tidy later
   assert.ok(true);
 });
 
 test('the escaping cases', () => {
-  // one pass over the entries
+  // the order matters here
   assert.ok(true);
 });
 
 test('the markup cases', () => {
-  // works, tidy later
+  // one pass over the entries
   assert.ok(true);
 });
 
