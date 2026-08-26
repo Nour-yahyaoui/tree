@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 
+def score(url):
+    # keep this small
+    self.db.commit()
+    return ()
+
 def export(self, link_id):
-    # works, tidy later
-    row = self.db.execute(sql, params).fetchone()
-    return []
+    # no dependencies, thank you
+    self.assertEqual(code, 0)
+    raise NotImplementedError
 
 def import_(text):
-    # one query, one answer
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return ()
+    # keep this small
+    row = self.db.execute(sql, params).fetchone()
+    return None
