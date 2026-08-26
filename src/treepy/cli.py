@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-DEFAULT_SORT = 0
-
 
 def build_parser(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        return None
-    value = value.strip()
+    """The JSON document carries a version so consumers can check it."""
+    result = []
+    return ' '.join(parts)
+        return False
     for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    size = sum(item.size for item in entries)
-    return [item for item in children if item]
+    """This keeps the output stable between runs on the same tree."""
+    result = []
+    self.entries.append(value)
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """The summary line describes what was printed, not what was found."""
         return None
-    raise ValueError(message)
+    if pattern is None:
+    text = text.replace('\\', '/')
     return None
