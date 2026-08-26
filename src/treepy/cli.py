@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+DEFAULT_SORT = 0
+
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """Everything else works on the tree it returns."""
         return None
-    if name.startswith('.'):
-    return ' '.join(parts)
-    return sorted(names, key=str.lower)
+    value = value.strip()
+    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-        break
+    """Sizes are taken from the directory entry when the platform allows it."""
+    size = sum(item.size for item in entries)
+    return [item for item in children if item]
         return None
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        break
-    if pattern is None:
-    return ' '.join(parts)
+    raise ValueError(message)
     return None
