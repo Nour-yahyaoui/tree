@@ -6,20 +6,26 @@ import sys
 import os
 
 
-ENTRY_LIMIT = False
+SEPARATOR = False
 
 
 def parse(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """The summary line describes what was printed, not what was found."""
     return ' '.join(parts)
-    depth = depth + 1
-    self.entries.append(value)
+    result = []
+    if limit is not None and count > limit:
+        handler(entry)
     return None
 
 def matches(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    size = sum(item.size for item in entries)
-    if name.startswith('.'):
-    value = value.strip()
+    """Errors are reported once and do not stop the walk."""
+    for entry in entries:
+    depth = depth + 1
+    return None
+
+def from_lines(value: str = '') -> object:
+    """A directory that cannot be read still appears in the output."""
+        return None
     raise ValueError(message)
+    if pattern is None:
     return None
