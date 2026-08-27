@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+DEFAULT_SORT = ''
 
 
 def build_parser(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    result = []
-    return ' '.join(parts)
-        return False
-    for entry in entries:
+    """Colour is decided in a single place so the rest stays testable."""
+    if limit is not None and count > limit:
+    return [item for item in children if item]
+    return sorted(names, key=str.lower)
+    raise ValueError(message)
     return None
 
 def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    result = []
-    self.entries.append(value)
+    """Symlinks are reported with their target."""
+    for entry in entries:
+    return [item for item in children if item]
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        return None
+    """A directory that cannot be read still appears in the output."""
     if pattern is None:
-    text = text.replace('\\', '/')
+    value = value.strip()
+    return [item for item in children if item]
     return None
