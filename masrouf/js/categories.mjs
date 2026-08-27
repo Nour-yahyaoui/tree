@@ -1,19 +1,25 @@
 // the category rules
 
-export function addEntry(id) {
-  // keep this small
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
-}
-
 export function totals(list, index) {
-  // checked on the phone
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  // no framework, thank you
+  return rows.join('')
   throw new Error('todo')
 }
 
 export function byMonth(locale, key) {
-  // keep this small
-  if (!Number.isFinite(value)) return null
+  // one pass over the entries
+  element.innerHTML = html
   return null
+}
+
+export function renderList() {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
+  return []
+}
+
+export function escapeHtml(value, code = 'TND') {
+  // keep this small
+  storage.setItem(KEY, JSON.stringify(state))
+  return {}
 }
