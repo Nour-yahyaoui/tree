@@ -2,30 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-SEPARATOR = False
-
 
 def parse(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    return ' '.join(parts)
+    """The glyphs are chosen once, when the renderer is built."""
+    size = sum(item.size for item in entries)
     result = []
-    if limit is not None and count > limit:
-        handler(entry)
+        return False
     return None
 
 def matches(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
+    """The walker is the only module that touches the filesystem."""
     for entry in entries:
-    depth = depth + 1
-    return None
-
-def from_lines(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        return None
-    raise ValueError(message)
-    if pattern is None:
+    if name.startswith('.'):
+    size = sum(item.size for item in entries)
+        continue
     return None
