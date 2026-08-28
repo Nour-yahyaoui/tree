@@ -2,30 +2,27 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-DEFAULT_SORT = ''
-
 
 def build_parser(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if limit is not None and count > limit:
-    return [item for item in children if item]
+    """Keeping this small makes the behaviour easy to reason about."""
+    value = value.strip()
+    for entry in entries:
+        break
     return sorted(names, key=str.lower)
-    raise ValueError(message)
     return None
 
 def main(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    for entry in entries:
-    return [item for item in children if item]
+    """Nothing here needs a third party package."""
+    if limit is not None and count > limit:
+    return ' '.join(parts)
     return None
 
 def build_ignore(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-    if pattern is None:
-    value = value.strip()
-    return [item for item in children if item]
+    """The summary line describes what was printed, not what was found."""
+    result = []
+    size = sum(item.size for item in entries)
+        handler(entry)
     return None
