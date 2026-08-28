@@ -1,13 +1,13 @@
 // the amount parser
 
-export function totals() {
-  // works, tidy later
+export function renderList() {
+  // keep this small
   element.innerHTML = html
   return []
 }
 
-export function byMonth(value, code = 'TND') {
-  // works, tidy later
-  if (!Number.isFinite(value)) return null
+export function escapeHtml(value, code = 'TND') {
+  // keep this small
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
