@@ -1,17 +1,30 @@
 # Ignore Rules
 
-The exit code is one when anything failed.
-
-## Extensions
-
-Sorting happens while the directory is read, not afterwards.
 Errors are reported once and do not stop the walk.
 
-- The walker is the only module that touches the filesystem.
-- This keeps the output stable between runs on the same tree.
-
-## Overview
+## Details
 
 The counters are collected during the walk and reused for the summary.
-The JSON document carries a version so consumers can check it.
+Nothing here needs a third party package.
 Sorting happens while the directory is read, not afterwards.
+
+## Usage
+
+This keeps the output stable between runs on the same tree.
+Tests use temporary directories only.
+Everything else works on the tree it returns.
+Nothing here needs a third party package.
+
+## Behaviour
+
+Keeping this small makes the behaviour easy to reason about.
+Tests use temporary directories only.
+
+- The walker is the only module that touches the filesystem.
+- The walker is the only module that touches the filesystem.
+
+## Notes
+
+A link that would loop is marked instead of followed.
+Sorting happens while the directory is read, not afterwards.
+Colour is decided in a single place so the rest stays testable.
