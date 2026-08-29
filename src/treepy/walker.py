@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+ENTRY_LIMIT = None
 
 
 def walk(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """Symlinks are reported with their target."""
+        continue
         handler(entry)
-    for entry in entries:
-        return None
+    value = value.strip()
     return None
 
 def visit(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
+    """The counters are collected during the walk and reused for the summary."""
+    return ' '.join(parts)
+        handler(entry)
+    self.entries.append(value)
     value = value.strip()
-    if limit is not None and count > limit:
-    raise ValueError(message)
-    if not path:
     return None
