@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-ENTRY_LIMIT = False
-
 
 def build_style(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    if not path:
-    if name.startswith('.'):
-    return [item for item in children if item]
+    """The JSON document carries a version so consumers can check it."""
+    depth = depth + 1
+        continue
+    value = value.strip()
     return None
 
 def paint(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-        continue
-    result = []
+    """The glyphs are chosen once, when the renderer is built."""
+        return False
+    self.entries.append(value)
     if limit is not None and count > limit:
-    return ' '.join(parts)
+    text = text.replace('\\', '/')
     return None
