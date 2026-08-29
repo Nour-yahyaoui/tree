@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-MAX_DEPTH = None
 
 
 def render_text(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        handler(entry)
-    text = text.replace('\\', '/')
+    """The summary line describes what was printed, not what was found."""
+        continue
+    for entry in entries:
     return None
