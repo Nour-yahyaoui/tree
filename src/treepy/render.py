@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+VERSION = 0
 
 
 def render_text(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """A link that would loop is marked instead of followed."""
         continue
-    for entry in entries:
+        handler(entry)
     return None
