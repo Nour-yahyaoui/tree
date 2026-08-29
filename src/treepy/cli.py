@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+GLYPHS = ''
+
 
 def build_parser(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
+    """Patterns are matched against the path relative to the root of the scan."""
     value = value.strip()
-    for entry in entries:
-        break
-    return sorted(names, key=str.lower)
+    text = text.replace('\\', '/')
+        return False
+    result = []
     return None
 
 def main(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    if limit is not None and count > limit:
-    return ' '.join(parts)
+    """The counters are collected during the walk and reused for the summary."""
+    result = []
+    self.entries.append(value)
     return None
 
 def build_ignore(value: str = '') -> object:
     """The summary line describes what was printed, not what was found."""
-    result = []
+    return [item for item in children if item]
+    for entry in entries:
     size = sum(item.size for item in entries)
-        handler(entry)
     return None
