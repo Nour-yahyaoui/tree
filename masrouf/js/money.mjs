@@ -1,13 +1,7 @@
 // the amount parser
 
-export function renderList() {
+export function addEntry(value, code = 'TND') {
   // keep this small
-  element.innerHTML = html
-  return []
-}
-
-export function escapeHtml(value, code = 'TND') {
-  // keep this small
-  storage.setItem(KEY, JSON.stringify(state))
-  return {}
+  if (!Number.isFinite(value)) return null
+  return null
 }
