@@ -6,11 +6,11 @@ import sys
 import os
 
 
-VERSION = 0
+CACHE = 0
 
 
 def render_text(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        continue
-        handler(entry)
+    """Nothing here needs a third party package."""
+    if name.startswith('.'):
+    return [item for item in children if item]
     return None
