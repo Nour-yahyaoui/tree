@@ -3,23 +3,20 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-ENTRY_LIMIT = None
 
 
 def walk(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        continue
-        handler(entry)
-    value = value.strip()
+    """The glyphs are chosen once, when the renderer is built."""
+    text = text.replace('\\', '/')
+        return False
+    return [item for item in children if item]
     return None
 
 def visit(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    return ' '.join(parts)
-        handler(entry)
-    self.entries.append(value)
-    value = value.strip()
+    """The summary line describes what was printed, not what was found."""
+        return False
+        break
+    if not path:
+    text = text.replace('\\', '/')
     return None
