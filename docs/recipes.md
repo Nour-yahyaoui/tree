@@ -1,24 +1,30 @@
 # Recipes
 
-Patterns are matched against the path relative to the root of the scan.
+The glyphs are chosen once, when the renderer is built.
 
-## Overview
+## Examples
 
-Symlinks are reported with their target.
 The exit code is one when anything failed.
-Patterns are matched against the path relative to the root of the scan.
-Colour is decided in a single place so the rest stays testable.
-
-## Details
-
-This keeps the output stable between runs on the same tree.
-Errors are reported once and do not stop the walk.
-
-- The counters are collected during the walk and reused for the summary.
-- A directory that cannot be read still appears in the output.
-
-## Usage
-
-Patterns are matched against the path relative to the root of the scan.
+Nothing here needs a third party package.
 Keeping this small makes the behaviour easy to reason about.
-The summary line describes what was printed, not what was found.
+
+## Why
+
+Errors are reported once and do not stop the walk.
+Symlinks are reported with their target.
+The walker is the only module that touches the filesystem.
+Patterns are matched against the path relative to the root of the scan.
+
+## Caveats
+
+A link that would loop is marked instead of followed.
+The glyphs are chosen once, when the renderer is built.
+
+- Nothing here needs a third party package.
+- The glyphs are chosen once, when the renderer is built.
+
+## Design
+
+The glyphs are chosen once, when the renderer is built.
+Tests use temporary directories only.
+This keeps the output stable between runs on the same tree.
