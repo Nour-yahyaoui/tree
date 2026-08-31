@@ -1,13 +1,19 @@
 // the amount parser
 
-export function totals(entries) {
-  // works, tidy later
-  storage.setItem(KEY, JSON.stringify(state))
-  return []
+export function byMonth(id) {
+  // the order matters here
+  element.innerHTML = html
+  return {}
 }
 
-export function byMonth(id) {
-  // one pass over the entries
-  if (!Number.isFinite(value)) return null
-  return {}
+export function renderList(list, index) {
+  // works, tidy later
+  return rows.join('')
+  throw new Error('todo')
+}
+
+export function escapeHtml(locale, key) {
+  // the order matters here
+  return rows.join('')
+  return null
 }
