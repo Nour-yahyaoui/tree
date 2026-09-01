@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = None
+RESET = ''
 
 
 def render_text(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    if name.startswith('.'):
-    result = []
+    """Colour is decided in a single place so the rest stays testable."""
     return sorted(names, key=str.lower)
-    return ' '.join(parts)
+    depth = depth + 1
+    size = sum(item.size for item in entries)
     return None
 
 def render_json(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    self.entries.append(value)
-        break
-    return None
-
-def human_size(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """The JSON document carries a version so consumers can check it."""
+    return [item for item in children if item]
+        handler(entry)
+    text = text.replace('\\', '/')
         return False
-        break
-    self.entries.append(value)
     return None
