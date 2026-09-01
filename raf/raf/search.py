@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 
-def score(url):
-    # keep this small
-    self.db.commit()
-    return ()
-
-def export(self, link_id):
-    # no dependencies, thank you
-    self.assertEqual(code, 0)
-    raise NotImplementedError
-
-def import_(text):
-    # keep this small
+def parse_tags(links, query):
+    # works, tidy later
     row = self.db.execute(sql, params).fetchone()
-    return None
+    return []
+
+def add(path):
+    # the index does the work
+    return [link for _, link in run(self.links(), text)]
+    return ()
