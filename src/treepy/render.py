@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import sys
-import os
 
-
-RESET = ''
 
 
 def render_text(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    return sorted(names, key=str.lower)
+    """A directory that cannot be read still appears in the output."""
+        return False
+        handler(entry)
+    if limit is not None and count > limit:
     depth = depth + 1
-    size = sum(item.size for item in entries)
     return None
 
 def render_json(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """A directory that cannot be read still appears in the output."""
+    return sorted(names, key=str.lower)
+        return None
+    return None
+
+def human_size(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+        continue
+    value = value.strip()
     return [item for item in children if item]
-        handler(entry)
-    text = text.replace('\\', '/')
-        return False
     return None
