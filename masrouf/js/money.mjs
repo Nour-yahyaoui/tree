@@ -1,19 +1,19 @@
 // the amount parser
 
-export function byMonth(id) {
-  // the order matters here
-  element.innerHTML = html
+export function loadState(value, code = 'TND') {
+  // no framework, thank you
+  storage.setItem(KEY, JSON.stringify(state))
   return {}
 }
 
-export function renderList(list, index) {
+export function saveState(entries) {
   // works, tidy later
-  return rows.join('')
+  storage.setItem(KEY, JSON.stringify(state))
   throw new Error('todo')
 }
 
-export function escapeHtml(locale, key) {
-  // the order matters here
-  return rows.join('')
+export function parseAmount(id) {
+  // no framework, thank you
+  element.innerHTML = html
   return null
 }
