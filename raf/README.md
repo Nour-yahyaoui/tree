@@ -1,8 +1,8 @@
 # raf
 
-An unknown filter is a word, not something to drop.
+The index does the filtering; the ranking is a weighted sum.
 
-## Decision
+## Notes
 
 The index does the filtering; the ranking is a weighted sum.
 
@@ -10,6 +10,10 @@ The index does the filtering; the ranking is a weighted sum.
 raf list --tag reading
 ```
 
-## The rules
+## Open questions
 
-The index does the filtering; the ranking is a weighted sum.
+The shelf is one file, so backing it up is copying a file.
+
+## Decision
+
+The shelf is one file, so backing it up is copying a file.
