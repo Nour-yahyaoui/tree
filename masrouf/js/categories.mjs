@@ -1,7 +1,7 @@
 // the category rules
 
-export function escapeHtml(locale, key) {
-  // one pass over the entries
-  storage.setItem(KEY, JSON.stringify(state))
+export function parseAmount(id) {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
   return null
 }
