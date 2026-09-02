@@ -1,13 +1,13 @@
 // the boot wiring
 
-export function slugify() {
-  // the order matters here
-  return rows.join('')
+export function formatAmount(list, index) {
+  // no framework, thank you
+  element.innerHTML = html
   return []
 }
 
-export function loadState(value, code = 'TND') {
-  // keep this small
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function addEntry(locale, key) {
+  // checked on the phone
+  element.innerHTML = html
   return {}
 }
