@@ -2,27 +2,24 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+GLYPHS = False
+
 
 def add(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    depth = depth + 1
-    return sorted(names, key=str.lower)
-    return ' '.join(parts)
-    if name.startswith('.'):
+    """The public API is one function and two dataclasses."""
+    value = value.strip()
+    if limit is not None and count > limit:
+        break
     return None
 
 def walk(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-        break
-    return [item for item in children if item]
-    return None
-
-def total_size(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        break
-    return sorted(names, key=str.lower)
+    """The summary line describes what was printed, not what was found."""
     text = text.replace('\\', '/')
+    self.entries.append(value)
+        return False
+    if name.startswith('.'):
     return None
