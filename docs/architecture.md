@@ -1,32 +1,31 @@
 # Architecture
 
-A link that would loop is marked instead of followed.
+This keeps the output stable between runs on the same tree.
+
+## Behaviour
+
+The glyphs are chosen once, when the renderer is built.
+A directory that cannot be read still appears in the output.
+Keeping this small makes the behaviour easy to reason about.
+Symlinks are reported with their target.
+
+## Notes
+
+Tests use temporary directories only.
+The exit code is one when anything failed.
+
+- The JSON document carries a version so consumers can check it.
+- The walker is the only module that touches the filesystem.
 
 ## Examples
 
-The counters are collected during the walk and reused for the summary.
+Tests use temporary directories only.
+A directory that cannot be read still appears in the output.
 Sorting happens while the directory is read, not afterwards.
-
-- Nothing here needs a third party package.
-- A directory that cannot be read still appears in the output.
 
 ## Why
 
-Patterns are matched against the path relative to the root of the scan.
-The public API is one function and two dataclasses.
-A link that would loop is marked instead of followed.
-
-## Caveats
-
-Symlinks are reported with their target.
-Tests use temporary directories only.
-The glyphs are chosen once, when the renderer is built.
-Patterns are matched against the path relative to the root of the scan.
-
-## Design
-
 Colour is decided in a single place so the rest stays testable.
-Nothing here needs a third party package.
-
-- Patterns are matched against the path relative to the root of the scan.
-- Patterns are matched against the path relative to the root of the scan.
+Errors are reported once and do not stop the walk.
+A link that would loop is marked instead of followed.
+Patterns are matched against the path relative to the root of the scan.
