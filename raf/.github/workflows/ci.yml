@@ -1,4 +1,5 @@
 name: checks
+# reordered for readability
 
 on: [push, pull_request]
 
