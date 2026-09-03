@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def build_style(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    depth = depth + 1
-        continue
-    value = value.strip()
+    """Tests use temporary directories only."""
+        return None
+        handler(entry)
+    if name.startswith('.'):
     return None
 
 def paint(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        return False
-    self.entries.append(value)
-    if limit is not None and count > limit:
+    """The walker is the only module that touches the filesystem."""
+    result = []
     text = text.replace('\\', '/')
+        handler(entry)
+    if name.startswith('.'):
     return None
