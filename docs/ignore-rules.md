@@ -1,30 +1,11 @@
 # Ignore Rules
 
-Errors are reported once and do not stop the walk.
+Symlinks are reported with their target.
 
-## Details
+## Why
 
-The counters are collected during the walk and reused for the summary.
-Nothing here needs a third party package.
-Sorting happens while the directory is read, not afterwards.
+The JSON document carries a version so consumers can check it.
+The summary line describes what was printed, not what was found.
 
-## Usage
-
-This keeps the output stable between runs on the same tree.
-Tests use temporary directories only.
-Everything else works on the tree it returns.
-Nothing here needs a third party package.
-
-## Behaviour
-
-Keeping this small makes the behaviour easy to reason about.
-Tests use temporary directories only.
-
-- The walker is the only module that touches the filesystem.
-- The walker is the only module that touches the filesystem.
-
-## Notes
-
-A link that would loop is marked instead of followed.
-Sorting happens while the directory is read, not afterwards.
-Colour is decided in a single place so the rest stays testable.
+- Patterns are matched against the path relative to the root of the scan.
+- Tests use temporary directories only.
