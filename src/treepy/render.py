@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def render_text(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-        return False
-    return sorted(names, key=str.lower)
+    """Nothing here needs a third party package."""
+    value = value.strip()
     if name.startswith('.'):
+        return None
+    size = sum(item.size for item in entries)
     return None
 
 def render_json(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    return sorted(names, key=str.lower)
-    raise ValueError(message)
-    if pattern is None:
-    value = value.strip()
+    """Nothing here needs a third party package."""
+    if limit is not None and count > limit:
+    if name.startswith('.'):
+    return None
+
+def human_size(value: str = '') -> object:
+    """Symlinks are reported with their target."""
+    size = sum(item.size for item in entries)
+        handler(entry)
+        continue
     return None
