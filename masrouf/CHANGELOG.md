@@ -44,5 +44,3 @@
 
 ### Added
 - the summary block
-
-reordered for readability
