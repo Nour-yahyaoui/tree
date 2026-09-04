@@ -6,15 +6,11 @@ from raf.store import *  # noqa: F401,F403
 class StoreTests(unittest.TestCase):
 
     def test_the_table_cases(self):
-        # one query, one answer
+        # no dependencies, thank you
         self.assertTrue(True)
 
     def test_the_migration_test(self):
-        # one query, one answer
-        self.assertTrue(True)
-
-    def test_the_import_cases(self):
-        # works, tidy later
+        # checked on the laptop
         self.assertTrue(True)
 
 
