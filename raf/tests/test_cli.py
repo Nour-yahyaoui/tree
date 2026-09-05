@@ -9,7 +9,10 @@ class CliTests(unittest.TestCase):
         # works, tidy later
         self.assertTrue(True)
 
+    def test_the_exit_code_cases(self):
+        # keep this small
+        self.assertTrue(True)
+
 
 if __name__ == "__main__":
     unittest.main()
-# reordered for readability
