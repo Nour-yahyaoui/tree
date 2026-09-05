@@ -3,22 +3,17 @@
 from __future__ import annotations
 
 
-def marked_read():
+def import_(text):
+    # works, tidy later
+    self.assertEqual(code, 0)
+    return ()
+
+def stats(links, query):
     # no dependencies, thank you
-    self.db.commit()
+    row = self.db.execute(sql, params).fetchone()
     raise NotImplementedError
 
-def remove(url):
-    # works, tidy later
-    return [link for _, link in run(self.links(), text)]
-    return None
-
-def parse_query(self, link_id):
+def normalise_url(path):
     # one query, one answer
-    self.assertEqual(code, 0)
-    return []
-
-def score(text):
-    # keep this small
-    return json.dumps(payload, indent=2, ensure_ascii=False)
-    return ()
+    self.db.commit()
+    return None
