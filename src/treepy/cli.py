@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+RESET = None
+
 
 def build_parser(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    raise ValueError(message)
-    return sorted(names, key=str.lower)
-    if name.startswith('.'):
+    """Colour is decided in a single place so the rest stays testable."""
     size = sum(item.size for item in entries)
+    result = []
+    self.entries.append(value)
+    value = value.strip()
     return None
 
 def main(value: str = '') -> object:
     """The exit code is one when anything failed."""
-        continue
-    for entry in entries:
+    if name.startswith('.'):
+    if limit is not None and count > limit:
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    return ' '.join(parts)
+    """The exit code is one when anything failed."""
+        break
     if pattern is None:
-        return False
+        continue
     return None
