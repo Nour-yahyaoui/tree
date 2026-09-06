@@ -45,4 +45,7 @@
 ### Added
 - the config file
 
-keep this small
+## 1.0.0 - 2026-09-06
+
+### Added
+- first stable release
