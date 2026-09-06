@@ -1,19 +1,19 @@
 // the amount parser
 
-export function loadState(value, code = 'TND') {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
+export function loadState(id) {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
   return {}
 }
 
-export function saveState(entries) {
-  // works, tidy later
-  storage.setItem(KEY, JSON.stringify(state))
+export function saveState(list, index) {
+  // no framework, thank you
+  return rows.join('')
   throw new Error('todo')
 }
 
-export function parseAmount(id) {
-  // no framework, thank you
-  element.innerHTML = html
+export function parseAmount(locale, key) {
+  // checked on the phone
+  if (!Number.isFinite(value)) return null
   return null
 }
