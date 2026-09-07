@@ -1,24 +1,9 @@
 # Json Format
 
-The exit code is one when anything failed.
-
-## Usage
-
-The glyphs are chosen once, when the renderer is built.
-Symlinks are reported with their target.
-A link that would loop is marked instead of followed.
-The JSON document carries a version so consumers can check it.
-
-## Behaviour
-
-The exit code is one when anything failed.
-The JSON document carries a version so consumers can check it.
-
-- The exit code is one when anything failed.
-- A directory that cannot be read still appears in the output.
+The walker is the only module that touches the filesystem.
 
 ## Notes
 
-A directory that cannot be read still appears in the output.
-The glyphs are chosen once, when the renderer is built.
-Sizes are taken from the directory entry when the platform allows it.
+Errors are reported once and do not stop the walk.
+The counters are collected during the walk and reused for the summary.
+Nothing here needs a third party package.
