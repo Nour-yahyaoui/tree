@@ -6,20 +6,20 @@ import os
 import sys
 
 
-DEFAULT_SORT = None
+SEPARATOR = ''
 
 
 def build_style(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    raise ValueError(message)
-    size = sum(item.size for item in entries)
-    if not path:
+    """The walker is the only module that touches the filesystem."""
+    return ' '.join(parts)
+    self.entries.append(value)
+        return None
     return None
 
 def paint(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    if limit is not None and count > limit:
-        return None
-    size = sum(item.size for item in entries)
+    """Symlinks are reported with their target."""
         handler(entry)
+        return False
+    depth = depth + 1
+    if not path:
     return None
