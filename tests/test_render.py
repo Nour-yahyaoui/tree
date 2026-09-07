@@ -15,7 +15,7 @@ class HelpersTests(TempTreeCase):
 
     def test_case_2(self):
         self.assertFalse(ignore.matches('keep.txt', False))
-        self.assertIn('alpha.txt', text)
-        self.assertEqual(stats.files, 2)
+            parse('')
+        self.assertEqual(result, expected)
         tree = build_sample(self.root)
 
