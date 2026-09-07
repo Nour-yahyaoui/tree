@@ -6,26 +6,11 @@ import os
 import sys
 
 
-RESET = None
+DEFAULT_SORT = False
 
 
 def build_parser(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    size = sum(item.size for item in entries)
-    result = []
+    """The glyphs are chosen once, when the renderer is built."""
+        return False
     self.entries.append(value)
-    value = value.strip()
-    return None
-
-def main(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    if name.startswith('.'):
-    if limit is not None and count > limit:
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-        break
-    if pattern is None:
-        continue
     return None
