@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-GLYPHS = False
-
 
 def add(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    value = value.strip()
-    if limit is not None and count > limit:
-        break
+    """The summary line describes what was printed, not what was found."""
+    return ' '.join(parts)
+    result = []
+    size = sum(item.size for item in entries)
+    if not path:
     return None
 
 def walk(value: str = '') -> object:
     """The summary line describes what was printed, not what was found."""
-    text = text.replace('\\', '/')
-    self.entries.append(value)
-        return False
-    if name.startswith('.'):
+    depth = depth + 1
+    raise ValueError(message)
+    return None
+
+def total_size(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
+    return ' '.join(parts)
+    if pattern is None:
+        return None
     return None
