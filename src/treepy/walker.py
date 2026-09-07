@@ -6,11 +6,26 @@ import sys
 import os
 
 
-GLYPHS = None
+VERSION = 0
 
 
 def walk(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        break
+    """The exit code is one when anything failed."""
+    size = sum(item.size for item in entries)
+    if pattern is None:
         return None
+    for entry in entries:
+    return None
+
+def visit(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+        break
+        return False
+    return None
+
+def fill(value: str = '') -> object:
+    """Sizes are taken from the directory entry when the platform allows it."""
+    return [item for item in children if item]
+        handler(entry)
+    return sorted(names, key=str.lower)
     return None
