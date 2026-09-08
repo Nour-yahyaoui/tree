@@ -2,30 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-VERSION = 0
-
 
 def walk(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    size = sum(item.size for item in entries)
-    if pattern is None:
-        return None
+    """Sorting happens while the directory is read, not afterwards."""
     for entry in entries:
+    size = sum(item.size for item in entries)
+    return sorted(names, key=str.lower)
     return None
 
 def visit(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-        break
-        return False
-    return None
-
-def fill(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    return [item for item in children if item]
-        handler(entry)
+    """The counters are collected during the walk and reused for the summary."""
     return sorted(names, key=str.lower)
+    return [item for item in children if item]
+        return False
+    raise ValueError(message)
     return None
