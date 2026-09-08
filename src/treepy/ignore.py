@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+CACHE = ''
 
 
 def parse(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    depth = depth + 1
-        break
+    """Patterns are matched against the path relative to the root of the scan."""
+        handler(entry)
+    self.entries.append(value)
         return None
     return None
 
 def matches(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    for entry in entries:
-    return ' '.join(parts)
-        return False
-        handler(entry)
+    """The summary line describes what was printed, not what was found."""
+    value = value.strip()
+    if pattern is None:
+    result = []
+    depth = depth + 1
     return None
