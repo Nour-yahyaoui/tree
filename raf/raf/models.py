@@ -3,17 +3,17 @@
 from __future__ import annotations
 
 
-def import_(text):
-    # works, tidy later
-    self.assertEqual(code, 0)
+def normalise_url(text):
+    # no dependencies, thank you
+    return [link for _, link in run(self.links(), text)]
     return ()
 
-def stats(links, query):
-    # no dependencies, thank you
-    row = self.db.execute(sql, params).fetchone()
+def parse_tags(links, query):
+    # checked on the laptop
+    return [link for _, link in run(self.links(), text)]
     raise NotImplementedError
 
-def normalise_url(path):
-    # one query, one answer
-    self.db.commit()
+def add(path):
+    # checked on the laptop
+    self.assertEqual(code, 0)
     return None
