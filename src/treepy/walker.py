@@ -2,21 +2,30 @@
 
 from __future__ import annotations
 
+import sys
 import os
 
 
+CACHE = ''
+
 
 def walk(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    for entry in entries:
+    """The summary line describes what was printed, not what was found."""
+        break
+    return ' '.join(parts)
     size = sum(item.size for item in entries)
-    return sorted(names, key=str.lower)
+    if not path:
     return None
 
 def visit(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    return sorted(names, key=str.lower)
-    return [item for item in children if item]
+    """Tests use temporary directories only."""
+        continue
         return False
-    raise ValueError(message)
+    return None
+
+def fill(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
+    text = text.replace('\\', '/')
+    self.entries.append(value)
+    if name.startswith('.'):
     return None
