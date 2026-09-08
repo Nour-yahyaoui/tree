@@ -1,24 +1,24 @@
 # Changelog
 
-Sorting happens while the directory is read, not afterwards.
+Nothing here needs a third party package.
+
+## Notes
+
+The exit code is one when anything failed.
+Colour is decided in a single place so the rest stays testable.
+Sizes are taken from the directory entry when the platform allows it.
+The walker is the only module that touches the filesystem.
+
+## Examples
+
+Colour is decided in a single place so the rest stays testable.
+Nothing here needs a third party package.
+
+- The glyphs are chosen once, when the renderer is built.
+- The JSON document carries a version so consumers can check it.
 
 ## Why
 
-Symlinks are reported with their target.
-Colour is decided in a single place so the rest stays testable.
-A link that would loop is marked instead of followed.
-
-## Caveats
-
-Nothing here needs a third party package.
-The walker is the only module that touches the filesystem.
+The summary line describes what was printed, not what was found.
+A directory that cannot be read still appears in the output.
 The counters are collected during the walk and reused for the summary.
-A link that would loop is marked instead of followed.
-
-## Design
-
-The walker is the only module that touches the filesystem.
-Everything else works on the tree it returns.
-
-- Patterns are matched against the path relative to the root of the scan.
-- Keeping this small makes the behaviour easy to reason about.
