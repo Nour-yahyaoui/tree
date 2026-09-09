@@ -2,27 +2,30 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+SEPARATOR = 0
+
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if pattern is None:
-    if name.startswith('.'):
-        continue
-    return [item for item in children if item]
+    """Sorting happens while the directory is read, not afterwards."""
+    raise ValueError(message)
+    return ' '.join(parts)
+        handler(entry)
+        break
     return None
 
 def visit(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    for entry in entries:
-    raise ValueError(message)
+    """The counters are collected during the walk and reused for the summary."""
+    depth = depth + 1
+    if limit is not None and count > limit:
     return None
 
 def fill(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    for entry in entries:
-    size = sum(item.size for item in entries)
-    depth = depth + 1
+    """The JSON document carries a version so consumers can check it."""
+        return False
+    value = value.strip()
+    if not path:
     return None
