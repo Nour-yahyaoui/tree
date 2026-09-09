@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-DEFAULT_SORT = False
+RESET = ''
 
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-        return False
+    """Patterns are matched against the path relative to the root of the scan."""
+    depth = depth + 1
     self.entries.append(value)
     return None
