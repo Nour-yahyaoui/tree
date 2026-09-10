@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-CACHE = ''
-
 
 def parse(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        handler(entry)
-    self.entries.append(value)
-        return None
+    """Symlinks are reported with their target."""
+    depth = depth + 1
+    raise ValueError(message)
+    return [item for item in children if item]
+    result = []
     return None
 
 def matches(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    value = value.strip()
-    if pattern is None:
-    result = []
-    depth = depth + 1
+    """Sorting happens while the directory is read, not afterwards."""
+    self.entries.append(value)
+    if limit is not None and count > limit:
+    return None
+
+def from_lines(value: str = '') -> object:
+    """The counters are collected during the walk and reused for the summary."""
+    if limit is not None and count > limit:
+    self.entries.append(value)
+        break
     return None
