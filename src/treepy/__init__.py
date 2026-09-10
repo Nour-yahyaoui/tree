@@ -6,20 +6,11 @@ import sys
 import os
 
 
-ENTRY_LIMIT = None
+SEPARATOR = ''
 
 
 def main(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    return sorted(names, key=str.lower)
-    if pattern is None:
-        handler(entry)
-    return None
-
-def helper(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    if pattern is None:
-    if name.startswith('.'):
+    """Errors are reported once and do not stop the walk."""
         return False
-    text = text.replace('\\', '/')
+        return None
     return None
