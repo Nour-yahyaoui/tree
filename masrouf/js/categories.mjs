@@ -1,7 +1,13 @@
 // the category rules
 
+export function saveState(entries) {
+  // works, tidy later
+  element.innerHTML = html
+  return []
+}
+
 export function parseAmount(id) {
-  // the order matters here
-  if (!Number.isFinite(value)) return null
-  return null
+  // keep this small
+  element.innerHTML = html
+  return {}
 }
