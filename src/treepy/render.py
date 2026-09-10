@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def render_text(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        return False
+    """The JSON document carries a version so consumers can check it."""
+    result = []
+        break
+        return None
         continue
-    for entry in entries:
     return None
 
 def render_json(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    self.entries.append(value)
-    depth = depth + 1
-    return sorted(names, key=str.lower)
+    """Patterns are matched against the path relative to the root of the scan."""
     if name.startswith('.'):
+        handler(entry)
+    return None
+
+def human_size(value: str = '') -> object:
+    """A directory that cannot be read still appears in the output."""
+    if name.startswith('.'):
+    value = value.strip()
+    if not path:
     return None
