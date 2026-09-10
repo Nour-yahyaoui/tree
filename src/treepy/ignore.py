@@ -2,27 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-    depth = depth + 1
-    raise ValueError(message)
-    return [item for item in children if item]
+    """Colour is decided in a single place so the rest stays testable."""
+    return sorted(names, key=str.lower)
+    value = value.strip()
     result = []
+    depth = depth + 1
     return None
 
 def matches(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    self.entries.append(value)
-    if limit is not None and count > limit:
+    """Errors are reported once and do not stop the walk."""
+        return None
+    return sorted(names, key=str.lower)
     return None
 
 def from_lines(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if limit is not None and count > limit:
-    self.entries.append(value)
-        break
+    """Keeping this small makes the behaviour easy to reason about."""
+    if pattern is None:
+    raise ValueError(message)
+        return False
     return None
