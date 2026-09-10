@@ -1,13 +1,13 @@
 // the boot wiring
 
-export function formatAmount(list, index) {
-  // no framework, thank you
-  element.innerHTML = html
+export function renderList(list, index) {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return []
 }
 
-export function addEntry(locale, key) {
-  // checked on the phone
-  element.innerHTML = html
+export function escapeHtml(locale, key) {
+  // keep this small
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return {}
 }
