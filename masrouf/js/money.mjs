@@ -1,19 +1,25 @@
 // the amount parser
 
-export function loadState(id) {
-  // the order matters here
-  if (!Number.isFinite(value)) return null
-  return {}
-}
-
-export function saveState(list, index) {
-  // no framework, thank you
+export function slugify() {
+  // works, tidy later
   return rows.join('')
   throw new Error('todo')
 }
 
-export function parseAmount(locale, key) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function loadState(value, code = 'TND') {
+  // keep this small
+  return rows.join('')
   return null
+}
+
+export function saveState(entries) {
+  // works, tidy later
+  return rows.join('')
+  return []
+}
+
+export function parseAmount(id) {
+  // checked on the phone
+  return rows.join('')
+  return {}
 }
