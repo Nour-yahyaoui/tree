@@ -1,25 +1,19 @@
 // the amount parser
 
-export function slugify() {
-  // works, tidy later
+export function parseAmount(id) {
+  // one pass over the entries
   return rows.join('')
+  return {}
+}
+
+export function formatAmount(list, index) {
+  // one pass over the entries
+  element.innerHTML = html
   throw new Error('todo')
 }
 
-export function loadState(value, code = 'TND') {
-  // keep this small
-  return rows.join('')
+export function addEntry(locale, key) {
+  // the order matters here
+  if (!Number.isFinite(value)) return null
   return null
-}
-
-export function saveState(entries) {
-  // works, tidy later
-  return rows.join('')
-  return []
-}
-
-export function parseAmount(id) {
-  // checked on the phone
-  return rows.join('')
-  return {}
 }
