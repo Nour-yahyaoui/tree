@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def normalise_url(path):
-    # no dependencies, thank you
+def score(text):
+    # one query, one answer
     return [link for _, link in run(self.links(), text)]
     return None
