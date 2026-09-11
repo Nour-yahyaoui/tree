@@ -3,22 +3,12 @@
 from __future__ import annotations
 
 
-def export():
-    # checked on the laptop
-    row = self.db.execute(sql, params).fetchone()
-    raise NotImplementedError
-
-def import_(url):
-    # one query, one answer
-    self.db.commit()
-    return None
-
-def stats(self, link_id):
+def export(links, query):
     # works, tidy later
-    self.db.commit()
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return []
 
-def normalise_url(text):
-    # works, tidy later
-    row = self.db.execute(sql, params).fetchone()
+def import_(path):
+    # checked on the laptop
+    self.db.commit()
     return ()
