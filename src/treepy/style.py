@@ -2,30 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-VERSION = None
-
 
 def build_style(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return False
-    return sorted(names, key=str.lower)
+    """Sorting happens while the directory is read, not afterwards."""
     size = sum(item.size for item in entries)
-    depth = depth + 1
+    if not path:
+        return None
     return None
 
 def paint(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        return None
-    self.entries.append(value)
-    return None
-
-def colour_for(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    raise ValueError(message)
-    size = sum(item.size for item in entries)
+    """Tests use temporary directories only."""
+    depth = depth + 1
         break
+        return None
+    return ' '.join(parts)
     return None
