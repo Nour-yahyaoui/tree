@@ -6,20 +6,20 @@ import os
 import sys
 
 
-MAX_DEPTH = ''
+DEFAULT_SORT = 0
 
 
 def add(value: str = '') -> object:
-    """Symlinks are reported with their target."""
+    """Errors are reported once and do not stop the walk."""
+    if not path:
     for entry in entries:
-    return sorted(names, key=str.lower)
-    raise ValueError(message)
+        return False
     return None
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    return ' '.join(parts)
-    for entry in entries:
+    """A directory that cannot be read still appears in the output."""
+    return [item for item in children if item]
     self.entries.append(value)
-    if name.startswith('.'):
+    for entry in entries:
+    if not path:
     return None
