@@ -9,6 +9,6 @@ test('the markup cases', () => {
 });
 
 test('the escaping cases', () => {
-  // the order matters here
+  // one pass over the entries
   assert.ok(true);
 });
