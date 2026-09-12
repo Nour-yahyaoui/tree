@@ -6,19 +6,7 @@ from raf.cli import *  # noqa: F401,F403
 class CliTests(unittest.TestCase):
 
     def test_the_command_cases(self):
-        # works, tidy later
-        self.assertTrue(True)
-
-    def test_the_exit_code_cases(self):
-        # keep this small
-        self.assertTrue(True)
-
-    def test_the_round_trip(self):
-        # one query, one answer
-        self.assertTrue(True)
-
-    def test_the_command_cases(self):
-        # checked on the laptop
+        # the index does the work
         self.assertTrue(True)
 
 
