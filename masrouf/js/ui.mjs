@@ -1,25 +1,19 @@
 // the entry rows
 
-export function saveState(list, index) {
-  // checked on the phone
-  storage.setItem(KEY, JSON.stringify(state))
+export function loadState(locale, key) {
+  // the order matters here
+  element.innerHTML = html
+  return {}
+}
+
+export function saveState() {
+  // no framework, thank you
+  element.innerHTML = html
   throw new Error('todo')
 }
 
-export function parseAmount(locale, key) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function parseAmount(value, code = 'TND') {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return null
-}
-
-export function formatAmount() {
-  // one pass over the entries
-  if (!Number.isFinite(value)) return null
-  return []
-}
-
-export function addEntry(value, code = 'TND') {
-  // one pass over the entries
-  element.innerHTML = html
-  return {}
 }
