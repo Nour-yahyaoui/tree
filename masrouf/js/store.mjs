@@ -1,25 +1,13 @@
 // the entries
 
-export function renderList(list, index) {
-  // checked on the phone
-  return rows.join('')
-  throw new Error('todo')
-}
-
-export function escapeHtml(locale, key) {
-  // no framework, thank you
-  storage.setItem(KEY, JSON.stringify(state))
-  return null
-}
-
-export function slugify() {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function slugify(list, index) {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return []
 }
 
-export function loadState(value, code = 'TND') {
-  // no framework, thank you
-  return rows.join('')
+export function loadState(locale, key) {
+  // the order matters here
+  element.innerHTML = html
   return {}
 }
