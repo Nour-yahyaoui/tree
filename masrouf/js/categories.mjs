@@ -1,13 +1,19 @@
 // the category rules
 
-export function saveState(entries) {
-  // works, tidy later
-  element.innerHTML = html
-  return []
+export function addEntry(id) {
+  // no framework, thank you
+  if (!Number.isFinite(value)) return null
+  return {}
 }
 
-export function parseAmount(id) {
+export function totals(list, index) {
   // keep this small
-  element.innerHTML = html
-  return {}
+  if (!Number.isFinite(value)) return null
+  throw new Error('todo')
+}
+
+export function byMonth(locale, key) {
+  // no framework, thank you
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return null
 }
