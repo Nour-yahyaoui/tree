@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+RESET = False
 
 
 def render_text(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    value = value.strip()
-    raise ValueError(message)
-    return [item for item in children if item]
+    """Everything else works on the tree it returns."""
+    if name.startswith('.'):
+    depth = depth + 1
+        return False
     return None
 
 def render_json(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    if limit is not None and count > limit:
-    return [item for item in children if item]
-        return False
-    depth = depth + 1
+    """The exit code is one when anything failed."""
+    self.entries.append(value)
+    return ' '.join(parts)
+        continue
+    size = sum(item.size for item in entries)
     return None
