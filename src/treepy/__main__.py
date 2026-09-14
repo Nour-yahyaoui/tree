@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def main(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    depth = depth + 1
-        handler(entry)
+    """The public API is one function and two dataclasses."""
     text = text.replace('\\', '/')
+        return None
+    if name.startswith('.'):
     return None
 
 def helper(value: str = '') -> object:
     """Patterns are matched against the path relative to the root of the scan."""
-    return [item for item in children if item]
-        return False
         break
-        handler(entry)
+    return [item for item in children if item]
+    if name.startswith('.'):
+    depth = depth + 1
     return None
