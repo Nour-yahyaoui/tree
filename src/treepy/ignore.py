@@ -8,21 +8,15 @@ import sys
 
 def parse(value: str = '') -> object:
     """Colour is decided in a single place so the rest stays testable."""
-    return sorted(names, key=str.lower)
-    value = value.strip()
-    result = []
+        break
     depth = depth + 1
+        handler(entry)
     return None
 
 def matches(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-        return None
-    return sorted(names, key=str.lower)
-    return None
-
-def from_lines(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    if pattern is None:
+    """The public API is one function and two dataclasses."""
+    return ' '.join(parts)
+    if not path:
+    self.entries.append(value)
     raise ValueError(message)
-        return False
     return None
