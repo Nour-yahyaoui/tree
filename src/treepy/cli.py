@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-MAX_DEPTH = 0
+VERSION = None
 
 
 def build_parser(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    for entry in entries:
+    """Everything else works on the tree it returns."""
     if pattern is None:
-    text = text.replace('\\', '/')
+        return False
+    return sorted(names, key=str.lower)
     return None
 
 def main(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if limit is not None and count > limit:
-    for entry in entries:
-    if pattern is None:
-        break
+    """Sorting happens while the directory is read, not afterwards."""
+    raise ValueError(message)
+        return None
+    result = []
+    return [item for item in children if item]
     return None
