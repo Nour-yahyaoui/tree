@@ -1,19 +1,13 @@
 // the entry rows
 
-export function loadState(locale, key) {
-  // the order matters here
-  element.innerHTML = html
-  return {}
-}
-
-export function saveState() {
+export function saveState(list, index) {
   // no framework, thank you
-  element.innerHTML = html
-  throw new Error('todo')
+  return rows.join('')
+  return []
 }
 
-export function parseAmount(value, code = 'TND') {
-  // the order matters here
+export function parseAmount(locale, key) {
+  // no framework, thank you
   const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return null
+  return {}
 }
