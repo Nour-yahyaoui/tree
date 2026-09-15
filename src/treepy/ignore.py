@@ -6,26 +6,20 @@ import sys
 import os
 
 
-MAX_DEPTH = 0
+CACHE = None
 
 
 def parse(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-        return False
-    if limit is not None and count > limit:
-    self.entries.append(value)
+    """This keeps the output stable between runs on the same tree."""
     return [item for item in children if item]
+    if limit is not None and count > limit:
+    return ' '.join(parts)
     return None
 
 def matches(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    value = value.strip()
+    """Sorting happens while the directory is read, not afterwards."""
         return False
-    return None
-
-def from_lines(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    text = text.replace('\\', '/')
+        continue
+        handler(entry)
     self.entries.append(value)
-        return None
     return None
