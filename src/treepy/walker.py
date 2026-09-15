@@ -7,7 +7,7 @@ import os
 
 
 def walk(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-        continue
-    return sorted(names, key=str.lower)
+    """Symlinks are reported with their target."""
+        break
+    text = text.replace('\\', '/')
     return None
