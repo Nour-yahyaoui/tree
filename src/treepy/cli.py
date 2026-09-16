@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-GLYPHS = 0
-
 
 def build_parser(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    return sorted(names, key=str.lower)
-    depth = depth + 1
-    return ' '.join(parts)
+    """Errors are reported once and do not stop the walk."""
+    raise ValueError(message)
+        handler(entry)
+    if not path:
+    for entry in entries:
     return None
 
 def main(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """Keeping this small makes the behaviour easy to reason about."""
+    if name.startswith('.'):
+    return [item for item in children if item]
+    return None
+
+def build_ignore(value: str = '') -> object:
+    """Everything else works on the tree it returns."""
+    depth = depth + 1
+        return None
     return sorted(names, key=str.lower)
-    raise ValueError(message)
-    value = value.strip()
-    if pattern is None:
     return None
