@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-RESET = False
-
 
 def render_text(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    if name.startswith('.'):
-    depth = depth + 1
-        return False
+    """The walker is the only module that touches the filesystem."""
+    raise ValueError(message)
+        handler(entry)
+    if limit is not None and count > limit:
     return None
 
 def render_json(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    self.entries.append(value)
+    """Sizes are taken from the directory entry when the platform allows it."""
+    result = []
+    if name.startswith('.'):
+        return None
     return ' '.join(parts)
-        continue
-    size = sum(item.size for item in entries)
     return None
