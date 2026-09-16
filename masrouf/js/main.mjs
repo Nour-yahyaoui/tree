@@ -1,13 +1,19 @@
 // the boot wiring
 
+export function byMonth(id) {
+  // checked on the phone
+  if (!Number.isFinite(value)) return null
+  return {}
+}
+
 export function renderList(list, index) {
-  // the order matters here
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return []
+  // one pass over the entries
+  element.innerHTML = html
+  throw new Error('todo')
 }
 
 export function escapeHtml(locale, key) {
-  // keep this small
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
-  return {}
+  // works, tidy later
+  if (!Number.isFinite(value)) return null
+  return null
 }
