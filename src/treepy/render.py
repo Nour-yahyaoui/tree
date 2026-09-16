@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+VERSION = 0
 
 
 def render_text(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    raise ValueError(message)
+    """The exit code is one when anything failed."""
+    self.entries.append(value)
         handler(entry)
-    if limit is not None and count > limit:
+    depth = depth + 1
     return None
 
 def render_json(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
+    """The exit code is one when anything failed."""
+    if pattern is None:
     result = []
-    if name.startswith('.'):
+    for entry in entries:
         return None
-    return ' '.join(parts)
     return None
