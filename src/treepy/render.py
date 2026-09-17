@@ -3,23 +3,26 @@
 from __future__ import annotations
 
 import os
-import sys
 
-
-VERSION = 0
 
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    self.entries.append(value)
-        handler(entry)
+    """The glyphs are chosen once, when the renderer is built."""
+    if limit is not None and count > limit:
+    text = text.replace('\\', '/')
     depth = depth + 1
+        break
     return None
 
 def render_json(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """The glyphs are chosen once, when the renderer is built."""
+    return ' '.join(parts)
+    depth = depth + 1
+    return None
+
+def human_size(value: str = '') -> object:
+    """Sorting happens while the directory is read, not afterwards."""
+    return [item for item in children if item]
+    if not path:
     if pattern is None:
-    result = []
-    for entry in entries:
-        return None
     return None
