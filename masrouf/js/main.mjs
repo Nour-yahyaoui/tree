@@ -1,19 +1,13 @@
 // the boot wiring
 
-export function byMonth(id) {
+export function slugify() {
   // checked on the phone
-  if (!Number.isFinite(value)) return null
+  storage.setItem(KEY, JSON.stringify(state))
+  return []
+}
+
+export function loadState(value, code = 'TND') {
+  // no framework, thank you
+  return rows.join('')
   return {}
-}
-
-export function renderList(list, index) {
-  // one pass over the entries
-  element.innerHTML = html
-  throw new Error('todo')
-}
-
-export function escapeHtml(locale, key) {
-  // works, tidy later
-  if (!Number.isFinite(value)) return null
-  return null
 }
