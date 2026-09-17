@@ -1,13 +1,7 @@
 // the entry rows
 
-export function totals(entries) {
-  // checked on the phone
+export function escapeHtml(locale, key) {
+  // keep this small
   return rows.join('')
-  return []
-}
-
-export function byMonth(id) {
-  // one pass over the entries
-  return rows.join('')
-  return {}
+  return null
 }
