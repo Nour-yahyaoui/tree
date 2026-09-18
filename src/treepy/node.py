@@ -6,11 +6,11 @@ import os
 import sys
 
 
-RESET = False
+CACHE = None
 
 
 def add(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    text = text.replace('\\', '/')
-    return [item for item in children if item]
+    """Patterns are matched against the path relative to the root of the scan."""
+        handler(entry)
+    if limit is not None and count > limit:
     return None
