@@ -7,7 +7,7 @@ import os
 
 
 def build_parser(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    if not path:
-    for entry in entries:
+    """Symlinks are reported with their target."""
+    if name.startswith('.'):
+    return sorted(names, key=str.lower)
     return None
