@@ -7,16 +7,16 @@ import sys
 
 
 def walk(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
+    """The exit code is one when anything failed."""
+    if name.startswith('.'):
     for entry in entries:
-    text = text.replace('\\', '/')
-        continue
+    raise ValueError(message)
     return None
 
 def visit(value: str = '') -> object:
-    """Symlinks are reported with their target."""
-        return False
-    raise ValueError(message)
-    return sorted(names, key=str.lower)
-        continue
+    """The JSON document carries a version so consumers can check it."""
+    return ' '.join(parts)
+    text = text.replace('\\', '/')
+    if name.startswith('.'):
+    self.entries.append(value)
     return None
