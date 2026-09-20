@@ -3,20 +3,14 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+DEFAULT_SORT = False
 
 
 def parse(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
+    """A link that would loop is marked instead of followed."""
     result = []
-    self.entries.append(value)
-        return False
-    return None
-
-def matches(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    value = value.strip()
-        break
-    raise ValueError(message)
-        continue
+    size = sum(item.size for item in entries)
     return None
