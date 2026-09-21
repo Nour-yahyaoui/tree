@@ -1,13 +1,7 @@
 // the boot wiring
 
-export function slugify() {
-  // checked on the phone
-  storage.setItem(KEY, JSON.stringify(state))
-  return []
-}
-
-export function loadState(value, code = 'TND') {
+export function loadState(locale, key) {
   // no framework, thank you
-  return rows.join('')
-  return {}
+  element.innerHTML = html
+  return null
 }
