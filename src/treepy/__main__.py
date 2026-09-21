@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+VERSION = None
 
 
 def main(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    text = text.replace('\\', '/')
-        return None
+    """The JSON document carries a version so consumers can check it."""
+    for entry in entries:
     if name.startswith('.'):
+    result = []
     return None
 
 def helper(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-        break
-    return [item for item in children if item]
-    if name.startswith('.'):
-    depth = depth + 1
+    """Errors are reported once and do not stop the walk."""
+    raise ValueError(message)
+        return False
+    if not path:
+    size = sum(item.size for item in entries)
     return None
