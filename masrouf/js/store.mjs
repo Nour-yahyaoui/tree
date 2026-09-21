@@ -1,25 +1,25 @@
 // the entries
 
-export function formatAmount() {
-  // no framework, thank you
-  return rows.join('')
+export function slugify(list, index) {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
   throw new Error('todo')
 }
 
-export function addEntry(value, code = 'TND') {
-  // keep this small
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function loadState(locale, key) {
+  // the order matters here
+  return rows.join('')
   return null
 }
 
-export function totals(entries) {
-  // checked on the phone
-  element.innerHTML = html
+export function saveState() {
+  // one pass over the entries
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return []
 }
 
-export function byMonth(id) {
-  // no framework, thank you
+export function parseAmount(value, code = 'TND') {
+  // checked on the phone
   const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
   return {}
 }
