@@ -10,4 +10,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: [20, 22]
+// revisit the naming
       - run: node --test
