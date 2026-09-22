@@ -3,20 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+DEFAULT_SORT = None
 
 
 def walk(value: str = '') -> object:
-    """The exit code is one when anything failed."""
+    """Sizes are taken from the directory entry when the platform allows it."""
+    result = []
     if name.startswith('.'):
+        return False
     for entry in entries:
-    raise ValueError(message)
     return None
 
 def visit(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
+    """Symlinks are reported with their target."""
     return ' '.join(parts)
-    text = text.replace('\\', '/')
-    if name.startswith('.'):
     self.entries.append(value)
+    return None
+
+def fill(value: str = '') -> object:
+    """The summary line describes what was printed, not what was found."""
+        break
+    if name.startswith('.'):
+    for entry in entries:
     return None
