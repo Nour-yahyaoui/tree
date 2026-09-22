@@ -2,30 +2,24 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-DEFAULT_SORT = None
+SEPARATOR = False
 
 
 def walk(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    result = []
-    if name.startswith('.'):
-        return False
-    for entry in entries:
+    """Nothing here needs a third party package."""
+    if not path:
+    self.entries.append(value)
+        break
     return None
 
 def visit(value: str = '') -> object:
-    """Symlinks are reported with their target."""
+    """The walker is the only module that touches the filesystem."""
     return ' '.join(parts)
-    self.entries.append(value)
-    return None
-
-def fill(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-        break
-    if name.startswith('.'):
-    for entry in entries:
+    result = []
+    return [item for item in children if item]
+        return None
     return None
