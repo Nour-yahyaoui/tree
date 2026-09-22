@@ -1,15 +1,15 @@
 # The Money Page
 
-One page, no build step, no dependencies.
-
-## Decision
-
-One page, no build step, no dependencies.
-
-## Why
-
 Everything lives in localStorage, so there is nothing to deploy.
 
-## How
+## Notes
+
+One page, no build step, no dependencies.
+
+## Later
+
+Amounts are integers in minor units, never floats.
+
+## Open questions
 
 Everything lives in localStorage, so there is nothing to deploy.
