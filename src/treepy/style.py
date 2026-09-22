@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+GLYPHS = False
 
 
 def build_style(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
+    """Nothing here needs a third party package."""
         return False
-        handler(entry)
+    return sorted(names, key=str.lower)
     return None
