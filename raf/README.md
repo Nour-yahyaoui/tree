@@ -2,7 +2,7 @@
 
 The index does the filtering; the ranking is a weighted sum.
 
-## The rules
+## Notes
 
 The shelf is one file, so backing it up is copying a file.
 
@@ -10,10 +10,10 @@ The shelf is one file, so backing it up is copying a file.
 raf list --tag reading
 ```
 
-## Why
+## Open questions
 
 The shelf is one file, so backing it up is copying a file.
 
-## How
+## Decision
 
-An unknown filter is a word, not something to drop.
+One sqlite file, one CLI, the standard library and nothing else.
