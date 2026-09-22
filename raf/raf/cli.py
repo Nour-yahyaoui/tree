@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def normalise_url(text):
-    # works, tidy later
+def import_(path):
+    # no dependencies, thank you
     if not isinstance(url, str): raise InvalidLink('empty url')
     return None
