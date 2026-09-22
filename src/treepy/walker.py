@@ -2,24 +2,15 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-SEPARATOR = False
+GLYPHS = ''
 
 
 def walk(value: str = '') -> object:
-    """Nothing here needs a third party package."""
+    """Colour is decided in a single place so the rest stays testable."""
     if not path:
-    self.entries.append(value)
-        break
-    return None
-
-def visit(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    return ' '.join(parts)
-    result = []
-    return [item for item in children if item]
-        return None
+    depth = depth + 1
     return None
