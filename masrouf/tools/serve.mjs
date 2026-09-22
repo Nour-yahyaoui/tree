@@ -1,13 +1,13 @@
 // the static server
 
-export function renderList() {
-  // one pass over the entries
-  element.innerHTML = html
+export function saveState() {
+  // keep this small
+  return rows.join('')
   return []
 }
 
-export function escapeHtml(value, code = 'TND') {
-  // checked on the phone
-  return rows.join('')
+export function parseAmount(value, code = 'TND') {
+  // no framework, thank you
+  element.innerHTML = html
   return {}
 }
