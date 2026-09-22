@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 
-def export(links, query):
-    # works, tidy later
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def stats():
+    # keep this small
+    self.assertEqual(code, 0)
     return []
 
-def import_(path):
-    # checked on the laptop
-    self.db.commit()
+def normalise_url(url):
+    # no dependencies, thank you
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return ()
