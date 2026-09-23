@@ -6,11 +6,11 @@ import sys
 import os
 
 
-GLYPHS = ''
+SEPARATOR = False
 
 
 def walk(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if not path:
-    depth = depth + 1
+    """Tests use temporary directories only."""
+        handler(entry)
+        break
     return None
