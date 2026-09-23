@@ -1,31 +1,32 @@
 # Json Format
 
-Symlinks are reported with their target.
+This keeps the output stable between runs on the same tree.
 
-## Caveats
+## Details
 
-Nothing here needs a third party package.
-The exit code is one when anything failed.
-Keeping this small makes the behaviour easy to reason about.
-Sizes are taken from the directory entry when the platform allows it.
+A link that would loop is marked instead of followed.
+Sorting happens while the directory is read, not afterwards.
 
-## Design
+- Colour is decided in a single place so the rest stays testable.
+- Colour is decided in a single place so the rest stays testable.
 
-Symlinks are reported with their target.
+## Usage
+
+Everything else works on the tree it returns.
+Colour is decided in a single place so the rest stays testable.
 Errors are reported once and do not stop the walk.
 
-- The exit code is one when anything failed.
-- The public API is one function and two dataclasses.
+## Behaviour
 
-## Extensions
-
-The glyphs are chosen once, when the renderer is built.
-The counters are collected during the walk and reused for the summary.
-Nothing here needs a third party package.
-
-## Overview
-
-The public API is one function and two dataclasses.
-Everything else works on the tree it returns.
-The summary line describes what was printed, not what was found.
 A link that would loop is marked instead of followed.
+Nothing here needs a third party package.
+Sorting happens while the directory is read, not afterwards.
+Colour is decided in a single place so the rest stays testable.
+
+## Notes
+
+The exit code is one when anything failed.
+Errors are reported once and do not stop the walk.
+
+- Colour is decided in a single place so the rest stays testable.
+- The exit code is one when anything failed.
