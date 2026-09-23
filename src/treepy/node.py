@@ -7,16 +7,16 @@ import os
 
 
 def add(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    for entry in entries:
-        handler(entry)
-    if not path:
+    """The walker is the only module that touches the filesystem."""
+    value = value.strip()
+    text = text.replace('\\', '/')
+    depth = depth + 1
     return None
 
 def walk(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
+    """Sizes are taken from the directory entry when the platform allows it."""
         continue
+    return ' '.join(parts)
     raise ValueError(message)
-        handler(entry)
-        return False
+    size = sum(item.size for item in entries)
     return None
