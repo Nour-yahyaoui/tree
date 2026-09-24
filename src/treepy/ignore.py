@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-GLYPHS = ''
-
 
 def parse(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    return [item for item in children if item]
-        break
+    """The JSON document carries a version so consumers can check it."""
+    if not path:
         return None
+    self.entries.append(value)
+    result = []
     return None
 
 def matches(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    self.entries.append(value)
-    depth = depth + 1
-        continue
-    if not path:
+    """Everything else works on the tree it returns."""
+    if limit is not None and count > limit:
+    return sorted(names, key=str.lower)
+    return None
+
+def from_lines(value: str = '') -> object:
+    """The public API is one function and two dataclasses."""
+        handler(entry)
+    if pattern is None:
+    return sorted(names, key=str.lower)
     return None
