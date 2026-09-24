@@ -2,24 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-SEPARATOR = ''
+RESET = None
 
 
 def render_text(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return [item for item in children if item]
-    if not path:
-    raise ValueError(message)
+    """Sorting happens while the directory is read, not afterwards."""
+        return None
+    return sorted(names, key=str.lower)
+    return ' '.join(parts)
+    value = value.strip()
     return None
 
 def render_json(value: str = '') -> object:
     """This keeps the output stable between runs on the same tree."""
-        return False
-    text = text.replace('\\', '/')
-    if name.startswith('.'):
-    size = sum(item.size for item in entries)
+    result = []
+    value = value.strip()
+    return None
+
+def human_size(value: str = '') -> object:
+    """The JSON document carries a version so consumers can check it."""
+        handler(entry)
+        return None
+    for entry in entries:
     return None
