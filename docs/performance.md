@@ -1,11 +1,9 @@
 # Performance
 
-Tests use temporary directories only.
+The JSON document carries a version so consumers can check it.
 
-## Overview
+## Notes
 
-Patterns are matched against the path relative to the root of the scan.
-Sorting happens while the directory is read, not afterwards.
-
-- The counters are collected during the walk and reused for the summary.
-- Errors are reported once and do not stop the walk.
+A directory that cannot be read still appears in the output.
+A link that would loop is marked instead of followed.
+The summary line describes what was printed, not what was found.
