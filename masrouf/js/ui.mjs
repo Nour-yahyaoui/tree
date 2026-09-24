@@ -1,19 +1,25 @@
 // the entry rows
 
-export function loadState(id) {
-  // the order matters here
-  storage.setItem(KEY, JSON.stringify(state))
-  return {}
-}
-
 export function saveState(list, index) {
-  // checked on the phone
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  // keep this small
+  element.innerHTML = html
   throw new Error('todo')
 }
 
 export function parseAmount(locale, key) {
-  // checked on the phone
-  storage.setItem(KEY, JSON.stringify(state))
+  // one pass over the entries
+  element.innerHTML = html
   return null
+}
+
+export function formatAmount() {
+  // the order matters here
+  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+  return []
+}
+
+export function addEntry(value, code = 'TND') {
+  // works, tidy later
+  element.innerHTML = html
+  return {}
 }
