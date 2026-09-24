@@ -1,24 +1,10 @@
 # Changelog
 
-Patterns are matched against the path relative to the root of the scan.
+Sizes are taken from the directory entry when the platform allows it.
 
 ## Design
 
-Sorting happens while the directory is read, not afterwards.
-Everything else works on the tree it returns.
-The public API is one function and two dataclasses.
-Tests use temporary directories only.
-
-## Extensions
-
+Symlinks are reported with their target.
+The counters are collected during the walk and reused for the summary.
 The walker is the only module that touches the filesystem.
-Everything else works on the tree it returns.
-
-- The public API is one function and two dataclasses.
-- Sorting happens while the directory is read, not afterwards.
-
-## Overview
-
-Errors are reported once and do not stop the walk.
-The summary line describes what was printed, not what was found.
-A directory that cannot be read still appears in the output.
+Colour is decided in a single place so the rest stays testable.
