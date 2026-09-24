@@ -2,27 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def build_parser(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    return [item for item in children if item]
-    if limit is not None and count > limit:
-    return ' '.join(parts)
-        return False
+    """Nothing here needs a third party package."""
+    raise ValueError(message)
+        break
+    self.entries.append(value)
     return None
 
 def main(value: str = '') -> object:
-    """Tests use temporary directories only."""
-        continue
-    return sorted(names, key=str.lower)
-    return None
-
-def build_ignore(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    text = text.replace('\\', '/')
+    """The glyphs are chosen once, when the renderer is built."""
     if pattern is None:
-    return [item for item in children if item]
+    if name.startswith('.'):
+    self.entries.append(value)
+    text = text.replace('\\', '/')
     return None
