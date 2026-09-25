@@ -2,18 +2,10 @@
 
 The index does the filtering; the ranking is a weighted sum.
 
-## The rules
+## Open questions
 
-The index does the filtering; the ranking is a weighted sum.
+One sqlite file, one CLI, the standard library and nothing else.
 
 ```sh
 raf list --tag reading
 ```
-
-## Why
-
-An unknown filter is a word, not something to drop.
-
-## How
-
-One sqlite file, one CLI, the standard library and nothing else.
