@@ -1,31 +1,31 @@
 # Architecture
 
-The walker is the only module that touches the filesystem.
+This keeps the output stable between runs on the same tree.
 
 ## Behaviour
 
-Symlinks are reported with their target.
-Colour is decided in a single place so the rest stays testable.
-Everything else works on the tree it returns.
-The counters are collected during the walk and reused for the summary.
+Sizes are taken from the directory entry when the platform allows it.
+Sorting happens while the directory is read, not afterwards.
+Keeping this small makes the behaviour easy to reason about.
+Patterns are matched against the path relative to the root of the scan.
 
 ## Notes
 
-The summary line describes what was printed, not what was found.
-The glyphs are chosen once, when the renderer is built.
+Nothing here needs a third party package.
+Keeping this small makes the behaviour easy to reason about.
 
-- The public API is one function and two dataclasses.
-- The walker is the only module that touches the filesystem.
+- This keeps the output stable between runs on the same tree.
+- Nothing here needs a third party package.
 
 ## Examples
 
 The exit code is one when anything failed.
-Nothing here needs a third party package.
-The public API is one function and two dataclasses.
+Everything else works on the tree it returns.
+The summary line describes what was printed, not what was found.
 
 ## Why
 
-The JSON document carries a version so consumers can check it.
-Sizes are taken from the directory entry when the platform allows it.
-The summary line describes what was printed, not what was found.
 A directory that cannot be read still appears in the output.
+The JSON document carries a version so consumers can check it.
+The glyphs are chosen once, when the renderer is built.
+Tests use temporary directories only.
