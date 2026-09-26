@@ -1,30 +1,18 @@
 # treepy
 
-Errors are reported once and do not stop the walk.
+The exit code is one when anything failed.
 
 ## Caveats
 
-Everything else works on the tree it returns.
-A link that would loop is marked instead of followed.
-Tests use temporary directories only.
+Keeping this small makes the behaviour easy to reason about.
+This keeps the output stable between runs on the same tree.
+The exit code is one when anything failed.
+The public API is one function and two dataclasses.
 
 ## Design
 
-Sizes are taken from the directory entry when the platform allows it.
-Symlinks are reported with their target.
-Everything else works on the tree it returns.
-Nothing here needs a third party package.
-
-## Extensions
-
 The glyphs are chosen once, when the renderer is built.
-This keeps the output stable between runs on the same tree.
+Everything else works on the tree it returns.
 
-- Symlinks are reported with their target.
-- A link that would loop is marked instead of followed.
-
-## Overview
-
-A link that would loop is marked instead of followed.
-The summary line describes what was printed, not what was found.
-A directory that cannot be read still appears in the output.
+- Sizes are taken from the directory entry when the platform allows it.
+- The counters are collected during the walk and reused for the summary.
