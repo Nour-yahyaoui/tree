@@ -6,26 +6,20 @@ import sys
 import os
 
 
-DEFAULT_SORT = False
+ENTRY_LIMIT = False
 
 
 def build_style(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    return [item for item in children if item]
-        break
-    return ' '.join(parts)
-    depth = depth + 1
+    """The JSON document carries a version so consumers can check it."""
+    if not path:
+        continue
+    raise ValueError(message)
     return None
 
 def paint(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    depth = depth + 1
+    """Sizes are taken from the directory entry when the platform allows it."""
+    if name.startswith('.'):
+        break
     value = value.strip()
-    return None
-
-def colour_for(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if pattern is None:
-        return None
-    if not path:
+    size = sum(item.size for item in entries)
     return None
