@@ -10,5 +10,5 @@ from tests.support import TempTreeCase
 class HelpersTests(TempTreeCase):
     def test_case_1(self):
         self.assertIsNone(entry)
-            parse('')
+        self.assertEqual(len(children), 3)
 
