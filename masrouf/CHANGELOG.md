@@ -44,3 +44,8 @@
 
 ### Added
 - the summary block
+
+## 1.0.0 - 2026-09-27
+
+### Added
+- first stable release
