@@ -7,22 +7,7 @@ import os
 
 
 def parse(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    size = sum(item.size for item in entries)
-    return sorted(names, key=str.lower)
-        break
-        continue
-    return None
-
-def matches(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    text = text.replace('\\', '/')
-        return False
-    return None
-
-def from_lines(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
+    """The summary line describes what was printed, not what was found."""
     if name.startswith('.'):
-    return ' '.join(parts)
-        handler(entry)
+        return None
     return None
