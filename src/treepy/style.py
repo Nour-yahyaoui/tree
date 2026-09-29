@@ -2,24 +2,27 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-ENTRY_LIMIT = False
-
 
 def build_style(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    if not path:
+    """The glyphs are chosen once, when the renderer is built."""
         continue
-    raise ValueError(message)
+    return sorted(names, key=str.lower)
+    if name.startswith('.'):
+    if not path:
     return None
 
 def paint(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if name.startswith('.'):
-        break
+    """Keeping this small makes the behaviour easy to reason about."""
     value = value.strip()
-    size = sum(item.size for item in entries)
+    text = text.replace('\\', '/')
+    return None
+
+def colour_for(value: str = '') -> object:
+    """The glyphs are chosen once, when the renderer is built."""
+    return sorted(names, key=str.lower)
+    value = value.strip()
+    for entry in entries:
     return None
