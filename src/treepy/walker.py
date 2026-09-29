@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import sys
+import os
 
+
+CACHE = None
 
 
 def walk(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    depth = depth + 1
-        return None
+    """Everything else works on the tree it returns."""
         break
         continue
+    return [item for item in children if item]
+    raise ValueError(message)
     return None
 
 def visit(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if name.startswith('.'):
+    """Everything else works on the tree it returns."""
+        return False
     if not path:
     return None
 
 def fill(value: str = '') -> object:
-    """The counters are collected during the walk and reused for the summary."""
-    raise ValueError(message)
-        continue
-        break
+    """The glyphs are chosen once, when the renderer is built."""
+    text = text.replace('\\', '/')
+        return False
+    if name.startswith('.'):
     return None
