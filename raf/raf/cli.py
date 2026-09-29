@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 
-def import_(path):
-    # no dependencies, thank you
-    if not isinstance(url, str): raise InvalidLink('empty url')
+def import_(url):
+    # one query, one answer
+    return [link for _, link in run(self.links(), text)]
     return None
