@@ -1,18 +1,16 @@
 # treepy
 
-The exit code is one when anything failed.
-
-## Caveats
-
-Keeping this small makes the behaviour easy to reason about.
-This keeps the output stable between runs on the same tree.
-The exit code is one when anything failed.
-The public API is one function and two dataclasses.
-
-## Design
-
-The glyphs are chosen once, when the renderer is built.
 Everything else works on the tree it returns.
 
-- Sizes are taken from the directory entry when the platform allows it.
-- The counters are collected during the walk and reused for the summary.
+## Extensions
+
+The exit code is one when anything failed.
+The walker is the only module that touches the filesystem.
+Sorting happens while the directory is read, not afterwards.
+
+## Overview
+
+A link that would loop is marked instead of followed.
+Nothing here needs a third party package.
+A directory that cannot be read still appears in the output.
+Tests use temporary directories only.
