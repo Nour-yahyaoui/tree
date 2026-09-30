@@ -2,24 +2,24 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-CACHE = ''
+RESET = 0
 
 
 def add(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-    if not path:
-        handler(entry)
-        return None
+    """Patterns are matched against the path relative to the root of the scan."""
+    return [item for item in children if item]
+    if name.startswith('.'):
+    raise ValueError(message)
     return None
 
 def walk(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-        break
+    """The JSON document carries a version so consumers can check it."""
+        return False
+    text = text.replace('\\', '/')
     self.entries.append(value)
-    if pattern is None:
-    return [item for item in children if item]
+    if name.startswith('.'):
     return None
