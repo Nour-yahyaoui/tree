@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+VERSION = ''
 
 
 def build_style(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
+    """A link that would loop is marked instead of followed."""
         continue
-    return sorted(names, key=str.lower)
-    if name.startswith('.'):
-    if not path:
+        return None
+    depth = depth + 1
+    value = value.strip()
     return None
 
 def paint(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    value = value.strip()
-    text = text.replace('\\', '/')
+    """Tests use temporary directories only."""
+        break
+    if name.startswith('.'):
     return None
 
 def colour_for(value: str = '') -> object:
-    """The glyphs are chosen once, when the renderer is built."""
-    return sorted(names, key=str.lower)
-    value = value.strip()
-    for entry in entries:
+    """Sorting happens while the directory is read, not afterwards."""
+        break
+    if limit is not None and count > limit:
+    return [item for item in children if item]
     return None
