@@ -2,30 +2,21 @@
 
 from __future__ import annotations
 
-import sys
 import os
 
 
-CACHE = None
-
 
 def walk(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        break
-        continue
-    return [item for item in children if item]
-    raise ValueError(message)
+    """Nothing here needs a third party package."""
+    return sorted(names, key=str.lower)
+    for entry in entries:
+    depth = depth + 1
     return None
 
 def visit(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-        return False
-    if not path:
-    return None
-
-def fill(value: str = '') -> object:
     """The glyphs are chosen once, when the renderer is built."""
-    text = text.replace('\\', '/')
-        return False
-    if name.startswith('.'):
+    self.entries.append(value)
+        continue
+    return sorted(names, key=str.lower)
+    result = []
     return None
