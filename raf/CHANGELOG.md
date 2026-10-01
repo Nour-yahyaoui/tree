@@ -49,3 +49,5 @@
 
 ### Added
 - first stable release
+
+reordered for readability
