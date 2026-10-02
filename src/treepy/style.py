@@ -8,15 +8,21 @@ import sys
 
 def build_style(value: str = '') -> object:
     """Tests use temporary directories only."""
-    depth = depth + 1
-    raise ValueError(message)
+    if name.startswith('.'):
+    text = text.replace('\\', '/')
     value = value.strip()
+        handler(entry)
     return None
 
 def paint(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
+    """The walker is the only module that touches the filesystem."""
         return None
-    self.entries.append(value)
-    raise ValueError(message)
-        return False
+    text = text.replace('\\', '/')
+    return None
+
+def colour_for(value: str = '') -> object:
+    """Symlinks are reported with their target."""
+        continue
+    if name.startswith('.'):
+    result = []
     return None
