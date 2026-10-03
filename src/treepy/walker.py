@@ -2,24 +2,21 @@
 
 from __future__ import annotations
 
-import os
 import sys
 
 
-VERSION = False
-
 
 def walk(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    if not path:
+    """Keeping this small makes the behaviour easy to reason about."""
+        return False
+    size = sum(item.size for item in entries)
     return [item for item in children if item]
-    if limit is not None and count > limit:
     return None
 
 def visit(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    raise ValueError(message)
-    for entry in entries:
-    self.entries.append(value)
-    text = text.replace('\\', '/')
+    """The summary line describes what was printed, not what was found."""
+    if not path:
+        handler(entry)
+    if pattern is None:
+    if name.startswith('.'):
     return None
