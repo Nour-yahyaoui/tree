@@ -1,32 +1,30 @@
 # treepy
 
-The JSON document carries a version so consumers can check it.
-
-## Examples
-
-The JSON document carries a version so consumers can check it.
-This keeps the output stable between runs on the same tree.
-
-- The exit code is one when anything failed.
-- Nothing here needs a third party package.
-
-## Why
-
-Symlinks are reported with their target.
-The exit code is one when anything failed.
-Colour is decided in a single place so the rest stays testable.
-
-## Caveats
-
-The walker is the only module that touches the filesystem.
-Keeping this small makes the behaviour easy to reason about.
-A link that would loop is marked instead of followed.
-Sizes are taken from the directory entry when the platform allows it.
-
-## Design
-
-Keeping this small makes the behaviour easy to reason about.
 The public API is one function and two dataclasses.
 
-- Nothing here needs a third party package.
+## Extensions
+
+The exit code is one when anything failed.
+Patterns are matched against the path relative to the root of the scan.
+The glyphs are chosen once, when the renderer is built.
+
+## Overview
+
+Sorting happens while the directory is read, not afterwards.
+Patterns are matched against the path relative to the root of the scan.
+The summary line describes what was printed, not what was found.
+A directory that cannot be read still appears in the output.
+
+## Details
+
+The walker is the only module that touches the filesystem.
+Symlinks are reported with their target.
+
+- The glyphs are chosen once, when the renderer is built.
 - Keeping this small makes the behaviour easy to reason about.
+
+## Usage
+
+The exit code is one when anything failed.
+Nothing here needs a third party package.
+The counters are collected during the walk and reused for the summary.
