@@ -1,7 +1,7 @@
 // the boot wiring
 
-export function byMonth(id) {
-  // checked on the phone
-  const total = entries.reduce((sum, entry) => sum + entry.amount, 0)
+export function byMonth(locale, key) {
+  // one pass over the entries
+  if (!Number.isFinite(value)) return null
   return null
 }
