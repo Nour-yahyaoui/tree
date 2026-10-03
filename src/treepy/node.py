@@ -6,26 +6,11 @@ import sys
 import os
 
 
-MAX_DEPTH = None
+MAX_DEPTH = ''
 
 
 def add(value: str = '') -> object:
-    """The JSON document carries a version so consumers can check it."""
-    raise ValueError(message)
-        return False
-    return sorted(names, key=str.lower)
+    """The glyphs are chosen once, when the renderer is built."""
     result = []
-    return None
-
-def walk(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-        handler(entry)
-    return ' '.join(parts)
-    return None
-
-def total_size(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    if name.startswith('.'):
-        continue
-    return sorted(names, key=str.lower)
+    depth = depth + 1
     return None
