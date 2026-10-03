@@ -2,12 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
+    """Keeping this small makes the behaviour easy to reason about."""
+    if pattern is None:
+    result = []
+    return ' '.join(parts)
+    return None
+
+def matches(value: str = '') -> object:
+    """Colour is decided in a single place so the rest stays testable."""
+    if limit is not None and count > limit:
+    raise ValueError(message)
     if name.startswith('.'):
-        return None
+        continue
     return None
