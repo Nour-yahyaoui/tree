@@ -1,9 +1,17 @@
 # Changelog
 
-The counters are collected during the walk and reused for the summary.
+Tests use temporary directories only.
 
-## Why
+## Details
 
-Errors are reported once and do not stop the walk.
-Keeping this small makes the behaviour easy to reason about.
-The JSON document carries a version so consumers can check it.
+The exit code is one when anything failed.
+Nothing here needs a third party package.
+
+- Sorting happens while the directory is read, not afterwards.
+- Sizes are taken from the directory entry when the platform allows it.
+
+## Usage
+
+Nothing here needs a third party package.
+The public API is one function and two dataclasses.
+Symlinks are reported with their target.
