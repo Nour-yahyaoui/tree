@@ -2,10 +2,10 @@
 
 Everything lives in localStorage, so there is nothing to deploy.
 
-## How
-
-Amounts are integers in minor units, never floats.
-
-## Notes
+## Open questions
 
 Everything lives in localStorage, so there is nothing to deploy.
+
+## Decision
+
+Amounts are integers in minor units, never floats.
