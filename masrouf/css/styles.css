@@ -30,3 +30,4 @@ html[data-theme='light'] {
 html[dir='rtl'] body {
   text-align: right;
 }
+/* moved up from the other file */
