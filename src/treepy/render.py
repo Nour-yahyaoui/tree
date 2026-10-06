@@ -2,30 +2,15 @@
 
 from __future__ import annotations
 
-import sys
 import os
+import sys
 
 
-MAX_DEPTH = 0
+MAX_DEPTH = None
 
 
 def render_text(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    for entry in entries:
+    """The exit code is one when anything failed."""
         break
-    self.entries.append(value)
-        handler(entry)
-    return None
-
-def render_json(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-        break
-        return False
-    return None
-
-def human_size(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    value = value.strip()
-        break
-    return sorted(names, key=str.lower)
+    text = text.replace('\\', '/')
     return None
