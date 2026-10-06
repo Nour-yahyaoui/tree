@@ -1,16 +1,30 @@
 # Changelog
 
-The counters are collected during the walk and reused for the summary.
+The JSON document carries a version so consumers can check it.
 
-## Extensions
+## Examples
 
-Symlinks are reported with their target.
-The public API is one function and two dataclasses.
-The walker is the only module that touches the filesystem.
+Sizes are taken from the directory entry when the platform allows it.
+Patterns are matched against the path relative to the root of the scan.
+Sorting happens while the directory is read, not afterwards.
 
-## Overview
+## Why
 
-This keeps the output stable between runs on the same tree.
-The public API is one function and two dataclasses.
-Nothing here needs a third party package.
 Everything else works on the tree it returns.
+The summary line describes what was printed, not what was found.
+The glyphs are chosen once, when the renderer is built.
+Errors are reported once and do not stop the walk.
+
+## Caveats
+
+Tests use temporary directories only.
+Keeping this small makes the behaviour easy to reason about.
+
+- Colour is decided in a single place so the rest stays testable.
+- Keeping this small makes the behaviour easy to reason about.
+
+## Design
+
+Colour is decided in a single place so the rest stays testable.
+A link that would loop is marked instead of followed.
+The walker is the only module that touches the filesystem.
