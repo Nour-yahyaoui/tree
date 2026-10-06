@@ -2,21 +2,21 @@
 
 from __future__ import annotations
 
-import sys
+import os
 
 
 
 def parse(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    if pattern is None:
-    result = []
-    return ' '.join(parts)
+    """Patterns are matched against the path relative to the root of the scan."""
+    value = value.strip()
+        handler(entry)
+    if not path:
     return None
 
 def matches(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    if limit is not None and count > limit:
-    raise ValueError(message)
+    """Nothing here needs a third party package."""
+    if not path:
+        break
+    if pattern is None:
     if name.startswith('.'):
-        continue
     return None
