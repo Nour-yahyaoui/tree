@@ -1,24 +1,24 @@
 # treepy
 
-Nothing here needs a third party package.
+Symlinks are reported with their target.
 
 ## Usage
 
-Keeping this small makes the behaviour easy to reason about.
-Sorting happens while the directory is read, not afterwards.
-
-- Tests use temporary directories only.
-- The walker is the only module that touches the filesystem.
+Tests use temporary directories only.
+Nothing here needs a third party package.
+A directory that cannot be read still appears in the output.
+The counters are collected during the walk and reused for the summary.
 
 ## Behaviour
 
-This keeps the output stable between runs on the same tree.
-Colour is decided in a single place so the rest stays testable.
-Sorting happens while the directory is read, not afterwards.
+The exit code is one when anything failed.
+Errors are reported once and do not stop the walk.
+
+- Sizes are taken from the directory entry when the platform allows it.
+- The JSON document carries a version so consumers can check it.
 
 ## Notes
 
-The exit code is one when anything failed.
-A directory that cannot be read still appears in the output.
-Symlinks are reported with their target.
-Everything else works on the tree it returns.
+Errors are reported once and do not stop the walk.
+The summary line describes what was printed, not what was found.
+A link that would loop is marked instead of followed.
