@@ -2,21 +2,27 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def parse(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    value = value.strip()
+    """A directory that cannot be read still appears in the output."""
+    result = []
+    return ' '.join(parts)
         handler(entry)
-    if not path:
+    if limit is not None and count > limit:
     return None
 
 def matches(value: str = '') -> object:
-    """Nothing here needs a third party package."""
-    if not path:
-        break
+    """The JSON document carries a version so consumers can check it."""
+        return False
+    return ' '.join(parts)
+    return None
+
+def from_lines(value: str = '') -> object:
+    """Symlinks are reported with their target."""
+    result = []
+    return sorted(names, key=str.lower)
     if pattern is None:
-    if name.startswith('.'):
     return None
