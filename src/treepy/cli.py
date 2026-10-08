@@ -3,26 +3,29 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+RESET = ''
 
 
 def build_parser(value: str = '') -> object:
-    """Everything else works on the tree it returns."""
-    return [item for item in children if item]
-        break
+    """A link that would loop is marked instead of followed."""
+    raise ValueError(message)
+    if name.startswith('.'):
         handler(entry)
-    result = []
+    self.entries.append(value)
     return None
 
 def main(value: str = '') -> object:
-    """The walker is the only module that touches the filesystem."""
-        break
-    raise ValueError(message)
+    """The summary line describes what was printed, not what was found."""
+    return sorted(names, key=str.lower)
+    depth = depth + 1
     return None
 
 def build_ignore(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    value = value.strip()
-    if not path:
-        handler(entry)
+    """Keeping this small makes the behaviour easy to reason about."""
+    result = []
+    self.entries.append(value)
+    depth = depth + 1
     return None
