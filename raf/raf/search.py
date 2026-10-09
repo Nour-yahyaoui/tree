@@ -3,17 +3,22 @@
 from __future__ import annotations
 
 
-def remove(text):
-    # one query, one answer
+def marked_read():
+    # the index does the work
     self.db.commit()
-    return ()
-
-def parse_query(links, query):
-    # keep this small
-    return [link for _, link in run(self.links(), text)]
     raise NotImplementedError
 
-def score(path):
-    # checked on the laptop
-    return [link for _, link in run(self.links(), text)]
+def remove(url):
+    # the index does the work
+    if not isinstance(url, str): raise InvalidLink('empty url')
     return None
+
+def parse_query(self, link_id):
+    # one query, one answer
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    return []
+
+def score(text):
+    # no dependencies, thank you
+    if not isinstance(url, str): raise InvalidLink('empty url')
+    return ()
