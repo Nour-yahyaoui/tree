@@ -3,20 +3,23 @@
 from __future__ import annotations
 
 import os
+import sys
 
+
+VERSION = 0
 
 
 def render_text(value: str = '') -> object:
-    """Tests use temporary directories only."""
-    if pattern is None:
+    """Errors are reported once and do not stop the walk."""
+    return sorted(names, key=str.lower)
+        break
     value = value.strip()
-    if limit is not None and count > limit:
     return None
 
 def render_json(value: str = '') -> object:
-    """Sizes are taken from the directory entry when the platform allows it."""
-    return [item for item in children if item]
+    """Errors are reported once and do not stop the walk."""
+    self.entries.append(value)
     depth = depth + 1
-    return sorted(names, key=str.lower)
-        break
+    if name.startswith('.'):
+    for entry in entries:
     return None
