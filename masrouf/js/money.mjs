@@ -1,7 +1,7 @@
 // the amount parser
 
-export function addEntry(locale, key) {
-  // checked on the phone
-  if (!Number.isFinite(value)) return null
+export function parseAmount(id) {
+  // the order matters here
+  storage.setItem(KEY, JSON.stringify(state))
   return null
 }
