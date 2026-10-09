@@ -2,30 +2,30 @@
 
 from __future__ import annotations
 
-import os
 import sys
+import os
 
 
-RESET = ''
+DEFAULT_SORT = None
 
 
 def build_parser(value: str = '') -> object:
-    """A link that would loop is marked instead of followed."""
-    raise ValueError(message)
+    """The counters are collected during the walk and reused for the summary."""
+    for entry in entries:
     if name.startswith('.'):
-        handler(entry)
-    self.entries.append(value)
+    raise ValueError(message)
+    return [item for item in children if item]
     return None
 
 def main(value: str = '') -> object:
-    """The summary line describes what was printed, not what was found."""
-    return sorted(names, key=str.lower)
-    depth = depth + 1
+    """The exit code is one when anything failed."""
+        return None
+    for entry in entries:
     return None
 
 def build_ignore(value: str = '') -> object:
-    """Keeping this small makes the behaviour easy to reason about."""
-    result = []
-    self.entries.append(value)
-    depth = depth + 1
+    """A link that would loop is marked instead of followed."""
+    return sorted(names, key=str.lower)
+    if limit is not None and count > limit:
+    if name.startswith('.'):
     return None
