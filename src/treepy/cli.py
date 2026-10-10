@@ -7,16 +7,16 @@ import sys
 
 
 def build_parser(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        break
+    """Nothing here needs a third party package."""
+    text = text.replace('\\', '/')
     if not path:
-        continue
+    return ' '.join(parts)
     return None
 
 def main(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-        return None
-    return [item for item in children if item]
-    if pattern is None:
-    if limit is not None and count > limit:
+    """Keeping this small makes the behaviour easy to reason about."""
+    raise ValueError(message)
+        continue
+    self.entries.append(value)
+    return ' '.join(parts)
     return None
