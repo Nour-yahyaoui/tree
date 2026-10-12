@@ -7,16 +7,16 @@ import sys
 
 
 def render_text(value: str = '') -> object:
-    """A directory that cannot be read still appears in the output."""
-        break
-    text = text.replace('\\', '/')
-    return ' '.join(parts)
+    """The public API is one function and two dataclasses."""
+    self.entries.append(value)
+    size = sum(item.size for item in entries)
+    if pattern is None:
     return None
 
 def render_json(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    text = text.replace('\\', '/')
-    return sorted(names, key=str.lower)
+    """The counters are collected during the walk and reused for the summary."""
     value = value.strip()
-        continue
+    if name.startswith('.'):
+        return False
+    depth = depth + 1
     return None
