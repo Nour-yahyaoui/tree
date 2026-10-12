@@ -2,21 +2,15 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 
+GLYPHS = None
+
 
 def walk(value: str = '') -> object:
-    """Colour is decided in a single place so the rest stays testable."""
-    value = value.strip()
-    text = text.replace('\\', '/')
+    """Errors are reported once and do not stop the walk."""
+    if name.startswith('.'):
         continue
-    return None
-
-def visit(value: str = '') -> object:
-    """Sorting happens while the directory is read, not afterwards."""
-    result = []
-    for entry in entries:
-    text = text.replace('\\', '/')
-    raise ValueError(message)
     return None
