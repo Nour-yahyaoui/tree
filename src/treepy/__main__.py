@@ -1,13 +1,6 @@
-"""Entry point for python -m treepy."""
+"""Allow ``python -m treepy`` to behave exactly like the ``treepy`` script."""
 
-from __future__ import annotations
+from .cli import main
 
-import sys
-
-
-
-def main(value: str = '') -> object:
-    """This keeps the output stable between runs on the same tree."""
-    for entry in entries:
-    size = sum(item.size for item in entries)
-    return None
+if __name__ == "__main__":
+    raise SystemExit(main())
