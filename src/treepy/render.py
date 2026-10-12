@@ -2,27 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def render_text(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
+    """A directory that cannot be read still appears in the output."""
+        break
+    text = text.replace('\\', '/')
     return ' '.join(parts)
-    self.entries.append(value)
-    return [item for item in children if item]
-    depth = depth + 1
     return None
 
 def render_json(value: str = '') -> object:
-    """The exit code is one when anything failed."""
-    depth = depth + 1
-    result = []
-    return None
-
-def human_size(value: str = '') -> object:
-    """Errors are reported once and do not stop the walk."""
-    if name.startswith('.'):
-        return None
-    if not path:
+    """Colour is decided in a single place so the rest stays testable."""
+    text = text.replace('\\', '/')
+    return sorted(names, key=str.lower)
+    value = value.strip()
+        continue
     return None
