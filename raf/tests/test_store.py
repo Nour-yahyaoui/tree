@@ -109,6 +109,35 @@ class ShelfTests(unittest.TestCase):
         self.assertEqual(self.shelf.stats()["hosts"], 2)
 
 
+    def test_import_skips_malformed_fields_without_partial_rows(self):
+        items = [
+            None, 7, [], {"url": None},
+            {"url": "https://bad-title.test", "title": None},
+            {"url": "https://bad-note.test", "note": []},
+            {"url": "https://bad-tags.test", "tags": ["ok", 7]},
+            {"url": "https://bad-read.test", "read": "false"},
+            {"url": "https://bad-date.test", "added": {}},
+            {"url": "https://valid.test", "title": "Valid", "tags": ["reading"]},
+        ]
+        self.assertEqual(self.shelf.import_(json.dumps({"links": items})), (1, 9))
+        self.assertEqual([link.url for link in self.shelf.links()], ["https://valid.test/"])
+
+    def test_import_does_not_overwrite_existing_link_metadata(self):
+        self.shelf.add("https://example.com/a", title="Original", tags="keep")
+        before = self.shelf.export()
+        item = {
+            "url": "https://example.com/a#duplicate", "title": "Replacement",
+            "tags": ["new"], "read": True, "added": "2000-01-01T00:00:00+00:00",
+        }
+        self.assertEqual(self.shelf.import_(json.dumps({"links": [item]})), (0, 1))
+        self.assertEqual(self.shelf.export(), before)
+
+    def test_import_counts_duplicate_rows_as_skipped(self):
+        items = [{"url": "https://example.com/a"}, {"url": "https://example.com/a#same"}]
+        self.assertEqual(self.shelf.import_(json.dumps({"links": items})), (1, 1))
+        self.assertEqual(len(self.shelf.links()), 1)
+
+
 class ShelfPathTests(unittest.TestCase):
     def test_home_directory_paths_are_expanded_before_opening(self):
         with tempfile.TemporaryDirectory() as folder:

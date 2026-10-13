@@ -197,8 +197,23 @@ class Shelf:
         added = skipped = 0
         for item in payload["links"]:
             try:
+                if not isinstance(item, dict):
+                    raise InvalidLink("not a link object")
+                if any(not isinstance(item.get(key, ""), str) for key in ("title", "note", "added")):
+                    raise InvalidLink("invalid link text")
+                tags = item.get("tags", ())
+                if not isinstance(tags, (str, list, tuple)) or (
+                    not isinstance(tags, str) and any(not isinstance(tag, str) for tag in tags)
+                ):
+                    raise InvalidLink("invalid tags")
+                if not isinstance(item.get("read", False), bool):
+                    raise InvalidLink("invalid read flag")
+                normalised = normalise_url(item["url"])
+                if self._one(url=normalised) is not None:
+                    skipped += 1
+                    continue
                 link = self.add(
-                    item["url"],
+                    normalised,
                     title=item.get("title", ""),
                     tags=item.get("tags", ()),
                     note=item.get("note", ""),
