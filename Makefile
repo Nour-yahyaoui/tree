@@ -32,3 +32,8 @@ list:
 clean:
 	find . -name '__pycache__' -type d -prune -exec rm -rf {} +
 	find . -name 'node_modules' -type d -prune -exec rm -rf {} +
+
+.PHONY: lint
+
+lint:
+	python3 -m compileall -q treepy/src raf/raf
