@@ -15,3 +15,13 @@ test: cover the empty directory case
 
 The scope is the project or the part of it you touched. Keep the subject under
 about seventy characters and put the reasoning in the body when it matters.
+
+## Adding a project
+
+Use the helper, then work through its checklist:
+
+```sh
+./scripts/new-project.sh mysmallthing
+```
+
+The long version is in [`docs/adding-a-project.md`](docs/adding-a-project.md).
