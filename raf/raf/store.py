@@ -6,6 +6,7 @@ import json
 import os
 import sqlite3
 from typing import Iterable, List, Optional, Sequence
+from urllib.parse import urlparse
 
 from .models import Link, InvalidLink, normalise_url, now, parse_tags
 from .search import run
@@ -34,6 +35,7 @@ CREATE INDEX IF NOT EXISTS tags_tag ON tags (tag);
 class Shelf:
     def __init__(self, path: str = ":memory:"):
         if path != ":memory:":
+            path = os.path.expanduser(path)
             directory = os.path.dirname(os.path.abspath(path))
             os.makedirs(directory, exist_ok=True)
         self.path = path
@@ -161,7 +163,7 @@ class Shelf:
             "read": read,
             "unread": total - read,
             "tags": len(self.tags()),
-            "hosts": self.db.execute("SELECT COUNT(DISTINCT url) FROM links").fetchone()[0],
+            "hosts": len({urlparse(row["url"]).hostname for row in self.db.execute("SELECT url FROM links")}),
         }
 
     # moving data -----------------------------------------------------------

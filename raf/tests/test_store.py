@@ -1,4 +1,8 @@
 import json
+import os
+from pathlib import Path
+import tempfile
+from unittest.mock import patch
 import unittest
 
 from raf.models import InvalidLink
@@ -72,7 +76,7 @@ class ShelfTests(unittest.TestCase):
         a = self.shelf.add("https://example.com/a", tags="x y")
         self.shelf.add("https://example.com/b")
         self.shelf.mark(a.id)
-        self.assertEqual(self.shelf.stats(), {"total": 2, "read": 1, "unread": 1, "tags": 2, "hosts": 2})
+        self.assertEqual(self.shelf.stats(), {"total": 2, "read": 1, "unread": 1, "tags": 2, "hosts": 1})
 
     def test_an_export_imports_again(self):
         self.shelf.add("https://example.com/a", title="A", tags="x", note="n")
@@ -96,6 +100,34 @@ class ShelfTests(unittest.TestCase):
         for text in ("not json", "{}", '{"links": 5}'):
             with self.subTest(text=text), self.assertRaises(InvalidLink):
                 self.shelf.import_(text)
+
+
+    def test_stats_count_hosts_not_urls_or_ports(self):
+        self.shelf.add("http://example.com/a")
+        self.shelf.add("https://example.com:8080/b")
+        self.shelf.add("https://other.test/a")
+        self.assertEqual(self.shelf.stats()["hosts"], 2)
+
+
+class ShelfPathTests(unittest.TestCase):
+    def test_home_directory_paths_are_expanded_before_opening(self):
+        with tempfile.TemporaryDirectory() as folder:
+            home = Path(folder) / "home"
+            home.mkdir()
+            previous = os.getcwd()
+            try:
+                os.chdir(folder)  # a broken implementation cannot write into the checkout
+                with patch.dict(os.environ, {"HOME": str(home)}):
+                    shelf = Shelf("~/.raf/shelf.db")
+                try:
+                    expected = home / ".raf" / "shelf.db"
+                    self.assertEqual(shelf.path, str(expected))
+                    self.assertTrue(expected.is_file())
+                    self.assertFalse((Path(folder) / "~").exists())
+                finally:
+                    shelf.close()
+            finally:
+                os.chdir(previous)
 
 
 if __name__ == "__main__":
