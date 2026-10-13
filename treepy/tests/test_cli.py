@@ -204,3 +204,20 @@ class CliTests(TempTreeCase):
         trees = json.loads(out)["trees"]
         self.assertNotIn("children", trees[0])
         self.assertEqual([child["name"] for child in trees[1]["children"]], ["a.log"])
+
+    def test_include_matches_a_standalone_file_root(self):
+        path = self.make("alpha.txt", "abc")
+        code, out, _ = self.run_cli([path, "-P", "*.txt", "--json"])
+        document = json.loads(out)
+        self.assertEqual(code, 0)
+        self.assertEqual([tree["name"] for tree in document["trees"]], ["alpha.txt"])
+        self.assertEqual(document["stats"]["files"], 1)
+
+    def test_filtering_an_error_still_returns_failure_without_negative_counts(self):
+        code, out, err = self.run_cli([os.path.join(self.root, "missing"), "-P", "*.txt", "--json"])
+        document = json.loads(out)
+        self.assertEqual(code, 1)
+        self.assertIn("treepy:", err)
+        self.assertEqual(document["trees"], [])
+        self.assertEqual(document["stats"]["files"], 0)
+        self.assertEqual(document["stats"]["errors"], 0)

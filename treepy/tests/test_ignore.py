@@ -153,3 +153,12 @@ class FilterTreeTests(unittest.TestCase):
         stats = Stats(dirs=2, files=2, symlinks=1, errors=1, total_bytes=7)
         prune_tree(root, 1, stats)
         self.assertEqual(stats, Stats(dirs=1, files=1, total_bytes=3))
+
+    def test_filter_subtracts_symlinks_and_failed_stats_correctly(self):
+        root = Node(name="root", path="/root", is_dir=True)
+        root.add(Node(name="keep.py", path="/root/keep.py", relative="keep.py", is_dir=False, size=6))
+        root.add(Node(name="link", path="/root/link", relative="link", is_dir=False, size=4, symlink=True))
+        root.add(Node(name="missing", path="/root/missing", relative="missing", is_dir=False, error="gone"))
+        stats = Stats(dirs=1, files=2, symlinks=1, errors=1, total_bytes=10)
+        filter_tree(root, Pattern.parse("*.py"), stats)
+        self.assertEqual(stats, Stats(dirs=1, files=1, total_bytes=6))

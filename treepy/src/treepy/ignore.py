@@ -153,11 +153,10 @@ def filter_tree(node: Node, include: Pattern, stats: Optional[Stats] = None) -> 
     for the entries that were dropped.
     """
     if not node.is_dir:
-        if include.matches(node.relative, False):
+        if include.matches(node.relative or node.name, False):
             return node
         if stats is not None:
-            stats.files -= 1
-            stats.total_bytes -= node.size
+            _subtract_tree(node, stats)
         return None
 
     kept = []
@@ -165,11 +164,11 @@ def filter_tree(node: Node, include: Pattern, stats: Optional[Stats] = None) -> 
         survivor = filter_tree(child, include, stats)
         if survivor is not None:
             kept.append(survivor)
+    node.children = kept
     if not kept and node.relative:
         if stats is not None:
-            stats.dirs -= 1
+            _subtract_tree(node, stats)
         return None
-    node.children = kept
     return node
 
 
