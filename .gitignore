@@ -1,0 +1,32 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Test and coverage output
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# Tool caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Scratch output produced while testing the CLI
+tree-output.txt
+*.log
+
+# Editor and OS noise
+.idea/
+.vscode/
+.DS_Store

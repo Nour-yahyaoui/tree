@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "treepy"
+version = "0.9.4"
+description = "A tiny, dependency-free directory tree printer for humans and machines."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Nour Yahyaoui", email = "177131499+Nour-yahyaoui@users.noreply.github.com" }]
+keywords = ["tree", "cli", "filesystem", "directories", "json"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/Nour-yahyaoui/tree"
+Issues = "https://github.com/Nour-yahyaoui/tree/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "coverage>=7"]
+
+[project.scripts]
+treepy = "treepy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.coverage.run]
+branch = true
+source = ["treepy"]
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:"]

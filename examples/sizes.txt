@@ -1,0 +1,13 @@
+$ treepy -L 2 --size -H --du src
+src [32.1K]
+└── treepy [32.1K]
+    ├── __init__.py [862B]
+    ├── __main__.py [159B]
+    ├── cli.py [6.2K]
+    ├── ignore.py [5.9K]
+    ├── node.py [2.8K]
+    ├── render.py [5.3K]
+    ├── style.py [3.3K]
+    └── walker.py [7.6K]
+
+2 directories, 8 files, 32.1K total

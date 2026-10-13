@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile sources
+        run: python -m compileall -q src tests
+      - name: Run unit tests
+        run: PYTHONPATH=src python -m unittest discover -s tests -t . -v
+      - name: Smoke test the CLI
+        run: PYTHONPATH=src python -m treepy -L 2 --size src

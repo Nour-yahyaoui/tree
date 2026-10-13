@@ -1,0 +1,34 @@
+$ treepy --json -L 1 -P '*.py' src | jq .
+{
+  "version": 1,
+  "trees": [
+    {
+      "name": "src",
+      "type": "directory",
+      "size": 0,
+      "children": [
+        {
+          "name": "treepy",
+          "type": "directory",
+          "size": 0,
+          "path": "treepy",
+          "children": [
+            {
+              "name": "__init__.py",
+              "type": "file",
+              "size": 862,
+              "path": "treepy/__init__.py"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "directories": 2,
+    "files": 1,
+    "symlinks": 0,
+    "errors": 0,
+    "bytes": 862
+  }
+}
