@@ -4,5 +4,11 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-printf '\n== treepy ==\n'
-(cd treepy && make test)
+for project in treepy raf masrouf; do
+	printf '\n== %s ==\n' "$project"
+	case "$project" in
+		treepy)  (cd treepy && make test) ;;
+		raf)     (cd raf && python3 -m unittest discover -s tests) ;;
+		masrouf) (cd masrouf && npm test) ;;
+	esac
+done
