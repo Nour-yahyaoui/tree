@@ -82,5 +82,12 @@ class CliTests(unittest.TestCase):
             self.assertIn("no links", out)
 
 
+    def test_an_invalid_port_is_a_message_not_a_traceback(self):
+        code, out = self.raf("add", "https://example.com:bad/a")
+        self.assertEqual(code, 1)
+        self.assertIn("invalid url", out)
+        self.assertIn("0 link(s)", self.raf("list")[1])
+
+
 if __name__ == "__main__":
     unittest.main()

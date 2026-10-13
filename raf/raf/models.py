@@ -39,24 +39,28 @@ def normalise_url(url: str) -> str:
     if not isinstance(url, str) or not url.strip():
         raise InvalidLink("empty url")
     text = url.strip()
-    if "://" in text:
-        parsed = urlparse(text)
-        if parsed.scheme not in SCHEMES:
-            raise InvalidLink(f"unsupported scheme: {parsed.scheme}")
-    else:
+    if "://" not in text:
         # "mailto:..." is a scheme we do not speak; "localhost:8080/x" is a host
-        # with a port, and that one is fine
+        # with a port, and that one is fine.
         prefix = re.match(r"^([a-z][a-z0-9+.\-]*):(.*)$", text, re.IGNORECASE)
         if prefix and not prefix.group(2).split("/")[0].split("?")[0].isdigit():
             raise InvalidLink(f"unsupported scheme: {prefix.group(1)}")
-        parsed = urlparse("https://" + text)
-    if not parsed.hostname:
+        text = "https://" + text
+    try:
+        parsed = urlparse(text)
+        host, port = parsed.hostname, parsed.port
+    except ValueError as error:
+        raise InvalidLink(f"invalid url: {error}") from error
+    if parsed.scheme not in SCHEMES:
+        raise InvalidLink(f"unsupported scheme: {parsed.scheme}")
+    if not host:
         raise InvalidLink("no host in the url")
-    netloc = parsed.hostname.lower()
-    if parsed.port:
-        netloc = f"{netloc}:{parsed.port}"
+    host = host.lower()
+    netloc = f"[{host}]" if ":" in host else host
+    if port is not None:
+        netloc = f"{netloc}:{port}"
     path = parsed.path or "/"
-    return urlunparse((parsed.scheme.lower(), netloc, path, "", parsed.query, ""))
+    return urlunparse((parsed.scheme.lower(), netloc, path, parsed.params, parsed.query, ""))
 
 
 def parse_tags(text: str | None) -> tuple:
