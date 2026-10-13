@@ -7,3 +7,8 @@ help:
 	@echo
 	@echo "make test      run every project's tests"
 	@echo "make list      show what is in here"
+
+.PHONY: test
+
+test:
+	./scripts/check-all.sh
