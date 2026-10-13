@@ -27,3 +27,11 @@ One paragraph on what this is and why it exists.
 true   # replace with the real test command
 \`\`\`
 EOF
+
+echo "created $name/"
+echo
+echo "next:"
+echo "  - write the source and a real test command"
+echo "  - add a case to scripts/check-all.sh"
+echo "  - add a job to .github/workflows/ci.yml"
+echo "  - add a line to the table in README.md"
