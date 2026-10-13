@@ -15,3 +15,15 @@ if [ -e "$name" ]; then
 fi
 
 mkdir -p "$name"
+
+cat > "$name/README.md" <<EOF
+# $name
+
+One paragraph on what this is and why it exists.
+
+## Test
+
+\`\`\`sh
+true   # replace with the real test command
+\`\`\`
+EOF
