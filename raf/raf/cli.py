@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import sqlite3
 import sys
 from typing import List, Optional, TextIO
 
@@ -61,17 +62,22 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Optional[List[str]] = None, out: Optional[TextIO] = None) -> int:
-    args = build_parser().parse_args(argv)
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    if getattr(args, "limit", 0) < 0:
+        parser.error("--limit must be zero or greater")
     out = out or sys.stdout
-    shelf = Shelf(args.db)
+    shelf = None
 
     try:
+        shelf = Shelf(args.db)
         return dispatch(shelf, args, out)
-    except InvalidLink as error:
+    except (InvalidLink, OSError, sqlite3.Error) as error:
         print(str(error), file=out)
         return 1
     finally:
-        shelf.close()
+        if shelf is not None:
+            shelf.close()
 
 
 def dispatch(shelf: Shelf, args, out: TextIO) -> int:
@@ -107,6 +113,10 @@ def dispatch(shelf: Shelf, args, out: TextIO) -> int:
     if command in ("read", "unread-one"):
         if shelf.mark(args.id, read=command == "read"):
             return 0
+        print(f"no link {args.id}", file=out)
+        return 1
+
+    if command in ("tag", "untag") and shelf.get(args.id) is None:
         print(f"no link {args.id}", file=out)
         return 1
 
