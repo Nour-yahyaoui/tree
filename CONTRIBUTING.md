@@ -25,3 +25,8 @@ Use the helper, then work through its checklist:
 ```
 
 The long version is in [`docs/adding-a-project.md`](docs/adding-a-project.md).
+
+## Reporting things
+
+Open an issue with the smallest input that shows the problem. A failing test is
+worth more than a description of one.
