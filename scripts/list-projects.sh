@@ -1,7 +1,11 @@
 #!/bin/sh
-# list the projects in the collection
+# list the projects and what they are
 set -e
 
 cd "$(dirname "$0")/.."
 
-ls -d */
+for entry in */; do
+	project="${entry%/}"
+	[ -f "$project/README.md" ] || continue
+	printf '%-12s %s\n' "$project" "$(head -1 "$project/README.md" | sed 's/^# //')"
+done
