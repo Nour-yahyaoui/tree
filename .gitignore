@@ -6,3 +6,7 @@ dist/
 *.egg-info/
 .venv/
 venv/
+
+# node
+node_modules/
+npm-debug.log*
