@@ -140,3 +140,73 @@ test('a file with no header still imports', () => {
   assert.deepEqual(errors, []);
   assert.equal(entries[0].amount, 12500);
 });
+
+test('calendar dates are checked, including leap years', () => {
+  const store = createStore();
+  for (const date of ['2026-02-29', '2026-04-31', '1900-02-29', '2026-00-01', '2026-01-00', '0000-01-01']) {
+    assert.deepEqual(store.add({ amount: 1, date }), { ok: false, error: 'not a date' }, date);
+  }
+  for (const date of ['2024-02-29', '2000-02-29', '2026-12-31']) {
+    assert.equal(store.add({ amount: 1, date }).ok, true, date);
+  }
+  assert.equal(fromCSV('2026-02-29,food,1.000,TND,bad').entries.length, 0);
+});
+
+test('minor-unit inputs must be safe integers, not major-unit guesses', () => {
+  const store = createStore();
+  for (const amount of [Number.MAX_SAFE_INTEGER + 1, 1.5, '1000', null, Infinity]) {
+    assert.deepEqual(store.add({ amount, date: '2026-04-02' }), { ok: false, error: 'not an amount' });
+  }
+  assert.equal(store.entries.length, 0);
+});
+
+test('an explicit unknown currency is rejected instead of changed to dinars', () => {
+  const store = createStore();
+  assert.deepEqual(store.add({ amount: 100, currency: 'XYZ', date: '2026-04-02' }), { ok: false, error: 'unknown currency' });
+  assert.equal(store.entries.length, 0);
+});
+
+test('invalid edits leave stored data and subscribers untouched', () => {
+  const storage = memoryStorage();
+  const store = createStore({ storage });
+  const { entry } = store.add({ amount: 100, category: 'food', date: '2026-04-02' });
+  const before = storage.raw();
+  let notifications = 0;
+  store.subscribe(() => { notifications += 1; });
+  for (const patch of [{ amount: 1.5 }, { amount: Infinity }, { currency: 'XYZ' }, { date: '2026-02-29' }, { note: null }]) {
+    assert.equal(store.update(entry.id, patch), null);
+    assert.equal(storage.raw(), before);
+  }
+  assert.equal(notifications, 0);
+  assert.equal(store.entries[0].amount, 100);
+});
+
+test('an edit cannot replace an entry id', () => {
+  const store = createStore();
+  const { entry } = store.add({ amount: 100, date: '2026-04-02' });
+  const edited = store.update(entry.id, { id: 999, note: 'updated' });
+  assert.equal(edited.id, entry.id);
+  assert.equal(edited.note, 'updated');
+  assert.equal(store.remove(entry.id), true);
+});
+
+test('corrupt stored entries are discarded and duplicate ids do not break the store', () => {
+  const good = { id: 1, amount: 100, currency: 'TND', category: 'food', note: '', date: '2026-04-02' };
+  const bad = [null, 5, {}, { ...good, id: 2, date: '2026-02-29' }, { ...good, id: 3, amount: 1.5 }];
+  const state = migrate({ version: 2, entries: [...bad, good, { ...good, note: 'duplicate' }] });
+  assert.deepEqual(state.entries, [good]);
+  const store = createStore({ storage: memoryStorage(JSON.stringify(state)) });
+  assert.equal(store.add({ amount: 200, date: '2026-04-03' }).entry.id, 2);
+  assert.doesNotThrow(() => migrate({ version: 0, entries: [null, 5, {}] }));
+});
+
+test('settings accept only known keys and supported values', () => {
+  const store = createStore();
+  for (const [key, value] of [['currency', 'XYZ'], ['locale', 'xx'], ['theme', 'neon'], ['other', 'junk']]) {
+    assert.equal(store.setSetting(key, value), false);
+  }
+  assert.equal(store.setSetting('locale', 'fr'), true);
+  assert.equal(store.settings.locale, 'fr');
+  assert.equal(store.settings.currency, 'TND');
+  assert.equal(migrate({ settings: { theme: 'junk' } }).settings.theme, 'dark');
+});

@@ -17,11 +17,37 @@ export const DEFAULT_SETTINGS = {
   categories: [],
 };
 
+function isRecord(value) {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+function isDate(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [year, month, day] = value.split('-').map(Number);
+  if (year < 1 || month < 1 || month > 12 || day < 1) return false;
+  const leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+  return day <= [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1];
+}
+
+function validEntry(entry) {
+  return Number.isSafeInteger(entry.id) && entry.id > 0 &&
+    Number.isSafeInteger(entry.amount) && isCurrency(entry.currency) && isDate(entry.date) &&
+    typeof entry.category === 'string' && entry.category.trim() !== '' &&
+    typeof entry.note === 'string';
+}
+
+function validSetting(key, value) {
+  if (key === 'currency') return isCurrency(value);
+  if (key === 'locale') return ['en', 'fr', 'ar'].includes(value);
+  if (key === 'theme') return ['dark', 'light'].includes(value);
+  return false;
+}
+
 function readState(raw) {
   if (!raw) return null;
   try {
     const parsed = typeof raw === 'string' ? JSON.parse(raw) : raw;
-    return parsed && typeof parsed === 'object' ? parsed : null;
+    return isRecord(parsed) ? parsed : null;
   } catch {
     return null;
   }
@@ -30,13 +56,13 @@ function readState(raw) {
 /** Version 0 stored major units as floats under `value`. Those become integers. */
 export function migrate(state) {
   const next = readState(state) || {};
-  let entries = Array.isArray(next.entries) ? next.entries : [];
+  let entries = Array.isArray(next.entries) ? next.entries.filter(isRecord) : [];
   if (!next.version || next.version < 2) {
     entries = entries.map((entry) => {
       const code = isCurrency(entry.currency) ? entry.currency : 'TND';
       const amount = Number.isInteger(entry.amount)
         ? entry.amount
-        : toMinor(String(entry.value ?? entry.amount ?? 0), code) ?? 0;
+        : toMinor(String(entry.value ?? entry.amount ?? ''), code);
       return {
         id: Number(entry.id) || 0,
         amount,
@@ -47,9 +73,23 @@ export function migrate(state) {
       };
     });
   }
-  const settings = { ...DEFAULT_SETTINGS, ...(next.settings || {}) };
+  const seen = new Set();
+  entries = entries.map((entry) => ({
+    id: entry.id,
+    amount: entry.amount,
+    currency: entry.currency,
+    category: typeof entry.category === 'string' && entry.category.trim() ? entry.category.trim() : 'other',
+    note: typeof entry.note === 'string' ? entry.note : '',
+    date: entry.date,
+  })).filter((entry) => {
+    if (!validEntry(entry) || seen.has(entry.id)) return false;
+    seen.add(entry.id);
+    return true;
+  });
+  const settings = { ...DEFAULT_SETTINGS, ...(isRecord(next.settings) ? next.settings : {}) };
   if (!isCurrency(settings.currency)) settings.currency = 'TND';
-  if (!['en', 'fr', 'ar'].includes(settings.locale)) settings.locale = 'en';
+  if (!validSetting('locale', settings.locale)) settings.locale = 'en';
+  if (!validSetting('theme', settings.theme)) settings.theme = 'dark';
   return {
     version: SCHEMA_VERSION,
     entries,
@@ -76,25 +116,31 @@ export function createStore({ storage, now = () => new Date().toISOString() } = 
   }
 
   function add({ amount, value, currency, category, note = '', date }) {
-    const code = isCurrency(currency) ? currency : state.settings.currency;
-    const minor = Number.isInteger(amount) ? amount : parseAmount(String(value ?? amount ?? ''), code);
-    if (minor === null || !Number.isFinite(minor)) return { ok: false, error: 'not an amount' };
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) return { ok: false, error: 'not a date' };
-    const entry = { id: nextId++, amount: minor, currency: code, category, note, date };
+    const code = currency === undefined ? state.settings.currency : currency;
+    if (!isCurrency(code)) return { ok: false, error: 'unknown currency' };
+    const minor = amount === undefined ? parseAmount(String(value ?? ''), code) : amount;
+    if (!Number.isSafeInteger(minor)) return { ok: false, error: 'not an amount' };
+    if (!isDate(date)) return { ok: false, error: 'not a date' };
+    if (typeof note !== 'string') return { ok: false, error: 'not a note' };
+    if (!Number.isSafeInteger(nextId)) return { ok: false, error: 'too many entries' };
+    const entry = {
+      id: nextId++, amount: minor === 0 ? 0 : minor, currency: code,
+      category: typeof category === 'string' && category.trim() ? category.trim() : 'other',
+      note, date,
+    };
     state.entries = [...state.entries, entry];
     persist();
     return { ok: true, entry };
   }
 
   function update(id, patch) {
-    let found = null;
-    state.entries = state.entries.map((entry) => {
-      if (entry.id !== id) return entry;
-      found = { ...entry, ...patch };
-      return found;
-    });
-    if (found) persist();
-    return found;
+    const original = state.entries.find((entry) => entry.id === id);
+    if (!original || !isRecord(patch)) return null;
+    const edited = { ...original, ...patch, id: original.id };
+    if (!validEntry(edited)) return null;
+    state.entries = state.entries.map((entry) => (entry.id === id ? edited : entry));
+    persist();
+    return edited;
   }
 
   function remove(id) {
@@ -105,8 +151,10 @@ export function createStore({ storage, now = () => new Date().toISOString() } = 
   }
 
   function setSetting(key, value) {
+    if (!validSetting(key, value)) return false;
     state.settings = { ...state.settings, [key]: value };
     persist();
+    return true;
   }
 
   function setCategories(categories) {
@@ -209,7 +257,7 @@ export function fromCSV(text, { defaultCurrency = 'TND' } = {}) {
       errors.push(`line ${line}: needs at least date, category and amount`);
       return;
     }
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    if (!isDate(date)) {
       errors.push(`line ${line}: not a date: ${date}`);
       return;
     }
