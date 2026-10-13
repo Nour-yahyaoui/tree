@@ -6,13 +6,14 @@ Keep it independent of the other projects.
 
 ## With the script
 
-Run the helper from anywhere inside the checkout:
+From the repository root:
 
 ```sh
 ./scripts/new-project.sh mysmallthing
 ```
 
-(The command above assumes your current directory is the repository root.)
+The helper resolves the workspace root from its own location, so invoking it
+by an absolute path also works from another directory.
 Names start with a lowercase ASCII letter and contain only lowercase letters,
 digits, underscores or hyphens. Paths, hidden names and existing files or
 directories are refused; the helper never overwrites a project.

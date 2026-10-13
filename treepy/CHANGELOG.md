@@ -3,6 +3,16 @@
 All notable changes to treepy are recorded here. The format follows the
 usual `Added / Changed / Fixed` headings and versions use semver.
 
+## Unreleased
+
+### Fixed
+- Each scan root uses only its own `.gitignore`, alongside CLI exclusions.
+- Invalid entry limits produce an argument error; trimmed JSON counters describe
+  the displayed entries, including nested directories and symlinks.
+- Include patterns match standalone file roots and subtract error nodes without
+  negative file counts. Scan failures still produce a nonzero exit code.
+- Installation instructions point to `treepy/` after the workspace move.
+
 ## 0.9.4 - 2026-10-12
 
 ### Fixed

@@ -4,14 +4,15 @@ A read-later shelf you host yourself. One sqlite file, one CLI, the standard
 library and nothing else.
 
 ```sh
-pip install -e .
+cd raf             # from the repository root
+python3 -m pip install -e .
 raf add https://example.com/sqlite-notes --title "SQLite notes" --tag reading
 raf list --tag reading
 raf search "pragma is:unread"
 ```
 
 ```sh
-python3 -m unittest discover -s tests -t .   # 47 tests, no framework
+python3 -m unittest discover -s tests -t .   # standard library only, no framework
 ```
 
 ## What it does

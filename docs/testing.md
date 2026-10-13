@@ -17,5 +17,14 @@ best. There is no shared harness, and nothing to install at the root.
 ## When something fails
 
 Run the project's command directly rather than through `make test`, so you see
-the real output and the real exit code. `python3 -m unittest -v` and
-`node --test --test-reporter=spec` both print far more about what a test expected.
+the real output and the real exit code. For verbose output from the root:
+
+```sh
+(cd treepy && PYTHONPATH=src python3 -m unittest discover -s tests -t . -v)
+(cd raf && python3 -m unittest discover -s tests -t . -v)
+(cd masrouf && node --test --test-reporter=spec)
+```
+
+The root CI runs each project in its own job. Workspace helpers have a separate
+job; no dependency caches are needed because none of these suites installs
+packages.

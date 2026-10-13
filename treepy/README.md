@@ -26,7 +26,7 @@ src [0B]
 
 ```sh
 git clone https://github.com/Nour-yahyaoui/tree
-cd tree
+cd tree/treepy
 python3 -m pip install -e .
 treepy --version
 ```
@@ -156,7 +156,7 @@ make demo        # print this repository with treepy itself
 make clean       # drop caches and build output
 ```
 
-CI runs the suite on Python 3.9, 3.11 and 3.12 and smoke tests the CLI.
+CI runs the suite, including the CLI tests, on Python 3.9, 3.11 and 3.13.
 Changes are welcome; keep the zero-dependency promise intact.
 
 ## License

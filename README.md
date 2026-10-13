@@ -19,7 +19,7 @@ here depends on anything else in here, on purpose.
 
 ```
 tree/
-├── .github/workflows/   one ci file for every project
+├── .github/workflows/   workspace ci jobs and release archives
 ├── docs/                notes about the workspace itself
 ├── scripts/             the helpers that keep it tidy
 ├── treepy/              the directory tree printer
