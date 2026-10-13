@@ -10,3 +10,9 @@ venv/
 # node
 node_modules/
 npm-debug.log*
+
+# editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp
