@@ -23,3 +23,12 @@ raf:
 
 masrouf:
 	cd masrouf && npm test
+
+.PHONY: list clean
+
+list:
+	./scripts/list-projects.sh
+
+clean:
+	find . -name '__pycache__' -type d -prune -exec rm -rf {} +
+	find . -name 'node_modules' -type d -prune -exec rm -rf {} +
