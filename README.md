@@ -43,3 +43,9 @@ Or run all of them from the root:
 make test          # every project
 make list          # what is in here
 ```
+
+## Testing
+
+`make test` runs every suite from the root, `make treepy`, `make raf` and
+`make masrouf` run one each, and `./scripts/check-all.sh` does the same thing
+with a summary at the end — which is what CI calls.
