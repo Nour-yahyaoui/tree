@@ -38,8 +38,10 @@ date,category,amount,currency,note
 ```
 
 The amount column is in major units, which is what makes an export importable
-again. A bad row is reported by line number and the rest of the file still
-imports:
+again. Quoted commas, quotes and multiline notes round-trip without losing
+whitespace. A UTF-8 BOM and CRLF line endings are accepted. A bad row is reported
+by its original line number, including blank lines, and valid records still
+import:
 
 ```
 line 4: not an amount: oops

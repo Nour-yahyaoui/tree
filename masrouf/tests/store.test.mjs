@@ -210,3 +210,50 @@ test('settings accept only known keys and supported values', () => {
   assert.equal(store.settings.currency, 'TND');
   assert.equal(migrate({ settings: { theme: 'junk' } }).settings.theme, 'dark');
 });
+
+test('CSV round trips quoted fields, multiline notes and surrounding spaces', () => {
+  const entries = [{
+    date: '2026-04-02', category: 'food, fun', amount: 12500, currency: 'TND',
+    note: '  first "quoted" line\r\nsecond line\rthird line  ',
+  }];
+  const result = fromCSV(toCSV(entries));
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.entries, entries);
+});
+
+test('CSV error line numbers include blank lines and quoted newlines', () => {
+  const text = [
+    '\ufeffdate,category,amount,currency,note', '',
+    '2026-04-02,food,12.500,TND,"first', 'second"', '',
+    'bad-date,food,12.500,TND,bad',
+  ].join('\r\n');
+  const result = fromCSV(text);
+  assert.equal(result.entries.length, 1);
+  assert.equal(result.entries[0].note, 'first\r\nsecond');
+  assert.match(result.errors[0], /^line 6: not a date/);
+});
+
+test('a headerless CSV note mentioning dates and categories is still a row', () => {
+  const result = fromCSV('2026-04-02,food,12.500,TND,update category dates');
+  assert.deepEqual(result.errors, []);
+  assert.equal(result.entries.length, 1);
+});
+
+test('malformed CSV quoting is reported while later valid records still import', () => {
+  const result = fromCSV([
+    'date,category,amount,currency,note',
+    '2026-04-02,food,12.500,TND,"quoted"junk',
+    '2026-04-03,food,1.000,TND,valid',
+  ].join('\n'));
+  assert.equal(result.entries.length, 1);
+  assert.match(result.errors[0], /^line 2: malformed quoted field/);
+});
+
+test('an unterminated CSV field is not silently imported', () => {
+  const result = fromCSV([
+    '2026-04-02,food,12.500,TND,valid',
+    '2026-04-03,food,1.000,TND,"unfinished',
+  ].join('\n'));
+  assert.equal(result.entries.length, 1);
+  assert.match(result.errors[0], /^line 2: unterminated quoted field/);
+});

@@ -226,16 +226,17 @@ export function createStore({ storage, now = () => new Date().toISOString() } = 
 }
 
 export function toCSV(entries) {
-  const escape = (text) => (/[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text);
+  const escape = (value) => {
+    const text = String(value ?? '');
+    return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+  };
   const rows = ['date,category,amount,currency,note'];
   for (const entry of entries) {
     rows.push([
-      entry.date,
-      entry.category,
-      formatPlain(entry.amount, entry.currency),   // major units: an export must import again
-      entry.currency,
-      escape(entry.note || ''),
-    ].join(','));
+      entry.date, entry.category,
+      formatPlain(entry.amount, entry.currency), // major units, so an export imports again
+      entry.currency, entry.note,
+    ].map(escape).join(','));
   }
   return rows.join('\n') + '\n';
 }
@@ -243,55 +244,92 @@ export function toCSV(entries) {
 export function fromCSV(text, { defaultCurrency = 'TND' } = {}) {
   const entries = [];
   const errors = [];
-  const lines = String(text || '').split(/\r?\n/).filter((line) => line.trim() !== '');
-  if (!lines.length) return { entries, errors: ['empty file'] };
-  const first = lines[0].toLowerCase();
-  const hasHeader = first.includes('date') && first.includes('category');
-  const body = hasHeader ? lines.slice(1) : lines;
+  const records = splitRecords(String(text ?? '').replace(/^\ufeff/, ''));
+  if (!records.length) return { entries, errors: ['empty file'] };
+  const first = records[0].cells.map((cell) => cell.trim().toLowerCase());
+  const hasHeader = !records[0].error && first[0] === 'date' && first[1] === 'category';
+  const body = hasHeader ? records.slice(1) : records;
 
-  body.forEach((row, index) => {
-    const line = index + (hasHeader ? 2 : 1);
-    const cells = splitCells(row);
-    const [date, category, amount, currency, ...rest] = cells;
+  for (const { cells, line, error } of body) {
+    if (error) {
+      errors.push(`line ${line}: ${error}`);
+      continue;
+    }
+    const [rawDate, rawCategory, amount, currency, ...rest] = cells;
+    const date = (rawDate || '').trim();
+    const category = (rawCategory || '').trim();
     if (!date || !category || amount === undefined || amount === '') {
       errors.push(`line ${line}: needs at least date, category and amount`);
-      return;
+      continue;
     }
     if (!isDate(date)) {
       errors.push(`line ${line}: not a date: ${date}`);
-      return;
+      continue;
     }
     const code = currency && currency.trim() ? currency.trim().toUpperCase() : defaultCurrency;
     if (!isCurrency(code)) {
       errors.push(`line ${line}: unknown currency: ${code}`);
-      return;
+      continue;
     }
     const minor = parseAmount(amount, code);
     if (minor === null) {
       errors.push(`line ${line}: not an amount: ${amount}`);
-      return;
+      continue;
     }
-    entries.push({ amount: minor, currency: code, category: category.trim(), note: rest.join(',').trim(), date });
-  });
+    entries.push({ amount: minor, currency: code, category, note: rest.join(','), date });
+  }
   return { entries, errors };
 }
 
-function splitCells(row) {
-  const cells = [];
+/** Parse records, not physical lines: quoted notes may contain newlines. */
+function splitRecords(text) {
+  const records = [];
+  let cells = [];
   let cell = '';
   let quoted = false;
-  for (let index = 0; index < row.length; index += 1) {
-    const char = row[index];
-    if (quoted) {
-      if (char === '"' && row[index + 1] === '"') { cell += '"'; index += 1; }
-      else if (char === '"') quoted = false;
-      else cell += char;
-    } else if (char === '"') quoted = true;
-    else if (char === ',') { cells.push(cell); cell = ''; }
-    else cell += char;
+  let closed = false;
+  let malformed = false;
+  let line = 1;
+  let startLine = 1;
+
+  function finish() {
+    cells.push(cell);
+    const error = quoted ? 'unterminated quoted field' : malformed ? 'malformed quoted field' : null;
+    if (error || cells.length > 1 || cells[0].trim() !== '') {
+      records.push({ cells, line: startLine, error });
+    }
+    cells = [];
+    cell = '';
+    quoted = closed = malformed = false;
   }
-  cells.push(cell);
-  return cells;
+
+  for (let index = 0; index < text.length; index += 1) {
+    const char = text[index];
+    if (quoted) {
+      if (char === '"' && text[index + 1] === '"') { cell += '"'; index += 1; }
+      else if (char === '"') { quoted = false; closed = true; }
+      else {
+        cell += char;
+        if (char === '\n' || (char === '\r' && text[index + 1] !== '\n')) line += 1;
+      }
+    } else if (char === ',') {
+      cells.push(cell);
+      cell = '';
+      closed = false;
+    } else if (char === '\r' || char === '\n') {
+      if (char === '\r' && text[index + 1] === '\n') index += 1;
+      finish();
+      line += 1;
+      startLine = line;
+    } else if (char === '"') {
+      if (cell === '' && !closed) quoted = true;
+      else { malformed = true; cell += char; }
+    } else if (closed) {
+      if (char !== ' ' && char !== '\t') malformed = true;
+    } else cell += char;
+  }
+  finish();
+  return records;
 }
 
 export { decimalsOf, CURRENCIES };
