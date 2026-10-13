@@ -19,7 +19,7 @@ here depends on anything else in here, on purpose.
 
 ```
 tree/
-├── .github/workflows/   one ci file for every project
+├── .github/workflows/   workspace ci jobs and release archives
 ├── docs/                notes about the workspace itself
 ├── scripts/             the helpers that keep it tidy
 ├── treepy/              the directory tree printer
@@ -49,6 +49,23 @@ make list          # what is in here
 `make test` runs every suite from the root, `make treepy`, `make raf` and
 `make masrouf` run one each, and `./scripts/check-all.sh` does the same thing
 with a summary at the end — which is what CI calls.
+
+## Adding the next project
+
+Start with the helper from the repository root:
+
+```sh
+./scripts/new-project.sh mysmallthing
+```
+
+It creates a project directory and a README with a placeholder test command.
+Replace that placeholder with real tests, keep the project self-contained, and
+add its test command to `scripts/check-all.sh` and a job to
+`.github/workflows/ci.yml`. Then add it to the project table above, the project
+list in `scripts/list-projects.sh`, and the archive loop in the release workflow.
+
+The full checklist is in [docs/adding-a-project.md](docs/adding-a-project.md).
+For repository-wide coding and testing guidance, see [AGENTS.md](AGENTS.md).
 
 ## Licence
 

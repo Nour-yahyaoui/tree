@@ -4,11 +4,12 @@ A one-page expense tracker. Masrouf (مصروف) means "expense", and the app is
 what I wanted when every tracker I tried asked me to sign up before it would
 remember a sandwich.
 
-No account, no server, no dependencies, no build step: open `index.html`, or
+No account, no backend, no dependencies and no build step. Serve this directory
+with any static HTTP server, or use Node.js 22 or 24:
 
 ```sh
 npm start          # http://localhost:8080
-npm test           # node --test, 33 tests, no framework
+npm test           # node --test, no framework
 ```
 
 ## What it does
@@ -18,6 +19,9 @@ npm test           # node --test, 33 tests, no framework
 - Filter by month, edit an entry, delete it.
 - Import and export CSV, so the data is never trapped in a browser.
 - English, French and Arabic (with RTL), a dark and a light theme.
+
+ES modules need HTTP: opening `index.html` directly as a `file://` URL is blocked
+by many browsers. No `npm install` is needed; CI tests Node 22 and 24.
 
 Everything lives in `localStorage`. After the page loads, nothing leaves the
 browser, because there is nothing to leave it to.
@@ -38,8 +42,10 @@ date,category,amount,currency,note
 ```
 
 The amount column is in major units, which is what makes an export importable
-again. A bad row is reported by line number and the rest of the file still
-imports:
+again. Quoted commas, quotes and multiline notes round-trip without losing
+whitespace. A UTF-8 BOM and CRLF line endings are accepted. A bad row is reported
+by its original line number, including blank lines, and valid records still
+import:
 
 ```
 line 4: not an amount: oops

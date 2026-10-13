@@ -6,6 +6,7 @@ import json
 import os
 import sqlite3
 from typing import Iterable, List, Optional, Sequence
+from urllib.parse import urlparse
 
 from .models import Link, InvalidLink, normalise_url, now, parse_tags
 from .search import run
@@ -34,6 +35,7 @@ CREATE INDEX IF NOT EXISTS tags_tag ON tags (tag);
 class Shelf:
     def __init__(self, path: str = ":memory:"):
         if path != ":memory:":
+            path = os.path.expanduser(path)
             directory = os.path.dirname(os.path.abspath(path))
             os.makedirs(directory, exist_ok=True)
         self.path = path
@@ -161,7 +163,7 @@ class Shelf:
             "read": read,
             "unread": total - read,
             "tags": len(self.tags()),
-            "hosts": self.db.execute("SELECT COUNT(DISTINCT url) FROM links").fetchone()[0],
+            "hosts": len({urlparse(row["url"]).hostname for row in self.db.execute("SELECT url FROM links")}),
         }
 
     # moving data -----------------------------------------------------------
@@ -195,8 +197,23 @@ class Shelf:
         added = skipped = 0
         for item in payload["links"]:
             try:
+                if not isinstance(item, dict):
+                    raise InvalidLink("not a link object")
+                if any(not isinstance(item.get(key, ""), str) for key in ("title", "note", "added")):
+                    raise InvalidLink("invalid link text")
+                tags = item.get("tags", ())
+                if not isinstance(tags, (str, list, tuple)) or (
+                    not isinstance(tags, str) and any(not isinstance(tag, str) for tag in tags)
+                ):
+                    raise InvalidLink("invalid tags")
+                if not isinstance(item.get("read", False), bool):
+                    raise InvalidLink("invalid read flag")
+                normalised = normalise_url(item["url"])
+                if self._one(url=normalised) is not None:
+                    skipped += 1
+                    continue
                 link = self.add(
-                    item["url"],
+                    normalised,
                     title=item.get("title", ""),
                     tags=item.get("tags", ()),
                     note=item.get("note", ""),

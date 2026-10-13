@@ -28,6 +28,32 @@ class NormaliseUrlTests(unittest.TestCase):
                 normalise_url(url)
 
 
+    def test_ipv6_hosts_keep_their_brackets_and_ports(self):
+        for source, expected in (
+            ("https://[2001:DB8::1]/a", "https://[2001:db8::1]/a"),
+            ("[::1]:8080/a", "https://[::1]:8080/a"),
+        ):
+            with self.subTest(source=source):
+                self.assertEqual(normalise_url(source), expected)
+
+    def test_port_zero_is_not_silently_dropped(self):
+        self.assertEqual(normalise_url("http://localhost:0/a"), "http://localhost:0/a")
+
+    def test_path_parameters_survive_normalisation(self):
+        self.assertEqual(
+            normalise_url("https://example.com/a;version=2?q=1#heading"),
+            "https://example.com/a;version=2?q=1",
+        )
+
+    def test_invalid_ports_and_ipv6_hosts_raise_invalid_link(self):
+        for url in (
+            "https://example.com:bad/a", "https://example.com:65536/a",
+            "https://example.com:-1/a", "https://[::1", "https://[not-ipv6]/a",
+        ):
+            with self.subTest(url=url), self.assertRaises(InvalidLink):
+                normalise_url(url)
+
+
 class TagTests(unittest.TestCase):
     def test_tags_are_lowercased_sorted_and_unique(self):
         self.assertEqual(parse_tags("Python, python, READING"), ("python", "reading"))

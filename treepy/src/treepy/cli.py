@@ -8,6 +8,8 @@ function makes it easy to test option handling without touching the disk.
 from __future__ import annotations
 
 import argparse
+from dataclasses import replace
+import os
 import sys
 from typing import List, Optional, Sequence
 
@@ -102,8 +104,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     if args.depth is not None and args.depth < 0:
         parser.error("--depth must be zero or greater")
+    if args.max_entries is not None and args.max_entries < 1:
+        parser.error("--max-entries must be at least 1")
 
-    ignore = _build_ignore(args)
     options = WalkOptions(
         max_depth=args.depth,
         show_hidden=args.all,
@@ -112,14 +115,15 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         sort_key=args.sort,
         reverse=args.reverse,
         prune_empty=args.prune,
-        ignore=ignore,
         error_hook=default_error_hook,
     )
 
     stats = Stats()
     roots: List[Node] = []
     for path in args.paths:
-        roots.append(walk(path, options, stats))
+        roots.append(walk(path, replace(options, ignore=_build_ignore(args, path)), stats))
+
+    scan_errors = stats.errors
 
     if args.include:
         pattern = Pattern.parse(args.include)
@@ -134,7 +138,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     if args.max_entries is not None:
         for root in roots:
-            prune_tree(root, args.max_entries)
+            prune_tree(root, args.max_entries, stats)
 
     options_render = RenderOptions(
         show_sizes=args.size or args.du,
@@ -153,20 +157,18 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         document = "\n\n".join(blocks) + "\n"
 
     _emit(document, args.output)
-    return 1 if stats.errors else 0
+    return 1 if scan_errors else 0
 
 
-def _build_ignore(args: argparse.Namespace) -> Optional[IgnoreSet]:
-    """Combine --exclude and --gitignore into a single matcher."""
+def _build_ignore(args: argparse.Namespace, path: str) -> Optional[IgnoreSet]:
+    """Combine CLI exclusions with the ignore file belonging to this root."""
     combined: Optional[IgnoreSet] = None
     if args.exclude:
         combined = IgnoreSet.from_patterns(args.exclude)
     if args.gitignore:
-        for path in args.paths:
-            candidate = f"{path.rstrip('/')}/.gitignore" if path != "." else ".gitignore"
-            found = IgnoreSet.from_file(candidate)
-            if found:
-                combined = found if combined is None else combined.merge(found)
+        found = IgnoreSet.from_file(os.path.join(path, ".gitignore"))
+        if found:
+            combined = found if combined is None else combined.merge(found)
     return combined
 
 

@@ -7,13 +7,17 @@ help:
 	@echo
 	@echo "make test      run every project's tests"
 	@echo "make list      show what is in here"
+	@echo "make helpers   test the workspace scripts"
 
 .PHONY: test
 
 test:
 	./scripts/check-all.sh
 
-.PHONY: treepy raf masrouf
+.PHONY: helpers treepy raf masrouf
+
+helpers:
+	python3 -m unittest discover -s scripts/tests -v
 
 treepy:
 	cd treepy && make test
