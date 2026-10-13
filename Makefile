@@ -12,3 +12,14 @@ help:
 
 test:
 	./scripts/check-all.sh
+
+.PHONY: treepy raf masrouf
+
+treepy:
+	cd treepy && make test
+
+raf:
+	cd raf && python3 -m unittest discover -s tests
+
+masrouf:
+	cd masrouf && npm test
