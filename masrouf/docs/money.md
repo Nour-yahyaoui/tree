@@ -64,3 +64,7 @@ A CSV import can bring amounts in another currency, and adding millimes to
 cents is nonsense, so the summary reports the currency most entries use and
 lists the others on their own line. If you want one number, export the CSV,
 convert it, and import it back.
+
+Amounts outside JavaScript's safe integer range are refused rather than rounded
+into a different value. This check also applies after half-up rounding. A refund
+that rounds to zero is stored as ordinary zero, not negative zero.
