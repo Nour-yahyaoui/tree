@@ -26,3 +26,20 @@ tree/
 ├── raf/                 the read-later shelf
 └── masrouf/             the expense tracker
 ```
+
+## Quick start
+
+Each project is standalone, so you can ignore the rest of the repository:
+
+```sh
+cd treepy  && make test
+cd raf     && python3 -m unittest discover -s tests
+cd masrouf && npm test
+```
+
+Or run all of them from the root:
+
+```sh
+make test          # every project
+make list          # what is in here
+```
