@@ -2,7 +2,9 @@
 // store, and every change redraws the whole page from it.
 
 import { createStore, fromCSV, toCSV } from './store.mjs';
-import { renderChart, renderList, renderSummary } from './ui.mjs';
+import { escapeHtml, renderChart, renderList, renderSummary } from './ui.mjs';
+import { label } from './categories.mjs';
+import { formatPlain, parseAmount } from './money.mjs';
 
 export function boot(doc = document, win = window) {
   const storage = safeStorage(win);
@@ -10,17 +12,34 @@ export function boot(doc = document, win = window) {
   const elements = collect(doc);
 
   function paint() {
-    const month = elements.month && elements.month.value ? elements.month.value : null;
+    const known = store.months();
+    const selectedMonth = elements.month?.value;
+    const month = known.includes(selectedMonth) ? selectedMonth : null;
+    const settings = store.settings;
     const entries = month ? store.entries.filter((entry) => entry.date.startsWith(month)) : store.entries;
     if (elements.list) elements.list.innerHTML = renderList(entries, { locale: store.settings.locale });
     if (elements.summary) elements.summary.innerHTML = renderSummary(store.totals(month), { month });
     if (elements.chart) elements.chart.innerHTML = renderChart(store.totals().byMonth);
     if (elements.month) {
-      const known = store.months();
       elements.month.innerHTML = '<option value="">All time</option>' +
         known.map((key) => `<option value="${key}"${key === month ? ' selected' : ''}>${key}</option>`).join('');
+      elements.month.value = month || '';
     }
-    doc.documentElement.setAttribute('data-theme', store.settings.theme);
+    if (elements.category) {
+      const categories = store.categories;
+      const selected = elements.category.value;
+      elements.category.innerHTML = categories.map((category) =>
+        `<option value="${escapeHtml(category.id)}">${escapeHtml(category.icon)} ${escapeHtml(label(category, settings.locale))}</option>`
+      ).join('');
+      elements.category.value = categories.some((category) => category.id === selected)
+        ? selected : categories[0].id;
+    }
+    for (const key of ['currency', 'locale', 'theme']) {
+      const control = elements.settings?.querySelector(`[name="${key}"]`);
+      if (control) control.value = settings[key];
+    }
+    if (elements.date && !elements.date.value) elements.date.value = localDate();
+    doc.documentElement.setAttribute('data-theme', settings.theme);
     doc.documentElement.setAttribute('lang', store.settings.locale);
     doc.documentElement.setAttribute('dir', store.settings.locale === 'ar' ? 'rtl' : 'ltr');
   }
@@ -34,7 +53,7 @@ export function boot(doc = document, win = window) {
       currency: store.settings.currency,
       category: elements.category.value,
       note: elements.note ? elements.note.value : '',
-      date: elements.date.value || new Date().toISOString().slice(0, 10),
+      date: elements.date.value || localDate(),
     });
     if (!result.ok) {
       if (elements.error) elements.error.textContent = result.error;
@@ -46,17 +65,21 @@ export function boot(doc = document, win = window) {
   });
 
   elements.list?.addEventListener('click', (event) => {
-    const button = event.target;
-    const id = Number(button.dataset ? button.dataset.id : 0);
+    const button = event.target?.closest?.('button[data-id]');
+    const id = Number(button?.dataset?.id || 0);
     if (!id) return;
     if (button.classList?.contains('delete')) store.remove(id);
     if (button.classList?.contains('edit')) {
       const entry = store.entries.find((item) => item.id === id);
       if (!entry) return;
-      const answer = win.prompt ? win.prompt('Amount', entry.note || '') : null;
+      const answer = win.prompt ? win.prompt(`Amount (${entry.currency})`, formatPlain(entry.amount, entry.currency)) : null;
       if (answer === null) return;
-      const minor = Number(answer);
-      if (Number.isFinite(minor)) store.update(id, { amount: minor, currency: entry.currency });
+      const minor = parseAmount(answer, entry.currency);
+      if (minor === null || !store.update(id, { amount: minor })) {
+        if (elements.error) elements.error.textContent = 'not an amount';
+        return;
+      }
+      if (elements.error) elements.error.textContent = '';
     }
     paint();
   });
@@ -64,7 +87,7 @@ export function boot(doc = document, win = window) {
   elements.month?.addEventListener('change', paint);
 
   elements.settings?.addEventListener('change', (event) => {
-    const field = event.target.closest('[name]');
+    const field = event.target?.closest?.('[name]');
     if (!field) return;
     if (field.name === 'locale' || field.name === 'theme' || field.name === 'currency') {
       store.setSetting(field.name, field.value);
@@ -74,8 +97,14 @@ export function boot(doc = document, win = window) {
 
   elements.export?.addEventListener('click', () => {
     const csv = toCSV(store.entries);
-    if (win.navigator?.clipboard?.writeText) win.navigator.clipboard.writeText(csv);
     if (elements.exportOut) elements.exportOut.value = csv;
+    try {
+      if (win.navigator?.clipboard?.writeText) {
+        Promise.resolve(win.navigator.clipboard.writeText(csv)).catch(() => {});
+      }
+    } catch {
+      // Clipboard permissions are optional: the text box still contains the CSV.
+    }
   });
 
   elements.import?.addEventListener('click', () => {
@@ -94,6 +123,11 @@ export function boot(doc = document, win = window) {
 
   paint();
   return { store, elements, paint };
+}
+
+function localDate() {
+  const date = new Date();
+  return [date.getFullYear(), String(date.getMonth() + 1).padStart(2, '0'), String(date.getDate()).padStart(2, '0')].join('-');
 }
 
 function collect(doc) {
