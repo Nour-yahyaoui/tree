@@ -178,3 +178,29 @@ class CliTests(TempTreeCase):
         self.assertEqual(document["stats"]["directories"], 2)
         self.assertEqual(document["stats"]["files"], 1)
         self.assertEqual(document["stats"]["bytes"], 1)
+
+    def test_gitignore_rules_are_local_to_each_root(self):
+        first = self.mkdir("first")
+        second = self.mkdir("second")
+        self.make("first/.gitignore", "*.log\n")
+        self.make("second/.gitignore", "*.txt\n")
+        for directory in ("first", "second"):
+            self.make(directory + "/keep.txt")
+            self.make(directory + "/keep.log")
+        code, out, _ = self.run_cli([first, second, "--gitignore", "--json"])
+        trees = json.loads(out)["trees"]
+        self.assertEqual(code, 0)
+        self.assertEqual([child["name"] for child in trees[0]["children"]], ["keep.txt"])
+        self.assertEqual([child["name"] for child in trees[1]["children"]], ["keep.log"])
+
+    def test_cli_excludes_apply_to_roots_without_ignore_files(self):
+        first = self.mkdir("first")
+        second = self.mkdir("second")
+        self.make("first/.gitignore", "*.log\n")
+        for directory in ("first", "second"):
+            self.make(directory + "/a.log")
+            self.make(directory + "/b.tmp")
+        _, out, _ = self.run_cli([first, second, "--gitignore", "-I", "*.tmp", "--json"])
+        trees = json.loads(out)["trees"]
+        self.assertNotIn("children", trees[0])
+        self.assertEqual([child["name"] for child in trees[1]["children"]], ["a.log"])
