@@ -1,33 +1,39 @@
-PYTHON ?= python3
-SRC := src
-TESTS := tests
+# the workspace. every project also has its own Makefile.
 
-.PHONY: help test coverage lint demo install clean
+.PHONY: help
 
 help:
-	@echo "make test      - run the unit test suite"
-	@echo "make coverage  - run tests with a coverage report"
-	@echo "make lint      - compile every module to catch syntax errors"
-	@echo "make demo      - print this repository with treepy itself"
-	@echo "make install   - editable install into the current environment"
-	@echo "make clean     - remove caches and build artefacts"
+	@echo "tree - a collection of small projects"
+	@echo
+	@echo "make test      run every project's tests"
+	@echo "make list      show what is in here"
+
+.PHONY: test
 
 test:
-	PYTHONPATH=$(SRC) $(PYTHON) -m unittest discover -s $(TESTS) -t . -v
+	./scripts/check-all.sh
 
-coverage:
-	PYTHONPATH=$(SRC) $(PYTHON) -m coverage run -m unittest discover -s $(TESTS) -t .
-	PYTHONPATH=$(SRC) $(PYTHON) -m coverage report -m
+.PHONY: treepy raf masrouf
 
-lint:
-	$(PYTHON) -m compileall -q $(SRC) $(TESTS)
+treepy:
+	cd treepy && make test
 
-demo:
-	PYTHONPATH=$(SRC) $(PYTHON) -m treepy --gitignore --size --human-readable src
+raf:
+	cd raf && python3 -m unittest discover -s tests
 
-install:
-	$(PYTHON) -m pip install -e .
+masrouf:
+	cd masrouf && npm test
+
+.PHONY: list clean
+
+list:
+	./scripts/list-projects.sh
 
 clean:
-	rm -rf build dist .coverage htmlcov
 	find . -name '__pycache__' -type d -prune -exec rm -rf {} +
+	find . -name 'node_modules' -type d -prune -exec rm -rf {} +
+
+.PHONY: lint
+
+lint:
+	python3 -m compileall -q treepy/src raf/raf

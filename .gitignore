@@ -1,32 +1,18 @@
-# Byte-compiled files
+# python
 __pycache__/
 *.py[cod]
-
-# Packaging
 build/
 dist/
 *.egg-info/
-
-# Virtual environments
 .venv/
 venv/
 
-# Test and coverage output
-.coverage
-coverage.xml
-htmlcov/
-.tox/
+# node
+node_modules/
+npm-debug.log*
 
-# Tool caches
-.mypy_cache/
-.pytest_cache/
-.ruff_cache/
-
-# Scratch output produced while testing the CLI
-tree-output.txt
-*.log
-
-# Editor and OS noise
+# editors and operating systems
+.DS_Store
 .idea/
 .vscode/
-.DS_Store
+*.swp

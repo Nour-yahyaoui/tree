@@ -1,25 +1,46 @@
-name: tests
+name: ci
 
 on:
   push:
-    branches: [main]
   pull_request:
 
 jobs:
-  unit:
+  treepy:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
       matrix:
-        python-version: ["3.9", "3.11", "3.12"]
+        python-version: ["3.9", "3.11", "3.13"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Compile sources
-        run: python -m compileall -q src tests
-      - name: Run unit tests
-        run: PYTHONPATH=src python -m unittest discover -s tests -t . -v
-      - name: Smoke test the CLI
-        run: PYTHONPATH=src python -m treepy -L 2 --size src
+          cache: pip
+      - name: test
+        working-directory: treepy
+        run: make test
+
+  raf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: test
+        working-directory: raf
+        run: python3 -m unittest discover -s tests
+
+  masrouf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: masrouf/package.json
+      - name: test
+        working-directory: masrouf
+        run: npm test

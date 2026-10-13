@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "links": [
+    {
+      "url": "https://example.com/sqlite-notes",
+      "title": "SQLite notes",
+      "tags": ["reading", "db"],
+      "note": "the pragma page, especially user_version",
+      "read": false,
+      "added": "2026-04-02T19:04:11+00:00"
+    },
+    {
+      "url": "https://example.com/an-article-about-cli-design",
+      "title": "On CLI design",
+      "tags": ["reading"],
+      "note": "",
+      "read": true,
+      "added": "2026-02-17T09:41:00+00:00"
+    }
+  ]
+}

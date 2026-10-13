@@ -1,0 +1,20 @@
+name: checks
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: tests
+        run: node --test
+      - name: no dependencies, ever
+        run: node -e "const p=require('./package.json'); if(Object.keys(p.dependencies||{}).length) process.exit(1)"

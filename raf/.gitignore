@@ -1,0 +1,17 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# a shelf, if you keep one in the project
+*.db
+shelf.json
+
+# editors and os noise
+.DS_Store
+.idea/
+.vscode/

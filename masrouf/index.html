@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masrouf — where the money went</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>Masrouf</h1>
+      <p class="tagline">One page, no account, no server. The data stays in this browser.</p>
+    </header>
+
+    <main>
+      <section class="summary-block">
+        <div id="summary" class="summary"></div>
+      </section>
+
+      <section class="form-block">
+        <form id="entry-form">
+          <input id="amount" name="amount" inputmode="decimal" placeholder="0.000" autocomplete="off" />
+          <select id="category" name="category"></select>
+          <input id="note" name="note" maxlength="120" placeholder="note" autocomplete="off" />
+          <input id="date" name="date" type="date" />
+          <button type="submit">Add it</button>
+        </form>
+        <p id="error" class="error" role="status"></p>
+      </section>
+
+      <section class="chart-block">
+        <div id="chart" class="chart"></div>
+      </section>
+
+      <section class="list-block">
+        <label class="month-label">Month <select id="month"></select></label>
+        <div id="entries"></div>
+      </section>
+
+      <section class="settings-block" id="settings">
+        <label>Language
+          <select name="locale">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+          </select>
+        </label>
+        <label>Currency
+          <select name="currency">
+            <option value="TND">TND — dinar</option>
+            <option value="EUR">EUR — euro</option>
+            <option value="USD">USD — dollar</option>
+            <option value="JPY">JPY — yen</option>
+          </select>
+        </label>
+        <label>Theme
+          <select name="theme">
+            <option value="dark">dark</option>
+            <option value="light">light</option>
+          </select>
+        </label>
+        <button type="button" id="export">Export CSV</button>
+        <textarea id="export-out" rows="3" readonly placeholder="the export lands here"></textarea>
+        <textarea id="import-in" rows="3" placeholder="paste a CSV here"></textarea>
+        <button type="button" id="import">Import CSV</button>
+      </section>
+    </main>
+
+    <footer class="bottom">
+      <p>Amounts are kept in minor units: millimes, cents, yen. No floats, no rounding surprises.</p>
+    </footer>
+
+    <script type="module" src="./js/main.mjs"></script>
+  </body>
+</html>

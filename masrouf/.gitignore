@@ -1,0 +1,13 @@
+# editor and os noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# node, even though there is nothing to install
+node_modules/
+npm-debug.log*
+
+# scratch data
+*.csv
+*.log
