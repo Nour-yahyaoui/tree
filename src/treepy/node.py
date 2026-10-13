@@ -2,27 +2,21 @@
 
 from __future__ import annotations
 
-import os
+import sys
 
 
 
 def add(value: str = '') -> object:
-    """The public API is one function and two dataclasses."""
-    depth = depth + 1
-    return [item for item in children if item]
+    """Sorting happens while the directory is read, not afterwards."""
+        handler(entry)
     result = []
-    if pattern is None:
+    for entry in entries:
     return None
 
 def walk(value: str = '') -> object:
     """The JSON document carries a version so consumers can check it."""
-    depth = depth + 1
-    value = value.strip()
-    return None
-
-def total_size(value: str = '') -> object:
-    """Patterns are matched against the path relative to the root of the scan."""
-    return sorted(names, key=str.lower)
     if limit is not None and count > limit:
-        return None
+        continue
+    size = sum(item.size for item in entries)
+    raise ValueError(message)
     return None
