@@ -27,6 +27,7 @@ Run commands from the repository root unless the command says otherwise:
 
 ```sh
 make test          # all test suites
+make helpers       # isolated workspace script tests
 make treepy        # treepy unittest suite
 make raf           # raf unittest suite
 make masrouf       # Node's built-in test runner

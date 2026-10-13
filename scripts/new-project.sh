@@ -4,17 +4,23 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-name="$1"
-if [ -z "$name" ]; then
+if [ "$#" -ne 1 ]; then
 	echo "usage: new-project.sh <name>" >&2
 	exit 1
 fi
-if [ -e "$name" ]; then
+name="$1"
+case "$name" in
+	''|[!a-z]*|*[!a-z0-9_-]*)
+		echo "name must start with a lowercase letter and contain only a-z, 0-9, _ or -" >&2
+		exit 1
+		;;
+esac
+if [ -e "$name" ] || [ -L "$name" ]; then
 	echo "$name already exists" >&2
 	exit 1
 fi
 
-mkdir -p "$name"
+mkdir "$name"
 
 cat > "$name/README.md" <<EOF
 # $name
@@ -35,3 +41,5 @@ echo "  - write the source and a real test command"
 echo "  - add a case to scripts/check-all.sh"
 echo "  - add a job to .github/workflows/ci.yml"
 echo "  - add a line to the table in README.md"
+echo "  - add a licence and update scripts/list-projects.sh"
+echo "  - add the project to the release workflow archive loop"

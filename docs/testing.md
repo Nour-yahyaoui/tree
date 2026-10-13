@@ -7,6 +7,7 @@ best. There is no shared harness, and nothing to install at the root.
 
 | project | command |
 | --- | --- |
+| workspace helpers | `make helpers` |
 | treepy | `cd treepy && make test` |
 | raf | `cd raf && python3 -m unittest discover -s tests` |
 | masrouf | `cd masrouf && npm test` |
