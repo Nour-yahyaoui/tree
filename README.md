@@ -49,3 +49,8 @@ make list          # what is in here
 `make test` runs every suite from the root, `make treepy`, `make raf` and
 `make masrouf` run one each, and `./scripts/check-all.sh` does the same thing
 with a summary at the end — which is what CI calls.
+
+## Licence
+
+MIT. Every project carries its own `LICENSE`; the one at the root covers the
+workspace files themselves.
