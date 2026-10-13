@@ -12,3 +12,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: pack every project
+        run: |
+          mkdir -p dist
+          for project in treepy raf masrouf; do
+            tar -czf "dist/$project-${GITHUB_REF_NAME}.tar.gz" "$project"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: projects
+          path: dist/*.tar.gz
