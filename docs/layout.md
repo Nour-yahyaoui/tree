@@ -12,3 +12,10 @@ docs and its own licence.
   the usual tests.
 - `masrouf/` — the expense tracker. A static page, a handful of ES modules and
   the tests that run on `node --test`.
+
+## Where new things go
+
+A new project gets its own top-level directory with a README that says how to run
+it and how to test it. Nothing is shared between projects: this is a shelf, not a
+framework. If two projects ever need the same helper, that helper is a third
+project.
