@@ -36,7 +36,7 @@ make list          # check the project inventory
 ```
 
 The Python suites need no packages installed. Masrouf needs a supported Node.js
-runtime (CI uses Node 20); `npm test` needs no `npm install`. Add a regression test
+runtime (CI uses Node 22 and 24); `npm test` needs no `npm install`. Add a regression test
 for a bug fix, run the affected suite during development, and run `make test` and
 `make lint` before handing off repository-wide changes. Tests must not write to a
 real user's home directory, browser storage or shelf.
