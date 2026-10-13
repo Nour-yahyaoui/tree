@@ -102,6 +102,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     if args.depth is not None and args.depth < 0:
         parser.error("--depth must be zero or greater")
+    if args.max_entries is not None and args.max_entries < 1:
+        parser.error("--max-entries must be at least 1")
 
     ignore = _build_ignore(args)
     options = WalkOptions(
@@ -121,6 +123,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     for path in args.paths:
         roots.append(walk(path, options, stats))
 
+    scan_errors = stats.errors
+
     if args.include:
         pattern = Pattern.parse(args.include)
         if pattern is None:
@@ -134,7 +138,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     if args.max_entries is not None:
         for root in roots:
-            prune_tree(root, args.max_entries)
+            prune_tree(root, args.max_entries, stats)
 
     options_render = RenderOptions(
         show_sizes=args.size or args.du,
@@ -153,7 +157,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         document = "\n\n".join(blocks) + "\n"
 
     _emit(document, args.output)
-    return 1 if stats.errors else 0
+    return 1 if scan_errors else 0
 
 
 def _build_ignore(args: argparse.Namespace) -> Optional[IgnoreSet]:

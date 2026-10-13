@@ -149,3 +149,32 @@ class CliTests(TempTreeCase):
         self.make("sub/a.txt", "x" * 2048)
         _, out, _ = self.run_cli([self.root, "--du", "-H"])
         self.assertIn("[2.0K]", out)
+
+    def test_nonpositive_max_entries_is_an_argument_error(self):
+        for value in ("0", "-1"):
+            with self.subTest(value=value):
+                error = StringIO()
+                with redirect_stderr(error), self.assertRaises(SystemExit) as caught:
+                    main([self.root, "--max-entries", value])
+                self.assertEqual(caught.exception.code, 2)
+                self.assertIn("--max-entries must be at least 1", error.getvalue())
+
+    def test_max_entries_updates_json_totals(self):
+        self.make("a.txt", "abc")
+        self.make("b.txt", "extra")
+        self.make("sub/c.txt", "more")
+        code, out, _ = self.run_cli([self.root, "--json", "--max-entries", "1"])
+        document = json.loads(out)
+        self.assertEqual(code, 0)
+        self.assertEqual(document["stats"]["directories"], 1)
+        self.assertEqual(document["stats"]["files"], 1)
+        self.assertEqual(document["stats"]["bytes"], 3)
+
+    def test_max_entries_updates_totals_in_nested_directories(self):
+        self.make("sub/a.txt", "a")
+        self.make("sub/b.txt", "bb")
+        _, out, _ = self.run_cli([self.root, "--json", "--max-entries", "1"])
+        document = json.loads(out)
+        self.assertEqual(document["stats"]["directories"], 2)
+        self.assertEqual(document["stats"]["files"], 1)
+        self.assertEqual(document["stats"]["bytes"], 1)

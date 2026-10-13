@@ -125,7 +125,7 @@ The exact shape is documented in [docs/json-format.md](docs/json-format.md).
   to stderr, exactly once per entry.
 - **`-d` still walks into directories.** Only files are hidden, so the
   summary stays honest about the directories below.
-- **`--prune` and `-P` change the counters.** Entries removed after the walk
+- **`--prune`, `--max-entries` and `-P` change the counters.** Entries removed after the walk
   are subtracted from the summary, so the totals always describe what you
   can actually see on screen.
 

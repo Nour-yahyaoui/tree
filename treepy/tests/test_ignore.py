@@ -143,3 +143,13 @@ class FilterTreeTests(unittest.TestCase):
         root = Node(name="root", path="/root", is_dir=True)
         with self.assertRaises(ValueError):
             prune_tree(root, 0)
+
+    def test_prune_tree_subtracts_whole_dropped_subtrees(self):
+        root = Node(name="root", path="/root", is_dir=True)
+        root.add(Node(name="keep", path="/root/keep", is_dir=False, size=3))
+        dropped = root.add(Node(name="sub", path="/root/sub", is_dir=True))
+        dropped.add(Node(name="link", path="/root/sub/link", is_dir=False, size=4, symlink=True))
+        dropped.add(Node(name="missing", path="/root/sub/missing", is_dir=False, error="gone"))
+        stats = Stats(dirs=2, files=2, symlinks=1, errors=1, total_bytes=7)
+        prune_tree(root, 1, stats)
+        self.assertEqual(stats, Stats(dirs=1, files=1, total_bytes=3))
