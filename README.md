@@ -14,3 +14,15 @@ chains, no accounts.
 
 Every project keeps its own README, its own tests and its own CI job. Nothing in
 here depends on anything else in here, on purpose.
+
+## Layout
+
+```
+tree/
+├── .github/workflows/   one ci file for every project
+├── docs/                notes about the workspace itself
+├── scripts/             the helpers that keep it tidy
+├── treepy/              the directory tree printer
+├── raf/                 the read-later shelf
+└── masrouf/             the expense tracker
+```
