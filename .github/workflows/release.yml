@@ -9,7 +9,7 @@ jobs:
   archive:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: pack every project
@@ -18,7 +18,7 @@ jobs:
           for project in treepy raf masrouf; do
             tar -czf "dist/$project-${GITHUB_REF_NAME}.tar.gz" "$project"
           done
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: projects
           path: dist/*.tar.gz

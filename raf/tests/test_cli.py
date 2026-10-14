@@ -1,3 +1,4 @@
+from contextlib import redirect_stderr
 import io
 import os
 import tempfile
@@ -80,6 +81,33 @@ class CliTests(unittest.TestCase):
             code, out = self.raf("import", junk)
             self.assertEqual(code, 1)
             self.assertIn("no links", out)
+
+
+    def test_an_invalid_port_is_a_message_not_a_traceback(self):
+        code, out = self.raf("add", "https://example.com:bad/a")
+        self.assertEqual(code, 1)
+        self.assertIn("invalid url", out)
+        self.assertIn("0 link(s)", self.raf("list")[1])
+
+
+    def test_missing_tag_targets_return_an_error(self):
+        for command in ("tag", "untag"):
+            with self.subTest(command=command):
+                code, out = self.raf(command, "9999", "reading")
+                self.assertEqual(code, 1)
+                self.assertIn("no link 9999", out)
+
+    def test_negative_limits_are_rejected_before_opening_a_shelf(self):
+        with redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as caught:
+            self.raf("list", "--limit", "-1")
+        self.assertEqual(caught.exception.code, 2)
+        self.assertFalse(os.path.exists(self.path))
+
+    def test_missing_import_files_return_an_error(self):
+        with tempfile.TemporaryDirectory() as folder:
+            code, out = self.raf("import", os.path.join(folder, "missing.json"))
+        self.assertEqual(code, 1)
+        self.assertIn("missing.json", out)
 
 
 if __name__ == "__main__":

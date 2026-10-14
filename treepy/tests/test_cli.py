@@ -149,3 +149,75 @@ class CliTests(TempTreeCase):
         self.make("sub/a.txt", "x" * 2048)
         _, out, _ = self.run_cli([self.root, "--du", "-H"])
         self.assertIn("[2.0K]", out)
+
+    def test_nonpositive_max_entries_is_an_argument_error(self):
+        for value in ("0", "-1"):
+            with self.subTest(value=value):
+                error = StringIO()
+                with redirect_stderr(error), self.assertRaises(SystemExit) as caught:
+                    main([self.root, "--max-entries", value])
+                self.assertEqual(caught.exception.code, 2)
+                self.assertIn("--max-entries must be at least 1", error.getvalue())
+
+    def test_max_entries_updates_json_totals(self):
+        self.make("a.txt", "abc")
+        self.make("b.txt", "extra")
+        self.make("sub/c.txt", "more")
+        code, out, _ = self.run_cli([self.root, "--json", "--max-entries", "1"])
+        document = json.loads(out)
+        self.assertEqual(code, 0)
+        self.assertEqual(document["stats"]["directories"], 1)
+        self.assertEqual(document["stats"]["files"], 1)
+        self.assertEqual(document["stats"]["bytes"], 3)
+
+    def test_max_entries_updates_totals_in_nested_directories(self):
+        self.make("sub/a.txt", "a")
+        self.make("sub/b.txt", "bb")
+        _, out, _ = self.run_cli([self.root, "--json", "--max-entries", "1"])
+        document = json.loads(out)
+        self.assertEqual(document["stats"]["directories"], 2)
+        self.assertEqual(document["stats"]["files"], 1)
+        self.assertEqual(document["stats"]["bytes"], 1)
+
+    def test_gitignore_rules_are_local_to_each_root(self):
+        first = self.mkdir("first")
+        second = self.mkdir("second")
+        self.make("first/.gitignore", "*.log\n")
+        self.make("second/.gitignore", "*.txt\n")
+        for directory in ("first", "second"):
+            self.make(directory + "/keep.txt")
+            self.make(directory + "/keep.log")
+        code, out, _ = self.run_cli([first, second, "--gitignore", "--json"])
+        trees = json.loads(out)["trees"]
+        self.assertEqual(code, 0)
+        self.assertEqual([child["name"] for child in trees[0]["children"]], ["keep.txt"])
+        self.assertEqual([child["name"] for child in trees[1]["children"]], ["keep.log"])
+
+    def test_cli_excludes_apply_to_roots_without_ignore_files(self):
+        first = self.mkdir("first")
+        second = self.mkdir("second")
+        self.make("first/.gitignore", "*.log\n")
+        for directory in ("first", "second"):
+            self.make(directory + "/a.log")
+            self.make(directory + "/b.tmp")
+        _, out, _ = self.run_cli([first, second, "--gitignore", "-I", "*.tmp", "--json"])
+        trees = json.loads(out)["trees"]
+        self.assertNotIn("children", trees[0])
+        self.assertEqual([child["name"] for child in trees[1]["children"]], ["a.log"])
+
+    def test_include_matches_a_standalone_file_root(self):
+        path = self.make("alpha.txt", "abc")
+        code, out, _ = self.run_cli([path, "-P", "*.txt", "--json"])
+        document = json.loads(out)
+        self.assertEqual(code, 0)
+        self.assertEqual([tree["name"] for tree in document["trees"]], ["alpha.txt"])
+        self.assertEqual(document["stats"]["files"], 1)
+
+    def test_filtering_an_error_still_returns_failure_without_negative_counts(self):
+        code, out, err = self.run_cli([os.path.join(self.root, "missing"), "-P", "*.txt", "--json"])
+        document = json.loads(out)
+        self.assertEqual(code, 1)
+        self.assertIn("treepy:", err)
+        self.assertEqual(document["trees"], [])
+        self.assertEqual(document["stats"]["files"], 0)
+        self.assertEqual(document["stats"]["errors"], 0)

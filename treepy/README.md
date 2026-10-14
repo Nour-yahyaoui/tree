@@ -26,7 +26,7 @@ src [0B]
 
 ```sh
 git clone https://github.com/Nour-yahyaoui/tree
-cd tree
+cd tree/treepy
 python3 -m pip install -e .
 treepy --version
 ```
@@ -125,7 +125,7 @@ The exact shape is documented in [docs/json-format.md](docs/json-format.md).
   to stderr, exactly once per entry.
 - **`-d` still walks into directories.** Only files are hidden, so the
   summary stays honest about the directories below.
-- **`--prune` and `-P` change the counters.** Entries removed after the walk
+- **`--prune`, `--max-entries` and `-P` change the counters.** Entries removed after the walk
   are subtracted from the summary, so the totals always describe what you
   can actually see on screen.
 
@@ -156,7 +156,7 @@ make demo        # print this repository with treepy itself
 make clean       # drop caches and build output
 ```
 
-CI runs the suite on Python 3.9, 3.11 and 3.12 and smoke tests the CLI.
+CI runs the suite, including the CLI tests, on Python 3.9, 3.11 and 3.13.
 Changes are welcome; keep the zero-dependency promise intact.
 
 ## License

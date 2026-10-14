@@ -17,11 +17,37 @@ export const DEFAULT_SETTINGS = {
   categories: [],
 };
 
+function isRecord(value) {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+function isDate(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [year, month, day] = value.split('-').map(Number);
+  if (year < 1 || month < 1 || month > 12 || day < 1) return false;
+  const leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+  return day <= [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1];
+}
+
+function validEntry(entry) {
+  return Number.isSafeInteger(entry.id) && entry.id > 0 &&
+    Number.isSafeInteger(entry.amount) && isCurrency(entry.currency) && isDate(entry.date) &&
+    typeof entry.category === 'string' && entry.category.trim() !== '' &&
+    typeof entry.note === 'string';
+}
+
+function validSetting(key, value) {
+  if (key === 'currency') return isCurrency(value);
+  if (key === 'locale') return ['en', 'fr', 'ar'].includes(value);
+  if (key === 'theme') return ['dark', 'light'].includes(value);
+  return false;
+}
+
 function readState(raw) {
   if (!raw) return null;
   try {
     const parsed = typeof raw === 'string' ? JSON.parse(raw) : raw;
-    return parsed && typeof parsed === 'object' ? parsed : null;
+    return isRecord(parsed) ? parsed : null;
   } catch {
     return null;
   }
@@ -30,13 +56,13 @@ function readState(raw) {
 /** Version 0 stored major units as floats under `value`. Those become integers. */
 export function migrate(state) {
   const next = readState(state) || {};
-  let entries = Array.isArray(next.entries) ? next.entries : [];
+  let entries = Array.isArray(next.entries) ? next.entries.filter(isRecord) : [];
   if (!next.version || next.version < 2) {
     entries = entries.map((entry) => {
       const code = isCurrency(entry.currency) ? entry.currency : 'TND';
       const amount = Number.isInteger(entry.amount)
         ? entry.amount
-        : toMinor(String(entry.value ?? entry.amount ?? 0), code) ?? 0;
+        : toMinor(String(entry.value ?? entry.amount ?? ''), code);
       return {
         id: Number(entry.id) || 0,
         amount,
@@ -47,9 +73,23 @@ export function migrate(state) {
       };
     });
   }
-  const settings = { ...DEFAULT_SETTINGS, ...(next.settings || {}) };
+  const seen = new Set();
+  entries = entries.map((entry) => ({
+    id: entry.id,
+    amount: entry.amount,
+    currency: entry.currency,
+    category: typeof entry.category === 'string' && entry.category.trim() ? entry.category.trim() : 'other',
+    note: typeof entry.note === 'string' ? entry.note : '',
+    date: entry.date,
+  })).filter((entry) => {
+    if (!validEntry(entry) || seen.has(entry.id)) return false;
+    seen.add(entry.id);
+    return true;
+  });
+  const settings = { ...DEFAULT_SETTINGS, ...(isRecord(next.settings) ? next.settings : {}) };
   if (!isCurrency(settings.currency)) settings.currency = 'TND';
-  if (!['en', 'fr', 'ar'].includes(settings.locale)) settings.locale = 'en';
+  if (!validSetting('locale', settings.locale)) settings.locale = 'en';
+  if (!validSetting('theme', settings.theme)) settings.theme = 'dark';
   return {
     version: SCHEMA_VERSION,
     entries,
@@ -76,25 +116,31 @@ export function createStore({ storage, now = () => new Date().toISOString() } = 
   }
 
   function add({ amount, value, currency, category, note = '', date }) {
-    const code = isCurrency(currency) ? currency : state.settings.currency;
-    const minor = Number.isInteger(amount) ? amount : parseAmount(String(value ?? amount ?? ''), code);
-    if (minor === null || !Number.isFinite(minor)) return { ok: false, error: 'not an amount' };
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) return { ok: false, error: 'not a date' };
-    const entry = { id: nextId++, amount: minor, currency: code, category, note, date };
+    const code = currency === undefined ? state.settings.currency : currency;
+    if (!isCurrency(code)) return { ok: false, error: 'unknown currency' };
+    const minor = amount === undefined ? parseAmount(String(value ?? ''), code) : amount;
+    if (!Number.isSafeInteger(minor)) return { ok: false, error: 'not an amount' };
+    if (!isDate(date)) return { ok: false, error: 'not a date' };
+    if (typeof note !== 'string') return { ok: false, error: 'not a note' };
+    if (!Number.isSafeInteger(nextId)) return { ok: false, error: 'too many entries' };
+    const entry = {
+      id: nextId++, amount: minor === 0 ? 0 : minor, currency: code,
+      category: typeof category === 'string' && category.trim() ? category.trim() : 'other',
+      note, date,
+    };
     state.entries = [...state.entries, entry];
     persist();
     return { ok: true, entry };
   }
 
   function update(id, patch) {
-    let found = null;
-    state.entries = state.entries.map((entry) => {
-      if (entry.id !== id) return entry;
-      found = { ...entry, ...patch };
-      return found;
-    });
-    if (found) persist();
-    return found;
+    const original = state.entries.find((entry) => entry.id === id);
+    if (!original || !isRecord(patch)) return null;
+    const edited = { ...original, ...patch, id: original.id };
+    if (!validEntry(edited)) return null;
+    state.entries = state.entries.map((entry) => (entry.id === id ? edited : entry));
+    persist();
+    return edited;
   }
 
   function remove(id) {
@@ -105,8 +151,10 @@ export function createStore({ storage, now = () => new Date().toISOString() } = 
   }
 
   function setSetting(key, value) {
+    if (!validSetting(key, value)) return false;
     state.settings = { ...state.settings, [key]: value };
     persist();
+    return true;
   }
 
   function setCategories(categories) {
@@ -178,16 +226,17 @@ export function createStore({ storage, now = () => new Date().toISOString() } = 
 }
 
 export function toCSV(entries) {
-  const escape = (text) => (/[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text);
+  const escape = (value) => {
+    const text = String(value ?? '');
+    return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+  };
   const rows = ['date,category,amount,currency,note'];
   for (const entry of entries) {
     rows.push([
-      entry.date,
-      entry.category,
-      formatPlain(entry.amount, entry.currency),   // major units: an export must import again
-      entry.currency,
-      escape(entry.note || ''),
-    ].join(','));
+      entry.date, entry.category,
+      formatPlain(entry.amount, entry.currency), // major units, so an export imports again
+      entry.currency, entry.note,
+    ].map(escape).join(','));
   }
   return rows.join('\n') + '\n';
 }
@@ -195,55 +244,92 @@ export function toCSV(entries) {
 export function fromCSV(text, { defaultCurrency = 'TND' } = {}) {
   const entries = [];
   const errors = [];
-  const lines = String(text || '').split(/\r?\n/).filter((line) => line.trim() !== '');
-  if (!lines.length) return { entries, errors: ['empty file'] };
-  const first = lines[0].toLowerCase();
-  const hasHeader = first.includes('date') && first.includes('category');
-  const body = hasHeader ? lines.slice(1) : lines;
+  const records = splitRecords(String(text ?? '').replace(/^\ufeff/, ''));
+  if (!records.length) return { entries, errors: ['empty file'] };
+  const first = records[0].cells.map((cell) => cell.trim().toLowerCase());
+  const hasHeader = !records[0].error && first[0] === 'date' && first[1] === 'category';
+  const body = hasHeader ? records.slice(1) : records;
 
-  body.forEach((row, index) => {
-    const line = index + (hasHeader ? 2 : 1);
-    const cells = splitCells(row);
-    const [date, category, amount, currency, ...rest] = cells;
+  for (const { cells, line, error } of body) {
+    if (error) {
+      errors.push(`line ${line}: ${error}`);
+      continue;
+    }
+    const [rawDate, rawCategory, amount, currency, ...rest] = cells;
+    const date = (rawDate || '').trim();
+    const category = (rawCategory || '').trim();
     if (!date || !category || amount === undefined || amount === '') {
       errors.push(`line ${line}: needs at least date, category and amount`);
-      return;
+      continue;
     }
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    if (!isDate(date)) {
       errors.push(`line ${line}: not a date: ${date}`);
-      return;
+      continue;
     }
     const code = currency && currency.trim() ? currency.trim().toUpperCase() : defaultCurrency;
     if (!isCurrency(code)) {
       errors.push(`line ${line}: unknown currency: ${code}`);
-      return;
+      continue;
     }
     const minor = parseAmount(amount, code);
     if (minor === null) {
       errors.push(`line ${line}: not an amount: ${amount}`);
-      return;
+      continue;
     }
-    entries.push({ amount: minor, currency: code, category: category.trim(), note: rest.join(',').trim(), date });
-  });
+    entries.push({ amount: minor, currency: code, category, note: rest.join(','), date });
+  }
   return { entries, errors };
 }
 
-function splitCells(row) {
-  const cells = [];
+/** Parse records, not physical lines: quoted notes may contain newlines. */
+function splitRecords(text) {
+  const records = [];
+  let cells = [];
   let cell = '';
   let quoted = false;
-  for (let index = 0; index < row.length; index += 1) {
-    const char = row[index];
-    if (quoted) {
-      if (char === '"' && row[index + 1] === '"') { cell += '"'; index += 1; }
-      else if (char === '"') quoted = false;
-      else cell += char;
-    } else if (char === '"') quoted = true;
-    else if (char === ',') { cells.push(cell); cell = ''; }
-    else cell += char;
+  let closed = false;
+  let malformed = false;
+  let line = 1;
+  let startLine = 1;
+
+  function finish() {
+    cells.push(cell);
+    const error = quoted ? 'unterminated quoted field' : malformed ? 'malformed quoted field' : null;
+    if (error || cells.length > 1 || cells[0].trim() !== '') {
+      records.push({ cells, line: startLine, error });
+    }
+    cells = [];
+    cell = '';
+    quoted = closed = malformed = false;
   }
-  cells.push(cell);
-  return cells;
+
+  for (let index = 0; index < text.length; index += 1) {
+    const char = text[index];
+    if (quoted) {
+      if (char === '"' && text[index + 1] === '"') { cell += '"'; index += 1; }
+      else if (char === '"') { quoted = false; closed = true; }
+      else {
+        cell += char;
+        if (char === '\n' || (char === '\r' && text[index + 1] !== '\n')) line += 1;
+      }
+    } else if (char === ',') {
+      cells.push(cell);
+      cell = '';
+      closed = false;
+    } else if (char === '\r' || char === '\n') {
+      if (char === '\r' && text[index + 1] === '\n') index += 1;
+      finish();
+      line += 1;
+      startLine = line;
+    } else if (char === '"') {
+      if (cell === '' && !closed) quoted = true;
+      else { malformed = true; cell += char; }
+    } else if (closed) {
+      if (char !== ' ' && char !== '\t') malformed = true;
+    } else cell += char;
+  }
+  finish();
+  return records;
 }
 
 export { decimalsOf, CURRENCIES };

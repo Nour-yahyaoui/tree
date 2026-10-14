@@ -2,6 +2,22 @@
 
 All notable changes to masrouf. Versions follow semver.
 
+## Unreleased
+
+### Fixed
+- Forms populate categories, restore settings and use the browser's local date.
+- Editing an amount uses major units in that entry's currency, not its note.
+- Amounts, calendar dates, edits, settings and stored entries are validated;
+  duplicate IDs and malformed stored rows no longer break the page.
+- CSV preserves quoted fields, multiline notes and whitespace, accepts a BOM,
+  and reports malformed quotes using original physical line numbers.
+- The static server rejects malformed paths, traversal and external symlinks,
+  handles missing files without crashing and supports HEAD requests.
+
+### Added
+- Dependency-free DOM event and HTTP server regression tests.
+- Accessible names for expense and CSV form controls.
+
 ## 1.0.0 - 2026-09-27
 
 First stable release: one page, no dependencies, the data in the browser, and

@@ -42,7 +42,8 @@ function assemble(negative, whole, fraction, decimals) {
   const padded = (fraction + '0'.repeat(decimals + 1)).slice(0, decimals + 1);
   let minor = Number(whole + padded.slice(0, decimals));
   if (padded.charAt(decimals) >= '5') minor += 1;
-  return negative ? -minor : minor;
+  if (!Number.isSafeInteger(minor)) return null;
+  return negative && minor !== 0 ? -minor : minor;
 }
 
 /**

@@ -4,14 +4,15 @@ A read-later shelf you host yourself. One sqlite file, one CLI, the standard
 library and nothing else.
 
 ```sh
-pip install -e .
+cd raf             # from the repository root
+python3 -m pip install -e .
 raf add https://example.com/sqlite-notes --title "SQLite notes" --tag reading
 raf list --tag reading
 raf search "pragma is:unread"
 ```
 
 ```sh
-python3 -m unittest discover -s tests -t .   # 47 tests, no framework
+python3 -m unittest discover -s tests -t .   # standard library only, no framework
 ```
 
 ## What it does
@@ -21,7 +22,8 @@ python3 -m unittest discover -s tests -t .   # 47 tests, no framework
 - Search with words, `tag:name` and `is:unread`. A hit in the title counts for
   more than a hit in the note, so the thing you saved comes up first.
 - `raf stats`, and `raf tags` for the tags you actually use.
-- Export the whole shelf as json and import it anywhere.
+- Export the whole shelf as json and import it anywhere. Invalid rows and
+  existing URLs are skipped; importing never overwrites a saved link.
 
 The shelf is one file (default `~/.raf/shelf.db`), so "backing up" is copying a
 file, and the schema upgrades itself from `PRAGMA user_version`.

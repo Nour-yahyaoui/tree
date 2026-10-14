@@ -153,11 +153,10 @@ def filter_tree(node: Node, include: Pattern, stats: Optional[Stats] = None) -> 
     for the entries that were dropped.
     """
     if not node.is_dir:
-        if include.matches(node.relative, False):
+        if include.matches(node.relative or node.name, False):
             return node
         if stats is not None:
-            stats.files -= 1
-            stats.total_bytes -= node.size
+            _subtract_tree(node, stats)
         return None
 
     kept = []
@@ -165,21 +164,38 @@ def filter_tree(node: Node, include: Pattern, stats: Optional[Stats] = None) -> 
         survivor = filter_tree(child, include, stats)
         if survivor is not None:
             kept.append(survivor)
+    node.children = kept
     if not kept and node.relative:
         if stats is not None:
-            stats.dirs -= 1
+            _subtract_tree(node, stats)
         return None
-    node.children = kept
     return node
 
 
-def prune_tree(node: Node, max_entries: int) -> Node:
-    """Trim very wide directories, mainly useful for terminal output."""
+def _subtract_tree(node: Node, stats: Stats) -> None:
+    """Undo the walker's counters for a discarded subtree."""
+    for item in node.walk():
+        if item.is_dir:
+            stats.dirs -= 1
+        elif not item.error:
+            # A failed stat produces an error node, not a counted file.
+            stats.files -= 1
+            stats.total_bytes -= item.size
+        if item.symlink:
+            stats.symlinks -= 1
+        if item.error:
+            stats.errors -= 1
+
+
+def prune_tree(node: Node, max_entries: int, stats: Optional[Stats] = None) -> Node:
+    """Trim wide directories, updating *stats* for every discarded entry."""
     if max_entries < 1:
         raise ValueError("max_entries must be at least 1")
+    if stats is not None:
+        for child in node.children[max_entries:]:
+            _subtract_tree(child, stats)
+    node.children = node.children[:max_entries]
     for child in node.children:
         if child.is_dir:
-            prune_tree(child, max_entries)
-    if len(node.children) > max_entries:
-        node.children = node.children[:max_entries]
+            prune_tree(child, max_entries, stats)
     return node

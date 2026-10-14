@@ -2,6 +2,16 @@
 
 All notable changes to raf. Versions follow semver.
 
+## Unreleased
+
+### Fixed
+- Home-directory shelf paths are expanded before opening sqlite.
+- IPv6 brackets, port zero and path parameters survive URL normalisation;
+  invalid ports and hosts return a validation error instead of a traceback.
+- Host statistics count hosts rather than individual URLs.
+- Imports validate fields and skip duplicate URLs without overwriting metadata.
+- Missing tag targets, missing import files and negative limits report errors.
+
 ## 1.0.0 - 2026-09-06
 
 First stable release. The command line, the schema and the export format are

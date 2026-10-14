@@ -76,3 +76,17 @@ test('formatting groups the thousands and ends with the symbol', () => {
   assert.equal(formatPlain(1234567, 'TND'), '1234.567');
   assert.equal(formatPlain(1200, 'JPY'), '1200');
 });
+
+test('amounts outside the safe integer range are rejected instead of rounded', () => {
+  assert.equal(toMinor('90071992547409.91', 'EUR'), Number.MAX_SAFE_INTEGER);
+  assert.equal(parseAmount('9007199254740.991', 'TND'), Number.MAX_SAFE_INTEGER);
+  assert.equal(toMinor('90071992547409.915', 'EUR'), null, 'rounding also checks the boundary');
+  assert.equal(toMinor('-90071992547409.92', 'EUR'), null);
+  assert.equal(parseAmount('9007199254740992', 'JPY'), null);
+  assert.equal(parseAmount('9'.repeat(400), 'TND'), null, 'overflow is not Infinity');
+});
+
+test('rounding a tiny refund to zero does not create negative zero', () => {
+  assert.equal(toMinor('-0.0004', 'TND'), 0);
+  assert.equal(parseAmount('-0.000', 'TND'), 0);
+});
